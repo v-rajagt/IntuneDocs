@@ -212,6 +212,22 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more details on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
    |**Root Certificate**             |**-** Android device administrator <br> **-** Android Enterprise (*Device Owner*, *Work Profile*) |Select a root CA certificate profile that was previously assigned. |
 
+3. Go to **Settings**, and configure the properties that apply to the platform you selected:  
+   
+   |Setting     | Platform     | Details   |
+   |------------|------------|------------|
+   |**Renewal threshold (%)**        |All         |Recommended is 20%  | 
+   |**Certificate validity period**  |All         |If you didn't change the certificate template, this option may be set to one year. |
+   |**Key storage provider (KSP)**   |Windows 10  | For Windows, select where to store the keys on the device. |
+   |**Certification authority**      |All         |Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.  |
+   |**Certification authority name** |All         |Lists the name of your Enterprise CA, such as "Contoso Certification Authority". |
+   |**Certificate type**             |macOS       |Select either **User** or **Device** for the certificate type. <br><br> This selection affects the Subject name format. |
+   |**Subject name format**          |All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For macOS, the Subject name format is determined by the certificate type. |
+   |**Subject alternative name**     |All         |Set this option to **User principal name (UPN)** unless otherwise required. |
+   |**Extended key usage**           |**-** Android device administrator <br>**-** Android Enterprise (*Device Owner*, *Work Profile*) <br> **-** Windows 10 |Certificates usually require *Client Authentication* so that the user or device can authenticate to a server. |
+   |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more details on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
+   |**Root Certificate**             |**-** Android device administrator <br> **-** Android Enterprise (*Device Owner*, *Work Profile*) |Select a root CA certificate profile that was previously assigned. |
+
 4. Select **OK** > **Create** to save your profile.
 5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
