@@ -209,7 +209,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 7. Select **OK**, and then select **Create**. The profile is created and appears on the *Device configuration - Profiles* list.
 
 ### Avoid certificate signing requests with escaped special characters
-There's a known issue for SCEP certificate requests that include a Subject Name (CN) with one or more of the following special characters as an escaped character. Subject names that include one of the special characters as an escaped character result in a CSR with an incorrect subject name which in turn results in the Intune SCEP challenge validation failing and no certificate issued.  This issue also applies to PKCS certificate requests that include the same special characters as escaped characters.
+There's a known issue for SCEP and PKCS certificate requests that include a Subject Name (CN) with one or more of the following special characters as an escaped character. Subject names that include one of the special characters as an escaped character result in a CSR with an incorrect subject name which in turn results in the Intune SCEP challenge validation failing and no certificate issued.
 
 The special characters are:
 - \+
