@@ -206,8 +206,8 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    |**Key storage provider (KSP)**   |Windows 10  | For Windows, select where to store the keys on the device. |
    |**Certification authority**      |All         |Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.  |
    |**Certification authority name** |All         |Lists the name of your Enterprise CA, such as "Contoso Certification Authority". |
-   |**Certificate type**             |macOS       |Select a type: <br> **-** **User** certificates can contain both user and device attributes in the subject and SAN of the certificate. <br><br>**-** **Device** certificates can only contain device attributes in the subject and SAN of the certificate.​ Use Device for scenarios such as user-less devices, like kiosks or other shared devices.  <br><br> This selection affects the Subject name format. For more information about the subject name format, see [Custom subject name format](#custom-subject-name-format) later in this article. |
-   |**Subject name format**          |All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For macOS, the Subject name format is determined by the certificate type. |
+   |**Certificate type**             |macOS       |Select a type: <br> **-** **User** certificates can contain both user and device attributes in the subject and SAN of the certificate. <br><br>**-** **Device** certificates can only contain device attributes in the subject and SAN of the certificate.​ Use Device for scenarios such as user-less devices, like kiosks or other shared devices.  <br><br> This selection affects the Subject name format. |
+   |**Subject name format**          |All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For macOS, the Subject name format is determined by the certificate type. See [Subject name format for macOS](#subject-name-format-for-macos) later in this article. |
    |**Subject alternative name**     |All         |Set this option to **User principal name (UPN)** unless otherwise required. |
    |**Extended key usage**           |**-** Android device administrator <br>**-** Android Enterprise (*Device Owner*, *Work Profile*) <br> **-** Windows 10 |Certificates usually require *Client Authentication* so that the user or device can authenticate to a server. |
    |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more details on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
@@ -219,78 +219,58 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    > [!NOTE]
    > On devices with an Android Enterprise profile, certificates installed using a PKCS certificate profile are not visible on the device. To confirm successful certificate deployment, check the status of the profile in the Intune console.
 
-### Custom subject name format  
+### Subject name format for macOS
 
-For macOS PKCS certificate profiles, you can create a custom subject name. The format of the name depends on your selection of a *User* or *Device* certificate.
+When you create a macOS PKCS certificate profile, options for the subject name format depend on the Certificate type you select, either **User** or **Device**.  
 
+> [!NOTE]  
+> There is a known issue for using PCKS to get certificates [which is the same issue as seen for SCEP](certficates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) when the subject name in the resulting Certificate Signing Request (CSR) includes one of the following characters as an escaped character (proceeded by a backslash \\):
+> - \+
+> - ;
+> - ,
+> - =
 
-**Device certificate**  
-Device certificate type​  
-Format options for the Subject name format include the following variables:​  
-​
-{{AAD_Device_ID}}​
-{{Device_Serial}}​
-{{Device_IMEI}}​
-{{SerialNumber}}​
-{{IMEINumber}}​
-{{AzureADDeviceId}}​
-{{WiFiMacAddress}}​
-{{IMEI}}​
-{{DeviceName}}​
-{{FullyQualifiedDomainName}} (Only applicable for Windows and domain-joined devices)​
-{{MEID}}​
-​
-You can specify these variables, followed by the text for the variable, in the textbox. For example, the common name for a device named Device1 can be added as CN={{DeviceName}}Device1.​
-​
- Important​
-​
-When you specify a variable, enclose the variable name in curly brackets { } as seen in the example, to avoid an error.​
-Device properties used in the subject or SAN of a device certificate, like IMEI, SerialNumber, and FullyQualifiedDomainName, are properties that could be spoofed by a person with access to the device.​
-A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if {{IMEI}} is used in the subject name of a PKCS profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.​
-​
-​
-​
-Subject alternative name:​
-Select how Intune automatically creates the subject alternative name (SAN) in the certificate request. Options for the SAN depend on the Certificate type you selected; either User or Device.​
-​
-Use the Attribute dropdown and select an attribute, assign a Value, and Add that to the certificate profile. You can add multiple values by selecting additional attributes.​
-Available attributes include:​
-​
-Email address​
-User principal name (UPN)​
-DNS​
-​
+- **User certificate type**  
+  Format options for the *Subject name format* include two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
 
-**User certificate type**
-The custom format supports two variables: *Common Name* (CN) and *Email* (E). Common Name (CN) can be set to any of the following variables:​
-​
-- CN={{UserName}}: The user principal name of the user, such as janedoe@contoso.com.​
-​
-- CN={{AAD_Device_ID}}: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.​
-​
-- CN={{SERIALNUMBER}}: The unique serial number (SN) typically used by the manufacturer to identify a device.​
-​
-- CN={{IMEINumber}}: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone.​
-​
-- CN={{OnPrem_Distinguished_Name}}: A sequence of relative distinguished names separated by comma, such as CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com.​
-To use the {{OnPrem_Distinguished_Name}} variable, be sure to sync the onpremisesdistinguishedname user attribute using Azure AD Connect to your Azure AD.​
-​
-- CN={{onPremisesSamAccountName}}: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called onPremisesSamAccountName. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign-in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: DomainName\testUser, or only testUser.​
-To use the {{onPremisesSamAccountName}} variable, be sure to sync the onPremisesSamAccountName user attribute using Azure AD Connect to your Azure AD.​
-​
-​You can also use any device variable mentioned under *Device certificate type*.  
+  - **CN={{UserName}}**: The user principal name of the user, such as janedoe@contoso.com.
+  - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
+  - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device.
+  - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone.
+  - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distinguished names separated by comma, such as *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
 
-<!--     Example needs links for some exlanitory details near its end: 
+    To use the *{{OnPrem_Distinguished_Name}}* variable, be sure to sync the *onpremisesdistinguishedname* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
-#### Examaple
-By using a combination of one or many of the supported variables and static strings, you can create a custom subject name format, such as:​
-​
-CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US​
-​
-The example includes a subject name format that uses the **CN** and **E** variables, and strings for Organizational Unit, Organization, Location, State, and Country values. The *CertStrToName* function describes this function, and its supported strings.​
+  - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called *onPremisesSamAccountName*. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign-in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: *DomainName\testUser*, or only *testUser*.
 
+    To use the *{{onPremisesSamAccountName}}* variable, be sure to sync the *onPremisesSamAccountName* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
---> 
+  By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as:  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  That example includes a subject name format that uses the CN and E variables, and strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
+
+- **Device certificate type**  
+  Format options for the Subject name format include the following variables: 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{IMEINumber}}**
+  - **{{AzureADDeviceId​}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEI}}**
+  - **{{DeviceName}}**
+  - **{{FullyQualifiedDomainName}}** *(Only applicable for Windows and domain-joined devices)*
+  - **{{MEID}}**
+   
+  You can specify these variables, followed by the text for the variable, in the textbox. For example, the common name for a device named *Device1* can be added as **CN={{DeviceName}}Device1**.
+
+  > [!IMPORTANT]  
+  > - When you specify a variable, enclose the variable name in curly brackets { } as seen in the example, to avoid an error.  
+  > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
+  > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.  
+ 
 
 
 ## What's new for Connectors
