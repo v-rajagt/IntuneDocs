@@ -197,7 +197,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
     - **Platform** to deploy the profile to
     - Set **Profile type** to **PKCS certificate**
 
-3. Go to **Settings**, and configure the properties that apply to the platform you selected: 
+3. Go to **Settings**, and configure the properties that apply to the platform you selected:  
    |Setting     | Platform     | Details   |
    |------------|------------|------------|
    |**Renewal threshold (%)**        |All         |Recommended is 20%  | 
