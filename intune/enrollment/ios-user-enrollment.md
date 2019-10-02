@@ -47,7 +47,7 @@ For more information about the options available with User Enrollment, see [User
 
 An enrollment profile defines the settings applied to a group of devices during enrollment. 
 
-1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)** > **Create profile** > **iOS**. This profile is where you’ll indicate what enrollment experience your iOS and iPadOS end users will have on devices not enrolled through a corporate Apple method. You’ll be able to edit this profile after if you’d like to make changes.
+1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)** > **Create profile** > **iOS**. This profile is where you’ll indicate what enrollment experience your iOS and iPadOS end users will have on devices not enrolled through a corporate Apple method. If you'd like tomake changes, you can edit this profile after you've created it.
 
 2. On the **Basics** page, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices).
 
@@ -55,12 +55,12 @@ An enrollment profile defines the settings applied to a group of devices during 
 
 4. On the **Settings** page, you can choose to give users the choice on which enrollment type they'll use. Alternately, you can set a default.
     - If you want all the users in this profile to use User Enrollment, follow these steps:
-        1. For **Require user to elect device type**, select **Not configured**.
+        1. For **Require user to select device type**, select **Not configured**.
         2. For **Default enrollment type**, select **User Enrollment**.
     - If you want all the users in this profile to use Device Enrollment, follow these steps:
-        1. For **Require user to elect device type**, select **Not configured**.
+        1. For **Require user to select device type**, select **Not configured**.
         2. For **Default enrollment type**, select **Device Enrollment**.
-    - If you want to give all users in this group the choice of which enrollment type to use, select **Required** for **Require user to elect device type**. When users enroll their devices, they'll be given the option to choose between **I own this device** and **(Company) owns this device**. If they choose the former, the device will be enrolled by using User Enrollment. If they choose the latter, the device will be enrolled by using Device Enrollment. If the user chooses **I own this device**, they'll get another option to secure the entire device or only secure work-related apps and data. The end user's selection of whether they own the device only determines which enrollment type is implemented on their device. This user choice is not reflected in teh Device Ownership attribute in Intune. To learn more about the user experience, see [Set up IOS device access to your company resources](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - If you want to give all users in this group the choice of which enrollment type to use, select **Required** for **Require user to select device type**. When users enroll their devices, they'll be given the option to choose between **I own this device** and **(Company) owns this device**. If they choose the former, the device will be enrolled by using User Enrollment. If they choose the latter, the device will be enrolled by using Device Enrollment. If the user chooses **I own this device**, they'll get another option to secure the entire device or only secure work-related apps and data. The end user's selection of whether they own the device only determines which enrollment type is implemented on their device. This user choice isn't reflected in the Device Ownership attribute in Intune. To learn more about the user experience, see [Set up IOS device access to your company resources](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
 > [!NOTE]
 > The following notice is inaccurate and will be removed from the UI.
@@ -69,19 +69,19 @@ An enrollment profile defines the settings applied to a group of devices during 
 
 5. Select **Next**.
 
-6. On the **Assignments** page, choose the user groups containing the users to which you want this profile assigned. You can choose to assign the profile to all users or specific groups. All users in the selected groups will use the enrollment type chosen above. Device groups are not supported for User Enrollment scenarios because the feature is based on user identities, rather than devices. You can choose to assign the profile to all users or specific groups.
+6. On the **Assignments** page, choose the user groups containing the users to which you want this profile assigned. You can choose to assign the profile to all users or specific groups. All users in the selected groups will use the enrollment type chosen above. Device groups aren't supported for User Enrollment scenarios because the feature is based on user identities, rather than devices. You can choose to assign the profile to all users or specific groups.
 
 7. Select **Next**.
 
-8. On the **Review and Create** page, review your choices and then select Create to assign the profile to the users.
+8. On the **Review and Create** page, review your choices, and then select Create to assign the profile to the users.
 
 ## Profile priority
 
-After you've created more than one enrollment type profile, you can change the priority order in which they are applied.
+After you've created more than one enrollment type profile, you can change the priority order in which they're applied.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)**.
 2. Drag and drop the profiles in the list in the order you want them applied.
 
-In case of conflicts between profiles for any user, the higher priority profile on the page will be applied for the user.
+In case of conflicts between profiles for any user, the higher priority profile is applied for the user.
 
 
