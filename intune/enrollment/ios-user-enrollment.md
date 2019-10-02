@@ -3,7 +3,7 @@
 
 title: Enroll iOS devices - User Enrollment
 titleSuffix: Microsoft Intune
-description: Learn how to iOS and iPadOS User Enrollment.
+description: Learn how to set up iOS and iPadOS User Enrollment.
 keywords:
 author: ErikjeMS
 ms.author: erikje
