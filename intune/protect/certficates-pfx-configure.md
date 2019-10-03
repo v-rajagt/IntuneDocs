@@ -60,7 +60,7 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 - **Microsoft Intune Certificate Connector** (also called the *NDES Certificate Connector*):  
   In the Intune portal, go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install the connector for PKCS #12*. Use the download link in the portal to start download of the certificate connector installer **NDESConnectorSetup.exe**.  
 
-  Intune supports up to 100 instances of this connector per tenant, with each instance on a separate Windows server. You can install an instance of this connector on the same server as an instance of the PFX Certificate Connector for Microsoft Intune. When you use multiple connectors the connector infrastructure supports high availability and load balancing as any available connector instance can process your PKCS certificate requests. 
+  Intune supports up to 100 instances of this connector per tenant, with each instance on a separate Windows server. You can install an instance of this connector on the same server as an instance of the PFX Certificate Connector for Microsoft Intune. When you use multiple connectors, the connector infrastructure supports high availability and load balancing as any available connector instance can process your PKCS certificate requests. 
 
   This connector processes PKCS certificate requests used for authentication or S/MIME email signing.
 
@@ -77,7 +77,7 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   - Install the PFX Certificate Connector for Microsoft Intune on your server.  
   - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.   
 
-  For more information about network endpoints that Intune and the connector must be able to access, see [Network endpoints for Microsoft Intune](../fundamentals/intune-endpoints.md).
+  For more information about network endpoints that Intune and the connector access, see [Network endpoints for Microsoft Intune](../fundamentals/intune-endpoints.md).
 
 - **Windows Server**:  
   You use a Windows Server to host:
@@ -104,7 +104,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open the **Certification Authority** console, right-click **Certificate Templates**, and select **Manage**.
-3. Find the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
+3. Find the **User** certificate template, right-click it, and choose **Duplicate Template** to open **Properties of New Template**.
 
     > [!NOTE]
     > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd-party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
@@ -167,7 +167,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 ## Create a trusted certificate profile
 
-1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device configuration** > **Profiles** > **Create profile**.
     ![Navigate to Intune and create a new profile for a trusted certificate](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Enter the following properties:
@@ -189,7 +189,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 ## Create a PKCS certificate profile
 
-1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device configuration** > **Profiles** > **Create profile**.
 2. Enter the following properties:
 
     - **Name** for the profile
@@ -210,7 +210,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    |**Subject name format**          |All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For macOS, the Subject name format is determined by the certificate type. See [Subject name format for macOS](#subject-name-format-for-macos) later in this article. |
    |**Subject alternative name**     |All         |Set this option to **User principal name (UPN)** unless otherwise required. |
    |**Extended key usage**           |**-** Android device administrator <br>**-** Android Enterprise (*Device Owner*, *Work Profile*) <br> **-** Windows 10 |Certificates usually require *Client Authentication* so that the user or device can authenticate to a server. |
-   |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more details on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
+   |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more information on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
    |**Root Certificate**             |**-** Android device administrator <br> **-** Android Enterprise (*Device Owner*, *Work Profile*) |Select a root CA certificate profile that was previously assigned. |
 
 4. Select **OK** > **Create** to save your profile.
