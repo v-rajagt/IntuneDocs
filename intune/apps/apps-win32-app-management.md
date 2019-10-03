@@ -140,6 +140,9 @@ The following steps provide guidance to help you add a Windows app to Intune.
     In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
 
+    > [!NOTE]
+    > When deploying Win32 apps, consider using [Intune Management Extension](../apps/intune-management-extension.md) exclusively, particularly when you have a multi-file installation process. Mixed use of the Win32 app installation configuration service provider (CSP) and Intune Management Extension may result in installation timing and installation priority issues. MDM policies prevent app installation serialization.
+
 3. Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
     For example:
