@@ -35,9 +35,12 @@ User Enrollment supports a subset of device management options. If a pre-existin
 
 ## Password settings
 
-On User Enrollment devices, the Require password setting is the only supported option. If any of the password policy settings are configured in any way, then two restrictions are automatically enforced. The device will be required to have a 6 digit non-simple (complex) pin.
+On User Enrollment devices, if you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
 
-For example, you configure the Password expiration setting, and push this policy to User Enrollment devices. On such devices, the expiration is ignored and the password must be 6-digit, complex number.
+For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the following happens:
+- The **Password expiration** setting is ignored.
+- Simple passwords, such as `1111` or `1234`, aren't allowed.
+- A 6 digit pin is enforced.
 
 ## Administrator remote device actions and options
 Admins can perform the following actions and options on User Enrollment devices:
