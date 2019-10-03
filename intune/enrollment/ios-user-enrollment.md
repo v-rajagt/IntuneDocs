@@ -49,14 +49,19 @@ An enrollment profile defines the settings applied to a group of devices during 
 
 1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)** > **Create profile** > **iOS**. This profile is where you’ll indicate what enrollment experience your iOS and iPadOS end users will have on devices not enrolled through a corporate Apple method. If you'd like to make changes, you can edit this profile after you've created it.
 
-    ![Create Apple enrollment profile](./media/ios-user-enrollment/xxx.png)
-
+    ![Create Apple enrollment profile](./media/ios-user-enrollment/create-profile.png)
 
 2. On the **Basics** page, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices).
+
+    ![Basics page](./media/ios-user-enrollment/basics-page.png)
+
 
 3. Select **Next**.
 
 4. On the **Settings** page, you can choose to give users the choice on which enrollment type they'll use. Alternately, you can set a default.
+
+    ![Settings page](./media/ios-user-enrollment/settings-page.png)
+
     - If you want all the users in this profile to use User Enrollment, follow these steps:
         1. For **Require user to select device type**, select **Not configured**.
         2. For **Default enrollment type**, select **User Enrollment**.
@@ -74,9 +79,14 @@ An enrollment profile defines the settings applied to a group of devices during 
 
 6. On the **Assignments** page, choose the user groups containing the users to which you want this profile assigned. You can choose to assign the profile to all users or specific groups. All users in the selected groups will use the enrollment type chosen above. Device groups aren't supported for User Enrollment scenarios because the feature is based on user identities, rather than devices. You can choose to assign the profile to all users or specific groups.
 
+    ![Assignments page](./media/ios-user-enrollment/assignments-page.png)
+
 7. Select **Next**.
 
-8. On the **Review and Create** page, review your choices, and then select Create to assign the profile to the users.
+8. On the **Review and Create** page, review your choices, and then select **Create** to assign the profile to the users.
+
+    ![Assignments page](./media/ios-user-enrollment/assignments-page.png)
+
 
 ## Profile priority
 
