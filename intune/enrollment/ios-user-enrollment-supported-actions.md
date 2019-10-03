@@ -35,7 +35,7 @@ User Enrollment supports a subset of device management options. If a pre-existin
 
 ## Password settings
 
-On User Enrollment devices, the Require password setting is the only supported option. If configured, the only restriction enforced is to require a 6-digit complex numeric PIN.
+On User Enrollment devices, the Require password setting is the only supported option. If any of the password policy settings are configured in any way, then two restrictions are automatically enforced. The device will be required to have a 6 digit non-simple (complex) pin.
 
 For example, you configure the Password expiration setting, and push this policy to User Enrollment devices. On such devices, the expiration is ignored and the password must be 6-digit, complex number.
 
@@ -73,7 +73,17 @@ The following restrictions are supported:
 - Managed apps sync to cloud
 - Control Center access while device locked
 - Notification Center access while device locked
-- Today view while device locked 
+- Today view while device locked
+- Block screenshots
+- Block Enterprise Book backup
+- Block Enterprise Book metadata sync
+- Require encrypted backup
+- Require watch wrist detection
+- Block Siri
+- Block Siri while device is locked
+- Require Safari fraud warnings
+- Block diagnostics submission to Apple
+
 
 ## Options not supported
 The following options aren't supported on devices enrolled with User Enrollment. If you need these options, check out Device Enrollment for personally-owned devices or Automated Device Enrollment for corporate devices.

@@ -47,7 +47,10 @@ For more information about the options available with User Enrollment, see [User
 
 An enrollment profile defines the settings applied to a group of devices during enrollment. 
 
-1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)** > **Create profile** > **iOS**. This profile is where you’ll indicate what enrollment experience your iOS and iPadOS end users will have on devices not enrolled through a corporate Apple method. If you'd like tomake changes, you can edit this profile after you've created it.
+1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment types (preview)** > **Create profile** > **iOS**. This profile is where you’ll indicate what enrollment experience your iOS and iPadOS end users will have on devices not enrolled through a corporate Apple method. If you'd like to make changes, you can edit this profile after you've created it.
+
+    ![Create Apple enrollment profile](./media/ios-user-enrollment/xxx.png)
+
 
 2. On the **Basics** page, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices).
 
