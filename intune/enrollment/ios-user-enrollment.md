@@ -79,7 +79,9 @@ An enrollment profile defines the settings applied to a group of devices during 
 
 6. On the **Assignments** page, choose the user groups containing the users to which you want this profile assigned. You can choose to assign the profile to all users or specific groups. All users in the selected groups will use the enrollment type chosen above. Device groups aren't supported for User Enrollment scenarios because the feature is based on user identities, rather than devices. You can choose to assign the profile to all users or specific groups.
 
-    ![Assignments page](media/ios-user-enrollment/assignments-page.png)
+    ![Assignments page](./media/ios-user-enrollment/assignments-page.png)
+    ![Screenshot of Windows Autopilot devices](./media/enrollment-autopilot/autopilot-import-device.png)
+
 
 7. Select **Next**.
 
