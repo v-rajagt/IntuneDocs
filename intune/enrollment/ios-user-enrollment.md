@@ -70,10 +70,10 @@ An enrollment profile defines the settings applied to a group of devices during 
         2. For **Default enrollment type**, select **Device Enrollment**.
     - If you want to give all users in this group the choice of which enrollment type to use, select **Required** for **Require user to select device type**. When users enroll their devices, they'll be given the option to choose between **I own this device** and **(Company) owns this device**. If they choose the former, the device will be enrolled by using User Enrollment. If they choose the latter, the device will be enrolled by using Device Enrollment. If the user chooses **I own this device**, they'll get another option to secure the entire device or only secure work-related apps and data. The end user's selection of whether they own the device only determines which enrollment type is implemented on their device. This user choice isn't reflected in the Device Ownership attribute in Intune. To learn more about the user experience, see [Set up IOS device access to your company resources](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
-> [!NOTE]
-> The following notice is inaccurate and will be removed from the UI.
-> “For Conditional Access to work on devices targeted with User Enrollment, you will need to push the Azure Authenticator app as a required app for this user group to enable Single Sign-On and Workplace Join.”
-> As an administrator, you do not need to take any action to push the Authenticator app to your users. Your users will be instructed within the Company Portal to install the Authenticator app to complete the User Enrollment process to ensure these scenarios function properly.
+    > [!NOTE]
+    > The following notice is inaccurate and will be removed from the UI.
+    > “For Conditional Access to work on devices targeted with User Enrollment, you will need to push the Azure Authenticator app as a required app for this user group to enable Single Sign-On and Workplace Join.”
+    > As an administrator, you do not need to take any action to push the Authenticator app to your users. Your users will be instructed within the Company Portal to install the Authenticator app to complete the User Enrollment process to ensure these scenarios function properly.
 
 5. Select **Next**.
 

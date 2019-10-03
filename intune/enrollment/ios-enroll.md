@@ -65,7 +65,7 @@ You can also enroll company-owned iOS devices with a [device enrollment manager]
 
 ## Device Enrollment Program
 
-Organizations can purchase iOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management. For more informaiton, see [Device Enrollment Program](device-enrollment-program-enroll-ios.md).
+Organizations can purchase iOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management. For more information, see [Device Enrollment Program](device-enrollment-program-enroll-ios.md).
 
 ## User enrollment
 User Enrollment gives admins a subset of management options compared to other enrollment methods. For more information, see [User Enrollment supported actions, passwords, and other options](ios-user-enrollment-supported-actions.md) and [Set up iOS and iPadOS User Enrollment](ios-user-enrollment.md).
