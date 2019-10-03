@@ -85,7 +85,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 ### Process flow to add a Win32 app to Intune
 
-   ![Process flow to add a Win32 app to Intune](./media/apps-win32-app-management/add-win32-app.svg)
+    <img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="300">
 
 ### Add a Win32 app to Intune
 
