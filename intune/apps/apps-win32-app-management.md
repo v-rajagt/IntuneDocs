@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -26,6 +26,9 @@ ms.collection: M365-identity-device-management
 
 > [!NOTE]
 > This app management capability supports both 32-bit and 64-bit operating system architecture for Windows applications.
+
+> [!IMPORTANT]
+> When deploying Win32 apps, consider using [Intune Management Extension](../apps/intune-management-extension.md) exclusively, particularly when you have a multi-file Win32 app installer. If you mix the installation of Win32 apps and line-of-business apps during AutoPilot enrollment, the app installation may fail.  
 
 ## Prerequisites
 
@@ -139,9 +142,6 @@ The following steps provide guidance to help you add a Windows app to Intune.
     `ApplicationName.exe /quiet`<br>
     In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
-
-    > [!NOTE]
-    > When deploying Win32 apps, consider using [Intune Management Extension](../apps/intune-management-extension.md) exclusively, particularly when you have a multi-file installation process. Mixed use of the Win32 app installation configuration service provider (CSP) and Intune Management Extension may result in installation timing and installation priority issues. MDM policies prevent app installation serialization.
 
 3. Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
