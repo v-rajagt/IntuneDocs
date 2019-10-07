@@ -41,9 +41,6 @@ You can use an Intune app configuration policy to configure Google Chrome for An
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In the **Intune** pane, select **Client apps** > **Apps** > **Add** then add the **Managed Google Play** app.
-
-    ![Add the Managed Google Play app](~/apps/media/apps-configure-chrome-android/add-app.png)
-
 3. Go to Managed Google Play, search with **Google Chrome** and approve.
 
     ![Search and approve Google Chrome](~/apps/media/apps-configure-chrome-android/search.png)
@@ -67,12 +64,11 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 
     ![Add Use configuration designer](~/apps/media/apps-configure-chrome-android/configuration.png)
 
-  Below is the example of the common settings:
-
-    **Block access to a list of URLs**: `["*"]`
-    **Allow access to a list of URLs**: `["baidu.com", "yahoo.com", "chrome://*"]`
-    **Managed Bookmarks**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
-    **Incognito mode availability**: `Incognito mode disabled`
+    Below is the example of the common settings:
+    - **Block access to a list of URLs**: `["*"]`
+    - **Allow access to a list of URLs**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Managed Bookmarks**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
+    - **Incognito mode availability**: `Incognito mode disabled`
 
     ![Common settings](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
@@ -84,22 +80,22 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 ## Verify the device settings
 
 1. Once the Android device is enrolled with Android Enterprise, the managed Google Chrome app with the portfolio icon will be deployed automatically.
-
-   ![Managed Google Chrome with the portfolio icon](~/apps/media/apps-configure-chrome-android/chrome-icon.png)
+ 
+    <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="500">
 
 2. Launch Google Chrome and you will find the settings applied.
 
-    - Bookmarks:
-    ![Bookmarks](~/apps/media/apps-configure-chrome-android/bookmarks.png)
+    - Bookmarks:<br>
+    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="500">
 
-    - Blocked URL:
-    ![Blocked URL](~/apps/media/apps-configure-chrome-android/blocked-url.png)
+    - Blocked URL:<br>
+    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="500">
 
-    - Allow URL:
-    ![Allow URL](~/apps/media/apps-configure-chrome-android/allowed-url.png)
+    - Allow URL:<br>
+    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="500">
 
-    - Incognito tab:
-    ![Incognito tab](~/apps/media/apps-configure-chrome-android/incognito-tab.png)
+    - Incognito tab:<br>
+    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="500">
 
 ## Troubleshooting
 
