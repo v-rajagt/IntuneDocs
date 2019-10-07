@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -34,8 +34,8 @@ You can use an Intune app configuration policy to configure Google Chrome for An
 
 ## Prerequisites
 
-- Android Enterprise enrollment
-- Google Chrome is added as Managed Google Play app
+- The user's Android Enterprise device must be enrolled in Intune. For more information, see [Set up enrollment of Android Enterprise work profile devices](./enrollment/android-work-profile-enroll.md).
+- Google Chrome is added as a Managed Google Play app. For more information about Managed Google Play, see [Connect your Intune account to your Managed Google Play account](./enrollment/connect-intune-android-enterprise.md).
 
 ## Configuration steps
 
@@ -43,11 +43,11 @@ Intune admin needs to add Google Chrome into the Managed Google Play store first
 
 1. Go to the Intune portal > Client apps > Apps, add the **Managed Google Play** app.
 
-   ![Add the Managed Google Play app](./media/manage-android-google-chrome/add-app.png)
+   ![Add the Managed Google Play app](./apps/media/apps-configure-chrome-android/add-app.png)
 
 1. Go to Managed Google Play, search with **Google Chrome** and approve.
 
-   ![Search and approve Google Chrome](./media/manage-android-google-chrome/search.png)
+   ![Search and approve Google Chrome](./apps/media/apps-configure-chrome-android/search.png)
 
 1. Assign Google Chrome to a user group as the required type. Thus, Google Chrome will be deployed automatically when the device is enrolled into Intune.
 
@@ -56,15 +56,15 @@ Next, Intune admin can follow below steps to create the configuration policy.
 1. Go to the **App configuration policies** blade and add the policy.
 1. Enter the policy name, choose **Managed devices** under Device enrollment type and **Android** under Platform.
 
-   ![Add Google Chrome Configuration policy](./media/manage-android-google-chrome/add-policy.png)
+   ![Add Google Chrome Configuration policy](./apps/media/apps-configure-chrome-android/add-policy.png)
 
 1. Click Associated app, and then select **Google Chrome**.
 
-   ![Select Google Chrome under Associated app](./media/manage-android-google-chrome/associated-app.png)
+   ![Select Google Chrome under Associated app](./apps/media/apps-configure-chrome-android/associated-app.png)
 
 1. Click Configuration settings, select **Use configuration designer**, and then click **Add** to select the configuration keys.
 
-   ![Add Use configuration designer](./media/manage-android-google-chrome/configuration.png)
+   ![Add Use configuration designer](./apps/media/apps-configure-chrome-android/configuration.png)
 
 1. Below is the example of the common settings:
 
@@ -75,7 +75,7 @@ Next, Intune admin can follow below steps to create the configuration policy.
    Incognito mode availability: Incognito mode disabled
    ```
 
-   ![Common settings](./media/manage-android-google-chrome/common-settings.png)
+   ![Common settings](./apps/media/apps-configure-chrome-android/common-settings.png)
 
    With the above setting, the bookmarks will be created, and all websites except baidu.com, yahoo.com and chrome:// will be blocked.
 
@@ -86,35 +86,35 @@ Next, Intune admin can follow below steps to create the configuration policy.
 
 1. Once the Android device is enrolled as Android Enterprise, the managed Google Chrome with the portfolio icon will be deployed automatically.
 
-   ![Managed Google Chrome with the portfolio icon](./media/manage-android-google-chrome/chrome-icon.png)
+   ![Managed Google Chrome with the portfolio icon](./apps/media/apps-configure-chrome-android/chrome-icon.png)
 
 1. Launch Google Chrome and you will find the settings applied.
 
    - Bookmarks:
 
-     ![Bookmarks](./media/manage-android-google-chrome/bookmarks.png)
+     ![Bookmarks](./apps/media/apps-configure-chrome-android/bookmarks.png)
 
    - Blocked URL:
 
-     ![Blocked URL](./media/manage-android-google-chrome/blocked-url.png)
+     ![Blocked URL](./apps/media/apps-configure-chrome-android/blocked-url.png)
 
    - Allow URL:
 
-     ![Allow URL](./media/manage-android-google-chrome/allowed-url.png)
+     ![Allow URL](./apps/media/apps-configure-chrome-android/allowed-url.png)
 
    - Incognito tab:
 
-     ![Incognito tab](./media/manage-android-google-chrome/incognito-tab.png)
+     ![Incognito tab](./apps/media/apps-configure-chrome-android/incognito-tab.png)
 
 ## Troubleshooting
 
 1. Check the Intune portal to monitor the policy deployment status.
 
-   ![Monitor the policy deployment status](./media/manage-android-google-chrome/monitor-status.png)
+   ![Monitor the policy deployment status](./apps/media/apps-configure-chrome-android/monitor-status.png)
 
 1. Launch Google Chrome and visit **chrome://policy**. We can confirm if the settings are applied successfully.
 
-   ![Confirm settings are applied successfully](./media/manage-android-google-chrome/confirm.png)
+   ![Confirm settings are applied successfully](./apps/media/apps-configure-chrome-android/confirm.png)
 
 ## Reference
 
