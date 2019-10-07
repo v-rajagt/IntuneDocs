@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 Use certificates with Intune to authenticate your users to applications and corporate resources through VPN, Wi-Fi, or email profiles. When you use certificates to authenticate these connections, your end users won't need to enter usernames and passwords, which helps to make their access seamless. Certificates are also used for signing and encryption of email using S/MIME.
 
-## Intune Supported certificates and usage
+## Intune supported certificates and usage
 | Type              | Authentication | S/MIME Signing | S/MIME encryption  |
 |--|--|--|--|
 | PKCS imported certificate |  | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png)|
