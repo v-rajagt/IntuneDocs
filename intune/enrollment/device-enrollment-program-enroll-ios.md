@@ -38,7 +38,7 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 By the way, DEP enrollment doesn't work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 > [!NOTE]
-> DEP sets device configurations that can't be removed by the end user. Therefore, before [migrating to DEP](./fundamentals/migration-guide-considerations.md), the device must be wiped to return it to an out-of-box (new) state.
+> DEP sets device configurations that can't be removed by the end user. Therefore, before [migrating to DEP](../fundamentals/migration-guide-considerations.md), the device must be wiped to return it to an out-of-box (new) state.
 
 ## DEP and the Company Portal
 
