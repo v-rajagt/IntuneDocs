@@ -70,9 +70,11 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
     - **Managed Bookmarks**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Incognito mode availability**: `Incognito mode disabled`
 
+    Once the configuration settings are added using the configuration designer, they will be listed in a table. 
+
     ![Common settings](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-  The above setting create bookmarks and allow access to all websites except `baidu.com`, `yahoo.com` and `chrome://`.
+    The above setting create bookmarks and allow access to all websites except `baidu.com`, `yahoo.com` and `chrome://`.
 
 5. Click **OK** and **Add** to add your configuration policy to Intune.
 6. Assign this configuration policy to a user group. For more inforamtion, see [Assign apps to groups with Microsoft Intune](~/apps/apps-deploy.md). 
@@ -81,21 +83,21 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 
 Once the Android device is enrolled with Android Enterprise, the managed Google Chrome app with the portfolio icon will be deployed automatically.
  
-    <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="350">
+   <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="350">
 
 Launch Google Chrome and you will find the settings applied.
 
-    Bookmarks:<br>
-    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="350">
+   Bookmarks:<br>
+   <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="350">
 
-    Blocked URL:<br>
-    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="350">
+   Blocked URL:<br>
+   <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="350">
 
-    Allow URL:<br>
-    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="350">
+   Allow URL:<br>
+   <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="350">
 
-    Incognito tab:<br>
-    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="350">
+   Incognito tab:<br>
+   <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="350">
 
 ## Troubleshooting
 
