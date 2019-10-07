@@ -79,23 +79,23 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 
 ## Verify the device settings
 
-1. Once the Android device is enrolled with Android Enterprise, the managed Google Chrome app with the portfolio icon will be deployed automatically.
+Once the Android device is enrolled with Android Enterprise, the managed Google Chrome app with the portfolio icon will be deployed automatically.
  
-    <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="500">
+    <img alt="Managed Google Chrome with the portfolio icon" src="~/apps/media/apps-configure-chrome-android/chrome-icon.png" width="350">
 
-2. Launch Google Chrome and you will find the settings applied.
+Launch Google Chrome and you will find the settings applied.
 
-    - Bookmarks:<br>
-    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="400">
+    Bookmarks:<br>
+    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="350">
 
-    - Blocked URL:<br>
-    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="400">
+    Blocked URL:<br>
+    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="350">
 
-    - Allow URL:<br>
-    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="400">
+    Allow URL:<br>
+    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="350">
 
-    - Incognito tab:<br>
-    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="400">
+    Incognito tab:<br>
+    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="350">
 
 ## Troubleshooting
 
