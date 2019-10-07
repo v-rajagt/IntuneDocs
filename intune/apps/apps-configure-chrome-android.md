@@ -86,16 +86,16 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 2. Launch Google Chrome and you will find the settings applied.
 
     - Bookmarks:<br>
-    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="500">
+    <img alt="Bookmarks" src="~/apps/media/apps-configure-chrome-android/bookmarks.png" width="400">
 
     - Blocked URL:<br>
-    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="500">
+    <img alt="Blocked URL" src="~/apps/media/apps-configure-chrome-android/blocked-url.png" width="400">
 
     - Allow URL:<br>
-    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="500">
+    <img alt="Allow URL" src="~/apps/media/apps-configure-chrome-android/allowed-url.png" width="400">
 
     - Incognito tab:<br>
-    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="500">
+    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="400">
 
 ## Troubleshooting
 
@@ -112,11 +112,12 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 - [Add app configuration policies for managed Android Enterprise devices](~/app-configuration-policies-use-android.md)
 - [Chrome Enterprise policy list](https://cloud.google.com/docs/chrome-enterprise/policies/)
 
-**Third-party disclaimer information**
-
-The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products.
-
-The information and the solution in this document represent the current view of Microsoft Corporation on these issues as of the date of publication. This solution is available through Microsoft or through a third-party provider. Microsoft does not specifically recommend any third-party provider or third-party solution that this article might describe. There might also be other third-party providers or third-party solutions that this article does not describe. Because Microsoft must respond to changing market conditions, this information should not be interpreted to be a commitment by Microsoft. Microsoft cannot guarantee or endorse the accuracy of any information or of any solution that is presented by Microsoft or by any mentioned third-party provider.
+> [!IMPORTANT]
+> **Third-party disclaimer information**
+> 
+> *The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products.*
+>
+> *The information and the solution in this document represent the current view of Microsoft Corporation on these issues as of the date of publication. This solution is available through Microsoft or through a third-party provider. Microsoft does not specifically recommend any third-party provider or third-party solution that this article might describe. There might also be other third-party providers or third-party solutions that this article does not describe. Because Microsoft must respond to changing market conditions, this information should not be interpreted to be a commitment by Microsoft. Microsoft cannot guarantee or endorse the accuracy of any information or of any solution that is presented by Microsoft or by any mentioned third-party provider.*
 
 ## Next steps
 
