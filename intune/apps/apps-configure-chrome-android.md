@@ -34,20 +34,21 @@ You can use an Intune app configuration policy to configure Google Chrome for An
 
 ## Prerequisites
 
-- The user's Android Enterprise device must be enrolled in Intune. For more information, see [Set up enrollment of Android Enterprise work profile devices](./enrollment/android-work-profile-enroll.md).
-- Google Chrome is added as a Managed Google Play app. For more information about Managed Google Play, see [Connect your Intune account to your Managed Google Play account](./enrollment/connect-intune-android-enterprise.md).
+- The user's Android Enterprise device must be enrolled in Intune. For more information, see [Set up enrollment of Android Enterprise work profile devices](/enrollment/android-work-profile-enroll.md).
+- Google Chrome is added as a Managed Google Play app. For more information about Managed Google Play, see [Connect your Intune account to your Managed Google Play account](enrollment/connect-intune-android-enterprise.md).
 
 ## Configuration steps
 
-Intune admin needs to add Google Chrome into the Managed Google Play store first, below are the steps:
+You must add Google Chrome to Intune from the Managed Google Play store.
 
-1. Go to the Intune portal > Client apps > Apps, add the **Managed Google Play** app.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. In the **Intune** pane, select **Client apps** > **Apps** and then add the **Managed Google Play** app.
 
-   ![Add the Managed Google Play app](./apps/media/apps-configure-chrome-android/add-app.png)
+   ![Add the Managed Google Play app](apps/media/apps-configure-chrome-android/add-app.png)
 
-1. Go to Managed Google Play, search with **Google Chrome** and approve.
+3. Go to Managed Google Play, search with **Google Chrome** and approve.
 
-   ![Search and approve Google Chrome](./apps/media/apps-configure-chrome-android/search.png)
+   ![Search and approve Google Chrome](intune/apps/media/apps-configure-chrome-android/search.png)
 
 1. Assign Google Chrome to a user group as the required type. Thus, Google Chrome will be deployed automatically when the device is enrolled into Intune.
 
@@ -56,7 +57,7 @@ Next, Intune admin can follow below steps to create the configuration policy.
 1. Go to the **App configuration policies** blade and add the policy.
 1. Enter the policy name, choose **Managed devices** under Device enrollment type and **Android** under Platform.
 
-   ![Add Google Chrome Configuration policy](./apps/media/apps-configure-chrome-android/add-policy.png)
+   ![Add Google Chrome Configuration policy](/intune/apps/media/apps-configure-chrome-android/add-policy.png)
 
 1. Click Associated app, and then select **Google Chrome**.
 
