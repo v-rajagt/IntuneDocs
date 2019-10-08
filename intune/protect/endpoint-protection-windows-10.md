@@ -782,7 +782,7 @@ These settings apply specifically to removable data drives.
  
 ## Windows Defender Exploit Guard  
 
-Use [exploit protection](https://docs.microsoft.com/ windows/security/threat-protection/microsoft-defender-atp/exploit-protection) to manage and reduce the attack surface of apps used by your employees.  
+Use [exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) to manage and reduce the attack surface of apps used by your employees.  
 
 ### Attack Surface Reduction  
 
@@ -986,7 +986,7 @@ Block outbound connections from any app to IP addresses or domains with low repu
 - **Upload XML**  
   **Default**: *Not configured*  
 
-  To use exploit protection to [protect devices from exploits](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), create an XML file that includes the system and application mitigation settings you want. There are two methods to create the XML file:  
+  To use exploit protection to [protect devices from exploits](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), create an XML file that includes the system and application mitigation settings you want. There are two methods to create the XML file:  
 
   - *PowerShell* - Use one or more of the *Get-ProcessMitigation*, *Set-ProcessMitigation*, and *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlets. The cmdlets configure mitigation settings, and export an XML representation of them.  
 
