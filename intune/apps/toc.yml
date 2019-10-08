@@ -58,29 +58,31 @@
           href: apps-add-office365.md
         - name: Office 365 apps for macOS
           href: apps-add-office365-macos.md
-      - name: Web apps
-        href: web-app.md
-        displayName: web; web link; weblink; web-link
-      - name: Built-in apps
-        href: apps-add-built-in.md     
-      - name: Build your app (LOB)
+      - name: Other
         items:
-        - name: Android LOB apps
-          href: lob-apps-android.md
-        - name: iOS LOB apps
-          href: lob-apps-ios.md
-        - name: Windows Phone LOB apps
-          href: lob-apps-windows-phone.md
-        - name: Windows LOB apps
-          href: lob-apps-windows.md
-        - name: Sideload Windows LOB apps
-          href: app-sideload-windows.md          
-        - name: macOS LOB apps
-          href: lob-apps-macos.md     
-      - name: Android Enterprise system apps
-        href: apps-ae-system.md         
-      - name: Win32 app management
-        href: apps-win32-app-management.md
+        - name: Android Enterprise system apps
+          href: apps-ae-system.md    
+        - name: Web apps
+          href: web-app.md
+          displayName: web; web link; weblink; web-link
+        - name: Built-in apps
+          href: apps-add-built-in.md     
+        - name: Build your app (LOB)
+          items:
+          - name: Android LOB apps
+            href: lob-apps-android.md
+          - name: iOS LOB apps
+            href: lob-apps-ios.md
+          - name: Windows Phone LOB apps
+            href: lob-apps-windows-phone.md
+          - name: Windows LOB apps
+            href: lob-apps-windows.md
+          - name: Sideload Windows LOB apps
+            href: app-sideload-windows.md          
+          - name: macOS LOB apps
+            href: lob-apps-macos.md     
+        - name: Win32 app management
+          href: apps-win32-app-management.md
       - name: Specific apps to add
         items:
         - name: Company Portal app
