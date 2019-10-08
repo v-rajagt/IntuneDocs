@@ -40,7 +40,7 @@ When you reinstall an older Windows version, install a separate OS, or format th
 
 This feature applies to:
 
-- Windows 10 and later
+- Windows 10 RS5 (1809) and later on some OEMs
 
 ## Before you begin
 
