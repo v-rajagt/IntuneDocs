@@ -278,7 +278,7 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
 ## Exploit Protection  
 
 - **Exploit protection XML**  
-  For more information, see [Import, export, and deploy exploit protection configurations](windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) in the Windows documentation.  
+  For more information, see [Import, export, and deploy exploit protection configurations](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) in the Windows documentation.  
 
   Enables the IT admin to push out a configuration representing the desired system and application mitigation options to all the devices in the organization. The configuration is represented by an XML. 
 
