@@ -110,7 +110,7 @@ This profile includes the DFCI settings you configure.
         - **Disabled**: All built-in radios directly managed by UEFI (BIOS) are disabled. Peripherals, like USB devices, aren't affected.
 
         > [!WARNING]
-        > Disabling all radios renders the device unmanageable without a wired network connection.
+        > If you disable the **Radios** setting, the device requires a wired network connection. Otherwise, the device may unmanageable.
 
     - **Boot from external media (USB, SD)**: Your options:
         - **Not configured**: Intune doesn't touch this feature, and leaves any settings as-is.
@@ -148,7 +148,9 @@ You can also [signal devices to check in](../remote-actions/device-sync.md). Aft
 
 ### Reuse
 
-If you plan to reset Windows to repurpose the device, then [wipe the device](../remote-actions/devices-wipe.md). Do **not** remove the Autopilot device record. After wiping the device, move the device to the group assigned the new DFCI and Autopilot profiles. Then, reboot the device to rerun Windows setup.
+If you plan to reset Windows to repurpose the device, then [wipe the device](../remote-actions/devices-wipe.md). Do **not** remove the Autopilot device record.
+
+After wiping the device, move the device to the group assigned the new DFCI and Autopilot profiles. Be sure to reboot the device to rerun Windows setup.
 
 ### Retire
 
@@ -169,7 +171,11 @@ If you wipe a device, and delete the Autopilot record before unlocking the UEFI 
 
 - **Option 1**: Ask your CSP or OEM-direct device vendor to re-register the device with Autopilot, and re-enroll it in Intune. This step should reapply the Autopilot and DFCI profiles.
 
+  Then, unlock the UEFI menus using the steps in [retire the device](#retire) (in this article).
+
 - **Option 2**: Open the UEFI (BIOS) menu, and select a recovery option. Confirm the device isn't registered for DFCI management, and unlock the menu. Recovery options leave all UEFI (BIOS) settings to the values in the last Intune DFCI profile.
+
+  Then, unlock the UEFI menus using the steps in [retire the device](#retire) (in this article).
 
 ## End user impact
 

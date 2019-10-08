@@ -71,7 +71,7 @@ This feature supports:
 
 ## Custom profile
 
-[Custom settings](../custom-settings-configure.md) let administrators assign device settings that aren't built in to Intune. On Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator.
+[Custom settings](custom-settings-configure.md) let administrators assign device settings that aren't built in to Intune. On Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator.
 
 This feature supports:
 
@@ -83,7 +83,7 @@ This feature supports:
 
 ## Delivery optimization
 
-[Delivery optimization](../delivery-optimization-windows.md) provides a better experience to delivery software updates. These settings are replacing the **Software Updates** > **Windows 10 update ring** settings.
+[Delivery optimization](delivery-optimization-windows.md) provides a better experience to delivery software updates. These settings are replacing the **Software Updates** > **Windows 10 update ring** settings.
 
 Use these settings to control how software updates are downloaded to devices in your organization. For example, you can let users get their own updates, or get updates using the delivery optimization cloud services in a device profile.
 
@@ -93,7 +93,7 @@ This feature supports:
 
 ## Device features
 
-[Device features](../device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and lock screen messages.
+[Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and lock screen messages.
 
 This feature supports:
 
@@ -102,7 +102,7 @@ This feature supports:
 
 ## Device firmware configuration interface
 
-[Device firmware configuration interface](../device-firmware-configuration-interface-windows.md) (DFCI) allows administrators to enable or disable UEFI (BIOS) settings using Intune. Use these settings to enhance security at the firmware-level, which is typically more resilient to malicious attacks.
+[Device firmware configuration interface](device-firmware-configuration-interface-windows.md) (DFCI) allows administrators to enable or disable UEFI (BIOS) settings using Intune. Use these settings to enhance security at the firmware-level, which is typically more resilient to malicious attacks.
 
 This feature supports:
 
@@ -223,9 +223,9 @@ This feature supports:
 
 ## Update policies
 
-[iOS update policies](../software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
+[iOS update policies](../protect/software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
 
-For update policies on Windows devices, see [Delivery optimization](../delivery-optimization-windows.md). 
+For update policies on Windows devices, see [Delivery optimization](delivery-optimization-windows.md). 
 
 This feature supports:
 
@@ -278,7 +278,7 @@ This feature supports:
 
 ## Manage and troubleshoot
 
-[Manage your profiles](../device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that include these settings. [Common issues and resolutions](device-profile-troubleshoot.md) helps administrators work with profiles. It describes what happens when deleting a profile, what causes notifications to be sent to devices, and more.
+[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that include these settings. [Common issues and resolutions](device-profile-troubleshoot.md) helps administrators work with profiles. It describes what happens when deleting a profile, what causes notifications to be sent to devices, and more.
 
 ## Next steps
 

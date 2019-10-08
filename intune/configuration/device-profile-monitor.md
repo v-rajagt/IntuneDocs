@@ -86,9 +86,12 @@ Now that you know the conflicting setting, and the policies that include that se
 
 ## Device Firmware Configuration Interface profile reporting
 
-Depending on the manufacturer’s support of DFCI, some settings may not apply.
+DFCI profiles are reported on a per-setting basis, just like other device configuration profiles. Depending on the manufacturer’s support of DFCI, some settings may not apply.
+
+With your DFCI profile settings, you may see the following states:
 
 - **Compliant**: This state shows when a setting value in the profile matches the setting on the device. This state can happen in the following scenarios:
+
   - The DFCI profile successful configured the setting in the profile.
   - The device doesn't have the hardware feature controlled by the setting, and the profile setting is **Disabled**.
   - UEFI doesn't allow DFCI to disable the feature, and the profile setting is **Enabled**.
@@ -97,6 +100,7 @@ Depending on the manufacturer’s support of DFCI, some settings may not apply.
 - **Not Applicable**: This state shows when a setting value in the profile is **Enabled**, and the matching setting on the device isn't found. This state can happen if the device hardware doesn't have the feature.
 
 - **Noncompliant**: This state shows when a setting value in the profile doesn't match the setting on the device. This state can happen in the following scenarios:
+
   - UEFI doesn't allow DFCI to disable a setting, and the profile setting is **Disabled**.
   - The device lacks the hardware to disable the feature, and the profile setting is **Disabled**.
   - The device doesn't have the latest DFCI firmware version.
