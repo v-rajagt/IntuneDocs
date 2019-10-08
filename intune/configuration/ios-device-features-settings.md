@@ -46,6 +46,7 @@ This article lists these settings, and describes what each setting does. For mor
 ## AirPrint
 
 ### Settings apply to: All enrollment types
+Note: Multiple AirPrint profiles targeted at the same device is not allowed by Apple. Please add all the printers to the same profile. 
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. Get the IP address and path (in this article) provides more details.
 - **Path**: The path is typically `ipp/print` for printers on your network. Get the IP address and path (in this article) provides more details.
