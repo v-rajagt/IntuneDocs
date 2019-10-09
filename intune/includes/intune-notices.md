@@ -60,7 +60,7 @@ You don't need to take any action to prepare for this change. But you can consid
 #### Additional information 
 For more information and for screenshots of the new experience in the console, see [New full-screen experience coming to Intune](https://aka.ms/intune_fullscreen).
 
-### New Windows updates settings <!-- 4464404 -->
+### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
 Starting with the August release to the Intune service or 1908, we're adding new **Deadline** settings. You can configure these settings instead of the **Allow user to restart (engaged restart)** settings. We plan to disable the engaged-restart settings in the UI in 1909 or the September update. Then we'll completely remove them from the console near the end of October.
 
 #### How this change affects you

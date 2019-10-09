@@ -118,7 +118,7 @@ The Company Portal app will show additional app installation status messages to 
 - App installed successfully but requires a restart.
 - App is in the process of installing but requires a restart to continue.
 
-#### Assign the Microsoft Edge beta for macOS <!-- 4678761  -->
+### Assign the Microsoft Edge beta for macOS <!-- 4678761  -->
 You'll be able to add and assign the latest version of the Microsoft Edge beta to Intune for macOS devices. 
 
 To assign the Microsoft Edge beta for macOS devices:
