@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -141,10 +141,10 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 - **Firewall**: Set to **Require** to turn on the Microsoft Defender Firewall, and prevent users from turning it off. **Not configured** (default) doesn't control the Microsoft Defender Firewall, nor change existing settings.
 
-  > [!NOTE]
-  > There are times when **Firewall** might report "Error". This behvior will not affect your device overall compliance status. If the machine will sync immediatelly after a restart or waking up from sleep, firewall setting is not ready yet to report its state. This will result in reporting "Error" for the compliance setting status. 
-
   [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > If the device immediately syncs after a reboot, or immediately syncs waking from sleep, then this setting may report as an **Error**. This scenario may not affect the overall device compliance status. On the device, you can use the Company Portal app to sync the device again.
 
 - **Trusted Platform Module (TPM)**: When set to **Require**, Intune checks the version for compliance. The device is compliant if the TPM chip version is greater than 0 (zero). The device is not compliant if there isn't a TPM version on the device. When **Not configured**, Intune doesn't check the device for a TPM chip version.
 
