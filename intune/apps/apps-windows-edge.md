@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 Before you can deploy, configure, monitor, or protect apps, you must add them to Intune. One of the available [app types](~/apps/apps-add.md#app-types-in-microsoft-intune) is Microsoft Edge *version 77 and later*. By selecting this app type in Intune, you can assign and install Microsoft Edge *version 77 and later* to devices you manage that run Windows 10.
 
 > [!IMPORTANT]
-> This app type is in **public preview** and offers developer and beta channels for Windows 10. The deployment is in English (EN) only, however end users can change the display language in the browser under **Settings** > **Languages**. Microsoft Edge is a Win32 app installed in system context and on like architectures (x86 app on x86 OS, and x64 app on x64 OS). In addition, automatic updates of the browser is **On** by default.
+> This app type is in **public preview** and offers developer and beta channels for Windows 10. The deployment is in English (EN) only, however end users can change the display language in the browser under **Settings** > **Languages**. Microsoft Edge is a Win32 app installed in system context and on like architectures (x86 app on x86 OS, and x64 app on x64 OS). In addition, automatic updates of Edge are **On** by default, and Edge cannot be uninstalled.
 
 > [!NOTE]
 > Microsoft Edge *version 77 and later* is available for macOS as well.
@@ -93,6 +93,9 @@ You can use scope tags to determine who can see client app information in Intune
 When you've completed configuring, select **Add** from the **App app** blade. 
 
 The app you've created is displayed in the apps list, where you can assign it to the groups that you select. 
+
+> [!NOTE]
+> Currently, if you unassign the deployment of Microsoft Edge, it will remain on the device.
 
 ## Troubleshooting
 **Microsoft Edge version 77 and later for Windows 10:**<br>
