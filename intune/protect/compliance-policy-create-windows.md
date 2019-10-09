@@ -141,6 +141,9 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 - **Firewall**: Set to **Require** to turn on the Microsoft Defender Firewall, and prevent users from turning it off. **Not configured** (default) doesn't control the Microsoft Defender Firewall, nor change existing settings.
 
+  > [!NOTE]
+  > There are times when **Firewall** might report "Error". This behvior will not affect device overall compliance status immediatelly. If machine will sync immediatelly after a restart or waking up from sleep, firewall setting is not ready yet to report status and this will result in reporting the error status. 
+
   [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
 
 - **Trusted Platform Module (TPM)**: When set to **Require**, Intune checks the version for compliance. The device is compliant if the TPM chip version is greater than 0 (zero). The device is not compliant if there isn't a TPM version on the device. When **Not configured**, Intune doesn't check the device for a TPM chip version.
