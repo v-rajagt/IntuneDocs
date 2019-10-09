@@ -80,6 +80,6 @@ The final step allows you to review a summary of the settings you configured. On
 > Once the guided scenario is complete it will display a summary. You can modify the resources listed in the summary later, however the table displaying these resouces will not be saved.
 ## Next steps
 
-- Enhance the security of using Microsoft Edge by setting up Intune app protection policy integration. For more information, see [Application protection policies for Microsoft Edge](manage-microsoft-edge.md#application-protection-policies-for-microsoft-edge).
-- If you have intranet sites to include, explore protecting access with Azure Application Proxy integration. For more information, see [Configure Application Proxy settings for Microsoft Edge](manage-microsoft-edge.md#configure-application-proxy-settings-for-microsoft-edge).
+- Enhance the security of using Microsoft Edge by setting up Intune app protection policy integration. For more information, see [Application protection policies for Microsoft Edge](~/apps/manage-microsoft-edge.md#application-protection-policies-for-microsoft-edge).
+- If you have intranet sites to include, explore protecting access with Azure Application Proxy integration. For more information, see [Configure Application Proxy settings for Microsoft Edge](~/apps/manage-microsoft-edge.md#configure-application-proxy-settings-for-microsoft-edge).
 
