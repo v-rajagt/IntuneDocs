@@ -273,7 +273,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Access to network drive in Files app**: Using the Server Message Block (SMB) protocol, devices can access files or other resources on a network server. **Disable** prevents accessing files on a network SMB drive. **Not configured** (default) allows access.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS and iPadOS 13.0 and newer
 
 ## Built-in Apps
 
@@ -445,7 +445,7 @@ To add apps, you can:
   Configuring this setting doesn't prevent users from selecting a Wi-Fi network.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS and iPadOS 13.0 and newer
 
 ## Connected Devices
 
@@ -475,7 +475,7 @@ To add apps, you can:
 - **Access to files on USB drive**: Devices can connect and open files on a USB drive. **Disable** prevents device access to the USB drive in the Files app when a USB is connected to the device. Disabling this feature also blocks end users from transferring files onto a USB drive connected to an iPad. **Not configured** (default) allows access to a USB drive in the Files app.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS and iPadOS 13.0 and newer
 
 ## Keyboard and Dictionary
 
