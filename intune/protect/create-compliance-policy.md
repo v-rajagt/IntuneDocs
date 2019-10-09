@@ -7,12 +7,12 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
-ms.reviewer: joglocke
+ms.reviewer: samyada
 
 # optional metadata
 
@@ -105,9 +105,9 @@ Once a policy is created, the next step is to assign the policy to your groups:
 
 1. Choose a policy you created. Existing policies are in **Device compliance** > **Policies**.
 2. Select the policy > **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply > Choose **Save** to deploy the policy to users.
+3. Choose **Selected groups** to see your Azure AD security groups. Select the groups you want this policy to apply > Choose **Save** to deploy the policy.
 
-You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
+The users or devices target by your policy are evaluated for compliance when they check-in with Intune.
 
 ### Evaluate how many users are targeted
 
