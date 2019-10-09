@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -669,13 +669,13 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
 
 These settings use the [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), which also lists the supported Windows editions.
 
-- **Real-time monitoring**: **Enable** turns on real-time scanning for malware, spyware, and other unwanted software. Users can't turn it off. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this scanning, and allows users to change it.
+- **Real-time monitoring**: **Enable** turns on real-time scanning for malware, spyware, and other unwanted software. Users can't turn it off. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **Behavior monitoring**: **Enable** turns on behavior monitoring, and checks for certain known patterns of suspicious activity on devices. Users can't turn behavior monitoring off. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on Behavior Monitoring, and allows users to change it.
+- **Behavior monitoring**: **Enable** turns on behavior monitoring, and checks for certain known patterns of suspicious activity on devices. Users can't turn behavior monitoring off. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on Behavior Monitoring, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -685,7 +685,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   **Enable** turns on network protection and network blocking. Users can't turn it off. When enabled, users are blocked from connecting to known vulnerabilities.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on NIS, and allows users to change the setting.
+  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on NIS, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -693,19 +693,19 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan all downloads**: **Enable** turns on this setting, and Defender scans all files downloaded from the Internet. Users can't turn this setting off. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this setting, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **Scan scripts loaded in Microsoft web browsers**: **Enable** allows Defender to scan scripts that are used in Internet Explorer. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this setting, and allows users to change it.
+- **Scan scripts loaded in Microsoft web browsers**: **Enable** allows Defender to scan scripts that are used in Internet Explorer. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **End user access to Defender**: **Block** hides the Microsoft Defender user interface from end users. All Microsoft Defender notifications are also suppressed. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS allows user access to the Microsoft Defender UI, and allows users to change it.
+- **End user access to Defender**: **Block** hides the Microsoft Defender user interface from end users. All Microsoft Defender notifications are also suppressed. When set to **Not configured** (default), Intune doesn't touch this setting. If you block the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows user access to the Microsoft Defender UI, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -736,19 +736,19 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from `0` to `100`.
-- **Scan archive files**: **Enable** turns on Defender so it scans archive files, such as Zip or Cab files. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this scanning, and allows users to change it.
+- **Scan archive files**: **Enable** turns on Defender so it scans archive files, such as Zip or Cab files. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this scanning, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this scanning, and allows users to change it.
+- **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns off this scanning, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **Scan removable drives during a full scan**: **Enable** turns on Defender removable drive scans during a full scan. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS lets Defender scan removable drives, such as USB sticks.
+- **Scan removable drives during a full scan**: **Enable** turns on Defender removable drive scans during a full scan. Users can't turn this setting off. When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS lets Defender scan removable drives, such as USB sticks, and allows users to change this setting.
 
   During a quick scan, removable drives may still be scanned.
 
@@ -758,7 +758,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan mapped network drives during a full scan**: **Enable** has Defender scan files on mapped network drives. If the files on the drive are read-only, Defender can't remove any malware found in them. Users can't turn this setting off.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS turns on this feature, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
 
   During a quick scan, mapped network drives may still be scanned.
 
@@ -768,13 +768,15 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan files opened from network folders**: **Enable** has Defender scans files opened from network folders or shared network drives, such as files accessed from a UNC path. Users can't turn this setting off. If the files on the drive are read-only, Defender can't remove any malware found in them.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS scans files opened from network folders, and allows users to change this setting.
+  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS scans files opened from network folders, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Cloud protection**: **Enable** turns on the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. Users can't change this setting. When set to **Not configured** (default), Intune doesn't touch this setting, and leaves it as-is. By default, the OS allows the Microsoft Active Protection Service to receive information, and allows users to change this setting.
+- **Cloud protection**: **Enable** turns on the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. Users can't change this setting. 
+
+When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows the Microsoft Active Protection Service to receive information, and allows users to change this setting.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
