@@ -273,7 +273,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Access to network drive in Files app**: Using the Server Message Block (SMB) protocol, devices can access files or other resources on a network server. **Disable** prevents accessing files on a network SMB drive. **Not configured** (default) allows access.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS and iPadOS 13.0 and newer
 
 ## Built-in Apps
 
