@@ -445,7 +445,7 @@ To add apps, you can:
   Configuring this setting doesn't prevent users from selecting a Wi-Fi network.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS and iPadOS 13.0 and newer
 
 ## Connected Devices
 
