@@ -37,10 +37,12 @@ Derived credentials are an implementation of the National Institute of Standards
 
 - The Intune administrator configures their tenant to work with a supported derived credential issuer. You don’t need to configure any Intune specific settings in the derived credential issuer's system.
 
-- The Intune administrator creates device configuration profiles that use **Derived credential** as an authentication method. This option is available for the following objects:
+- The Intune administrator creates device configuration profiles that use **Derived credential** as an authentication method. This option is available for the following objects:  
 
   - Common profile types like Wi-Fi, VPN, and Email, which includes the iOS native mail app 
+
   - App authentication
+
   - S/MIME signing and encryption 
 
 - Users obtain a derived credential by using their smart card on a Windows PC to authenticate to the derived credential issuer, which then issues a certificate for their mobile device. The resulting certificate is derived from their smart card and issued to the mobile device.
@@ -164,9 +166,9 @@ In addition to the deploying the app with Intune, configure an Intune per-app VP
 **Complete the following tasks**: 
   
 1. Download the [DISA Purebred application](https://cyber.mil/pki-pke/purebred/).
-2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](https://docs.microsoft.com/en-us/intune/lob-apps-ios).
+2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](../apps/lob-apps-ios).
 3. [Create a per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred application.
-4. Deploy the Company Portal app from the App store.  See [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios)
+4. Deploy the Company Portal app from the App store.  See [Add iOS store apps to Microsoft Intune](../apps/store-apps-ios).
  
 
 ## Use derived credentials for authentication and S/MIME signing and encryption
@@ -175,9 +177,9 @@ You can specify **Derived credential** for the following profile types and purpo
 
 - [Applications](#use-derived-credentials-for-app-authentication)
 - [Email](../configuration/email-settings-ios.md)
-- [VPN](../configuration/vpn-settings-ios)
+- [VPN](../configuration/vpn-settings-ios.md)
 - [S/MIME signing and encryption](certificates-s-mime-encryption-sign.md)
-- [Wi-Fi](../configuration/wi-fi-settings-ios)
+- [Wi-Fi](../configuration/wi-fi-settings-ios.md)
 
   For Wi-Fi profiles, *Authentication method* is available only when the **EAP type** is set to one of the following values: 
   - EAP – TLS
