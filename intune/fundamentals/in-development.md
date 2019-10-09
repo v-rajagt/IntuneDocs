@@ -30,13 +30,13 @@ ms.collection: M365-identity-device-management
 
 To help in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition to the information on this page:
 
-- If we anticipate that you'll need to take action before a change, we'll publish a complementary Office Message Center post.
-- When a feature is launched in production, whether it's a preview or generally available, the feature description will move off this page and onto the [What's New page](whats-new.md).
-- This page and the [What's New page](whats-new.md) are updated periodically. Check back for additional updates.
+- If we anticipate that you'll need to take action before a change, we'll publish a complementary post in Office message center.
+- When a feature enters production, whether it's a preview or generally available, the feature description will move from this page to [What's new](whats-new.md).
+- This page and the [What's new](whats-new.md) page are updated periodically. Check back for additional updates.
 - Refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) for strategic deliverables and timelines.
 
 > [!NOTE]
-> This page reflects our current expectations about upcoming Intune capabilities in a future release. Dates and individual features might change. This page doesn't describe all features in development.
+> This page reflects our current expectations about Intune capabilities in a future release. Dates and individual features might change. This page doesn't describe all features in development.
 
 **RSS feed**: Find out when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
@@ -73,16 +73,16 @@ To add the `AAD Device ID` configuration variable:
 Dark mode is planned for iOS Company Portal. You'll be able to download company apps, manage your devices, and get IT support in the color scheme of your choice. For more information about iOS Company Portal, see [How to configure the Microsoft Intune Company Portal app](../apps/company-portal-app.md).
 
 ### Prevent installation of apps from unknown sources on Android Enterprise devices <!-- 4760025  -->
-On Android Enterprise work profile devices, end users can never install apps from unknown sources on the work profile. You'll be able to choose to extend this restriction to the personal profile as well. If you enable this restriction, end users on Android Enterprise work profile devices will also be prevented from side-loading apps from unknown sources onto the personal side of their device. 
+On Android Enterprise work profile devices, end users can never install apps from unknown sources on the work profile. You'll be able to choose to extend this restriction to the personal profile as well. If you enable this restriction, end users on Android Enterprise work profile devices won't be able to side-load apps from unknown sources onto the personal side of their device. 
 
 ### Use an updated app protection UI and iOS app provisioning UI <!-- 4102027, 4102029  -->
-The UI to create and edit app protection policies (APP) and iOS app provisioning profiles in Intune will be updated. The UI changes include:
+We'll update the UI to create and edit app protection policies (APP) and iOS app provisioning profiles in Intune. The UI changes include:
 - A simplified experience that uses a wizard-style format on one blade. 
 - An update to the create flow to include assignments.
 - A summary. When you view properties before you create a new policy or when you edit a property, you'll see a summary page of all settings. Also, when you edit properties, the summary will list only items from the category of properties you're editing.
 
 ### Create groups of management objects called policy sets <!-- 3762880  -->
-You'll be able to use policy sets to create a bundle of references to existing management entities that need to be identified, targeted, and monitored as a single conceptual unit. Policy sets don't replace existing concepts or objects. Admins can continue to assign individual objects as they do today. Policy sets reference individual objects. Therefore, any changes to those individual objects will be reflected in the policy set. 
+You'll be able to use *policy sets* to create a bundle of references to existing management entities that need to be identified, targeted, and monitored as a single conceptual unit. Policy sets don't replace existing concepts or objects. Admins can continue to assign individual objects as they do today. Policy sets reference individual objects. Therefore, any changes to those individual objects will be reflected in the policy set. 
 
 To create a policy set in Intune, you'll select **Policy sets** > **Create**. 
 
@@ -104,13 +104,13 @@ To set app availability based on date and time:
 1. Select **Edit** to modify the **End user experience** options. 
 1. On the **End user experience** blade, set the **Software available time** as needed. 
 
-For more information about adding apps, see [Add apps to Microsoft Intune](../apps/apps-add.md).
+For more information, see [Add apps to Microsoft Intune](../apps/apps-add.md).
 
 ### Require Win32 apps to restart <!-- 3136567  -->
-You'll be able to require a Win32 app to restart after a successful installation. You'll also be able to choose the amount of time (the grace period) before the restart.
+You'll be able to require a Win32 app to restart after a successful installation. You can choose the amount of time (the grace period) before the restart.
 
 ### Display notifications for the Company Portal app on Windows <!-- 1808082  -->
-The Company Portal app on Windows devices will be updated to display toast notifications to users, even when the application is closed. The update will show notifications for available apps only when the installation status is completed or failed. The Company Portal app won't show notifications for required applications.
+We'll update the Company Portal app on Windows devices to display toast notifications to users, even when the application is closed. The update will show notifications for available apps only when the installation status is completed or failed. The Company Portal app won't show notifications for required applications.
 
 ### Display installation status messages for the Company Portal app <!-- 2514416  -->
 The Company Portal app will show additional app installation status messages to end users. The following conditions will apply to new Win32 dependency features:
@@ -128,7 +128,7 @@ To assign the Microsoft Edge beta for macOS devices:
 For more information about Microsoft Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](../apps/manage-microsoft-edge.md).
 
 ### Configure app notification content for organization accounts <!-- 2576686 -->
-Intune APP on Android and iOS devices will allow you to control app notification content for organization accounts. This feature will require support from applications and might not be available for all APP-enabled applications. For more about APP, see [What are app protection policies?](../apps/app-protection-policy.md).
+Intune APP on Android and iOS devices will allow you to control app notification content for organization accounts. This feature will require support from applications and might not be available for all APP-enabled applications. For more information about APP, see [What are app protection policies?](../apps/app-protection-policy.md)
 
 ### Available Google Play app reporting for Android work profiles <!-- 3041956  -->
 For available app installations on Android work profile devices, you can view the app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](../apps/app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](../enrollment/android-enterprise-overview.md), and [Managed Google Play app types](../apps/apps-add-android-for-work.md#managed-google-play-app-types).
@@ -145,9 +145,9 @@ On iOS and iPadOS devices, you can create a profile to restrict features and set
 1. For the profile type, select **Device restrictions**.
 
 You'll be able to control new settings: 
-- Access the network drive in the Files app  
-- Access the USB drive in the Files app 
-- Keep Wi-Fi on 
+- Access the network drive in the Files app.  
+- Access the USB drive in the Files app. 
+- Keep Wi-Fi on. 
 
 For information about the current settings, see [iOS device settings to allow or restrict features using Intune](../configuration/device-restrictions-ios.md).
 
@@ -173,12 +173,12 @@ The removal of this setting applies to:
 - Android Enterprise.
 
 ### Global HTTP proxy on Android Enterprise devices <!-- 4816339  -->
-On Android Enterprise devices, you will be able to configure a global HTTP proxy to meet your organization's web browsing standards:
+On Android Enterprise devices, you'll be able to configure a global HTTP proxy to meet your organization's web browsing standards:
 
 1. Select **Device configuration** > **Profiles** > **Create profile**.
 1. For the platform, select **Android Enterprise**.
 1. Select **Device owner**.
-1. For the profile type, select **Device restrictions** for the profile type > 
+1. For the profile type, select **Device restrictions**. 
 1. Select **Connectivity**. 
  
 After you configure the proxy, all HTTP traffic will use it. This feature applies to Android Enterprise devices that are in device-owner mode.
@@ -196,16 +196,14 @@ For information about the current settings you can configure, see [Apply feature
 This feature applies to Windows 10 RS5 (1809) and later, on select devices.
 
 ### PKCS certificates for macOS  <!-- 1333650                -->
-We'll add full support for Public Key Cryptography Standards (PKCS) certificates on devices that run macOS. Users will be able to deploy user and device certificates with fields for customization subject and subject alternative name. 
+We'll add full support for Public Key Cryptography Standards (PKCS) certificates on devices that run macOS. Users will be able to deploy user and device certificates with fields for **Customization subject** and **Subject alternative name**. 
 
-We'll also have a new setting called Allow All Apps Access. Enable this setting to give all associated apps access to the private key. For more information about this setting, see [Configuration profile reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) on Developer.Apple.com.
+We'll also have a new setting called **Allow All Apps Access**. Enable this setting to give all associated apps access to the private key. For more information about this setting, see [Configuration profile reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) on Developer.Apple.com.
 
 ### Derived credentials to provision mobile devices with certificates      <!--  1736036, 1736037, 1772050      --> 
-We'll add support for derived credentials, which support the *National Institute of Standards and Technology (NIST) 800-157* standard for deploying certificates to devices.  Derived credentials rely on the use of a personal identity verification (PIV) or common access card (CAC) card, like a smart card. Users authenticate by using their smart card on a computer. They then request a certificate for their managed device by following the process required by the derived credential provider.   
+We'll add support for derived credentials, which support the *National Institute of Standards and Technology (NIST) 800-157* standard for deploying certificates to devices.  Derived credentials rely on the use of a personal identity verification (PIV) or common access card (CAC), like a smart card. Users authenticate by using their smart card on a computer. They then request a certificate for their managed device by following the process that the derived credential provider requires.   
 
-The process to use derived credentials to get a certificate is different from processes that use SCEP or PKCS certificate profiles. But the result is the same: mobile devices that have authentication certificates that can be used for app authentication, VPN, Wi-Fi, or email profiles.   
-
-For more information, see [Derived PIV credentials](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) on NCCOE.NIST.gov.
+The process to use derived credentials to get a certificate is different from processes that use SCEP or PKCS certificate profiles. But the result is the same: mobile devices that have authentication certificates that can be used for app authentication, VPN, Wi-Fi, or email profiles. For more information, see [Derived PIV credentials](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) on NCCOE.NIST.gov.
 
 The initial release of derived credentials will support Entrust Datacard, Intercede, and DISA Purebred on iOS. Additional platforms and derived credential providers will be supported in later releases.   
 
@@ -216,7 +214,7 @@ The initial release of derived credentials will support Entrust Datacard, Interc
 By using Intune device type restrictions, you'll be able to use a device's OS version to specify whether it will use Android Enterprise work profile enrollment or Android device administrator enrollment. To do so, in Intune, select **Device enrollment** > **Enrollment restrictions** > **Create restriction** > **Device type restriction** > **Platform settings**.
 
 ### Edit the device name value for Autopilot devices <!-- 4816775 -->
-You'll be able to edit the Device Name value for Azure AD Joined Autopilot devices:
+You'll be able to edit the **Device Name** value for Azure AD Joined Autopilot devices:
 
 1. Select **Intune** > **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices**.
 1. Choose the device.
@@ -224,31 +222,31 @@ You'll be able to edit the Device Name value for Azure AD Joined Autopilot devic
 1. Select **Save**.
 
 ### For iOS devices, customize the enrollment privacy window of Company Portal <!-- 4394993  -->
-By using Markdown, you'll be able to customize the Company Portal privacy window that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device.
+By using Markdown, you'll be able to customize the Company Portal privacy window that end users see during iOS enrollment. Specifically, you can customize the list of things that your organization can't see or do on the device.
 
 <!-- ***********************************************-->
 ## Device management
 
 
 ### Edit the Group Tag value for Autopilot devices<!-- 4816775 -->
-You'll be able to edit the Group Tag value for Autopilot devices:
+You'll be able to edit the **Group Tag** value for Autopilot devices:
 
 1. Select **Intune** > **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices**.
 1. Choose the device.
-1. In the pane on the right, change the Group Tag value.
+1. In the pane on the right, change the **Group Tag** value.
 1. Select **Save**.
 
 ### UI update for creating and editing Windows 10 update rings  <!-- 4099089          -->   
 We'll roll out updated create and edit UI experiences for Windows 10 update rings. The new UI will:  
 - Simplify the existing experience by using a wizard-style format on one blade. This UI update will eliminate blade sprawl that requires IT pros to take deep blade journeys.   
 - Revise the create flow to include assignments.  
-- Add a summary page. The summary will include all settings when you're viewing properties, when you're preparing to create a new update ring, and when you're editing a property. When you're editing, the summary will list only the items within the category of properties you're editing.
+- Add a summary page. The summary will include all settings when you're viewing properties, when you're preparing to create an update ring, and when you're editing a property. When you're editing, the summary will list only the items within the category of properties you're editing.
 
 ### UI update for creating and editing iOS software updates  <!-- 4099090        -->   
 We'll roll out updated create and edit UI experiences for iOS software updates to Intune. The new UI will:
 - Simplify the existing experience by using a wizard-style format on one blade. This UI update will eliminate blade sprawl that requires IT pros to take deep blade journeys.  
 - Include assignments in the iOS software update policy create flow. 
-- Include a summary page in the iOS software update policy. The summary will include all settings when you're viewing properties, when you're preparing to creating a new policy, and when you're editing a property. When you're editing, the summary will list only the items within the category of properties you're editing.
+- Include a summary page in the iOS software update policy. The summary will include all settings when you're viewing properties, when you're preparing to create a policy, and when you're editing a property. When you're editing, the summary will list only the items within the category of properties you're editing.
 
 ### Target macOS user groups to require Jamf management <!-- 4061739 -->
 You'll be able to target specific groups of users to require their macOS devices to be managed by Jamf. This targeting will enable you to apply the Jamf compliance integration to a subset of macOS devices while other devices continue to be managed by Intune. Targeting will also let you gradually migrate users' devices from one mobile device management (MDM) system to the other.
@@ -264,7 +262,7 @@ Device names will have to follow these rules:
 - Disallowed characters: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *
 
 ### Deploy software updates to macOS devices <!-- 3194876 -->
-You'll be able to deploy software updates to groups of macOS devices. This feature includes critical, firmware, configuration file, and other updates. You'll be able to send updates on the next device check-in. Or you can select a weekly schedule to deploy updates in or out of time windows that you set. 
+You'll be able to deploy software updates to groups of macOS devices. This feature includes critical, firmware, configuration file, and other updates. You can send updates on the next device check-in. Or you can select a weekly schedule to deploy updates in or out of periods that you set. 
 
 This feature helps when you want to update devices outside standard work hours or outside hours when your help desk is fully staffed. You'll also get a detailed report of all macOS devices that have updates deployed. You can drill into the report by device to see the status of a particular update.
 
@@ -272,7 +270,7 @@ This feature helps when you want to update devices outside standard work hours o
 ## Monitoring and troubleshooting
 
 ### Android report on the Devices overview page <!-- 2984353  -->
-We'll add a new report to the Devices overview page. The report displays how many Android devices have been enrolled in each device management solution. The chart shows device counts for work profile, fully managed, dedicated, and device-administrator enrolled. 
+We'll add a new report to the **Devices overview** page. The report displays how many Android devices have been enrolled in each device management solution. The chart shows device counts for work profile, fully managed, dedicated, and device-administrator enrolled. 
 
 To see the report, choose **Intune** > **Devices** > **Overview**.
 
@@ -295,7 +293,3 @@ As part of continuing improvements, we'll update the in-console support experien
 
 ## See also
 For details about recent developments, see [What's new in Microsoft Intune](whats-new.md).
-
-
-
-
