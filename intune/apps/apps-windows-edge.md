@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,7 +45,7 @@ Before you can deploy, configure, monitor, or protect apps, you must add them to
 - Any pre-installed versions of Microsoft Edge *version 77 and later* for **developer** and **beta** channels in user context will be overwritten with Edge installed in system context.
 
 ## Add an app to Intune
-You can add a Microsoft Store app to Intune using the following steps:
+You can add a Microsoft Edge version 77 and later to Intune using the following steps:
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
@@ -58,7 +58,7 @@ In this step, you provide information about this app deployment. This informatio
 2. In the **App information** blade, you provide information about this app deployment. This information helps you identify the app in Intune, and it helps users find the app in the company portal.
     - **Name**: Enter the name of the app as it will be displayed in the company portal. Make sure that all names are unique. If the same app name exists twice, only one of the apps is displayed to users in the company portal.
     - **Description**: Enter a description for the app. For example, you could list the targeted users in the description.
-    - **Publisher**: Enter the name of the publisher of the app.
+    - **Publisher**: Microsoft appears as the publisher.
     - **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app when they browse the company portal.
     - **Display this as a featured app in the Company Portal**: Select this option to display the app prominently on the main page of the company portal when users browse for apps.
     - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
@@ -74,8 +74,8 @@ In this step, configure installation options for the app.
 
 1. In the **Add App** blade, select **App settings**.
 2. In the **App settings** blade, select either **Beta** or **Dev** from the **Channel** list to determine which Edge Channel you will deploy the app from.
-    - **Beta** channel is the most stable Microsoft Edge preview experience and the best choice for a full pilot within your organization. With major updates every six weeks, each release incorporates the learnings and improvements from the Dev Channel.
-    - **Dev** channel is ready for enterprise feedback on Windows, Windows Server and macOS. It updates every week and contains the latest improvements and fixes.
+    - **Beta** Channel is the most stable Microsoft Edge preview experience and the best choice for a full pilot within your organization. With major updates every six weeks, each release incorporates the learnings and improvements from the Dev Channel.
+    - **Dev** Channel is ready for enterprise feedback on Windows, Windows Server and macOS. It updates every week and contains the latest improvements and fixes.
 
     > [!NOTE]
     > The Microsoft Edge browser logo is displayed with the app when users browse the company portal.
