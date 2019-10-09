@@ -752,7 +752,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device.
+- **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. When enabled, the engine parses the mailbox and mail files to analyze the mail body and attachments. You can scan .pst (Outlook), .dbx, .mbx, MIME  (Outlook Express), and BinHex (Mac) formats.
 
   When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns off this scanning, and allows users to change it.
 
