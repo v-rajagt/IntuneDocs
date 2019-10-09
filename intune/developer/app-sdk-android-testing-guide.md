@@ -81,9 +81,9 @@ You can restrict the system clipboard to managed applications, as follows:
     - Copying text from your app into an unmanaged app (for example, Messages) is blocked.
 
 ### Prevent save
-You can control **Save as** functionality, as follows:
+You can control **Save As** functionality, as follows:
 
-1. If your app requires [integrated Save as controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), set **Prevent 'Save As'** to **Yes**.
+1. If your app requires [integrated Save As controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), set **Prevent 'Save As'** to **Yes**.
 2. Confirm the following conditions:
     - Save is restricted to only appropriate managed locations.
 

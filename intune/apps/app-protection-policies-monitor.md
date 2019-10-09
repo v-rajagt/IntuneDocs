@@ -41,7 +41,7 @@ There are three different places to monitor app protection policies:
 > [!NOTE]
 > For more information, see [How to create and assign app protection policies](app-protection-policies.md).
 
-The retention period for app protection data is 90 days. Any app instances that have checked in to the MAM service within the past 90 days is included in the App Protection Status report. An *app instance* is a unique user + app + device. 
+The retention period for app protection data is 90 days. Any app instances that have checked in to the MAM service within the past 90 days is included in the app protection status report. An *app instance* is a unique user + app + device. 
 
 ## Summary view
 
@@ -53,7 +53,7 @@ The retention period for app protection data is 90 days. Any app instances that 
 
    - **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context, and are protected and licensed. This category also includes the assigned users who are unprotected and unlicensed.
    - **Flagged users**: The number of users who are experiencing issues. Jailbroken (iOS) and rooted (Android) devices are included in this category. Users with devices that are flagged by the Google SafetyNet device attestation check (if turned on by the IT admin) are also reported here. 
-   - **Users with potentially harmful apps**: The number of users who may have a harmful app on their Android device, detected by Google Play Protect. 
+   - **Users with potentially harmful apps**: The number of users who might have a harmful app on their Android device, detected by Google Play Protect. 
    - **User status for iOS** and **User status for Android**: The number of users who have used an app and have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
    - **Top Protected iOS Apps**: Based on the most used iOS apps, this information shows the number of protected and unprotected iOS apps.
    - **Top Protected Android Apps**: Based on the most used Android apps, this information shows the number of protected and unprotected Android apps.
@@ -152,7 +152,7 @@ The **Reports** blade provides several reports based on user and app, including 
 
 ## Table grouping
 
-After the **App protection user report** data is displayed, you can aggregate data by the following:
+After the **App protection user report** data is shown, you can aggregate data by the following:
 
 - **Validation result**: The data is grouped by app protection status, which can be "failure," "warning," or "success."
 - **App name**: The data is grouped by the actual app name. Again, the status can be "failure," "warning," or "success."

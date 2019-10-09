@@ -72,10 +72,10 @@ Depending on the app type, you can install the app on a Windows 10 device in one
 > For Win32 apps built as Dual Mode apps, the admin must choose if the app will function as a User Mode or Machine Mode app for all assignments associated with that instance. The deployment context can't be changed per assignment.  
 
 When an app is deployed in device context, the installation only succeeds when targeted to a device that supports device context. In addition, deploying in device context supports the following conditions:
-- If an app is deployed in device context and targeted to a user, the installation fails. The following status and error is displayed in the admin console:
+- If an app is deployed in device context and targeted to a user, the installation fails. The following status and error appears in the admin console:
   - Status: Failed.
-  - Error: A user can’t be targeted with a Device context install.
-- If an app is deployed in device context, but is targeted to a device that doesn't support device context, the installation fails. The following status and error is displayed in the admin console:
+  - Error: A user can’t be targeted with a device context install.
+- If an app is deployed in device context, but is targeted to a device that doesn't support device context, the installation fails. The following status and error appears in the admin console:
   - Status: Failed.
   - Error: This platform does not support device context installs. 
 
