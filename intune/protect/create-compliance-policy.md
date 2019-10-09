@@ -99,7 +99,7 @@ To use device compliance policies, be sure you:
 
 4. When finished, select **OK** > **Create** to save your changes. The policy is created, and shown in the list. Next, assign the policy to your groups.
 
-## Assign user groups
+## Assign the policy
 
 Once a policy is created, the next step is to assign the policy to your groups:
 
@@ -107,7 +107,7 @@ Once a policy is created, the next step is to assign the policy to your groups:
 2. Select the policy > **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
 3. Choose **Selected groups** to see your Azure AD security groups. Select the groups you want this policy to apply > Choose **Save** to deploy the policy.
 
-The users or devices target by your policy are evaluated for compliance when they check-in with Intune.
+The users or devices targeted by your policy are evaluated for compliance when they check-in with Intune.
 
 ### Evaluate how many users are targeted
 
