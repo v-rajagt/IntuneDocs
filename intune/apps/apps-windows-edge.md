@@ -44,7 +44,7 @@ Before you can deploy, configure, monitor, or protect apps, you must add them to
 - Windows 10 RS2 and above is required.
 - Any pre-installed versions of Microsoft Edge *version 77 and later* for **developer** and **beta** channels in user context will be overwritten with Edge installed in system context.
 
-## Add an app to Intune
+## Configure the app in Intune
 You can add a Microsoft Edge version 77 and later to Intune using the following steps:
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -67,7 +67,6 @@ In this step, you provide information about this app deployment. This informatio
     - **Owner**: Microsoft appears as the owner.
     - **Notes**: Optionally, enter any notes that you want to associate with this app.
 3. Select **OK**.
-4. Select **Add**.
 
 ## Configure app settings
 In this step, configure installation options for the app.
@@ -90,7 +89,7 @@ You can use scope tags to determine who can see client app information in Intune
 4.	Click **Select** > **OK**.
 
 ## Add the app
-When you've completed configuring, select **Add** from the **App app** blade. 
+When you've completed configuring the app, select **Add** from the **App app** blade. 
 
 The app you've created is displayed in the apps list, where you can assign it to the groups that you select. 
 
