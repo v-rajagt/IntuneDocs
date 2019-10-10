@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -329,6 +329,13 @@ These password settings apply to personal profiles on devices that use a work pr
 
    > [!Note]
    > This setting only works for devices that are Android O and above.
+
+- **Prevent app installations from unknown sources in the personal profile**: By design, Android Enterprise work profile devices can't install apps from sources other than the Play Store. By nature, work profile devices are intended to be dual-profile:
+
+  - A work profile managed using MDM.
+  - A personal profile that's isolated from MDM management.
+
+  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) prevents app installations from unknown sources in the personal profile. **Block** allows app installations from sources other than the Play Store in the personal profile.
 
 ### Connectivity
 
