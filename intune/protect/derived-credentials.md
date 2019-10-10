@@ -37,7 +37,7 @@ Derived credentials are an implementation of the National Institute of Standards
 
 - The Intune administrator configures their tenant to work with a supported derived credential issuer. You don’t need to configure any Intune specific settings in the derived credential issuer's system.
 
-- The Intune administrator creates device configuration profiles that use **Derived credential** as an authentication method. This option is available for the following objects:  
+- The Intune administrator creates device configuration profiles that use **Derived credential** as an authentication method and for S/MIME signing and encryption. This option is available for the following objects:  
 
   - Common profile types like Wi-Fi, VPN, and Email, which includes the iOS native mail app 
 
@@ -45,7 +45,7 @@ Derived credentials are an implementation of the National Institute of Standards
 
   - S/MIME signing and encryption 
 
-- Users obtain a derived credential by using their smart card on a Windows PC to authenticate to the derived credential issuer, which then issues a certificate for their mobile device. The resulting certificate is derived from their smart card and issued to the mobile device.
+- Users obtain a derived credential by using their smart card on a Windows PC to authenticate to the derived credential issuer. The issuer then issues to the mobile device a certificate that’s derived from their smart card. 
 
 - After the device receives the derived credential, it's used for authentication and for S/MIME signing and encryption when apps or resource access profiles require the derived credential. 
 
@@ -79,23 +79,23 @@ Understand the following considerations before setting up a derived credential i
 
 Before you begin configuration of an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices. You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
 
-Your users won't be prompted to enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method.
+Your users won't be prompted to enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method or that uses a derived credential for S/MIME signing and encryption.
 
 #### 2) Review the end-user workflow for your chosen issuer
 
-Before you start configuration of an issuer, understand the tasks that users must complete to receive a derived credential from your chosen issuer.  Then, review Intune policies and configurations to ensure devices and users aren't blocked from successfully obtaining a derived credential. 
+Before you start configuration of an issuer, understand the tasks that users must complete to receive a derived credential from your chosen issuer.  Then, review Intune policies and configurations to ensure devices and users can successfully obtain a derived credential. 
 
 To request a derived credential for their mobile device, users are guided through a workflow that’s specific to your chosen issuer. To retrieve derived credentials from Intercede and Entrust Datacard, users use the Intune Company Portal app. To retrieve credentials from DISA Purebred, users must also use the DISA Purebred application.  
 
 Common to all issuers is the use of a computer where the user uses their smart card to authenticate themselves to the issuer. Some additional requirements that vary by issuer include:
 
-- Working with an online agent to obtain and enter a series of time-limited passcodes that configure the derived credential. - Use of a device camera to scan a QR code that links the user’s credentials to the derived credential being issued to that device.  
+- Working with an online agent to obtain and enter a series of time-limited passcodes that configure the derived credential. - Use of a device camera to scan a QR code that links authentication request to the derived credential request from the mobile device.  
 
 After derived credentials are configured in Intune, users  are notified to begin the derived credential enrollment.  Notification can be through app notification for the Company Portal, through email, or both.  If you choose to use email notifications and you use enabled conditional access, users might not receive the email notification if their device isn’t compliant.
 
 For example, you might use conditional access to block access to email for non-compliant devices. If you rely on email notifications to inform the user to start the derived credential enrollment process, your users might not receive those instructions until they're compliant with policy.
 
-Similarly, some derived credential request workflows require the use of the device camera to scan an on-screen QR code. This code links that device to the user’s smart card credentials. If device configuration polices block camera use, the user can’t complete the derived credential enrollment request.
+Similarly, some derived credential request workflows require the use of the device camera to scan an on-screen QR code. This code links that device to the authentication request that occurred against the derived credential issuer with the user’s smart card credentials. If device configuration polices block camera use, the user can’t complete the derived credential enrollment request.
 
 User workflow documentation:
 
