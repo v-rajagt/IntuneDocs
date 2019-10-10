@@ -174,8 +174,7 @@ In addition to the deploying the app with Intune, configure an Intune per-app VP
 
 ## Use derived credentials for authentication and S/MIME signing and encryption
 
-You can specify **Derived credential** for the following profile types and purposes:
-
+You can specify **Derived credential** for the following profile types and purposes:  
 - [Applications](#use-derived-credentials-for-app-authentication)
 - [Email](../configuration/email-settings-ios.md)
 - [VPN](../configuration/vpn-settings-ios.md)
