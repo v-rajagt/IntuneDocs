@@ -66,9 +66,10 @@ Intune supports a single derived credential issuer per tenant. You can configure
 - **Entrust Datacard**:  https://www.entrustdatacard.com/
 - **Intercede**:  https://www.intercede.com/
 
-If you delete the current derived credential issuer from your tenant, the derived credentials that were set up through that issuer will no longer function.  
-
-See [Change the derived credential issuer](#change-the-derived-credential-issuer) later in this article.   
+> [!IMPORTANT]  
+> If you delete the current derived credential issuer from your tenant, the derived credentials that were set up through that issuer will no longer function.  
+> 
+> See [Change the derived credential issuer](#change-the-derived-credential-issuer) later in this article.   
 
 ### Plan for derived credentials
 
@@ -76,9 +77,9 @@ Understand the following considerations before setting up a derived credential i
 
 #### 1) Review the documentation for your chosen derived credential issuer  
 
-Before you begin configuration of an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices.  
+Before you begin configuration of an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices. You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
 
-You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.  
+Your users won't be prompted to enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method.
 
 #### 2) Review the end-user workflow for your chosen issuer
 
@@ -166,9 +167,9 @@ In addition to the deploying the app with Intune, configure an Intune per-app VP
 **Complete the following tasks**: 
   
 1. Download the [DISA Purebred application](https://cyber.mil/pki-pke/purebred/).
-2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](../apps/lob-apps-ios).
+2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](../apps/lob-apps-ios.md).
 3. [Create a per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred application.
-4. Deploy the Company Portal app from the App store.  See [Add iOS store apps to Microsoft Intune](../apps/store-apps-ios).
+4. Deploy the Company Portal app from the App store.  See [Add iOS store apps to Microsoft Intune](../apps/store-apps-ios.md).
  
 
 ## Use derived credentials for authentication and S/MIME signing and encryption
