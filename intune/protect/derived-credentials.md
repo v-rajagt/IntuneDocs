@@ -163,6 +163,12 @@ For important details about using the different issuers, review guidance for tha
 > 
 > See [Change the derived credential issuer](#change-the-derived-credential-issuer) later in this article.   
 
+### Company Portal app
+
+Plan to deploy the Intune Company Portal app to devices that will enroll for a derived credential. Device users use the Company Portal app to start the credential enrollment process. 
+
+For iOS devices, see [Add iOS store apps to Microsoft Intune](../apps/store-apps-ios.md).
+
 ## Plan for derived credentials
 
 Understand the following considerations before setting up a derived credential issuer.  
@@ -272,17 +278,16 @@ After you save the configuration, you can make changes to all fields except for 
 
 *This section applies only when you use DISA Purebred*.
 
-To use **DISA Purebred** as your derived credential issuer for Intune, you must get the DISA Purebred app and then use Intune to deploy the app to devices. Device users must use the app on their device to request the derived credential from DISA Purebred.  
-  
-In addition to the deploying the app with Intune, configure an Intune per-app VPN for the DISA Purebred application.
+To use **DISA Purebred** as your derived credential issuer for Intune, you must:
+- Get the DISA Purebred app and then use Intune to deploy the app to devices. Device users must use the app on their device to request the derived credential from DISA Purebred.  
+
+- Configure an Intune per-app VPN for the DISA Purebred application.
 
 **Complete the following tasks**: 
   
 1. Download the [DISA Purebred application](https://cyber.mil/pki-pke/purebred/).
 2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](../apps/lob-apps-ios.md).
 3. [Create a per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred application.
-4. Deploy the Company Portal app from the App store.  See [Add iOS store apps to Microsoft Intune](../apps/store-apps-ios.md).
- 
 
 ## Use derived credentials for authentication and S/MIME signing and encryption
 
