@@ -187,13 +187,13 @@ General information:
 
 - You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
 
-- Device users won't be notified that they must enroll for derived credentials until you target them with a policy that requires a derived credential as the authentication method or that uses a derived credential for S/MIME signing and encryption.
+- Device users aren't notified that they must enroll for derived credentials until you target them with a policy that requires a derived credential as the authentication method or that uses a derived credential for S/MIME signing and encryption.
 
 - Notification can be through app notification for the Company Portal, through email, or both. If you use conditional access policies and choose only email notifications, users might not receive the notification if their device isn’t compliant.
 
 ### 2) Review the end-user workflow for your chosen issuer
 
-Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Become familiar with this information so you can ensure your Intune policies and configurations don’t block users and devices from completing enrollment for a derived credential.
+Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Review this information so you can ensure policies and configurations don’t block users and devices from completing enrollment for a derived credential.
 
 #### DISA Purebred
 
@@ -264,11 +264,11 @@ Before you create policies that require use of a derived credential, set up a cr
 
    If you don’t specify your own URL, Intune provides a link to generic details that can’t cover all scenarios. This generic guidance might not be accurate for your environment.
 
-5. Select one or more options for **Notification type**. Notification types are the methods you use to inform users that they must use the Company Portal app to get or update derived credentials for the following scenarios:
+5. Select one or more options for **Notification type**. Notification types are the methods you use to inform users about the following scenarios:
 
-   - Enroll a device with an issuer to get a new derived credential.
-   - Get a new derived credential when the current credential is close to expiration. 
-   - Use a derived credential with a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption. 
+   - How to enroll a device with an issuer to get a new derived credential.
+   - How to get a new derived credential when the current credential is close to expiration. 
+   - The requirement to use a derived credential for a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption. 
 
 6. When ready, select **Save** to complete configuration of the derived credential issuer. 
 
@@ -325,7 +325,7 @@ Users receive the app or email notification depending on the settings you specif
 
 Derived credentials can't be extended or renewed. Instead, users must use the credential request workflow to request a new derived credential for their device.
 
-If you configure one or more methods for **Notification type** for your issuer, users are automatically notified when their current derived credential reaches 80% of its life span. The notification directs users to go through the credential request process to get a new derived credential. 
+If you configure one or more methods for **Notification type**, Intune automatically notifies users when the current derived credential reaches 80% of its life span. The notification directs users to go through the credential request process to get a new derived credential. 
 
 After a device receives a new derived credential, policies that use derived credentials redeploy to that device. 
 
@@ -349,7 +349,7 @@ After you change the issuer, users are prompted to get a new derived credential 
 
 ### Update profiles that use derived credentials
 
-After you delete an issuer and then add a new one, even if it’s the same issuer, edit each profile that uses derived credentials. Any edit of the profile will trigger an update, including a simple edit to the profile *Description*.
+After you delete an issuer and then add a new one, edit each profile that uses derived credentials. This rule applies even if you restore the previous issuer. Any edit of the profile will trigger an update, including a simple edit to the profile *Description*.
 
 ### Update derived credentials on devices
 
