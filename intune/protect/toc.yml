@@ -198,7 +198,7 @@
     - name: Remove SCEP or PKCS certificates
       href: remove-certificates.md                           
   - name: Derived credentials
-    href: derived-credentials-md
+    href: derived-credentials.md
   - name: Software updates
     items:
     - name: Windows updates
