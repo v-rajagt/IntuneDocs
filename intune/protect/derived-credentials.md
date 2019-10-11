@@ -156,7 +156,7 @@ Intune supports a single derived credential issuer per tenant. You can configure
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-For important details about using the different issuers, review guidance for that issuer, including the issuers end-user workflow. For more information, see [Plan for derived credentials](plan-for-derived-credentials) in this article.
+For important details about using the different issuers, review guidance for that issuer, including the issuers end-user workflow. For more information, see [Plan for derived credentials](#plan-for-derived-credentials) in this article.
 
 > [!IMPORTANT]  
 > If you delete a derived credential issuer from your tenant, the derived credentials that were set up through that issuer will no longer function.  
