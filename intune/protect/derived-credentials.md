@@ -89,7 +89,8 @@ To request a derived credential for their mobile device, users are guided throug
 
 Common to all issuers is the use of a computer where the user uses their smart card to authenticate themselves to the issuer. Some additional requirements that vary by issuer include:
 
-- Working with an online agent to obtain and enter a series of time-limited passcodes that configure the derived credential. - Use of a device camera to scan a QR code that links authentication request to the derived credential request from the mobile device.  
+- Working with an online agent to obtain and enter a series of time-limited passcodes that configure the derived credential. 
+- Use of a device camera to scan a QR code that links authentication request to the derived credential request from the mobile device.  
 
 After derived credentials are configured in Intune, users  are notified to begin the derived credential enrollment.  Notification can be through app notification for the Company Portal, through email, or both.  If you choose to use email notifications and you use enabled conditional access, users might not receive the email notification if their device isn’t compliant.
 
@@ -113,7 +114,7 @@ When you use DISA Purebred, users need access to the DISA Purebred app:
 
 - Deploy a [per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred app. 
 
-#### 5) Deploy a trusted root certificate to devices 
+#### 4) Deploy a trusted root certificate to devices 
 
 A trusted root certificate is used with derived credentials to verify that the derived credential certificate chain is valid and trusted. Even when not directly referenced by policy, a trusted root certificate is required. See [Configure a certificate profile for your devices in Microsoft Intune](certificates-configure.md).
 
