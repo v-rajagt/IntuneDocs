@@ -56,7 +56,7 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 
     The **Expiration date** will be populated from a value in the Apple Mobile Configuration Profile file that you added above.
 
-    <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png" width="350">
+    <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
 
 4. Click **Next: Scope tags**.
 5. On the **Scope tags** page you can optionally configure scope tags to determine who can see iOS app provisioning profile in Intune. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md).
