@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -2047,7 +2047,7 @@ enum StringQueryType {
 
 Your app can also request the raw data as a list of sets of key-value pairs.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 
