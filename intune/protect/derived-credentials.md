@@ -51,94 +51,6 @@ Derived credentials are an implementation of the National Institute of Standards
 
 - After the device receives the derived credential, it's used for authentication and for S/MIME signing and encryption when apps or resource access profiles require the derived credential. 
 
-<!-- original structure 
-
-
-## Prepare for derived credentials
-
-Review the following information before you configure your tenant to use derived credentials.
-
-### Supported platforms
-
-Intune supports derived credentials on the following OS platforms:
-- iOS/iPadOS
- 
-### Supported issuers
-
-Intune supports a single derived credential issuer per tenant. You can configure Intune to work with the following issuers:  
-
-- **DISA Purebred**: https://cyber.mil/pki-pke/purebred/ 
-- **Entrust Datacard**:  https://www.entrustdatacard.com/
-- **Intercede**:  https://www.intercede.com/
-
-> [!IMPORTANT]  
-> If you delete the current derived credential issuer from your tenant, the derived credentials that were set up through that issuer will no longer function.  
-> 
-> See [Change the derived credential issuer](#change-the-derived-credential-issuer) later in this article.   
-
-### Plan for derived credentials
-
-Understand the following considerations before setting up a derived credential issuer.  
-
-#### 1) Review the documentation for your chosen derived credential issuer  
-
-Before you begin configuration of an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices. You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
-
-Your users won't be prompted to enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method or that uses a derived credential for S/MIME signing and encryption.
-
-#### 2) Review the end-user workflow for your chosen issuer
-
-Before you start configuration of an issuer, understand the tasks that users must complete to receive a derived credential from your chosen issuer.  Then, review Intune policies and configurations to ensure devices and users can successfully obtain a derived credential. 
-
-To request a derived credential for their mobile device, users are guided through a workflow that’s specific to your chosen issuer. To retrieve derived credentials from Intercede and Entrust Datacard, users use the Intune Company Portal app. To retrieve credentials from DISA Purebred, users must also use the DISA Purebred application.  
-
-Common to all issuers is the use of a computer where the user uses their smart card to authenticate themselves to the issuer. Some additional requirements that vary by issuer include:
-
-- Working with an online agent to obtain and enter a series of time-limited passcodes that configure the derived credential. 
-- Use of a device camera to scan a QR code that links authentication request to the derived credential request from the mobile device.  
-
-After derived credentials are configured in Intune, users  are notified to begin the derived credential enrollment.  Notification can be through app notification for the Company Portal, through email, or both.  If you choose to use email notifications and you use enabled conditional access, users might not receive the email notification if their device isn’t compliant.
-
-For example, you might use conditional access to block access to email for non-compliant devices. If you rely on email notifications to inform the user to start the derived credential enrollment process, your users might not receive those instructions until they're compliant with policy.
-
-Similarly, some derived credential request workflows require the use of the device camera to scan an on-screen QR code. This code links that device to the authentication request that occurred against the derived credential issuer with the user’s smart card credentials. If device configuration polices block camera use, the user can’t complete the derived credential enrollment request.
-
-User workflow documentation:
-
-- [DISA Purebred](/intune-user-help/) 
-- [Entrust Datacard](/intune-user-help/)
-- [Intercede](/intune-user-help/)
-
-#### 3) Plan for the end-user apps that are required to request derived credentials
-
-All devices that will enroll for derived credentials must have access to the Intune Company Portal app.
-
-When you use DISA Purebred, users need access to the DISA Purebred app:  
-
-- Use Intune to deploy the DISA Purebred app; a requirement for the app to work with the Company Portal successfully as a managed app.  
-
-- Deploy a [per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred app. 
-
-#### 4) Deploy a trusted root certificate to devices 
-
-A trusted root certificate is used with derived credentials to verify that the derived credential certificate chain is valid and trusted. Even when not directly referenced by policy, a trusted root certificate is required. See [Configure a certificate profile for your devices in Microsoft Intune](certificates-configure.md).
-
-#### 5) Provide end-user instructions for how to get the derived credential 
-
-Create and provide guidance to your users on how to start the derived credential enrollment process and to navigate you the derived credential enrollment workflow for your chosen issuer. 
-
-We recommend you provide a URL that will host your guidance. You specify this URL when you configure the derived credential issuer for your tenant, and that URL is made available from within the Company Portal app. If you don’t specify your own URL, Intune provides a link to generic details. These details can’t cover all scenarios and might not be accurate for your environment. 
-
-#### 6) Deploy Intune policies that require derived credentials 
-
-Create new policies or edit existing policies to use derived credentials. Derived credentials replace other authentication methods for app authentication, Wi-Fi, VPN, email, and for S/MIME signing and encryption.
-
-Avoid requiring use of a derived credential to access a process that you’ll use as part of the process to get the derived credential, as that can prevent users from completing the request. 
-
-END OF ORIGINAL STRUCTURE -->
-
-<!-- Start of NEW STRUCTURE -->
-
 ## Prerequisites
 
 Review the following information before you configure your tenant to use derived credentials.
@@ -175,9 +87,9 @@ Understand the following considerations before setting up a derived credential i
 
 ### 1) Review the documentation for your chosen derived credential issuer  
 
-Before you configure an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices. The different issuers can have different requirements. 
+Before you configure an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices.  
 
-Review your Intune configurations to ensure they don't block access that's necessary for devices or users to complete the credential request.  
+Depending on the issuer you choose, you might need staff to be available at the time of enrolment to help users complete the process. You should also review your current Intune configurations to ensure they don’t block access that’s necessary for devices or users to complete the credential request. 
 
 For example, you might use conditional access to block access to email for non-compliant devices. If you rely on email notifications to inform the user to start the derived credential enrollment process, your users might not receive those instructions until they're compliant with policy.  
 
@@ -187,13 +99,13 @@ General information:
 
 - You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
 
-- Device users aren't notified that they must enroll for derived credentials until you target them with a policy that requires a derived credential as the authentication method or that uses a derived credential for S/MIME signing and encryption.
+- Users won't be notified that they must enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method or that uses a derived credential for S/MIME signing and encryption.
 
-- Notification can be through app notification for the Company Portal, through email, or both. If you use conditional access policies and choose only email notifications, users might not receive the notification if their device isn’t compliant.
+- Notification can be through app notification for the Company Portal, through email, or both. If you choose to use email notifications and you use enabled conditional access, users might not receive the email notification if their device isn’t compliant.
 
 ### 2) Review the end-user workflow for your chosen issuer
 
-Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Review this information so you can ensure policies and configurations don’t block users and devices from completing enrollment for a derived credential.
+Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Become familiar with this information so you can ensure your Intune polices and configurations don’t block users and devices from successfully completing enrollment for a derived credential from that issuer.
 
 #### DISA Purebred
 
@@ -203,11 +115,13 @@ Review the [user workflow for DISA Purebred](https://review.docs.microsoft.com/i
 
 - Devices that will enroll for a derived credential must install the Intune Company Portal app.
 
-- Use Intune to [deploy the DISA Purebred app](#deploy-the-disa-purebred-app) to devices that will enroll for a derived credential. This app must be deployed through Intune so that it’s managed and can work with the Intune Company Portal app. Users must use this app to complete the derived credential request from DISA Purebred. 
+- Use Intune to [deploy the DISA Purebred app](#deploy-the-disa-purebred-app) to devices that will enroll for a derived credential. This app must be deployed through Intune so that it’s managed, and can then work with the Intune Company Portal app. This app is used by device users to complete the derived credential request. 
 
 - The DISA Purebred app requires a [per-app VPN](../configuration/vpn-settings-configure.md) to ensure the app can access DISA Purebred during enrollment for the derived credential. 
 
-- When requesting a credential for DISA Purebred, users communicate with a live agent to get a series of time-limited one-time passcodes as they work through the enrollment process.  
+- Device users must work with a live agent during the enrollment process. During enrolment, time-limited one-time passcodes are provided to the user as they proceed through the enrollment process.   
+
+For information getting and configuring the DISA Purebred app, see [Deploy the DISA Purebred app](#deploy-the-disa-purebred-app) later in this article.  
 
 #### Entrust Datacard  
 Review the [user workflow for Entrust Datacard](https://review.docs.microsoft.com/intune-user-help/). Key requirements for this workflow include: 
@@ -233,17 +147,15 @@ A trusted root certificate is used with derived credentials to verify that the d
 
 ### 4) Provide end-user instructions for how to get the derived credential 
 
-Specific to your organization, draft custom guidance for your users on how to start the enrollment process and to navigate the enrollment workflow. 
+Create and provide guidance to your users on how to start the derived credential enrollment process and to navigate you the derived credential enrollment workflow for your chosen issuer. 
 
-We recommend you provide a URL that will host your guidance. You specify this URL when configuring the derived credential issuer for your tenant. The URL is made available to users from within the Company Portal app. If you don’t specify your own URL, Intune provides a link to generic details. These details can’t cover all scenarios and might not be accurate for your environment. 
+We recommend you provide a URL that will host your guidance. You specify this URL when you configure the derived credential issuer for your tenant, and that URL is made available from within the Company Portal app. If you don’t specify your own URL, Intune provides a link to generic details. These details can’t cover all scenarios and might not be accurate for your environment. 
 
 ### 5) Deploy Intune policies that require derived credentials 
 
-Create new policies or edit existing policies to use derived credentials. Derived credentials can replace other authentication methods for app authentication, Wi-Fi, VPN, email, and for S/MIME signing and encryption.
+Create new policies or edit existing policies to use derived credentials. Derived credentials replace other authentication methods for app authentication, Wi-Fi, VPN, email, and for S/MIME signing and encryption. 
 
-Remember to avoid requiring a derived credential to access a process that you’ll use as part of the process to get the derived credential.  
-
-<!--  END OF NEW STRUCTURE -->
+Avoid requiring use of a derived credential to access a process that you’ll use as part of the process to get the derived credential, as that can prevent users from completing the request. 
 
 ## Set up a derived credential issuer
 
@@ -260,15 +172,15 @@ Before you create policies that require use of a derived credential, set up a cr
    - Entrust Datacard
    - Intercede  
 
-4. Specify a **Derived credential help URL** to provide a link to a location that includes custom instructions to help users get derived credentials for your organization. The instructions should be specific to your organization and to the workflow that's necessary to get a credential from your chosen issuer. The link appears in the Company Portal app. 
+4. Specify a **Derived credential help URL** to provide a link to a location that includes custom instructions to help users get derived credentials for your organization. The instructions should be specific to your organization and to the workflow that's necessary to get a credential from your chosen issuer. The link appears in the Company Portal app and should be accessible from the device. 
 
    If you don’t specify your own URL, Intune provides a link to generic details that can’t cover all scenarios. This generic guidance might not be accurate for your environment.
 
 5. Select one or more options for **Notification type**. Notification types are the methods you use to inform users about the following scenarios:
 
-   - How to enroll a device with an issuer to get a new derived credential.
-   - How to get a new derived credential when the current credential is close to expiration. 
-   - The requirement to use a derived credential for a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption. 
+   - Enroll a device with an issuer to get a new derived credential. 
+   - Get a new derived credential when the current credential is close to expiration. 
+   - Use a derived credential with a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption. 
 
 6. When ready, select **Save** to complete configuration of the derived credential issuer. 
 
@@ -278,10 +190,9 @@ After you save the configuration, you can make changes to all fields except for 
 
 *This section applies only when you use DISA Purebred*.
 
-To use **DISA Purebred** as your derived credential issuer for Intune, you must:
-- Get the DISA Purebred app and then use Intune to deploy the app to devices. Device users must use the app on their device to request the derived credential from DISA Purebred.  
+To use **DISA Purebred** as your derived credential issuer for Intune, you must get the DISA Purebred app and then use Intune to deploy the app to devices. Device users use the app on their device to request the derived credential from DISA Purebred. 
 
-- Configure an Intune per-app VPN for the DISA Purebred application.
+In addition to the deploying the app with Intune, configure an Intune per-app VPN for the DISA Purebred application. 
 
 **Complete the following tasks**: 
   
@@ -337,6 +248,7 @@ At the tenant level, you can change your credential issuer, although only one is
 After you change the issuer, users are prompted to get a new derived credential from the new issuer. They must do so before they can use a derived credential for authentication.
 
 ### Change the issuer for your tenant
+
 > [!IMPORTANT]  
 > If you delete an issuer and immediately reconfigure that same issuer, you must still update profiles and devices to use derived credentials from that issuer. Derived credentials that were obtained before you delete the issuer are no longer valid. 
 
