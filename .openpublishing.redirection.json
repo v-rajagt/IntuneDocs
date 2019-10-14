@@ -6973,7 +6973,7 @@
         {
             "source_path": "intune/get-started-evaluation.md",
             "redirect_url": "/intune/fundamentals/what-is-intune",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/get-support.md",
