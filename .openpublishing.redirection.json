@@ -4582,7 +4582,7 @@
         },
         {
             "source_path": "intune/introduction-intune.md",
-            "redirect_url": "/intune/what-is-intune",
+            "redirect_url": "/intune/fundamentals/what-is-intune",
             "redirect_document_id": true
         },
         {
