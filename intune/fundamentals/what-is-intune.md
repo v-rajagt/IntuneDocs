@@ -85,7 +85,7 @@ For example, a user signs in to a device with their organization credentials. Th
 
 And, you can use Intune with the other services in EMS. This feature provides your organization mobile app security beyond what's included with the operating system and any apps. Apps managed with EMS have access to a broader set of mobile app and data protection features.
 
-![Image that shows the levels of app management data security](../apps/media/managing-mobile-apps.png)
+![Image that shows the levels of app management data security](./media/what-is-intune/managing-mobile-apps.png)
 
 ## Compliance and conditional access
 
