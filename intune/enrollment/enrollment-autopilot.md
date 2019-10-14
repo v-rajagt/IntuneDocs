@@ -186,6 +186,11 @@ Prerequisites: Azure Active Directory Company Portal has been configured and Win
 
 4. Choose **Ok**.
 
+## Autopilot deployments report
+You can see details on each device deployed through Windows Autopilot.
+To see the report, go to **Intune** and, under **Monitor**, choose **Autopilot deployments**.
+The data is available for 30 days after deployment.
+
 
 ## Delete Autopilot devices
 
