@@ -661,15 +661,6 @@ If the app has its own PIN user experience, you might want to disable it if the 
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### Example: Determine if PIN is required for the app
-
-If the app has its own PIN user experience, you might want to disable it if the IT administrator has configured the SDK to prompt for an app PIN. To determine if the IT administrator has deployed the app PIN policy to this app, for the current end user, call the following method:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### Example: Determine the primary Intune user
 
 In addition to the APIs exposed in AppPolicy, the user principal name (**UPN**) is also exposed by the `getPrimaryUser()` API defined inside the `MAMUserInfo` interface. To get the UPN, call the following:
