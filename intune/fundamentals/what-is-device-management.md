@@ -106,7 +106,7 @@ On the Device Management admin center, you can:
 - [Azure active directory](https://docs.microsoft.com/azure/active-directory)  
 - [Manage users](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Manage groups and members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Troubleshoot](../fundamentals/help-desk-operators)
+- [Troubleshoot](help-desk-operators.md)
 
 ## Next steps
 
