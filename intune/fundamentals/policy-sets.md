@@ -66,7 +66,7 @@ When you create a policy set, you create a single unit of assignment, and manage
    <img alt="Create policy set - Basics" src="~/fundamentals/media/policy-sets/policy-sets-01.png">
 
 4. Click **Next: Application management**.<br>
-   On the **Application management** page you can optionally [add apps](~/apps/apps-add.md), [app configuration policies](~/apps/app-configuration-policies-overview.md), and [app protection policies](~/apps/apps/app-protection-policy.md) to your policy set. For information about app management, see [What is Microsoft Intune app management?](~/apps/app-management.md). 
+   On the **Application management** page you can optionally [add apps](~/apps/apps-add.md), [app configuration policies](~/apps/app-configuration-policies-overview.md), and [app protection policies](~/apps/app-protection-policy.md) to your policy set. For information about app management, see [What is Microsoft Intune app management?](~/apps/app-management.md). 
 5. Click **Next: Device management**.<br>
    The **Device management** page allows you to add device management objects to your policy set, such as [device configuration profiles](~/configuration/device-profiles.md) and [device compliance policies](~/protect/device-compliance-get-started.md). Be sure to include all associated objects, such as other policies, certificates, and security baseline profiles.
 6. Click **Next: Device enrollment**.<br>
@@ -78,4 +78,4 @@ When you create a policy set, you create a single unit of assignment, and manage
 
 ## Next steps
 
-- [Enroll devices in Microsoft Intune](~/enrollment/index.md).
+- [Enroll devices in Microsoft Intune](~/enrollment/index.yml).
