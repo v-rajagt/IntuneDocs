@@ -136,6 +136,12 @@ While an update ring is paused, you can select **Extend** to reset the pause per
 ### Uninstall  
 An Intune administrator can use **Uninstall** to uninstall (roll back) the latest *feature* update or the latest *quality* update for an active or paused update ring. After uninstalling one type, you can then uninstall the other type. Intune doesn't support or manage the ability of users to uninstall updates.  
 
+> [!IMPORTANT] 
+> When you use the *Uninstall* option, Intune passes the uninstall request to devices immediately. 
+> - Windows devices start removal of updates as soon as they receive the change in Intune policy. Update removal isn't limited to maintenance schedules, even when they're configured as part of the update ring. 
+> - If the update removal requires a device restart, the device  restarts without offering device users an option to delay.
+
+
 For Uninstall to be successful:  
 - A device must run the Windows 10 April 2018 update (version 1803) or later.  
 
