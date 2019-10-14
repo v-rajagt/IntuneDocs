@@ -89,7 +89,7 @@ Understand the following considerations before setting up a derived credential i
 
 Before you configure an issuer, review that issuer’s documentation to understand how their system delivers derived credentials to devices.  
 
-Depending on the issuer you choose, you might need staff to be available at the time of enrolment to help users complete the process. You should also review your current Intune configurations to ensure they don’t block access that’s necessary for devices or users to complete the credential request. 
+Depending on the issuer you choose, you might need staff to be available at the time of enrollment to help users complete the process. You should also review your current Intune configurations to ensure they don’t block access that’s necessary for devices or users to complete the credential request. 
 
 For example, you might use conditional access to block access to email for non-compliant devices. If you rely on email notifications to inform the user to start the derived credential enrollment process, your users might not receive those instructions until they're compliant with policy.  
 
@@ -99,13 +99,13 @@ General information:
 
 - You can only configure a single issuer per tenant at a time, and that issuer is available to all users and supported devices in your tenant.
 
-- Users won't be notified that they must enroll for derived credentials until you target them with a policy that requires derived credentials as an authentication method or that uses a derived credential for S/MIME signing and encryption.
+- Users won't be notified that they must enroll for derived credentials until you target them with a policy that requires derived credentials.
 
 - Notification can be through app notification for the Company Portal, through email, or both. If you choose to use email notifications and you use enabled conditional access, users might not receive the email notification if their device isn’t compliant.
 
 ### 2) Review the end-user workflow for your chosen issuer
 
-Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Become familiar with this information so you can ensure your Intune polices and configurations don’t block users and devices from successfully completing enrollment for a derived credential from that issuer.
+Following are key considerations for each supported partner, and links to that issuers end-user workflow.  Become familiar with this information so you can ensure your Intune policies and configurations don’t block users and devices from successfully completing enrollment for a derived credential from that issuer.
 
 #### DISA Purebred
 
@@ -119,7 +119,7 @@ Review the [user workflow for DISA Purebred](https://review.docs.microsoft.com/i
 
 - The DISA Purebred app requires a [per-app VPN](../configuration/vpn-settings-configure.md) to ensure the app can access DISA Purebred during enrollment for the derived credential. 
 
-- Device users must work with a live agent during the enrollment process. During enrolment, time-limited one-time passcodes are provided to the user as they proceed through the enrollment process.   
+- Device users must work with a live agent during the enrollment process. During enrollment, time-limited one-time passcodes are provided to the user as they proceed through the enrollment process.   
 
 For information getting and configuring the DISA Purebred app, see [Deploy the DISA Purebred app](#deploy-the-disa-purebred-app) later in this article.  
 
