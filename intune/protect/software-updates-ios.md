@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure iOS software update policies in Microsoft Intune - Azure | Microsoft Docs
-description: In Microsoft Intune, create or add a configuration policy to restrict when software updates automatically install on iOS devices managed or supervised by Intune. You can choose the date and time when updates aren't installed. You can also assign this policy to groups, users, or devices, and check for any installation failures. 
+description: In Microsoft Intune, create or add a configuration policy to restrict when software updates automatically install on iOS devices. You can choose the date and time when updates aren't installed. You can also assign this policy to groups, users, or devices, and check for any installation failures. 
 keywords:
 author: brenduns 
 ms.author: brenduns
@@ -34,7 +34,7 @@ This feature applies to:
 
 - iOS 10.3 and later (supervised)
 
-The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
+The device checks in with Intune about every 8 hours. If an update is available, the device downloads and  installs it, except during restricted times. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
 ## Configure the policy
 
@@ -46,7 +46,7 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 4. On the **Update policy settings** tab, specify a restricted time frame when updates aren't forcibly installed.  
    - Overnight blocks aren't supported and might not function. For example, don't configure a policy with a *Start time* of 8 PM and an *End time* of 6 AM.
-   - A policy that starts at 12 AM and ends at 12 AM is evaluated as 0 hours and not 24 hours, which result in no restriction.
+   - A policy that starts at 12 AM and ends at 12 AM is evaluated as 0 hours and not 24 hours. This configuration results in no restriction.
 
    When setting the restricted timeframe, enter the following details:
 
@@ -58,7 +58,7 @@ The device checks in with Intune about every 8 hours. If an update is available,
    > [!IMPORTANT]  
    > A policy that has a *Start time* and *End time* set to 12 AM is evaluated as 0 hours, and not 24 hours. This results in no restriction.  
     
-   If you want to delay the visibility of software updates for a specific amount of time on your supervised iOS devices, configure those settings in [Device Restrictions](../configuration/device-restrictions-ios.md#general). Software update policies override any device restrictions. When you set both a software update policy and restriction to delay visibility of software updates, the device forces a software update per the policy. The restriction applies so that users don't see the option to update the device themselves, and the update is pushed at the first time window as defined by your iOS update policy.
+   To delay the visibility of software updates for a specific amount of time on your supervised iOS devices, configure those settings in [Device Restrictions](../configuration/device-restrictions-ios.md#general). Software update policies override any device restrictions. When you set both a software update policy and restriction to delay visibility of software updates, the device forces a software update per the policy. The restriction applies so that users don't see the option to update the device themselves, and the update is pushed at the first time window as defined by your iOS update policy.
 
    After configuring *Update policy settings*, select **Next**. 
 
