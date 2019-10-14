@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tutorial - Protect Exchange Online email on Intune-managed devices
+title: Tutorial - Protect Exchange Online email on managed devices
 titleSuffix: Microsoft Intune
 description: Learn to secure Exchange Online with iOS Intune compliance policies and Azure AD Conditional Access to require managed devices and the Outlook app.
 keywords:
