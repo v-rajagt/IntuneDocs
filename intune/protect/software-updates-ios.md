@@ -91,7 +91,7 @@ You can edit an existing policy, including changing the restricted times:
 3. After introducing a change, select **Review + save** > **Save** to save your edits, and return to the policies *Properties*.  
  
 > [!NOTE]
-> If the **Start time** and **End time** are both set to 12am, then Intune does not check for restrictions on when to install updates. This means than any configurations you have for **Select times to prevent update installations** are ignored, and updates can install at any time.  
+> If the **Start time** and **End time** are both set to 12 AM, Intune does not check for restrictions on when to install updates. This means than any configurations you have for **Select times to prevent update installations** are ignored, and updates can install at any time.  
 
 
 ## Monitor device installation failures
