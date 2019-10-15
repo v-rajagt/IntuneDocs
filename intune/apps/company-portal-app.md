@@ -184,7 +184,7 @@ Some platforms and configurations do not allow self-service device actions. This
 
 
 <sup>(1)</sup> Retire is always blocked on Azure AD Joined Windows devices.<br>
-<sup>(2)</sup> Personal key recovery for macOS is only available via the Company Portal website, 
+<sup>(2)</sup> Personal key recovery for macOS is only available via the Company Portal website.<br> 
 <sup>(3)</sup> All remote actions are disabled if using a Device Enrollment Manager enrollment.<br>
 <sup>(4)</sup> Rename only changes the device name in the Company Portal App or website, not on the device.<br>
 <sup>(5)</sup> Remote Wipe is not available on MacOS devices.<br>
