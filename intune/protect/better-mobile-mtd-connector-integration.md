@@ -35,7 +35,7 @@ Complete the following steps to integrate the Better Mobile Threat Defense solut
 ## Before you begin
 
 > [!NOTE]
-> The following steps are to be completed in the [Better Mobile admin console](https://aad.bmobi.net).
+> The following steps are to be completed in the [Better Mobile admin console](https://aad.bmobi.net) and will enable a connection to Better Mobile's service for Intune enrolled devices (via device compliance) **and** unenrolled devices (via app protection policies).
 
 Before starting the process of integrating Better Mobile with Intune, make sure you have the following:
 
