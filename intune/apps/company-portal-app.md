@@ -178,13 +178,16 @@ Users can perform actions on their local or remote devices via the Company Porta
 
 Some platforms and configurations do not allow self-service device actions. This table below provides further details about self service actions:
 
-|     Platform    |    Retire    |    Wipe     |    Rename<sup>(4)</sup>    |    Sync    |    Remote Lock    |    Reset Passcode    |    Key Recovery    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Available<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Windows Phone only    |    Windows Phone only    |    NA    |
-|    iOS<sup>(3)</sup>    |    Available    |    Available    |    Available    |    Available    |    Available    |    Available    |    NA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Available    |    NA    |    Available    |    Available    |    Available    |    NA    |    Available<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Available<sup>(7)</sup>    |    Available<sup>(7)</sup>    |    Available    |    Available    |    Available    |    Available<sup>(6)</sup>    |    NA    |
-
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|	|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+|    Windows 10<sup>(3)</sup>    |    Available<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Windows Phone only    |    Windows Phone only    |    NA    |	| Retire | Available<sup>(1)</sup> | Available | Available | Available<sup>(7)</sup> |
+|    iOS<sup>(3)</sup>    |    Available    |    Available    |    Available    |    Available    |    Available    |    Available    |    NA    |	| Wipe | Available | Available | NA | Available<sup>(7)</sup> |
+|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Available    |    NA    |    Available    |    Available    |    Available    |    NA    |    Available<sup>(2)</sup>    |	| Rename<sup>(4)</sup> | Available | Available | Available | Available |
+|    Android<sup>(3)</sup>    |    Available<sup>(7)</sup>    |    Available<sup>(7)</sup>    |    Available    |    Available    |    Available    |    Available<sup>(6)</sup>    |    NA    |	| Sync | Available | Available | Available | Available |
+| Remote Lock | Windows Phone only | Available | Available | Available |
+| Reset Passcode | Windows Phone only | Available | NA | Available<sup>(6)</sup> |
+| Key Recovery | NA | NA | Available<sup>(2)</sup> | NA |
+| Dark Mode | NA | Available | NA | NA |
 
 <sup>(1)</sup> Retire is always blocked on Azure AD Joined Windows devices.<br>
 <sup>(2)</sup> Key Recovery for MacOS is only available via the Web Portal.<br>
