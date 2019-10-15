@@ -19,8 +19,6 @@
     href: administrative-templates-windows.md
   - name: Device features on iOS and macOS
     href: device-features-configure.md
-  - name: BIOS updates on Windows
-    href: device-firmware-configuration-interface-windows.md
   - name: Restrict device settings and features
     href: device-restrictions-configure.md
     displayName: Device restrictions
