@@ -130,6 +130,8 @@
           href: manage-microsoft-edge.md        
         - name: Configure Outlook
           href: app-configuration-policies-outlook.md
+        - name: Configure Google Chrome for Android
+          href: apps-configure-chrome-android.md        
       - name: Volume-purchased apps and books
         items:
         - name: Manage VPP apps and books
@@ -159,7 +161,7 @@
             href: app-protection-policy-settings-android.md
           - name: iOS settings
             href: app-protection-policy-settings-ios.md
-          - name: Access Actions
+          - name: Conditional launch
             href: app-protection-policies-access-actions.md
           - name: Data transfer exceptions
             href: app-protection-policies-exception.md
