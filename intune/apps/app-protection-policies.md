@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Learn how to create and assign Microsoft Intune app protection policies to your users. This topic also describes how to make changes to existing policies.
+Learn how to create and assign Microsoft Intune app protection policies (APP) for users of your organization. This topic also describes how to make changes to existing policies.
 
 ## Before you begin
 
@@ -42,19 +42,83 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
 For information about adding your organization's line-of-business (LOB) apps to Microsoft Intune to prepare for app protection policies, see [Add apps to Microsoft Intune](apps-add.md).
 
-## Create an app protection policy
-1. In Intune portal, go to **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
-2. Select **Create Policy**.
+Currently, the process flow to create an app protection policy differs based on platform:
+- App protection policies for iOS/iPadOS and Android apps
+- App protection policies for Windows 10 apps
 
-   ![Screenshot of the 'Add a policy' blade](./media/app-protection-policies/app-protection-add-policy.png)
+## App protection policies for iOS/iPadOS and Android apps
 
-3. Specify a name for the policy, add a brief description, and select the platform type for your policy. You can create more than one policy for each platform.
+When you create an app protection policy for iOS/iPadOS and Android apps, you will following a modern Intune process flow that results in a new policy set.
 
-4. Select **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating. Select at least one app to create a policy.  
+### Create an iOS/iPadOS or Android app protection policy
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. In Intune portal, choose **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+3. Select **Create policy** and select either **iOS/iPadOS** or **Android**. The **Create policy** blade is displayed.
+4. On the **Basics** page, add the following values:
 
-5. Once you've selected the apps, choose **Select** to save your selection.
+    | Value/Option | Description |
+    |--------------|------------------------------------------------|
+    | Name | The name of this policy set. |
+    | Description | [Optional] The description of this policy set. |
 
-6. On the **Add a policy** blade, select **Configure required settings** to open **Settings**.
+   <p>
+    The **Platform** value is set based on your above choice.
+    <p>
+   ![Screenshot of the Basics page of the Create policy blade](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+5. Click **Next** to display the **Apps** page.<br>
+    The **Apps** page allows you to choose how you want to apply this policy to apps on different devices. You must add at least one app.<p>
+    
+    | Value/Option | Description |
+    |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Target to apps on all devices types | Use this option to target your policy to apps on devices of any management state. Choose **No**  to target apps on specific devices types. |
+    |     Device types | Use this option to specify whether this policy applies to MDM managed devices or unmanaged devices. For iOS APP policies, select from **Unmanaged** and **Managed** devices. For Android APP policies, select from **Unmanaged**, **Android device administrator**, and **Android Enterprise**.  |
+    | Public apps | Click **Select public apps** to choose the apps to target. |
+    | Custom apps | Click **Select custom apps** to select custom apps to tareget based on a Bundle ID. |
+    
+    The app(s) you have selected will appear in the public and custom apps list. 
+6. Click **Next** to display the **Data protection** page.<br>
+    This page provides settings for data loss prevention (DLP) controls, including cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps that this app protection policy applies.​<p>
+
+    **iOS/iPadOS data protection** - For information, see [iOS app protection policy settings - Data protection](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    **Android data protection** - For information, see [Android app protection policy settings - Data protection](~/apps/app-protection-policy-settings-android.md#data-protection).
+
+7. Click **Next** to display the **Access requirements** page.<br>
+    This page provides settings to allow you to configure the PIN and credential requirements that users must meet to access apps in a work context. 
+
+    **iOS/iPadOS access requirements** - For information, see [iOS app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    **Android access requirements** - For information, see [Android app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-android.md#access-requirements).
+
+8. Click **Next** to display the **Conditional launch** page.<br>
+    This page provides settings to set the sign-in security requirements for your access protection policy. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. Then select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting.
+
+    **iOS/iPadOS conditional launch** - For information, see [iOS app protection policy settings - Conditional-launch](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    **Android conditional launch** - For information, see [Android app protection policy settings - Conditional-launch](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+7. Click **Next** to display the **Assignments** page.<br>
+   The **Assignments** page allows you can assign the app protection policy to groups of users. 
+8. Click **Next: Review + create** to review the values and settings you entered for this app protection policy.
+9. When you are done, click **Create** to create the app protection policy in Intune. 
+
+## App protection policies for Windows 10 apps
+
+When you create an app protection policy for Windows 10 apps, you will following a classic Intune process flow.
+
+### Create a Windows 10 app protection policy
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. In Intune portal,choose **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+3. Select **Create policy**.
+
+   ![Screenshot of the 'Create policy' blade for Windows 10](./media/app-protection-policies/app-protection-add-policy.png)
+
+4. Specify a name for the policy, add a brief description, and select the platform type for your policy. You can create more than one policy for each platform.
+
+4. You can choose to **Target to all app types**. This option allows you to target your policy to apps on devices of any management state. During policy conflict resolution, this setting will be superseded if a user has a policy targeted for a specific management state. For more information, see [Target app protection policies based on device management state](~/apps/app-protection-policies.md#target-app-protection-policies-based-on-device-management-state).
+
+5. Select **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating. Select at least one app to create a policy.  
+
+6. Once you've selected the apps, choose **Select** to save your selection.
+
+7. On the **Add a policy** blade, select **Configure required settings** to open **Settings**.
 
    There are three categories of policy settings:
    - **Data protection** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
@@ -66,12 +130,12 @@ For information about adding your organization's line-of-business (LOB) apps to 
    > [!TIP]
    > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies. Note that when you create a new file it is considered a personal file. 
 
-7. Select **OK** to save this configuration. You're now back in the **Add a policy** blade.
-8. Select **Create** to create the policy and save your settings.
+8. Select **OK** to save this configuration. You're now back in the **Add a policy** blade.
+9. Select **Create** to create the policy and save your settings.
 
 New policies you create aren't deployed to any users until you explicitly do so. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users).
 
-## Deploy a policy to users
+### Deploy a Windows 10 policy to users 
 
 1. In the **App protection policies** pane, select a policy.
 
@@ -98,7 +162,7 @@ End users can download the apps from the App store or Google Play. For more info
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md)
 * [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md)
 
-## Change existing policies
+### Change existing Windows 10 policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies, users who are already signed in to the apps won’t see the changes for an eight-hour period.
 
 To see the effect of the changes immediately, the end user must sign out of the app, and then sign back in.
@@ -111,8 +175,7 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 3. Remove or add apps from the list and then select the **Save** icon to save your changes.
 
-### To change the list of user groups
-
+#### To change the list of user groups
 
 1. In  the **App protection policies** pane, select the policy you want to change.
 
@@ -126,7 +189,7 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 5. After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
 
-### To change policy settings
+### To change Windows 10 policy settings
 
 1. In the **App protection policies** pane, choose the policy you want to change.
 
