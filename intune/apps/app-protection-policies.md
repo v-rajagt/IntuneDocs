@@ -136,9 +136,7 @@ When you create an app protection policy for Windows 10 apps, you will following
 8. Select **OK** to save this configuration. You're now back in the **Add a policy** blade.
 9. Select **Create** to create the policy and save your settings.
 
-New Windows 10 policies that you create aren't deployed to any users until you explicitly do so. To assign a Windows 10 policy, see: 
-- 
-- [Assign a Windows 10 policy to users](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
+New Windows 10 policies that you create aren't assigned to any users until you explicitly do so. To assign a Windows 10 policy, see [Assign a Windows 10 policy to users](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
 
 ### Assign a Windows 10 policy to users 
 
