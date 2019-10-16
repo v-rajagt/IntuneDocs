@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -245,7 +245,20 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
   Choose **Not configured** to allow traffic to flow through the VPN tunnel or through the mobile network.
 
-## Work profile only 
+- **Recommended global proxy**: Choose **Enable** to add a global proxy to the devices. When enabled, all HTTP and HTTPS traffic on the device go through the proxy you enter. Using a proxy prevents direct access to the internet. **Not configured** (default) doesn't add a global proxy.
+
+  When enabled, also enter the **Type** of proxy. Your options:
+
+  - **Direct**: Choose this option to manually enter the proxy server details, including:
+    - **Host**: Enter the hostname or IP address of your proxy server. For example, enter `proxy.contoso.com` or `127.0.0.1`.
+    - **Port number**: Enter the TCP port number used by the proxy server. For example, enter `8080`.
+    - **Excluded hosts**: Enter a list of host names or IP addresses that won't use the proxy. This list can include an asterisk (`*`) wildcard and multiple hosts separated by semicolons (`;`) with no spaces. For example, enter `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Proxy Auto-Config**: Enter the **PAC URL** to a proxy auto-configuration script. For example, enter `https://proxy.contoso.com/proxy.pac`.
+
+    For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+
+## Work profile only
 
 ### Work profile settings
 
@@ -329,6 +342,13 @@ These password settings apply to personal profiles on devices that use a work pr
 
    > [!Note]
    > This setting only works for devices that are Android O and above.
+
+- **Prevent app installations from unknown sources in the personal profile**: By design, Android Enterprise work profile devices can't install apps from sources other than the Play Store. By nature, work profile devices are intended to be dual-profile:
+
+  - A work profile managed using MDM.
+  - A personal profile that's isolated from MDM management.
+
+  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) prevents app installations from unknown sources in the personal profile. **Block** allows app installations from sources other than the Play Store in the personal profile.
 
 ### Connectivity
 
