@@ -59,8 +59,14 @@ If after enrollment your organization enforces a new security requirement, such 
 
 To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios).  
 
-## Apple user enrollment versus device enrollment
-**Info about this topic?**
+## Enrollment type
+**Do we want to explain what enrollment type is? Give context for the "User enrollment" screen? And also maybe to help some users understand why they won't have the option to only secure work app/data?**  
+
+### Device enrollment  
+What is device enrollment?  
+
+### User enrollment  
+What is user enrollment?  
 
 ## Enroll your iOS device  
 
@@ -76,22 +82,22 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
     ![Example screenshot of Company Portal home page, "Notifications" prompt.](./media/ios-02-cp-enroll-1904.PNG)  
 
-3. On the **Set up access** screen, select **Begin.**  
+3. On the **Set up access** screen, select **Begin.**   
 
          ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-03-cp-enroll-1904.PNG)  
 
-4. The **Select device and enrollment type** screen appears. Tap either:
+4. The **Select device and enrollment type** screen appears. Tap either:  
         *  **(Organization) owns this device** if you received your device from your organization. Then skip to [Secure entire device](###secure-entire-device) in this article to finish setup.    
         * **I own this device** if you're using a personal device that you brought from home. Then continue to the next step.  
 
-If you don't see this screen, skip to [Secure entire device](###secure-entire-device) in this article to finish setup. 
+    If you don't see this screen, skip to [Secure entire device](###secure-entire-device) in this article to finish setup.  
 
 
-5. Choose how to protect the data on your device once it's enrolled. Tap either:
+5. Choose how to protect the data on your device once it's enrolled. Tap either:  
         * **Secure entire device** to secure all apps and data on the device. Then go to [Secure entire device](###secure-entire-device) in this article to finish setup.   
         *  **Secure work-related apps and data only** to secure only the apps and data you access with your work account. Then go to [Secure work-related apps and data](###secure-work-related-apps-and-data)
 
-### Secure entire device 
+### Secure entire device   
 
 1.  On the **Device management and privacy** screen, read through the list of device information your organization can and can't see. Then tap **Continue**.  
 
@@ -148,7 +154,7 @@ If you don't see this screen, skip to [Secure entire device](###secure-entire-de
 1. The **Download Microsoft Authenticator** screen appears. 
 Tap **Download from App Store**. When the App Store opens, install the app. Then return to Company Portal and tap **Continue**..  
 
-If you already have Microsoft Authenticator on your device, you won't see this screen. Skip to step 2.  
+    If you already have Microsoft Authenticator on your device, you won't see this screen. Skip to step 2.  
 
 2. On the **Device management and privacy** screen, read through the list of device information your organization can and can't see. Then tap **Continue**.  
 
@@ -177,7 +183,7 @@ If you already have Microsoft Authenticator on your device, you won't see this s
 
 5. On the **User Enrollment** screen, tap **Enroll My iPhone/iPad**.
 6. Enter the device password. Then tap **Install**.
-7. On the **Sign in** screen, enter the password for your work or school account. This password is the same as you managed Apple ID.  **Note from Laura: What do we mean by "managed Apple ID?" Does the customer know this phrase? OR would the customer better recognize it as the Apple ID they use at work or school?
+7. On the **Sign in** screen, enter the password for your work or school account. This password is the same as you managed Apple ID.  **Note from Laura: What do we mean by "managed Apple ID?" Does the customer know this phrase? OR would the customer better recognize it as the Apple ID they use at work or school?**  
 8. Tap **Sign in**.
 9. A success message will appear on the screen briefly when the profile is installed. To verify that the profile was installed go to the **Profiles & Device Management** settings. You should see the profile listed under **Mobile Device Management.**  
 10. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**. 
