@@ -19,7 +19,7 @@ Android device administrator (sometimes referred to "legacy" Android management 
 Because of these changes by Google, Intune users will be impacted in the following ways:  
 - Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through the summer of 2020. This date is when the next major version of Android is expected to be released.   
 - Device administrator-managed devices that are running Android 10 or later after the summer of 2020 will no longer be able to be entirely managed.       
-- Android devices that are managed by device administrator and that remain on versions earlier than Android 10 won't be affected and can continue to be entirely managed by device administrator.  
+- Device administrator-managed Android devices that remain on Android versions below Android 10 will not be impacted and can continue to be entirely managed with device administrator.    
 - For all devices running Android 10 and later, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This impacts the following Intune features after a device updates to Android 10 or later:  
     - Network access control for VPN will no longer work.   
     - Identifying devices as corporate-owned with an IMEI or serial number will not automatically mark devices as corporate-owned.  
@@ -61,7 +61,7 @@ You do not need to take any action but can consider updating your IT-pro guidanc
 #### Additional information 
 https://aka.ms/intune_fullscreen
 
-### Plan for change: New Windows update settings in Intune <!-- 4464404 -->
+### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
 Starting with the August release to the Intune service or 1908, we're adding in new "Deadline settings," which you can configure instead of the "Allow user to restart (engaged restart)" settings. We plan to disable the engaged-restart settings in the UI in 1909 or the September update and then completely remove them from the console toward the end of October.
 
 #### How does this affect me?
@@ -103,6 +103,7 @@ As we messaged in MC148476, posted last September 2018, and again in MC176794 ba
 
 #### How does this affect me?
 You are receiving this message because you are currently managing Windows 7 PCs using the legacy Intune PC software agent. Because less than a year remains before the end of Windows 7 extended support, we strongly encourage your organization to begin upgrading to Windows 10 as soon as possible.  
+
 PC management capabilities are built directly into the Windows 10 operating system, and you no longer need to install a client agent such as the Intune software client for Windows 7. Starting with Windows 8.1, Microsoft uses the Mobile Device Management (MDM) architecture to provision, configure, update, and manage Windows PCs. When you have set up Intune, you can simplify Windows enrollment by [enrolling Windows 10 PCs into Intune](..\windows-enroll.md) through the MDM channel. We recommend that you use this "agentless" MDM management solution to manage your Windows 10 PCs.
 
 #### What do I need to do to prepare for this change?
