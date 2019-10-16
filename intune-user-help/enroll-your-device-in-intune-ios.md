@@ -152,7 +152,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 ### Secure work-related apps and data  
 1. The **Download Microsoft Authenticator** screen appears. 
-Tap **Download from App Store**. When the App Store opens, install the app. Then return to Company Portal and tap **Continue**..  
+Tap **Download from App Store**. When the App Store opens, install the app. Then return to Company Portal and tap **Continue**.    
 
     If you already have Microsoft Authenticator on your device, you won't see this screen. Skip to step 2.  
 
@@ -185,7 +185,7 @@ Tap **Download from App Store**. When the App Store opens, install the app. Then
 6. Enter the device password. Then tap **Install**.
 7. On the **Sign in** screen, enter the password for your work or school account. This password is the same as you managed Apple ID.  **Note from Laura: What do we mean by "managed Apple ID?" Does the customer know this phrase? OR would the customer better recognize it as the Apple ID they use at work or school?**  
 8. Tap **Sign in**.
-9. A success message will appear on the screen briefly when the profile is installed. To verify that the profile was installed go to the **Profiles & Device Management** settings. You should see the profile listed under **Mobile Device Management.**  
+9. A success message will appear on the screen briefly when the profile is installed. To verify that the profile was installed, go to the **Profiles & Device Management** settings. You should see the profile listed under **Mobile Device Management.**  
 10. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**. 
 11. You'll know that setup is complete when all items in the list show a green circle. Tap **Done**.  
 
