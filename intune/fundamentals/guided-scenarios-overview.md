@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -21,9 +21,9 @@ ms.collection: M365-identity-device-management
 
 # Intune guided scenarios overview 
 
-A guided scenario is a customized series of steps (workflow) centered around one end-to-end use-case. Common scenarios are defined based on the role an admin, user, or device plays in your organization. These workflows typically require a collection of carefully orchestrated profiles, settings, applications, and security controls to provide the best user experience and security.    
+A guided scenario is a customized series of steps centered around one end-to-end use-case. Common scenarios are based on the role an admin, user, or device plays in your organization. These roles typically require a collection of carefully orchestrated profiles, settings, applications, and security controls to provide the best user experience and security.    
 
-If you are not familiar with all the steps and resources needed to implement a particular Intune scenario, guided scenarios may be used as your starting point. You will understand the resources to use and how they should be configured. The guided scenario will assemble policies, apps, assignments, and other management configurations automatically. Additionally, the guided scenarios may deliberately omit certain options not applicable or uncommon for the given scenario. 
+If you are not familiar with all the steps and resources needed to implement a particular Intune scenario, guided scenarios may be used as your starting point. The guided scenario will assemble policies, apps, assignments, and other management configurations automatically. Additionally, the guided scenarios may deliberately omit certain options not applicable or uncommon for the given scenario. 
 
 Guided scenarios are not a different management space from Intune’s normal workflows. These workflows are intended to be used in conjunction with Intune’s existing workflows for profiles, apps, and policies. Upon completing a guided scenario, all future management of the scenario must take place in the existing menus for policies, apps, and profiles. A guided scenario does not save a “guided scenario” resource type or track future changes made to the resources. Every resource created by a guided scenario will appear in its respective workload. All options, even those options omitted in the guided scenario, will be available for editing in the existing menus.  
 
@@ -46,7 +46,7 @@ All guided scenarios are available from **[Device Management portal](https://dev
 
 The guided scenario begins with an introduction explaining the purpose of the scenario and any prerequisites required to complete the setup. At this point, your admin permissions are checked to verify you have all the necessary privileges to complete the scenario.  
 
-After all prerequisite checks pass, the scenario offers appropriate settings for customization. Guided scenarios aim to only require input for the minimal number of settings and hide uncommon or advanced settings until needed, or based on special circumstances. Each guided scenario’s links to documentation that provides additional details. 
+After all prerequisite checks pass, the scenario offers appropriate settings for customization. Guided scenarios aim to only require input for the minimal number of settings and hide uncommon or advanced settings until needed, or based on special circumstances. Each guided scenario links to documentation that provides additional details. 
 
 After all mandatory settings are entered, the guided scenario presents a summary of the settings entered and the resources the scenario requires. At this point, nothing has been saved unless explicitly noted.
 
@@ -58,7 +58,7 @@ If there is an error deploying the scenario, all changes will be reverted.
 
 ### Editing 
 
-Guided scenarios cannot be used to edit existing resources. Once created, all resources, groups, and assignments must be edited using the existing workloads. A workload is simply a sub-area of a service. 
+Guided scenarios cannot be used to edit existing resources. Once created, all resources, groups, and assignments must be edited using the existing workloads.
 
 ### Monitoring 
 
