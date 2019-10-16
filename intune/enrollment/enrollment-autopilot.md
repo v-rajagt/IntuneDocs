@@ -116,7 +116,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
     - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user). We allow the user joining the device to be a local Administrator by adding them to the local Admin group. We don't enable the user as the default administrator on the device.
     - **Allow White Glove OOBE** (requires Windows 10, version 1903 or later; [additional physical requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Choose **Yes** to allow white glove support.
-    - **Apply device name template** (requires Windows 10, version 1809 or later): Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
+    - **Apply device name template** (requires Windows 10, version 1809 or later, and Azure AD join type): Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. You can only provide a pre-fix for hybrid devices in a [domain join profile](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile). 
     - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
 8. Select **Next**.
@@ -148,6 +148,18 @@ After you've created an Autopilot deployment profile, you can edit certain parts
 > [!NOTE]
 > Changes to the profile are applied to devices assigned to that profile. However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled.
 
+## Edit Autopilot device attributes
+After you've uploaded an Autopilot device, you can edit certain attributes of the device.
+
+1. In Intune in the Azure portal, choose **Device enrollment**.
+2. Under **Windows enrollment**, in the **Windows Autopilot** section, choose **Devices**.
+3. Select the device you want to edit.
+4. In the pane on the right of the screen, you can edit the device name, group tag, or User Friendly Name (if you've assigned a user).
+5. Select **Save**.
+
+> [!NOTE]
+> Device names can be configured for all devices, but are ignored in Hybrid Azure AD joined deployments. Device name still comes from the domain join profile for Hybrid Azure AD devices.
+
 ## Alerts for Windows Autopilot unassigned devices  <!-- 163236 -->  
 
 Alerts will show how many Autopilot program devices don't have Autopilot deployment profiles. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows Autopilot devices and detailed information about them.
@@ -173,6 +185,11 @@ Prerequisites: Azure Active Directory Company Portal has been configured and Win
     ![Screenshot of friendly name](./media/enrollment-autopilot/friendly-name.png)
 
 4. Choose **Ok**.
+
+## Autopilot deployments report
+You can see details on each device deployed through Windows Autopilot.
+To see the report, go to **Intune** and, under **Monitor**, choose **Autopilot deployments**.
+The data is available for 30 days after deployment.
 
 
 ## Delete Autopilot devices
