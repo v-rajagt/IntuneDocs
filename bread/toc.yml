@@ -12,29 +12,28 @@
       items:
         - name: Intune for Education
           tocHref: /intune-education/
-          topicHref: /intune-education
+          topicHref: /intune-education/
         - name: Intune user help
           tocHref: /intune-user-help/
-          topicHref: /intune-user-help
+          topicHref: /intune-user-help/
         - name: Apps
-          tocHref: /intune/apps
-          topicHref: /intune/apps
+          tocHref: /intune/apps/
+          topicHref: /intune/apps/
         - name: Fundamentals
-          tocHref: /intune/fundamentals
-          topicHref: /intune/fundamentals
+          tocHref: /intune/fundamentals/
+          topicHref: /intune/fundamentals/
         - name: Enrollment
-          tocHref: /intune/enrollment
-          topicHref: /intune/enrollment
+          tocHref: /intune/enrollment/
+          topicHref: /intune/enrollment/
         - name: Remote actions
-          tocHref: /intune/remote-actions
-          topicHref: /intune/remote-actions
+          tocHref: /intune/remote-actions/
+          topicHref: /intune/remote-actions/
         - name: Configuration
-          tocHref: /intune/configuration
-          topicHref: /intune/configuration
+          tocHref: /intune/configuration/
+          topicHref: /intune/configuration/
         - name: Protect
-          tocHref: /intune/protect
-          topicHref: /intune/protect
+          tocHref: /intune/protect/
+          topicHref: /intune/protect/
         - name: Developer
-          tocHref: /intune/developer
-          topicHref: /intune/developer
-                 
+          tocHref: /intune/developer/
+          topicHref: /intune/developer/
