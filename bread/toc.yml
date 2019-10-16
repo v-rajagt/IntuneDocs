@@ -4,11 +4,11 @@
   items:
   - name: Enterprise Mobility + Security
     tocHref: /enterprise-mobility-security/
-    topicHref: /enterprise-mobility-security
+    topicHref: /enterprise-mobility-security/
     items:
     - name: Intune
       tocHref: /intune/
-      topicHref: /intune
+      topicHref: /intune/
       items:
         - name: Intune for Education
           tocHref: /intune-education/
