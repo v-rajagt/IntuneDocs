@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -41,7 +41,7 @@ If you want to evaluate a cloud-managed modern desktop in your own organization,
 
 ## Step 1 - Introduction
 
-Using this guided scenario, you'll set up a test user, enroll a device in Intune, and deploy the device with Intune-recommended settings, as well as Windows 10 and Office ProPlus. Your device will also be configured for Microsoft Defender Advanced Threat Protection, if you choose to enable this protection in Intune. The user you set up and the device that you enroll will be added to a new security groups and will be configured with the recommended settings for security and productivity. 
+Using this guided scenario, you'll set up a test user, enroll a device in Intune, and deploy the device with Intune-recommended settings, as well as Windows 10 and Office ProPlus. Your device will also be configured for Microsoft Defender Advanced Threat Protection, if you choose to [enable this protection in Intune](~/protect/advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune). The user you set up and the device that you enroll will be added to a new security groups and will be configured with the recommended settings for security and productivity. 
 
 ### What you will need to continue
 
@@ -73,6 +73,20 @@ The final step allows you to review a summary of the settings you configured. On
 
 > [!IMPORTANT]
 > Once the guided scenario is complete it will display a summary. You can modify the resources listed in the summary later, however the table displaying these resouces will not be saved.
+
+### Verification
+1. Verify that the selected is assigned MDM user scope
+    - Ensure [MDM User scope](~/enrollment/windows-enroll.md#enable-windows-10-automatic-enrollment) is:
+        - Set to **All** for the **Microsoft Intune** app or,
+        - Set to **Some**. Also, add the user group created by this guided scenario.
+2. Verify that the selected user is able to join devices to Azure Active Directory.
+    - Ensure AAD join is:
+        - Set to **All** or,
+        - Set to **Some**. Also add the user group created by this guided scenario.
+3. Follow the appropriate steps on the device to join it to Azure AD based on the following:
+    - With Autopilot. For more information, see [Windows Autopilot user-driven mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven).
+    - Without Autopilot: For more information, see [Join a Windows 10 device to Azure AD during the first-run experience](https://docs.microsoft.com/azure/active-directory/devices/azuread-joined-devices-frx#joining-a-device).
+
 ### What happens when I click Deploy?
 The user and device will be added to new security groups. They'll also be configured with Intune-recommended settings for security and productivity at work or school. After the user joins the device to Azure AD, additional apps and settings will be added to the device. To learn more about these additional configurations, see [Quickstart: Enroll your Windows 10 device](~/enrollment/quickstart-enroll-windows-device.md).
 
@@ -94,18 +108,6 @@ The Enrollment status page will be configured to be enabled only for Autopilot d
 The guided scenario will also assign the user to the selected Autopilot device for a personalized setup experience.
 
 #### Post-requisites
-1. Verify that the selected is assigned MDM user scope
-    - Ensure [MDM User scope](~/enrollment/windows-enroll.md#enable-windows-10-automatic-enrollment) is:
-        - Set to **All** for the **Microsoft Intune** app or,
-        - Set to **Some**. Also, add the user group created by this guided scenario.
-2. Verify that the selected user is able to join devices to Azure Active Directory.
-    - Ensure AAD join is:
-        - Set to **All** or,
-        - Set to **Some**. Also add the user group created by this guided scenario.
-3. Follow the appropriate steps on the device to join it to Azure AD based on the following:
-    - With Autopilot. For more information, see [Windows Autopilot user-driven mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven).
-    - Without Autopilot: For more information, see [Join a Windows 10 device to Azure AD during the first-run experience](https://docs.microsoft.com/azure/active-directory/devices/azuread-joined-devices-frx#joining-a-device).
-    - 
 Once the user joins the device to Azure Active Directory, the following configurations will be applied to the device:
 1. Office 365 ProPlus will be automatically installed on the Cloud-managed PC. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. Office 365 ProPlus is updated regularly with new features, unlike non-subscription versions of Office. For a list of new features, see What's new in Office 365.
 2. Windows security baselines will be installed on the Cloud-managed PC. If you have setup Microsoft Defender Advanced Threat Protection, the guided scenario will also configure baseline settings for Defender. Defender Advanced Threat Protection provides a new post-breach layer of protection to the Windows 10 security stack. With a combination of client technology built into Windows 10 and a robust cloud service, it will help detect threats that have made it past other defenses. 
