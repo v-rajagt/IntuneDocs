@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,17 +55,6 @@ In this example, the admin has applied app protection policies to the Outlook ap
 
 ## Prerequisites
 
-To help you get starting, this guided scenario pre-selects the following mobile apps to protect on iOS and Android devices:
-- Microsoft Excel 
-- Microsoft Word 
-- Microsoft Teams 
-- Microsoft Edge 
-- Microsoft PowerPoint 
-- Microsoft Outlook 
-- Microsoft OneDrive 
-
-This guided scenario will also configure these apps to open weblinks in Edge to guarantee work sites are opened in a protected browser.
-
 You’ll need the follow Intune admin permissions:
     - Managed apps read, create, delete, and assign permissions
     - Policy sets read, create, and assign permissions
@@ -73,16 +62,11 @@ You’ll need the follow Intune admin permissions:
 
 ## Step 1 - Introduction
 
-By following the **Intune App Protection** guided scenario, you will prevent data from being shared or leaked outside of your organization. In this scenario, you’ll block users from copying and pasting data between managed Office apps and non-managed apps on iOS and Android devices.
+By following the **Intune App Protection** guided scenario, you will prevent data from being shared or leaked outside of your organization. 
 
 Assigned iOS and Android users must enter a PIN each time they open an Office app. After 5 failed PIN attempts, users must reset their PIN. If you already require a device PIN, users won't be impacted.​
 
 ### What you will need to continue
-
-You’ll need the follow Intune admin permissions:
-    - Managed apps read, create, delete, and assign permissions
-    - Policy sets read, create, and assign permissions
-    - Organization read permission
 
 We'll ask you about the apps your users need, and what's needed to access them. Make sure you have the following information handy:
 - List of Office apps approved for corporate use.
@@ -94,9 +78,23 @@ In this step, you must enter a **Prefix** and **Description** for your new App p
 
 > [!TIP]
 > Consider making a note of the resources that will be created, so that you can refer to them later.
+
 ## Step 3 - Apps
 
-Modify the list of policy-managed apps that you want to protect. Add or remove apps from this list. When you've selected the apps, click **Next**.
+To help you get started, this guided scenario pre-selects the following mobile apps to protect on iOS and Android devices:
+- Microsoft Excel 
+- Microsoft Word 
+- Microsoft Teams 
+- Microsoft Edge 
+- Microsoft PowerPoint 
+- Microsoft Outlook 
+- Microsoft OneDrive 
+
+This guided scenario will also configure these apps to open weblinks in Edge to guarantee work sites are opened in a protected browser.
+
+Modify the list of policy-managed apps that you want to protect. Add or remove apps from this list. 
+
+When you've selected the apps, click **Next**.
 
 ## Step 4 - Configuration
 
