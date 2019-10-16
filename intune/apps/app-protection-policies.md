@@ -56,7 +56,7 @@ When you create an app protection policy for iOS/iPadOS and Android apps, you wi
 3. Select **Create policy** and select either **iOS/iPadOS** or **Android**. The **Create policy** blade is displayed.
 4. On the **Basics** page, add the following values:
 
-    | Value/Option | Description |
+    | Value | Description |
     |--------------|------------------------------------------------|
     | Name | The name of this policy set. |
     | Description | [Optional] The description of this policy set. |
@@ -78,21 +78,24 @@ When you create an app protection policy for iOS/iPadOS and Android apps, you wi
     The app(s) you have selected will appear in the public and custom apps list. 
 6. Click **Next** to display the **Data protection** page.<br>
     This page provides settings for data loss prevention (DLP) controls, including cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps that this app protection policy applies.​<p>
-
-    **iOS/iPadOS data protection** - For information, see [iOS app protection policy settings - Data protection](~/apps/app-protection-policy-settings-ios.md#data-protection).
-    **Android data protection** - For information, see [Android app protection policy settings - Data protection](~/apps/app-protection-policy-settings-android.md#data-protection).
+    <p>
+    **Data protection settings**:<br>
+    - **iOS/iPadOS data protection** - For information, see [iOS app protection policy settings - Data protection](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Android data protection** - For information, see [Android app protection policy settings - Data protection](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. Click **Next** to display the **Access requirements** page.<br>
     This page provides settings to allow you to configure the PIN and credential requirements that users must meet to access apps in a work context. 
-
-    **iOS/iPadOS access requirements** - For information, see [iOS app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-ios.md#access-requirements).
-    **Android access requirements** - For information, see [Android app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-android.md#access-requirements).
+    <p>
+    **Access requirements settings**:<br>
+    - **iOS/iPadOS access requirements** - For information, see [iOS app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Android access requirements** - For information, see [Android app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. Click **Next** to display the **Conditional launch** page.<br>
     This page provides settings to set the sign-in security requirements for your access protection policy. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. Then select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting.
-
-    **iOS/iPadOS conditional launch** - For information, see [iOS app protection policy settings - Conditional-launch](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
-    **Android conditional launch** - For information, see [Android app protection policy settings - Conditional-launch](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+    <p>
+    **Conditional launch settings**:<br>
+    - **iOS/iPadOS conditional launch** - For information, see [iOS app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Android conditional launch** - For information, see [Android app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 7. Click **Next** to display the **Assignments** page.<br>
    The **Assignments** page allows you can assign the app protection policy to groups of users. 
@@ -108,7 +111,7 @@ When you create an app protection policy for Windows 10 apps, you will following
 2. In Intune portal,choose **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 3. Select **Create policy**.
 
-   ![Screenshot of the 'Create policy' blade for Windows 10](./media/app-protection-policies/app-protection-add-policy.png)
+    <img alt="Screenshot of the 'Create policy' blade for Windows 10" src="~/apps/media/app-protection-policies/app-protection-add-policy.png" width="350">
 
 4. Specify a name for the policy, add a brief description, and select the platform type for your policy. You can create more than one policy for each platform.
 
@@ -133,9 +136,11 @@ When you create an app protection policy for Windows 10 apps, you will following
 8. Select **OK** to save this configuration. You're now back in the **Add a policy** blade.
 9. Select **Create** to create the policy and save your settings.
 
-New policies you create aren't deployed to any users until you explicitly do so. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users).
+New Windows 10 policies that you create aren't deployed to any users until you explicitly do so. To assign a Windows 10 policy, see: 
+- 
+- [Assign a Windows 10 policy to users](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
 
-### Deploy a Windows 10 policy to users 
+### Assign a Windows 10 policy to users 
 
 1. In the **App protection policies** pane, select a policy.
 
