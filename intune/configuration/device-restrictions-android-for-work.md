@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 10/16/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -245,7 +245,9 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
   Choose **Not configured** to allow traffic to flow through the VPN tunnel or through the mobile network.
 
-- **Recommended global proxy**: Choose **Enable** to add a global proxy to the devices. When enabled, all HTTP and HTTPS traffic on the device go through the proxy you enter. Using a proxy prevents direct access to the internet. **Not configured** (default) doesn't add a global proxy.
+- **Recommended global proxy**: Choose **Enable** to add a global proxy to the devices. When enabled, HTTP and HTTPS traffic, including some apps on the device, use the proxy you enter. This proxy is only a recommendation. It's possible some apps won't use the proxy. **Not configured** (default) doesn't add a recommended global proxy.
+
+  For more information on this feature, see [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (opens an Android site).
 
   When enabled, also enter the **Type** of proxy. Your options:
 
