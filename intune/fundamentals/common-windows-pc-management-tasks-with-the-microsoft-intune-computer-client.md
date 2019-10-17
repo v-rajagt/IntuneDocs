@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
@@ -29,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Common Windows PC management tasks with the Intune software client
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic lists tasks you can do to manage desktops that you manage as PCs by installing the Intune software client. This topic does not cover managing PCs as mobile devices. If you have not yet installed the client on your PCs, see [Install the Intune software client](install-the-windows-pc-client-with-microsoft-intune.md).
 

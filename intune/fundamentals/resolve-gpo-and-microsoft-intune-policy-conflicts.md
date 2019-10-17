@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
@@ -29,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Resolve Group Policy Objects (GPO) and Microsoft Intune policy conflicts
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.

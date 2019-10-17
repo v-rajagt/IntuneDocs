@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
@@ -29,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # View hardware and software inventory for Windows PCs
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client. If you want to view inventory for Windows PCs enrolled as mobile devices, see [View device details in Intune](../remote-actions/device-inventory.md).
