@@ -2,6 +2,7 @@
 # required metadata
 
 title: Data collection in Intune
+titleSuffix: Microsoft Intune
 description: Learn how personal data is collected in Intune.
 keywords:
 author: ErikjeMS
@@ -10,6 +11,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e

@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid:  
@@ -79,7 +80,7 @@ Setup of *EMM Connect* for Wandera requires a one-time configuration process tha
 
 7. While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization with Wandera.
 
-   ![Integrations and permissions](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![Synchronization group](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. Return to the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) console, and edit the Wandera MTD Connector. Set the available toggles to **On**, and the **Save** the configuration.  
 

@@ -2,6 +2,7 @@
 # required metadata
 
 title: Audit, export, or delete personal data
+titleSuffix: Microsoft Intune
 description: Learn how to audit, export, or delete personal data.
 keywords:
 author: ErikjeMS
@@ -10,6 +11,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4

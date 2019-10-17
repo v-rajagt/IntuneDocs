@@ -3,7 +3,7 @@
 
 title: Integrate Jamf Pro with Microsoft Intune for compliance
 titleSuffix: Microsoft Intune
-description: Use Microsoft Intune compliance policies with Azure Active Directory Conditional Access to help secure Jamf-managed devices.
+description: Use Microsoft Intune compliance policies with Azure Active Directory Conditional Access to help integrate and secure Jamf-managed devices.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6

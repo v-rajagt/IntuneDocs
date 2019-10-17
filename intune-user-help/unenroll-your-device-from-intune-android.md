@@ -11,6 +11,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 searchScope:
@@ -68,7 +69,7 @@ Alternatively, tap **Settings** > **Apps** > **Company Portal** > **Uninstall**.
 
 As a last resort, you can uninstall the app from your device as a device administrator.  
 
-If you have a company-owned device, your organization might require that Company Portal be on your device at all times. If you uninstall it, you might lose access to protected company resources such as email, apps, Wi-Fi, or VPN, until the app is reinstalled. For more information about installing, updating, or removing required apps, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune).
+If you have a company-owned device, your organization might require that Company Portal be on your device at all times. If you uninstall it, you might lose access to protected company resources such as email, apps, Wi-Fi, or VPN, until the app is reinstalled. For more information about installing, updating, or removing required apps, see [Add apps to Microsoft Intune](/intune/apps/apps-add#apps-that-are-added-automatically-by-intune).
 
 Here's how to disable Company Portal as a device administrator. The actual names of each setting might vary on your Android device.  
 

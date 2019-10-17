@@ -10,9 +10,9 @@ manager: dougeby
 ms.date: 06/15/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology:
-ms.assetid: 
+ms.assetid: 1f104923-12df-453c-9c20-942ef65a0945
 
 # optional metadata
 
@@ -37,6 +37,8 @@ When using Intune on Azure to manage your organization’s Windows devices, cons
 We recommend that you use [Mobile Device Management (MDM) to manage your Windows 10 devices](../configuration/device-restrictions-windows-10.md) instead of using the legacy Intune PC client. The ability to manage Windows 10 via MDM is available in the Intune on Azure portal. Windows 10 MDM provides many new management and security capabilities that are not available via the legacy Intune PC client.
 
 ## Legacy PC Client features are only available in the Silverlight console
+
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 The Intune PC Client management workflows use the [Silverlight-based Intune Admin Console](https://manage.microsoft.com/), which has the following consequences:
 

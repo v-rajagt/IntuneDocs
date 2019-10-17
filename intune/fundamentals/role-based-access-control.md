@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
@@ -70,6 +71,7 @@ You can create your own roles with custom permissions. For more information abou
 | Security Reader | Read only | Read only |
 | Compliance Administrator | None | Read only |
 | Compliance Data Administrator | None | Read only |
+| Global Reader | Read Only | Read Only |
 
 > [!TIP]
 > Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional Access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

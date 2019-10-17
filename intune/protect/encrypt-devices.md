@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Encrypt devices in Microsoft Intune by using the platforms supported encryption methods 
+title: Encrypt devices with the platforms supported encryption method 
 titleSuffix: Microsoft Intune
 description: Encrypt devices with built-in encryption methods like BitLocker or FileVault, and manage the recovery keys for those encrypted devices from within the Intune portal. 
 keywords:
@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid:  

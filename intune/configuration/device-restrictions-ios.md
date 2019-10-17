@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 09/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology:
 
@@ -380,7 +381,7 @@ Applies to devices running iOS 9.3 or newer.
 
 ### Settings apply to: Automated device enrollment (supervised)
 
-- **Type of apps list**: Create a list of apps to show or hide. Your options:
+- **Type of apps list**: Create a list of apps to show or hide. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094). Your options:
 
   - **Hidden apps**: Enter a list of apps that are hidden from users. Users can't view, or open these apps.
   - **Visible apps**: Enter a list of apps that users can view and launch. No other apps can be viewed or launched.

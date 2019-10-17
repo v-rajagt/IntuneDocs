@@ -8,9 +8,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/06/2019
-
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.reviewer: shpate
@@ -141,7 +141,8 @@ The compliance policy determines the level of risk that you consider as acceptab
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Microsoft Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. 
+5. Under **Settings**, select **Microsoft Defender ATP**.
+6. Set **Require the device to be at or under the machine risk score** to your preferred level. 
    
    Threat level classifications are [determined by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -151,7 +152,7 @@ The compliance policy determines the level of risk that you consider as acceptab
    - **High**: This level is the least secure and allows all threat levels. So devices that with high, medium, or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).  
-7. [Assign the device compliance policy](create-compliance-policy.md#assign-user-groups) to applicable groups.
+7. [Assign the device compliance policy](create-compliance-policy.md#assign-the-policy) to applicable groups.
 
 
 

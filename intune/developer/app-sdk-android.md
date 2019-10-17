@@ -7,9 +7,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -651,15 +652,6 @@ String toString();
 
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` will always return a non-null App Policy, even if the device or app is not under an Intune management policy.
-
-### Example: Determine if PIN is required for the app
-
-If the app has its own PIN user experience, you might want to disable it if the IT administrator has configured the SDK to prompt for an app PIN. To determine if the IT administrator has deployed the app PIN policy to this app, for the current end user, call the following method:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
 
 ### Example: Determine if PIN is required for the app
 
@@ -2047,7 +2039,7 @@ enum StringQueryType {
 
 Your app can also request the raw data as a list of sets of key-value pairs.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 

@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid:
@@ -1629,7 +1630,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 
 - **Email content execution type**  
   This rule blocks the following file types from being run or launched from an email seen in either Microsoft Outlook or webmail (such as Gmail.com or Outlook.com): Executable files (such as .exe, .dll, or .scr) Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file) Script archive files.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Learn more](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Default**: Block
 
@@ -1639,7 +1640,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 
 - **Network protection type**  
   This policy allows you to turn on network protection (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the "Block" option, users and apps are blocked from connecting to dangerous domains. You can see this activity in Windows Defender Security Center. If you enable this policy with the "Audit" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Windows Defender Security Center. If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Windows Defender Security Center. If you don't configure this policy, network blocking is disabled by default.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Learn more](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Default**: Enable
   

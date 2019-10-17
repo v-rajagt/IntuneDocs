@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid:  
@@ -74,7 +75,7 @@ Review the following sections to troubleshoot email notification issues.
       ![Nslookup results](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   You can also test the Autodiscover service from the internet at https://testconnectivity.microsoft.com. Or test it from a local domain by using the Microsoft Connectivity Analyzer tool. For more information, see [Microsoft Connectivity Analyzer tool](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). If necessary, [download the Microsoft Connectivity Analyzer tool](http://go.microsoft.com/fwlink/?LinkID=313782).
+   You can also test the Autodiscover service from the internet at https://testconnectivity.microsoft.com. Or test it from a local domain by using the Microsoft Connectivity Analyzer tool. For more information, see [Microsoft Connectivity Analyzer tool](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). If necessary, [download the Microsoft Connectivity Analyzer tool](https://go.microsoft.com/fwlink/?LinkID=313782).
 
 
 ### Check Autodiscovery  
