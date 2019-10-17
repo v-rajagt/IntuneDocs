@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -53,7 +54,7 @@ The specific enrollment restrictions that you can create include:
 - Platform operating system version for iOS, Android device administrator, Android Enterprise work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android device administrator, Android Enterprise work profile, macOS, Windows, and Windows Mobile only).
+- Restrict [personally owned devices](device-enrollment.md#bring-your-own-device) (iOS, Android device administrator, Android Enterprise work profile, macOS, Windows, and Windows Mobile only).
 
 ## Default restrictions
 
@@ -165,6 +166,12 @@ The following personal enrollment methods will also be blocked:
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 \* These won't be blocked if registered with Autopilot.
+
+
+## Blocking personal iOS devices
+By default, Intune classifies iOS devices as personally-owned. To be classified as corporate-owned, an iOS device must fulfill one of the following conditions:
+- Registered with a serial number or IMEI.
+- Enrolled by using Automated Device Enrollment (formerly Device Enrollment Program)
 
 
 ## Change enrollment restriction priority
