@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -73,14 +73,16 @@ You can choose the following options if you choose variable as the value type:
 
 | Option | Example |
 |----|----|
-| Mail | john@contoso.com |
-| User Principal Name | john@contoso.com |
-| Partial UPN | john |
-| Domain | contoso.com |
-| User name | John Doe |
+| AAD Device ID | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | Account ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Intune Device ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Domain | contoso.com |
+| Mail | john@contoso.com |
+| Partial UPN | john |
 | User ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| Device ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| User name | John Doe |
+| User Principal Name | john@contoso.com |
+
 
 ### Allow only configured organization accounts in multi-identity apps 
 
@@ -91,9 +93,8 @@ For Android devices, use the following key/value pairs:
 | **Values** | <ul><li>One or more <code>;</code> delimited UPNs.</li><li>Only account(s) allowed are the managed user account(s) defined by this key.</li><li> For Intune enrolled devices, the <code>{{userprincipalname}}</code> token may be used to represent the enrolled user account.</li></ul> |
 
    > [!NOTE]
-   > You must use Outlook for Android 2.2.222 or later when allowing only configured organization accounts with multi-identity.<p></p>
+   > You must use Outlook for Android 2.2.222 and later, Word, Excel, PowerPoint for Android 16.0.9327.1000 and later or OneDrive for Android 5.28 and later when allowing only configured organization accounts with multi-identity.<p></p>
    > As the Microsoft Intune administrator, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.<p></p>
-   > For Microsoft Word, Microsoft Excel, Microsoft PowerPoint, you must use app version 16.0.9327.1000 and later. 
 
 ## Enter the JSON editor
 
