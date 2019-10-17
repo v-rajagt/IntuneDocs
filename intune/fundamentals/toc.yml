@@ -44,9 +44,9 @@
   - name: Guided scenarios
     items: 
     - name: Guided scenarios overview
-    - href: guided-scenarios-overview.md 
+      href: guided-scenarios-overview.md 
     - name: Deploy Microsoft Edge for Mobile 
-    - href: guided-scenarios-edge.md 
+      href: guided-scenarios-edge.md 
   - name: Common scenarios
     href: common-scenarios.md
   - name: Technology decisions for BYOD with EMS
