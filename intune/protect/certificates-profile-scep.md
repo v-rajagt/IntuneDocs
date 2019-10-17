@@ -6,9 +6,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/18/2019
-ms.topic: article
-ms.prod:
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 
@@ -116,15 +116,13 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Only applicable for Windows and domain-joined devices)*
         - **{{MEID}}**
-        
+
         You can specify these variables, followed by the text for the variable, in the textbox. For example, the common name for a device named *Device1* can be added as **CN={{DeviceName}}Device1**.
 
         > [!IMPORTANT]  
         > - When you specify a variable, enclose the variable name in curly brackets { } as seen in the example, to avoid an error.  
         > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
         > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.  
- 
-
 
    - **Subject alternative name**:  
      Select how Intune automatically creates the subject alternative name (SAN) in the certificate request. Options for the SAN depend on the Certificate type you selected; either **User** or **Device**.  
