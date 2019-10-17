@@ -61,10 +61,11 @@ When you create an app protection policy for iOS/iPadOS and Android apps, you fo
     | Name | The name of this app protection policy. |
     | Description | [Optional] The description of this app protection policy. |
 
-   <p>
+
     The **Platform** value is set based on your above choice.
-    <p>
-   ![Screenshot of the Basics page of the Create policy blade](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+
+    ![Screenshot of the Basics page of the Create policy blade](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+
 5. Click **Next** to display the **Apps** page.<br>
     The **Apps** page allows you to choose how you want to apply this policy to apps on different devices. You must add at least one app.<p>
     
@@ -91,7 +92,7 @@ When you create an app protection policy for iOS/iPadOS and Android apps, you fo
     - **Android access requirements** - For information, see [Android app protection policy settings - Access requirements](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. Click **Next** to display the **Conditional launch** page.<br>
-    This page provides settings to set the sign-in security requirements for your access protection policy. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. Then select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting.
+    This page provides settings to set the sign-in security requirements for your app protection policy. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. Then select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting.
 
     **Conditional launch settings**:<br>
     - **iOS/iPadOS conditional launch** - For information, see [iOS app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
