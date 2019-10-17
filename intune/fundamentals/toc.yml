@@ -47,6 +47,8 @@
       href: guided-scenarios-overview.md 
     - name: Deploy Microsoft Edge for Mobile 
       href: guided-scenarios-edge.md 
+    - name: Cloud-managed Modern Desktop
+      href: guided-scenarios-cloud-managed-pc.md      
   - name: Common scenarios
     href: common-scenarios.md
   - name: Technology decisions for BYOD with EMS
