@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
@@ -29,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Use policies to help protect Windows PCs that run the Intune client software
 
-[!INCLUDE [classic-portal](../intune/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs that the [Intune client software](../manage-windows-pcs-with-microsoft-intune.md) manages.
 

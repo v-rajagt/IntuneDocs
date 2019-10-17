@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 06/08/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
@@ -28,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 # What's new in the Intune classic portal - previous months
 
-[!INCLUDE [classic-portal](../intune/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This page lists new features and notices previously announced on the [What's new page](whats-new.md) for the Intune classic portal.
 

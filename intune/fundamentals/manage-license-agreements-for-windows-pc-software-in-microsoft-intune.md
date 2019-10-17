@@ -11,8 +11,8 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology:
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 
 # optional metadata
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Manage license agreements for Windows PC software in Microsoft Intune
 
-[!INCLUDE [classic-portal](../intune/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements. You can also do this for Microsoft or non-Microsoft software that was purchased by other means. You can organize this information into logical groups.
 

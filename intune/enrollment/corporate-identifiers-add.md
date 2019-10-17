@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -127,7 +128,7 @@ For detailed specifications about International Mobile Equipment Identifiers, se
 
 ## Change device ownership
 
-Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**.
+Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**. When a device's ownership type is changed from Personal to Corporate, Intune deletes all app information previously collected from that device within 7 days. If applicable, Intune will also delete the phone number on record. 
 
 **To change device ownership:**
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), go to **Devices** and choose the device.
