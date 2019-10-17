@@ -37,7 +37,7 @@ The app protection that you enable will enforce the following actions:
 
 Office mobile apps, as well as Microsoft Edge for Mobile, support dual identity. Dual identity allows the apps to manage work files separately from personal files. 
 
-![Image of corporate data versus personal data](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile_01.png)
+![Image of corporate data versus personal data](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-01.png)
 
 [Intune app protection policies](~/apps/app-protection-policy.md) help protect your work files on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that work files and resources are protected.
 
@@ -51,14 +51,15 @@ You can block the built-in mail apps on iOS and Android when you allow only the 
 
 In this example, the admin has applied app protection policies to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
 
-![Outlook app conditional access process flow](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile_02.png)
+![Outlook app conditional access process flow](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
 ## Prerequisites
 
 You’ll need the follow Intune admin permissions:
-    - Managed apps read, create, delete, and assign permissions
-    - Policy sets read, create, and assign permissions
-    - Organization read permission
+
+   - Managed apps read, create, delete, and assign permissions
+   - Policy sets read, create, and assign permissions
+   - Organization read permission
 
 ## Step 1 - Introduction
 
@@ -90,7 +91,7 @@ To help you get started, this guided scenario pre-selects the following mobile a
 - Microsoft Outlook 
 - Microsoft OneDrive 
 
-This guided scenario will also configure these apps to open weblinks in Edge to guarantee work sites are opened in a protected browser.
+This guided scenario will also configure these apps to open weblinks in Microsoft Edge to guarantee work sites are opened in a protected browser.
 
 Modify the list of policy-managed apps that you want to protect. Add or remove apps from this list. 
 
