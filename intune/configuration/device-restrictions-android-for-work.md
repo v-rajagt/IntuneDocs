@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -352,7 +352,7 @@ These password settings apply to personal profiles on devices that use a work pr
   - A work profile managed using MDM.
   - A personal profile that's isolated from MDM management.
 
-  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) prevents app installations from unknown sources in the personal profile. **Block** allows app installations from sources other than the Play Store in the personal profile.
+  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) allows app installations from unknown sources in the personal profile. **Block** prevents app installations from sources other than the Play Store in the personal profile.
 
 ### Connectivity
 
