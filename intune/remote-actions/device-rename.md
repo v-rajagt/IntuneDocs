@@ -53,7 +53,7 @@ When renaming a Windows device, the new name must follow these rules:
 - Not null or an empty string
 - Allowed ASCII: Letters (a-z, A-Z), numbers (0-9), and hyphens
 - Allowed Unicode: characters >= 0x80, must be valid UTF8, must be IDN-mappable (that is, RtlIdnToNameprepUnicode succeeds; see RFC 3492)
-- Names must not contain only numbers or start with a number
+- Names must not contain only numbers
 - No spaces in the name
 - Disallowed characters: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
