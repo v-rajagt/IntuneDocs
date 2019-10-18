@@ -92,7 +92,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 You can configure a known self-updating mobile MSI app to ignore the version check process.
 
-Some MSI installer-based apps are automatically updated by the app developer or from another update method. For these automatically updated MSI apps, you can configure the **Ignore app version** setting in the **App information** pane. When you switch this setting to **Yes**, Microsoft Intune will not enforce the app version that's installed on the Windows client.
+Some MSI installer-based apps are automatically updated by the app developer or another update method. For these automatically updated MSI apps, you can configure the **Ignore app version** setting in the **App information** pane. When you switch this setting to **Yes**, Microsoft Intune will not enforce the app version that's installed on the Windows client.
 
 This capability is useful to avoid getting into a race condition. For instance, a race condition can occur when the app is automatically updated by the app developer and is updated by Intune. Both might try to enforce a version of the app on a Windows client, which creates a conflict.
 
