@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -58,6 +58,18 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 
 <!-- ########################## -->
+
+## Week of October 21, 2019
+
+### New device firmware configuration interface profile for Windows 10 and later devices <!-- 2266073 idready wnready -->
+
+On Windows 10 and later, you can create a device configuration profile to control settings and features (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform). In this update, there's a new device firmware configuration interface profile type that allows Intune to manage UEFI (BIOS) settings.
+
+For more information on this feature, see [Use DFCI profiles on Windows devices in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
+
+Applies to:
+
+- Windows 10 RS5 (1809) and newer on some OEMs
 
 ## Week of October 14, 2019
 
