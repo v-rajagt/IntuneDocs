@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-The Device Firmware Configuration Interface (DFCI) is an [open source UEFI (BIOS) framework](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/) that allows Intune to manage UEFI (BIOS) settings directly from the cloud. It [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface).
+The Device Firmware Configuration Interface (DFCI) is an [open source UEFI (BIOS) framework](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/) part of Microsoft’s [Project Mu](https://microsoft.github.io/mu/), that allows Intune to manage UEFI (BIOS) settings directly from the cloud. It [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface). 
 
 In Intune, use this feature to control BIOS settings. Typically, firmware is more resilient to malicious attacks. It limits end users control over the BIOS, which is good in a compromised situation.
 
@@ -110,7 +110,7 @@ This profile includes the DFCI settings you configure.
         - **Disabled**: All built-in radios directly managed by UEFI (BIOS) are disabled. Peripherals, like USB devices, aren't affected.
 
         > [!WARNING]
-        > If you disable the **Radios** setting, the device requires a wired network connection. Otherwise, the device may unmanageable.
+        > If you disable the **Radios** setting, the device requires a wired network connection. Otherwise, the device may be unmanageable.
 
     - **Boot from external media (USB, SD)**: Your options:
         - **Not configured**: Intune doesn't touch this feature, and leaves any settings as-is.
@@ -137,7 +137,7 @@ If you want to change existing DFCI settings on devices that are in use, you can
 
 1. The device checks in with the Intune service to review profile updates. Check-ins happen at various times. For more information, see [when devices get a policy, profile, or app updates](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-2. The device reboots, which enforces the new settings.
+2. Reboot the device either [remotely](https://docs.microsoft.com/en-us/intune/remote-actions/device-restart) or locally, which enforces the new settings.
 
 You can also [signal devices to check in](../remote-actions/device-sync.md). After a successful sync, [signal to reboot](../remote-actions/device-restart.md).
 
@@ -154,7 +154,7 @@ After wiping the device, move the device to the group assigned the new DFCI and 
 
 ### Retire
 
-When you're ready to retire the device and release it from management, update the DFCI profile to the UEFI (BIOS) settings you want at the exit state. Typically, you want all settings enabled. Once updated to your preferred exit state, then:
+When you're ready to retire the device and release it from management, update the DFCI profile to the UEFI (BIOS) settings you want at the exit state. Typically, you want all settings enabled e.g.:
 
 1. Open your DFCI profile (**Device configuration** > **Profiles**).
 2. Change the **Allow local user to change UEFI (BIOS) settings** to **Only not configured settings**.
@@ -169,7 +169,7 @@ You're now ready to wipe the device. Once the device is wiped, delete the Autopi
 
 If you wipe a device, and delete the Autopilot record before unlocking the UEFI (BIOS) menus, then the menus remain locked. Intune can't send profile updates to unlock it. To unlock the device, you can:
 
-- **Option 1**: Ask your CSP or OEM-direct device vendor to re-register the device with Autopilot, and re-enroll it in Intune. This step should reapply the Autopilot and DFCI profiles.
+- **Option 1**: Ask your CSP or OEM-direct device vendor to re-register the device with Autopilot. Re-enroll it in Intune to reapply the Autopilot and DFCI profiles.
 
   Then, unlock the UEFI menus using the steps in [retire the device](#retire) (in this article).
 
@@ -184,3 +184,5 @@ When the DFCI policy is applied, local users can't change settings configured by
 ## Next steps
 
 After the profile is assigned, [monitor its status](../device-profile-monitor.md).
+        > [!WARNING]
+        > Monitoring DFCI profiles is currently under construction. While DFCI is in public preview, monitoring data may be missing or incomplete.
