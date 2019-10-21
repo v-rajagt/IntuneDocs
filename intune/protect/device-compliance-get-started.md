@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -28,8 +28,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Set rules on devices to allow access to resources in your organization using Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, this feature is called "compliance policies". Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access, administrators can block users and devices that don't meet the rules.
 
@@ -161,8 +159,9 @@ To use the device compliance-related features in the Azure portal, you must crea
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 and later](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 and Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 and later](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 and later](compliance-policy-create-windows.md)
 
 - [Reference for policy entities](../reports-ref-policy.md) has information about the Intune Data Warehouse policy entities.
