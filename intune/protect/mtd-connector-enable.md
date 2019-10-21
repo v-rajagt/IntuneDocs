@@ -67,14 +67,14 @@ To view classic conditional access policies, in [Azure](https://portal.azure.com
 You can decide which Mobile Threat Defense toggle options you need to enable according to your organization's requirements. Here are more details:
 
 **MDM Compliance Policy Settings**
-- **Connect Android 4.1+ devices to [MTD partner name]**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-- **Connect iOS 8.0+ devices to [MTD partner name]**: When you enable this option, you can have iOS 8.0+ devices reporting security risk back to Intune.
+- **Connect Android 4.1+ devices to *\<MTD partner name>***: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
+- **Connect iOS 8.0+ devices to *\<MTD partner name>***: When you enable this option, you can have iOS 8.0+ devices reporting security risk back to Intune.
 - **Enable App Sync for iOS Devices**: Allows this Mobile Threat Defense partner to request metadata of iOS applications from Intune to use for threat analysis purposes.
 - **Block unsupported OS versions**: Block if the device is running an operating system less than the minimum supported version.
 
 **App Protection Policy Settings**
-- **Connect Android devices of version 4.1 and above to [MTD partner name] for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
-- **Connect iOS devices version 8.0 and above to [MTD partner name] for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
+- **Connect Android devices of version 4.1 and above to *\<MTD partner name>* for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
+- **Connect iOS devices version 8.0 and above to *\<MTD partner name>* for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
 
 To learn more about using Mobile Threat Defense connectors for Intune App Protection Policy evauation, see [Set up Mobile Threat Defense for unenrolled devices](PLACEHOLDER).
 
