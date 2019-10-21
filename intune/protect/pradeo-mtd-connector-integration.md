@@ -30,10 +30,10 @@ ms.collection: M365-identity-device-management
 
 # Integrate Pradeo Mobile Threat Defense with Intune
 
-> [!NOTE]
-> This Mobile Threat Defense vendor is not supported for unenrolled devices.
-
 Complete the following steps to integrate the Pradeo Mobile Threat Defense solution with Intune.
+
+> [!NOTE]  
+> This Mobile Threat Defense vendor is not supported for unenrolled devices.
 
 ## Before you begin
 
