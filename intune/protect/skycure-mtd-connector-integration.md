@@ -30,10 +30,10 @@ ms.collection: M365-identity-device-management
 
 # Set up Symantec Endpoint Protection Mobile integration with Intune
 
+Complete the following steps to integrate the Symantec Endpoint Protection Mobile (SEP Mobile) solution with Intune. You need to add SEP Mobile apps into Azure AD to have Single Sign On capabilities.
+
 > [!NOTE]
 > This Mobile Threat Defense vendor is not supported for unenrolled devices.
-
-Complete the following steps to integrate the Symantec Endpoint Protection Mobile (SEP Mobile) solution with Intune. You need to add SEP Mobile apps into Azure AD to have Single Sign On capabilities.
 
 ## Before you begin
 
