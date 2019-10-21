@@ -30,10 +30,10 @@ ms.collection: M365-identity-device-management
 
 # Integrate Sophos Mobile with Intune  
 
+Complete the following steps to integrate the Sophos Mobile Threat Defense solution with Intune.  
+
 > [!NOTE]
 > This Mobile Threat Defense vendor is not supported for unenrolled devices.
-
-Complete the following steps to integrate the Sophos Mobile Threat Defense solution with Intune.  
 
 ## Before you begin  
 
