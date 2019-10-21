@@ -172,18 +172,12 @@ Applies to:
 Using Intune device type restrictions, you can use the device's OS version to specify which user devices will use Android Enterprise work profile enrollment or Android device administrator enrollment.  For more information, see [Set enrollment restrictions](../enrollment/enrollment-restrictions-set.md).
 
 #### Windows Autopilot deployment reports <!-- 3856172 -->
-A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report).
+A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). We're in the process of rolling out this feature to all customers and expect to be completed by the end of next week.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
-#### Edit device name value for Autopilot devices<!-- 4816775  -->
-You can edit the Device Name value for Azure AD Joined Autopilot devices.  For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### Edit Group Tag value for Autopilot devices<!-- 4816775  -->
-You can edit the Group Tag value for Autopilot devices. For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### New restrictions for renaming Windows devices <!-- 2640074  -->
+#### New restrictions for renaming Windows devices <!-- 3478938  -->
 When renaming a Windows device, you must follow new rules:
 - 15 characters or less (must be less than or equal to 63 bytes, not including trailing NULL)
 - Not null or an empty string
