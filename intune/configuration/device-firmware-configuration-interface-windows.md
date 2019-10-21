@@ -29,8 +29,9 @@ ms.collection: M365-identity-device-management
 # Use Device Firmware Configuration Interface profiles on Windows devices in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+When you use Intune to manage Autopilot devices, you can manage UEFI(BIOS) settings after they're enrolled, using the Device Firmware Configuration Interface (DFCI). For an overview of benefits, scenarios, and prerequisites, see [Overview of DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/).
 
-The Device Firmware Configuration Interface (DFCI) is an [open source UEFI (BIOS) framework](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/) that allows Intune to manage UEFI (BIOS) settings directly from the cloud. It [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface).
+DFCI [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface).
 
 In Intune, use this feature to control BIOS settings. Typically, firmware is more resilient to malicious attacks. It limits end users control over the BIOS, which is good in a compromised situation.
 
@@ -40,7 +41,7 @@ When you reinstall an older Windows version, install a separate OS, or format th
 
 This feature applies to:
 
-- Windows 10 RS5 (1809) and later on some OEMs
+- Windows 10 RS5 (1809) and later on supported UEFI
 
 ## Before you begin
 
