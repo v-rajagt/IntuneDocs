@@ -69,7 +69,7 @@ For more information on this feature, see [Use DFCI profiles on Windows devices 
 
 Applies to:
 
-- Windows 10 RS5 (1809) and newer on some OEMs
+- Windows 10 RS5 (1809) and newer on supported firmware
 
 ## Week of October 14, 2019
 
