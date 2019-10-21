@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-The Device Firmware Configuration Interface (DFCI) is an [open source UEFI (BIOS) framework](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/) part of Microsoft’s [Project Mu](https://microsoft.github.io/mu/), that allows Intune to manage UEFI (BIOS) settings directly from the cloud. It [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface). 
+The Device Firmware Configuration Interface (DFCI) is an [open source UEFI (BIOS) framework](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Dfci_Feature/) that's part of Microsoft’s [Project Mu](https://microsoft.github.io/mu/). DFCI allows Intune to manage UEFI (BIOS) settings directly from the cloud. It [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface). 
 
 In Intune, use this feature to control BIOS settings. Typically, firmware is more resilient to malicious attacks. It limits end users control over the BIOS, which is good in a compromised situation.
 
@@ -137,7 +137,7 @@ If you want to change existing DFCI settings on devices that are in use, you can
 
 1. The device checks in with the Intune service to review profile updates. Check-ins happen at various times. For more information, see [when devices get a policy, profile, or app updates](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-2. Reboot the device either [remotely](https://docs.microsoft.com/en-us/intune/remote-actions/device-restart) or locally, which enforces the new settings.
+2. To enforce the new settings, reboot the device [remotely](../remote-actions/device-restart.md) or locally.
 
 You can also [signal devices to check in](../remote-actions/device-sync.md). After a successful sync, [signal to reboot](../remote-actions/device-restart.md).
 
@@ -154,7 +154,7 @@ After wiping the device, move the device to the group assigned the new DFCI and 
 
 ### Retire
 
-When you're ready to retire the device and release it from management, update the DFCI profile to the UEFI (BIOS) settings you want at the exit state. Typically, you want all settings enabled e.g.:
+When you're ready to retire the device and release it from management, update the DFCI profile to the UEFI (BIOS) settings you want at the exit state. Typically, you want all settings enabled. For example:
 
 1. Open your DFCI profile (**Device configuration** > **Profiles**).
 2. Change the **Allow local user to change UEFI (BIOS) settings** to **Only not configured settings**.
@@ -184,5 +184,3 @@ When the DFCI policy is applied, local users can't change settings configured by
 ## Next steps
 
 After the profile is assigned, [monitor its status](../device-profile-monitor.md).
-        > [!WARNING]
-        > Monitoring DFCI profiles is currently under construction. While DFCI is in public preview, monitoring data may be missing or incomplete.
