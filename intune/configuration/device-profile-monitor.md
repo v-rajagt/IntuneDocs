@@ -87,8 +87,8 @@ Now that you know the conflicting setting, and the policies that include that se
 
 ## Device Firmware Configuration Interface profile reporting
 
-        > [!WARNING]
-        > Monitoring DFCI profiles is currently under construction. While DFCI is in public preview, monitoring data may be missing or incomplete.
+> [!WARNING]
+> Monitoring DFCI profiles is currently being created. While DFCI is in public preview, monitoring data may be missing or incomplete.
 
 DFCI profiles are reported on a per-setting basis, just like other device configuration profiles. Depending on the manufacturer’s support of DFCI, some settings may not apply.
 
