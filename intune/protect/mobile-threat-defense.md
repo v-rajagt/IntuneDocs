@@ -75,11 +75,11 @@ Access is granted when the device is remediated:
 
 ## Sample scenarios for unenrolled devices using Intune app protection policies
 
-When a device is considered infected by the Mobile Threat Defense solution:
-![Image showing a Mobile Threat Defense infected device](PLACEHOLDER)
+When a device is considered infected by the Mobile Threat Defense solution:<br>
+![Image showing a Mobile Threat Defense infected device](./media/mobile-threat-defense/MTD-image-3.png)
 
-Access is granted when the device is remediated:
-![Image showing a Mobile Threat Defense access granted](PLACEHOLDER)
+Access is granted when the device is remediated:<br>
+![Image showing a Mobile Threat Defense access granted](./media/mobile-threat-defense/MTD-image-4.png)
 
 > [!NOTE] 
 > Using multiple Mobile Threat Defense vendors with Intune is not supported. Having multiple MTD connectors enabled will force all MTD apps to be installed and scan across devices for threats.
