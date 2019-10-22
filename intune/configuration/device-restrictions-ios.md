@@ -299,6 +299,8 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Safari Pop-ups**: **Block** to disable the pop-up blocker in the web browser. **Not configured** (default) allows the pop-up blocker.
 
+Note: The server-side logging for Siri commands setting has been deprecated by Apple, and will be removed from all policies and from Intune mid November 2019. 
+
 - **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side. This setting is not dependent on the Siri setting being blocked or not configured.
 
   This feature applies to:  
