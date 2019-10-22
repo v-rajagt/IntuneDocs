@@ -305,7 +305,7 @@ These settings are added to a device configuration profile in Intune, and then a
   - iOS 12.2 and newer
 
   > [!NOTE]
-  > The **Server-side logging for Siri commands** setting is deprecated by Apple. In an upcoming release, this setting is removed from all policies.
+  > The **Server-side logging for Siri commands** setting is deprecated by Apple and has no effect on any targeted devices. In an upcoming release, this setting is removed from the Intune admin console. The setting currently has no effect on devices but will still be shown in managemenet profiles if targeted with this setting. To delete this setting from any policy, go to that policy, make a minor edit and save the policy. The policy will be updated the the setting will be deleted from devices.  
 
 ### Settings apply to: Automated device enrollment (supervised)
 
