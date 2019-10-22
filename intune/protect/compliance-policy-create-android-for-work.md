@@ -123,7 +123,7 @@ As an Intune administrator, use these compliance settings to help protect your o
     
     - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
  
-- **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. Options include *Not configured*, and from *1 Minute* to *8 hours*..
+- **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. Options include *Not configured*, and from *1 Minute* to *8 hours*.
   - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-compliance.
 
 - **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. For example, to change the password after 60 days, enter `60`. When the password expires, users are prompted to create a new password.
@@ -148,7 +148,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 
 - **Rooted devices**: 
   - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-compliance.
-  - **Block** Mark rooted (jailbroken) devices as not compliant.  
+  - **Block** - Mark rooted (jailbroken) devices as not compliant.  
 
 - **Require the device to be at or under the Device Threat Level**: Select the maximum allowed device threat level evaluated by your [mobile threat defense service](mobile-threat-defense.md). Devices that exceed this threat level are marked noncompliant. To use this setting, choose the allowed threat level:
 
@@ -192,14 +192,14 @@ As an Intune administrator, use these compliance settings to help protect your o
 
 - **Require a password to unlock mobile devices**: 
   - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-compliance. 
-  - **Require** users to enter a password before they can access their device.  
+  - **Require** - Users must enter a password before they can access their device.  
 
   This setting applies at the device level. If you only need to require a password at the work profile level, then use a configuration policy. See [Android Enterprise device configuration settings](../configuration/device-restrictions-android-for-work.md).
 
 - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
   - **Device Default**
   - **Low security biometric**
-  - **At least numeric** (default): Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **At least numeric** (*default*): Enter the **minimum password length** a user must enter, between 4 and 16 characters.
   - **Numeric complex**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
   - **At least alphabetic**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
   - **At least alphanumeric**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
@@ -226,7 +226,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 
 - **Block apps from unknown sources**: 
   - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-compliance.
-  - **Block**  Block devices with **Security** > **Unknown Sources** enabled sources (*supported on Android 4.0 through Android 7.x. Not supported by Android 8.0 and later*).  
+  - **Block** - Block devices with **Security** > **Unknown Sources** enabled sources (*supported on Android 4.0 through Android 7.x. Not supported by Android 8.0 and later*).  
 
   To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy.
 
