@@ -97,7 +97,6 @@
       href: mobile-threat-defense.md
       items:
       - name: MTD on unenrolled devices
-        href: mtd-unenrolled-devices.md
         items:
         - name: Add MTD apps to unenrolled devices
           href: mtd-add-apps-unenrolled-devices.md
