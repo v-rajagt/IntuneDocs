@@ -161,7 +161,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 #### Google Play Protect
 
 - **Google Play Services is configured**: 
-  - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-complian
+  - **Not configured** (*default*) - This setting isn't evaluated for compliance or non-compliance.
   - **Require** - Require that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices. 
   
 - **Up-to-date security provider**: 
