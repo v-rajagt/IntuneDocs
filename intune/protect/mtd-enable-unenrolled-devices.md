@@ -66,15 +66,14 @@ You can decide which MTD toggle options you need to enable according to your org
 
 > [!NOTE] 
 > When you enable the Mobile Threat Defense connection to Intune, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, including [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy. **These policies can be ignored, but should not be edited, deleted, or disabled.**
-
-Classic conditional access policies for MTD apps: 
-
-- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID before communicating to MTD partners. The ID is required so that devices and can successfully report their status to Intune.  
-- Have no effect on any other Cloud apps or Resources.  
-- Are distinct from conditional access policies you might create to help manage MTD, or for Require App Protection CA
-- By default, don’t interact with other conditional access policies you use for evaluation.  
-
-To view classic conditional access policies, in [Azure](https://portal.azure.com/#home), go to **Azure Active Directory** > **Conditional Access** > **Classic policies**.
+> 
+> Classic conditional access policies for MTD apps: 
+> - Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID before communicating to MTD partners. The ID is required so that devices and can successfully report their status to Intune.  
+> - Have no effect on any other Cloud apps or Resources.  
+> - Are distinct from conditional access policies you might create to help manage MTD, or for Require App Protection CA
+> - By default, don’t interact with other conditional access policies you use for evaluation.  
+>
+> To view classic conditional access policies, in [Azure](https://portal.azure.com/#home), go to **Azure Active Directory** > **Conditional Access** > **Classic policies**.
 
 ## Next Steps
 

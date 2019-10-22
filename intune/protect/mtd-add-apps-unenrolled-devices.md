@@ -31,9 +31,11 @@ ms.collection: M365-identity-device-management
 
 # Add Mobile Threat Defense apps to unenrolled devices
 
-When using Intune app protection policies with Mobile Threat Defense, Intune will guide the end user to install and sign in to all required apps to enable the connections with the relevant services.
+By default, when using Intune app protection policies with Mobile Threat Defense, Intune does the work to guide the end user on their device to install and sign in to all required apps to enable the connections with the relevant services.
 
-Optionally, you can use Intune to add and deploy Mobile Threat Defense (MTD) apps so that end users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
+End users need the Microsoft Authenticator (iOS) to register their device, and the Mobile Threat Defense (both Android and iOS) to receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
+
+Optionally, you can use Intune to add and deploy the Microsoft Authenticator, and Mobile Threat Defense (MTD) apps as well.
 
 > [!NOTE] 
 > This article applies to all Mobile Threat Defense partners that support app protection policies: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
@@ -55,7 +57,6 @@ However, should you wish to make the app available to end users via the Intune C
 
 - [Adding an app into Intune](../apps/apps-add.md).
 - [Assigning an app with Intune](../apps/apps-deploy.md).
-- [Assigning app to groups with Intune](../apps/apps-deploy.md).
 
 ### Making Lookout for Work available to end users
 - **Android**  
