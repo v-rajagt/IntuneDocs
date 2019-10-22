@@ -1,17 +1,14 @@
-### YamlMime:Landing
+---
+# required metadata
 
-title: Configure device settings
-summary: Intune device management
-metadata:
-  title: Configure device settings
-  description: Landing page for device settings
-  ms.service: microsoft-intune
-  ms.subservice: configuration
-  ms.topic: landing-page
-  author: dougeby
-  ms.author: dougeby
-  ms.date: 09/16/2019  
-  
-  ---
+title: Intune device management
+description: Intune device management
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 03/26/2019
+ms.topic: troubleshooting
+ms.service: microsoft-intune
 
+---
 # Welcome to device-mgmt
