@@ -31,7 +31,9 @@ ms.collection: M365-identity-device-management
 
 # Install Mobile Threat Defense   
 
-Install Mobile Threat Defense to protect your device against security threats. The app finds and alerts you to suspicious apps or third-party contacts and helps you resolve them. Your organization might require you to install this app before you can access work or school data on your device. 
+Install Mobile Threat Defense to sign in to your work account from your device, and protect yourself against security threats. Mobile Threat Defense finds and alerts you to suspicious apps or third-party contacts on your device. It also helps your resolve them. 
+
+Organizations often require you to install a Mobile Threat Defense app before you can sign in to apps with your work or school account.  
 
 ---LN note: going to move this to a diff. section---You might see different prompts on your device, depending on which Mobile Threat Defense service your IT admin set it up.
 
@@ -53,7 +55,7 @@ Setting up threat protection requires you to:
 * Install the Mobile Threat Defense app that's required by your organization  
 
 ### Device registration
-Device registration creates a connection between your work account and your organization. This connection is needed so that they can alert you when your device falls outside of their defined threat level.  
+Register your device to confirm your identity with your organization. This step is required to access your organization's resources on your device.   
 
  To register your device:
 
@@ -63,7 +65,7 @@ Device registration creates a connection between your work account and your orga
 Follow the onscreen prompts to complete registration. If you're not sure if your device is registered, the Mobile Defense App that you install will let you know, and provide next-step instructions.    
 
 ### App installation  
-Your orgnization will make the app available to you through one of the following ways:  
+Your organization will make the app available to you through one of the following ways:  
 
 * Your organization might install the app on your device so that it's ready to use when you turn the device on. This applies to corporate-owned devices only. 
 
@@ -80,13 +82,6 @@ Next, in order for the Mobile Threat Defense service to do a scan of a particula
 
 Make sure you have signed in with your corporate account into the Mobile Threat Defense client app. 
 
-
-
-
-
-1. Make su 
-
-## Prepare device  
 
 
 
