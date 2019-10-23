@@ -73,33 +73,49 @@ On Windows 10 devices, you can add **applicability rules** so the profile only a
 
 ## Exclude groups from a profile assignment
 
-Intune device configuration profiles let you exclude groups from policy assignment.
+Intune device configuration profiles let you include and exclude groups from policy assignment.
 
-Intune doesn't look at user-to-device group relationships. Including user groups while excluding device groups may not get the results you expect. Exclusion takes precedence over inclusion in the following scenarios:
+As a best practice, create and assign policies specifically for your user groups. And, create and assign different policies specifically for your device groups. For more information on groups, see [Add groups to organize users and devices](../fundamentals/groups-add.md).
 
-- Including user groups and excluding user groups
-- Including device groups and excluding device group
+When you assign your policies, use the following table when including and excluding groups. A checkmark means that assignment is supported:
 
-For example, you assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. Since both groups are user groups, all members of the **Senior Management Staff** are excluded from the policy, even though they're members of the **All corporate users** include group.
+![Supported options include or exclude groups from a profile assignment](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Inclusion takes precedence over exclusion in the following mixed groups scenarios:
+### What you should know
 
-- Including user groups and excluding device groups
-- Including device groups and excluding user groups
+- Intune doesn't evaluate user-to-device group relationships. Including user groups while excluding device groups may not get the results you expect. It's not recommended to assign policies to mixed groups.
 
-Exclusion only looks at the members in the group; it doesn't use association.
+- Exclusion takes precedence over inclusion in the following same group type scenarios:
 
-For example, you want to assign a device profile to all users in your organization, except personal devices. You assign the profile to include the **All Users** user group, and exclude an **All personal devices** device group. In this mixed group case, the following happens:
+  - Including user groups and excluding user groups
+  - Including device groups and excluding device group
 
-- All users get the policy, including the users' devices in the **All personal devices** group.
+  For example, you assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. Since both groups are user groups, all members of the **Senior Management Staff** are excluded from the policy, even though they're members of the **All corporate users** include group.
+
+- Inclusion takes precedence over exclusion in the following mixed groups scenarios:
+
+  - Including user groups and excluding device groups
+  - Including device groups and excluding user groups
+
+  Exclusion only looks at the members in the group; it ignores user accounts on the device, also known as user association.
+
+  For example, you assign a device profile to the **All Users** user group, but exclude an **All personal devices** device group. In this mixed group policy assignment, the following happens:
+
+  - All users get the policy, including the users' devices in the **All personal devices** group.
   
-  The devices get the policy because the exclusion (Intune) ignores the user association. The inclusion wins.
-  
-- If the personal devices don't have a user, and the device is in the the **All personal devices** group, then the devices don't get the policy; which may not be the intent.
+    The devices also get the policy because Intune ignores the user association. In this scenario, the inclusion wins.
 
-If you include **All personal devices**, and exclude **All Users**, then all the devices receive the policy. It doesn't exclude the users because Intune ignores the user association. So, the exclusion isn't doing anything.
+    ? The devices also get the policy because the exclusion ignores the user association. In this scenario, the inclusion wins.
 
-As a best practice, don't assign policies to mixed groups. Create and assign policies for your user groups. And, create and assign different policies for your device groups.
+  - If the personal devices don't have a user (no user association), and the device is in the **All personal devices** group, then the devices don't get the policy. This behavior may not be your intent.
+
+    ? The devices don't get the policy because the exclusion in Intune ignores the user association.
+
+  - If you include **All personal devices**, and exclude **All Users**, then all the personal devices receive the policy.
+
+    ? The users don't get the policy because the exclusion in Intune ignores the user association. So, the exclusion isn't doing anything.
+
+Remember, if you assign policies to mixed groups, the results may not be what you want or expect.
 
 ## Next steps
 
