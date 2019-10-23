@@ -136,7 +136,7 @@ There will be new ExchangeActiveSync settings available, including:
 - Choose the services to sync (or block syncing), such as email, calendar, and contacts.
 - Allow (or block) users to change the sync settings for these services on their devices. 
 
-To see the current settings, go to [Email profile settings for iOS devices in Intune](email-settings-ios.md).
+To see the current settings, go to [Email profile settings for iOS devices in Intune](../configuration/email-settings-ios.md).
 
 Applies to:
 - iOS 13.0 and newer
