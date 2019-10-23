@@ -159,6 +159,9 @@ Applies to:
 <!-- ***********************************************-->
 ## Device management
 
+### Edit device name value for Autopilot devices<!-- 2640074  -->
+You'll be able to edit the Device Name value for Azure AD Joined Autopilot devices. To do so, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices** > choose the device > change the **Device Name** value in the right pane > **Save**.
+
 
 ### Edit the Group Tag value for Autopilot devices<!-- 4816775 -->
 You'll be able to edit the **Group Tag** value for Autopilot devices:
