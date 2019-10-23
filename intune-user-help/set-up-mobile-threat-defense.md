@@ -5,7 +5,7 @@ title: Install Mobile Threat Defense on your mobile device
 description: Learn how to install Mobile Threat Defense on your mobile device.
 keywords:
 author: lenewsad
-ms.author: lanewsad
+ms.author: lanewsad  
 manager: dougeby
 ms.date: 10/22/2019
 ms.topic: article
@@ -22,14 +22,14 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-#ms.reviewer: aanavath
+#ms.reviewer: aanavath  
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
----
+---  
 
-# Install Mobile Threat Defense on your mobile device
+# Install Mobile Threat Defense   
 
 Install Mobile Threat Defense to protect your device against security threats. The app finds and alerts you to suspicious apps or third-party contacts and helps you resolve them. Your organization might require you to install this app before you can access work or school data on your device. 
 
@@ -37,7 +37,7 @@ Install Mobile Threat Defense to protect your device against security threats. T
 
 ## Information your organization can see   
 
-Your organization can't see any data, such as texts, emails, and pictures, in your personal apps. Mobile Threat Defense does report information about your apps, such as name and version, to the Mobile Threat Defense service that your company uses. The details shared depend on the Mobile Threat Defense service your company uses. Your organization might see:   
+Your organization can't see any data, such as texts, emails, and pictures, in your personal apps. Mobile Threat Defense does report information about your apps, such as name and version, to the Mobile Threat Defense service that your company uses. The details shared depend on the service your company uses. Your organization might see:   
 
 * App name  
 * App ID: The unique name that identifies the app in the Play Store.  
@@ -45,15 +45,54 @@ Your organization can't see any data, such as texts, emails, and pictures, in yo
 * App bundle and dynamic size: The amount of space an app uses on your device.    
 
 LN notes: Ended here--editing resuming on 10/22 
-## What to expect
 
-In a general sense, the setup of your device with the Mobile Threat Defense service requires you to install Mobile Threat Defense client app, sign in to it with your corporate credentials, finish any setup instructions within the Mobile Threat Defense app, and return to your corporate app. 
+## Set up threat protection on your device  
+Setting up threat protection requires you to:
 
-First, in order for Intune to talk to the Mobile Threat Defense service regarding a particular device, your device needs to be registered with Azure Active Directory. On iOS, device registration requires you to install the Microsoft Authenticator app. On Android, in most cases, device registration can be done with the Company Portal app on the device. Intune helps you with that process with guided setup instructions within your Intune protected app. 
+* Register your device  
+* Install the Mobile Threat Defense app that's required by your organization  
+
+### Device registration
+Device registration creates a connection between your work account and your organization. This connection is needed so that they can alert you when your device falls outside of their defined threat level.  
+
+ To register your device:
+
+* iOS: Install Microsoft Authenticator app and sign in with your work or school. 
+* Android: Install the Company Portal app and sign in with your work or school account. 
+
+Follow the onscreen prompts to complete registration. If you're not sure if your device is registered, the Mobile Defense App that you install will let you know, and provide next-step instructions.    
+
+### App installation  
+Your orgnization will make the app available to you through one of the following ways:  
+
+* Your organization might install the app on your device so that it's ready to use when you turn the device on. This applies to corporate-owned devices only. 
+
+*  
+
+* 
+
+1. Install the Mobile Threat Defense app.
+2. Sign in with your work or school account.
+3. Follow the prompts within the app to complete setup. 
+
 
 Next, in order for the Mobile Threat Defense service to do a scan of a particular device, it needs to have the corresponding Mobile Threat Defense client app installed. Again, Intune helps you with that process with guided setup instructions within your Intune protected app. 
 
 Make sure you have signed in with your corporate account into the Mobile Threat Defense client app. 
+
+
+
+
+
+1. Make su 
+
+## Prepare device  
+
+
+
+After setup is complete, you should have access to your organization's email, Wi-Fi, and apps.  
+
+
 
 Lastly, once you have installed and signed in to all the required apps on your device, you may have to hit 'Recheck' within your Intune protected app, such as Microsoft Outlook. This is to get a status update to confirm the connection between services is working correctly. 
 
