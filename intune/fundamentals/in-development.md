@@ -196,11 +196,6 @@ The setup checklist in the Company Portal app for Android will be updated with a
 <!-- ***********************************************-->
 ## Monitoring and troubleshooting
 
-### Android report on the Devices overview page <!-- 2984353  -->
-We'll add a new report to the **Devices overview** page. The report displays how many Android devices have been enrolled in each device management solution. The chart shows device counts for work profile, fully managed, dedicated, and device-administrator enrolled. 
-
-To see the report, choose **Intune** > **Devices** > **Overview**.
-
 ### Updated support experience   <!--  5012398    -->
 As part of continuing improvements, we'll update the in-console support experience for Intune.  We'll improve the in-console search and feedback for common issues, and we'll streamline the workflow to contact support.     
 
