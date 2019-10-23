@@ -105,15 +105,6 @@ The Company Portal app will show additional app installation status messages to 
 - App installed successfully but requires a restart.
 - App is in the process of installing but requires a restart to continue.
 
-### Assign the Microsoft Edge beta for macOS <!-- 4678761  -->
-You'll be able to add and assign the latest version of the Microsoft Edge beta to Intune for macOS devices. 
-
-To assign the Microsoft Edge beta for macOS devices:
-1. In Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. 
-1. Assign the Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Microsoft Edge up to date. 
- 
-For more information about Microsoft Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](../apps/manage-microsoft-edge.md).
-
 ### Configure app notification content for organization accounts <!-- 2576686 -->
 Intune APP on Android and iOS devices will allow you to control app notification content for organization accounts. This feature will require support from applications and might not be available for all APP-enabled applications. For more information about APP, see [What are app protection policies?](../apps/app-protection-policy.md)
 
@@ -161,24 +152,9 @@ To see the settings you can configure, see [iOS and iPadOS device settings to al
 Applies to:
 - iOS
 
-### New device firmware configuration interface profile for devices that run Windows 10 and later <!-- 2266073  -->
-On Windows 10 and later, you can create a device configuration profile to control settings and features: 
-
-1. Select **Device configuration** > **Profiles** > **Create profile**.
-1. For the platform, select **Windows 10 and later**. 
- 
-A new device firmware configuration interface profile type will allow Intune to manage UEFI (BIOS) settings.
-
-For information about the current settings you can configure, see [Apply features and settings on your devices by using device profiles in Microsoft Intune](../configuration/device-profiles.md).
-
-This feature applies to Windows 10 RS5 (1809) and later, on select devices.
- 
 
 <!-- ***********************************************-->
-## Device enrollment
-
-### For iOS devices, customize the enrollment privacy window of Company Portal <!-- 4394993  -->
-By using Markdown, you'll be able to customize the Company Portal privacy window that end users see during iOS enrollment. Specifically, you can customize the list of things that your organization can't see or do on the device.
+<!--## Device enrollment-->
 
 <!-- ***********************************************-->
 ## Device management
