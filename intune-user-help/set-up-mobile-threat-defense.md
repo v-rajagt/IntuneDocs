@@ -65,31 +65,30 @@ After you're blocked from signing in to an app, you'll receive a prompt to regis
     1. Select **Download from App Store**.
     2. A reminder appears. Read it and then select **OK**.
     3. The App Store opens the app details page. Install the app but don't open it yet.   
-    4. Return to the app you were trying to access. 
-3. Intune MAM Diagnostic App will ask you for permission to open the mobile threat defense app. Select **Open**.  **From Laura: Is it always going to be the app that they were trying to access that's asking for the permission? So if they were trying to access Outlook, would it say "Outlook wants to open this mobile threat defense app?"**
+3. On the **Get access** screen, select **Open**.  
 4. The mobile threat defense app will ask you for permission to open Microsoft Authenticator. Select **Open**. 
-5. Select your work account to sign you in.  **From Laura: SHould users go back to the MAM diagnostic app as soon as the mtd app signs them in--or do they wait for the scan to complete (step 6)?**
+5. Select your work account to sign in.  **From Laura: SHould users go back to the MAM diagnostic app as soon as the mtd app signs them in--or do they wait for the scan to complete (step 6)?**
 6. The mobile threat defense app will begin scanning your device for security threats. 
 7.  Return to the school or work app that you were originally trying to access.  
 8. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device. 
 9. Return to the app. If you still don't have access:  
-    * Select **Recheck,** if available in the school or work app.  
+    * On the **Get access** screen, select **Recheck**.    
     * Check the mobile threat defense app for existing threats. Complete the recommended steps to resolve the threat and regain access.    
 
 ### Android setup 
 After you're blocked from signing in to an app, you'll receive a prompt to register or protect your device. Complete these steps to regain access to the app.  
 
-1. When prompted to register your device, select **Register**. **From Laura: Same question here about what users see to launch them into this flow--will it always be "Register?"**
+1. Select **Register**. **From Laura: Same question here about what users see to launch them into this flow--will it always be "Register?"**
 2. From the **Get access** screen, install the mobile threat defense app that's required by your organization.  
     a. Select **Download** to open the Google Play store.  
     b. Install the app.  
 3. The mobile threat defense app will ask for permission to access your contacts and location. In order for the app to work correctly, you must **Allow** access to contacts.  
-4. Select your work account. The mobile threat defense app uses this account to sign you in.
+4. Select your work account to sign in. 
 5. The mobile threat defense app will begin scanning your device for security threats.
 6. Return to the school or work app that you were originally trying to access.
 7. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device.  **From Laura: Is this PIN specific to this app or is it for all of the school or work data/apps?**
 8. Return to the app. If you still don't have access:  
-    * Select **Recheck,** if available in the school or work app.  
+    * On the **Get access** screen, select **Recheck**.  
     * Check the mobile threat defense app for existing threats. Complete the recommended steps to resolve the threat and regain access.   
 
 ### Installation failed 
@@ -103,20 +102,12 @@ You can also send your app logs to your IT support person to provide them with m
 
 ## Resolve a threat  
 
-Mobile Threat Defense apps detect and alert you to potential threats on your devices. Some organizations integrate a Mobile Threat Defense service with an Enterprise Mobility Management vendor (EMM), like Intune. When the connector is set up, the Mobile Threat Defense service reports the threats (such as suspicious apps, networks, and OS vulnerabilities) and notifies you within any [Intune protected app](https://docs.microsoft.com/en-us/intune/apps/apps-supported-intune-apps) that is targeted with your organization's policy. This threat notification may come as a block from corporate data access or as a selective wipe of corporate data, depending on IT admin intent. 
-
-Threat notifications appear to you the within an Intune protected app, such as Microsoft Outlook, as a dialog indicating that your access is blocked. As long as these threats are present on your device, you may be unable to:  
+Threat notifications appear to you within an Intune protected app, such as Microsoft Outlook, as a dialog indicating that your access is blocked. As long as these threats are present on your device, you may be unable to:  
 
 * Access your corporate data via your corporate account in an Intune protected app
 * Access other company apps 
 
 You can find details about the threat(s) and remediation steps in the Mobile Threat Defense app to get access to corporate data again. You may have to hit a 'Recheck' button within the Intune protected app, to get a status update to confirm the threat on your device is indeed remediated. 
-
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) 
-
-On Android, for information on how to send logs to someone who can help, check [Upload and email logs from Company Portal](https://docs.microsoft.com/en-us/intune-user-help/send-logs-to-your-it-admin-by-email-android). 
-
-On iOS, for information on how to send logs to someone who can help, check [Use Microsoft Edge on iOS to access managed app logs](https://docs.microsoft.com/en-us/intune/apps/manage-microsoft-edge#use-microsoft-edge-on-ios-to-access-managed-app-logs). 
 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
