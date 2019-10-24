@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -88,17 +88,11 @@ When you assign your policies, use the following table when including and exclud
   - Including user groups and excluding user groups
   - Including device groups and excluding device group
 
-  For example, you assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. Since both groups are user groups, the following behavior happens:
-
-    - All members in the **All corporate users** user group receive the policy.
-    - All members in the **Senior Management Staff** don't receive the policy, even though they're members of the **All corporate users** include group.
+  For example, you assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. Since both groups are user groups, **All corporate users** except the **Senior Management staff** get the policy.
 
 - Intune doesn't evaluate user-to-device group relationships. If you assign policies to mixed groups, the results may not be what you want or expect.
 
-  For example, you assign a device profile to the **All Users** user group, but exclude an **All personal devices** device group. In this mixed group policy assignment, the following behavior happens:
-
-  - All members in the **All users** user group get the policy.
-  - All devices in the **All personal devices** device group also get the policy, which isn't the intent.
+  For example, you assign a device profile to the **All Users** user group, but exclude an **All personal devices** device group. In this mixed group policy assignment, **All users** get the policy. The exclusion does not apply.
 
   As a result, it's not recommended to assign policies to mixed groups.
 
