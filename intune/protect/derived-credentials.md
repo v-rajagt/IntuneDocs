@@ -109,7 +109,7 @@ Following are key considerations for each supported partner<!--  , and links to 
 
 #### DISA Purebred
 
-Understand the end-user workflow,and following key requirements:  
+Understand the end-user workflow and key requirements:  
 <!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
 Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
 -->
@@ -128,7 +128,7 @@ For information getting and configuring the DISA Purebred app, see [Deploy the D
 
 #### Entrust Datacard  
 
-Understand the end-user workflow,and following key requirements:  
+Understand the end-user workflow and key requirements:  
 <!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
 Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
 --> 
@@ -140,7 +140,7 @@ Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intun
 
 #### Intercede
 
-Understand the end-user workflow,and following key requirements:  
+Understand the end-user workflow and key requirements:  
 <!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
 Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
 -->
