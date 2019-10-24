@@ -197,7 +197,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
 ### Power settings
 
-- **Time to lock screen**: Set the amount of idle time required before the device locks.
+- **Time to lock screen**: This setting limits the length user can set on the Device, It increases or decreases the option's available to end user to be set manually on device.
 - **Screen on while device plugged in**: Choose which power sources cause the device's screen to stay on when plugged in.
 
 ### Users and Accounts settings
