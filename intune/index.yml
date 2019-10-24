@@ -85,8 +85,6 @@ conceptualContent:
         - url: ./enrollment/android-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Android devices
-
-          Intune enrollment methods for Windows devices
       footerLink:
         text: See more
         url: ./enrollment/index.yml
