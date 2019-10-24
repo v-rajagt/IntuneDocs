@@ -61,6 +61,18 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ## Week of October 21, 2019
 
+### Microsoft 365 Device Management
+
+#### Improved administration experience in Microsoft 365 Device Management
+
+A refreshed and streamlined administration experience is now generally available in the Microsoft 365 Device Management specialist workspace at [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com), including:
+
+- **Updated navigation**: You will find a simplified 1st level navigation that logically groups features.
+- **New platform filters**: You can select a single platform, which shows only the policies and apps for the selected platform, on the Devices and Apps pages.
+- **A new home page**: Quickly see service health, state of your tenant, news, etc. on the new home page.
+
+For more information about these improvements, see the [Enterprise Mobility + Security blog post](https://go.microsoft.com/fwlink/?linkid=2109094) on the Microsoft Tech Community web site.
+
 ### App management
 
 #### Add Mobile Threat Defense apps to unenrolled devices <!-- 3005337 -->
