@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -197,7 +197,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
 ### Power settings
 
-- **Time to lock screen**: This setting limits the length user can set on the Device, It increases or decreases the option's available to end user to be set manually on device.
+- **Time to lock screen**: Enter the maximum time a user can set until the device locks. For example, if you set this setting to **10 minutes**, then users can set the time from 15 seconds up to 10 minutes. When set to **Not configured** (default), Intune doesn't change or control this setting.
+
 - **Screen on while device plugged in**: Choose which power sources cause the device's screen to stay on when plugged in.
 
 ### Users and Accounts settings
