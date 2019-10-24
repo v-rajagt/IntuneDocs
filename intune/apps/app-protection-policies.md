@@ -95,20 +95,18 @@ When you create an app protection policy for iOS/iPadOS and Android apps, you fo
     - **iOS/iPadOS conditional launch** - For information, see [iOS app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
     - **Android conditional launch** - For information, see [Android app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
-7. Click **Next** to display the **Assignments** page.<br>
-   The **Assignments** page allows you can assign the app protection policy to groups of users.
+9. Click **Next** to display the **Assignments** page.<br>
+   The **Assignments** page allows you to assign the app protection policy to groups of users.
    
->[!IMPORTANT]
-> If you're using Intune with Configuration Manager to manage your devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected aren't affected.
+    >[!IMPORTANT]
+    > If you're using Intune with Configuration Manager to manage your devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected aren't affected.
 
-8. Click **Next: Review + create** to review the values and settings you entered for this app protection policy.
-9. When you are done, click **Create** to create the app protection policy in Intune. 
+10. Click **Next: Review + create** to review the values and settings you entered for this app protection policy.
 
-   > [!TIP]
-   > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies. Note that when you create a new file it is considered a personal file. 
+11. When you are done, click **Create** to create the app protection policy in Intune. 
 
-8. Select **OK** to save this configuration. You're now back in the **Add a policy** blade.
-9. Select **Create** to create the policy and save your settings.
+    > [!TIP]
+    > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies. Note that when you create a new file it is considered a personal file. 
 
 End users can download the apps from the App store or Google Play. For more information, see:
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md)
