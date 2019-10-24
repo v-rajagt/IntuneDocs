@@ -59,6 +59,15 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
+## Week of October 28, 2019
+
+### App management
+
+#### Android Company Portal enforced minimum app version <!-- 2378776 -->
+You can specify a specific minimum defined version of the Company Portal that is enforced on an end user device. This conditional launch setting allows you to **Block access**, **Wipe data**, or **Warn** as possible actions when the value is not met. The possible formats for this value follows the pattern *[Major].[Minor]*, *[Major].[Minor].[Build]*, or *[Major].[Minor].[Build].[Revision]*. For more information, see [Android app protection policy settings - Conditional launch](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+This minimum defined version setting, if configured, will affect anyone who gets this month's update of Company Portal and any future versions of the Company Portal. This setting will have no effect on users using a version of Company Portal  that is older than the version that this feature is released with. End users using app auto-updates on their device will likely not see any dialogs from this feature, given that they will likely be on the latest Company Portal version. This setting is Android only with app protection for enrolled and unenrolled devices.
+
 ## Week of October 21, 2019
 
 ### App management
