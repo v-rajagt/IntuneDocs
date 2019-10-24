@@ -84,20 +84,18 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 3. On the **Set up access** screen, select **Begin.**   
 
-   ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-03-cp-enroll-1904.PNG)  
+    ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-03-cp-enroll-1904.PNG)  
 
-4. The **Select device and enrollment type** screen appears. Tap either: 
-    * **(Organization) owns this device** if you received your device from your organization. Then skip to [Secure entire device](###secure-entire-device) in this article to finish setup.  
-
-    * **I own this device** if you're using a personal device that you brought from home. Then continue to the next step.  
+4. The **Select device and enrollment type** screen appears. 
+    * Tap **(Organization) owns this device** if you received your device from your organization. Then skip to [Secure entire device](###secure-entire-device) in this article to finish setup.  
+    * Tap **I own this device** if you're using a personal device that you brought from home. Then continue to the next step.  
 
     If you don't see this screen, skip to [Secure entire device](enroll-your-device-in-intune-ios.md#secure-entire-device) to finish setup.  
 
 
-5. Choose how to protect the data on your device once it's enrolled. Tap either:  
-    * **Secure entire device** to secure all apps and data on the device. Then go to [Secure entire device](enroll-your-device-in-intune-ios.md#secure-entire-device) in this article to finish setup.  
-
-    * **Secure work-related apps and data only** to secure only the apps and data you access with your work account. Then go to [Secure work-related apps and data](enroll-your-device-in-intune-ios.md#secure-work-related-apps-and-data).
+5. Choose how to protect the data on your device once it's enrolled.  
+    * Tap **Secure entire device** to secure all apps and data on the device. Then go to [Secure entire device](enroll-your-device-in-intune-ios.md#secure-entire-device) to finish setup.
+    * Tap **Secure work-related apps and data only** to secure only the apps and data you access with your work account. Then go to [Secure work-related apps and data](enroll-your-device-in-intune-ios.md#secure-work-related-apps-and-data).
 
 ### Secure entire device  
 
