@@ -146,7 +146,7 @@ Applies to:
 - Android Enterprise work profile
 
 #### Create a global HTTP proxy on Android Enterprise device owner devices <!-- 4816339   -->
-On Android Enterprise devices, you can configure a global HTTP Proxy to meet your organization’s web browsing standards (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner > Device restrictions** for profile type > **Connectivity**). Once configured, all HTTP traffic will use this this proxy.
+On Android Enterprise devices, you can configure a global HTTP Proxy to meet your organization’s web browsing standards (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner > Device restrictions** for profile type > **Connectivity**). Once configured, all HTTP traffic will use this proxy.
 
 To configure this feature, and see all the settings you configure, go to [Android Enterprise device settings to allow or restrict features using Intune](../configuration/device-restrictions-android-for-work.md).
 
