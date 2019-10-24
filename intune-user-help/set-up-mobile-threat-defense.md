@@ -39,7 +39,6 @@ There are a variety of mobile threat defense apps available to install; your org
 
 * Register your device with your organization, if you haven't done it already
 * Install a mobile threat defense app 
-* Resolve a detected threat   
 
 
 ## Information your organization can see   
@@ -56,68 +55,42 @@ LN notes: Ended here--editing resuming on 10/22
 ## Install app    
  Before you begin the steps in this section, make sure you:  
 
-* iOS: Install Microsoft Authenticator app and sign in with your work or school. 
-* Android: Install the Company Portal app and sign in with your work or school account. 
+* For iOS: Install Microsoft Authenticator app and sign in with your work or school. 
+* For Android: Install the Company Portal app and sign in with your work or school account. 
 
 These two steps are neccessary to confirm your school or work identity with your organization.  From Laura: Is this accurate?
 
 ### iOS setup  
 
-1. When prompted to register your device, select **Register**. 
+1. When prompted to register your device, select **Register**. From Laura: If they already have the MS AUthenticator/CP set up, will they still see this prompt?  
 2. Install the mobile threat defense app that's required by your organization. 
     a. Select **Download from App Store**.  
     b. A reminder appears. Read it and then select **OK**.
     c. The App Store opens the app details page. Install the app but don't open it yet.   
-    d. Return to Company Portal. From Laura: From the iOS flow, I couldn't tell what the name of the app is. It didn't look like Company Portal. I see that a prompt later calls it Intune MAM Diagnostic App. Is that what iOS end users see?
-3. Intune MAM Diagnostic App will ask you for permission to open the mobile threat defense app. Select **Open**.
+    d. Return to the app you were trying to access. 
+3. Intune MAM Diagnostic App will ask you for permission to open the mobile threat defense app. Select **Open**. From Laura: Is it always going to be the app that they were trying to access that's asking for the permission? So if they were trying to access Outlook, would it say "Outlook wants to open this mobile threat defense app?"
 4. The mobile threat defense app will ask you for permission to open Microsoft Authenticator. Select **Open**. 
-5. Select your work account. The mobile threat defense app will use this account to sign you in.  From Laura: To users go back to the MAM diagnostic app as soon as the mtd app signs them in--or do they wait for the scan to complete (step 6)?
-6. The mobile threat defense app will begin scanming your device for security threats, such as untrusted app developers and viruses. 
-7. Return to the Intune MAM Diagnostic App. 
-8. Create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device. 
+5. Select your work account. The mobile threat defense app will use this account to sign you in.  From Laura: SHould users go back to the MAM diagnostic app as soon as the mtd app signs them in--or do they wait for the scan to complete (step 6)?
+6. The mobile threat defense app will begin scanning your device for security threats. 
+7.  Return to the school or work app that you were originally trying to access.  
+8. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device. 
+9. Return to the app. If you still don't have access:  
+    * Select **Recheck,** if available in the school or work app.  
+    * Check the mobile threat defense app for existing threats. Complete the recommended steps to resolve the threat and regain access.    
 
 ### Android setup 
-
-
-
-### Device registration
- This step  required to access your organization's protected resources.  
-
- To register your device:
-
-* iOS: Install Microsoft Authenticator app and sign in with your work or school. 
-* Android: Install the Company Portal app and sign in with your work or school account. 
-
-Follow the onscreen prompts to complete registration. If you're not sure if your device is registered, the Mobile Defense App that you install will let you know, and provide next-step instructions.    
-
-### App installation  
-Your organization will make the app available to you through one of the following ways:  
-
-* Your organization might install the app on your device so that it's ready to use when you turn the device on. This applies to corporate-owned devices only. 
-
-*  
-
-* 
-
-1. Install the Mobile Threat Defense app.
-2. Sign in with your work or school account.
-3. Follow the prompts within the app to complete setup. 
-
-
-Next, in order for the Mobile Threat Defense service to do a scan of a particular device, it needs to have the corresponding Mobile Threat Defense client app installed. Again, Intune helps you with that process with guided setup instructions within your Intune protected app. 
-
-Make sure you have signed in with your corporate account into the Mobile Threat Defense client app. 
-
-
-
-
-After setup is complete, you should have access to your organization's email, Wi-Fi, and apps.  
-
-
-
-Lastly, once you have installed and signed in to all the required apps on your device, you may have to hit 'Recheck' within your Intune protected app, such as Microsoft Outlook. This is to get a status update to confirm the connection between services is working correctly. 
-
-Now, you should be able to use your Intune protected apps as normal unless your device ever does not meet the threat level set by your IT admin. 
+1. When prompted to register your device, select **Register**. 
+2. Install the mobile threat defense app that's required by your organization. 
+    a. Select **Download** to open the Google Play store.  
+    b. Install the app.  
+3. The mobile threat defense app asks for permission to access your contacts and location. **Allow** the access to continue.  From Laura: Is this something that's required for both aspects--contacts and location? Can they continue if they select deny?
+4. Select your work account. The mobile threat defense app will use this account to sign you in.
+6. The mobile threat defense app will begin scanning your device for security threats.
+9. Return to the school or work app that you were originally trying to access.
+10. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device.  From Laura: Is this PIN specific to this app or is it for all of the school or work data/apps?
+11. Return to the app. If you still don't have access:  
+    * Select **Recheck,** if available in the school or work app.  
+    * Check the mobile threat defense app for existing threats. Complete the recommended steps to resolve the threat and regain access.   
 
 ## What permissions does an end user need to accept? 
 
