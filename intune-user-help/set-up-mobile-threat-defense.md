@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad  
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,48 +49,37 @@ Your organization can't see any data, such as texts, emails, and pictures, in yo
 
 
 ## Install app    
- Before you install the app, make sure you:  
+Complete the steps in this section to install an MTD app.  
 
-* For iOS: Install Microsoft Authenticator app and sign in with your work or school account. 
-* For Android: Install the Company Portal app and sign in with your work or school account. 
+You might be prompted to register your device first. Registration is necessary to confirm your identity and connect your school or work account to your device. If you're not registered, you'll automatically be guided through that setup before you install the MTD app. When you get to the **Get access** screen, you can start the installation steps.  
 
-These two steps are necessary to confirm your school or work identity with your organization.  **From Laura: Is this an accurate explanation**?  
+For more information about device registration, see [Register your personal device on your organization's network](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network).  
 
 ### iOS setup  
-After you're blocked from signing in to an app, you are prompted to register or protect your device with an MTD app. Complete these steps to regain access to the app.  
 
-1. Select **Register**. **From Laura: Will everyone get the "Register" prompt/button, whether they've registered or not?**
-2. From the **Get access** screen, install the MTD app that's required by your organization. 
-    1. Select **Download from App Store**.
-    2. A reminder appears. Read it and then select **OK**.
-    3. The App Store opens the app details page. Install the app but don't open it yet.   
-3. On the **Get access** screen, select **Open**.  
-4. The MTD app asks for permission to open Microsoft Authenticator. Select **Open**. 
-5. Select your work account to sign in.  **From Laura: SHould users go back to the MAM diagnostic app as soon as the mtd app signs them in--or do they wait for the scan to complete (step 6)?**
-6. Wait while the MTD app scans your device for security threats. 
-7. Return to the school or work app that you were originally trying to access.  
-8. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device. 
-9. Return to the app. If you still don't have access:  
-    * On the **Get access** screen, select **Recheck**.    
-    * Check the MTD app for existing threats. Complete the recommended steps to resolve the threat and regain access.    
+1. On the **Get access** screen, follow the instructions to install the MTD app that's required by your organization.   
+2. Return to the **Get access** screen and select **Open**.  
+3. The MTD app asks for permission to open Microsoft Authenticator. Select **Open**. 
+4. Select your work account to sign in. 
+5. Wait while the MTD app scans your device for security threats. 
+6. Return to the school or work app that you were originally trying to access. At this point, your organization might prompt you to configure other app security requirements, such as creating a PIN.   
+7. You should now have access to the app. If you're still blocked:  
+    * On the **Get access** screen, select **Recheck**.  
+    * Go to the MTD app and check for existing threats. Complete the recommended steps to resolve the threat and regain access.    
 
 ### Android setup 
-After you're blocked from signing in to an app, you are prompted to register or protect your device. Complete these steps to regain access to the app.  
 
-1. Select **Register**. **From Laura: Same question here about what users see to launch them into this flow--will it always be "Register?"**
-2. From the **Get access** screen, install the MTD app that's required by your organization.  
-    a. Select **Download** to open the Google Play store.  
-    b. Install the app.  
-3. The MTD app asks for permission to access your contacts and location. In order for the app to work correctly, you must **Allow** access to contacts.  
-4. Select your work account to sign in. 
+1. On the **Get access** screen, follow the instructions to install the MTD app that's required by your organization.  
+2. Return to the **Get access** screen and select **Open**.  
+3. The MTD app asks for your permission to access certain areas of your device, should it need to. In order for this app to work properly, you must **Allow** access to contacts. Requested permissions will vary across MTD vendors.  
+4. Select your work account to sign in.  
 5. Wait while the MTD app scans your device for security threats.  
-6. Return to the school or work app that you were originally trying to access.
-7. When prompted to, create a PIN that's easy for you to remember. You'll use this PIN to authenticate yourself when accessing school or work data from your device.  **From Laura: Is this PIN specific to this app or is it for all of the school or work data/apps?**
-8. Return to the app. If you still don't have access:  
+6. Return to the school or work app that you were originally trying to access. At this point, your organization might prompt you to configure other app security requirements, such as creating a PIN.  
+7. You should now have access to the app. If you're still blocked:  
     * On the **Get access** screen, select **Recheck**.  
-    * Check the MTD app for existing threats. Complete the recommended steps to resolve the threat and regain access.   
+    * Go to the MTD app and check for existing threats. Complete the recommended steps to resolve the threat and regain access.  
 
-### Installation failed 
+### Installation failed  
 
 If the installation fails, contact your IT support person. Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to find your organization's contact information.  
 
@@ -103,7 +92,7 @@ You can also send your app logs to your IT support person to provide them with m
 If a threat exceeds your organization's defined threat level, your organization will either:  
    
 * Block access: Blocks you from using your organization's protected apps while signed in to your work or school account.  
-* Wipe data: Deletes your work or school data from one or more of your organization's protected apps.    
+* Wipe data: Deletes your work or school data from one or more of your organization's protected apps.  
 
 To resolve a threat and regain access, open the MTD app on your device. Read through the provided information to learn how the threat could affect your device and how to resolve it. After you follow the steps to resolve the threat, go back to the MTD app and initiate a new scan. It might take a few minutes to regain access to your organization.  
 
