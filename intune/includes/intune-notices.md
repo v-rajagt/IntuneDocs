@@ -11,7 +11,7 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
-### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console
+### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
 
 We plan to remove the setting “Server-side logging for Siri commands” from the Intune console with the November update to the Intune service. This change aligns with Apple already having removed the setting on their side.
 
