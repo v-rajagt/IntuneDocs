@@ -88,10 +88,11 @@ For Android, you will be able to configure actions for the following settings us
 - Min patch version
 - Device manufacturer(s)
 - SafetyNet device attestation
-- Threat scan on apps
+- Require threat scan on apps
+- Min Company Portal version
 - Max allowed device threat level
 
-By using the **Min app version**, you can specify a specific minimum defined version of the Company Portal that is enforced on an end user device. This conditional launch setting allows you to set values to **Block access**, **Wipe data**, and **Warn** as possible actions when each value is not met. The possible formats for this value follows the pattern *[Major].[Minor]*, *[Major].[Minor].[Build]*, or *[Major].[Minor].[Build].[Revision]*. For this scenario, the **Warn** option will allow you to notify users without forcing an update. Forcing an update could result in unexpected data charges at the time of the update.
+By using the **Min app version**, you can specify a specific minimum defined version of the Company Portal that is enforced on an end user device. This conditional launch setting allows you to set values to **Block access**, **Wipe data**, and **Warn** as possible actions when each value is not met. The possible formats for this value follows the pattern *[Major].[Minor]*, *[Major].[Minor].[Build]*, or *[Major].[Minor].[Build].[Revision]*. For this scenario, the **Warn** option will allow you to notify users without forcing an update. Forcing an update could result in unexpected data charges at the time of the update. In addition, you can configure an app protection policy by setting the **Min Company Portal version** that is required to launch the apps specificied in the app protection policy.
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A;Manufacturer B* 
