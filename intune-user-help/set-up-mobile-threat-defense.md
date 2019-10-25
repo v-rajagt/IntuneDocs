@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
 As part of your organization's security requirements, you might be required to install a Mobile Threat Defense (MTD) vendor app. This type of app detects and alerts you to threats on your device, such as suspicious apps, networks, or OS vulnerabilities.  
 
-If you don't have the required MTD app, you'll be blocked from signing in to protected apps with your work or school account. This article describes [how to install an MTD app](set-up-mobile-threat-defense.md#install-app) and get access to your school or work data.  
+If you don't have the required MTD app, you'll be blocked from signing in to protected apps with your work or school account. In this article, you'll learn [how to install an MTD app](set-up-mobile-threat-defense.md#install-app) to get unblocked.  
 
 There are a variety of MTD vendor apps available to install; your organization will let you know which one to use. 
 
