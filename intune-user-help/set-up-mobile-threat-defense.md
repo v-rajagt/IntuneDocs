@@ -49,9 +49,9 @@ Your organization can't see any data, such as texts, emails, and pictures, in yo
 
 
 ## Install app    
-Complete the steps in this section to install an MTD app.  
-
-You might be prompted to register your device first. Registration is necessary to confirm your identity and connect your school or work account to your device. If you're not registered, you'll automatically be guided through that setup before you install the MTD app. When you get to the **Get access** screen, you can start the installation steps.  
+When you sign in to a protected app, you'll automatically be prompted to install an MTD app. Follow the onscreen steps to complete installation. Use the steps in this section for additional help.  
+ 
+You might also be prompted to register your device. Registration is necessary to confirm your identity and connect your school or work account to your device. If you're not registered, you'll automatically be guided through that setup before you install the MTD app. When you get to the **Get access** screen, you can start the installation steps.  
 
 For more information about device registration, see [Register your personal device on your organization's network](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network).  
 
