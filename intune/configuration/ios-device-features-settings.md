@@ -270,6 +270,7 @@ This feature applies to:
   - **Specific websites only** (for the Safari web browser only): These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be opened. Use this option only if you know the exact list of URLs that users can access.
 
     - **URL**: Enter the URL of the website you want to allow. For example, enter `https://www.contoso.com`.
+    Add a note because the Bookmark Path setting is not functioning as it used to due to Apple's change: Please keep in mind that for the Bookmark path setting, all bookmarks will go into one "Approved Sites" folder instead of the specified bookmark path. This is due to an Apple change.   
     - **Bookmark Path**: Enter the path to store the bookmark. For example, enter `/Contoso/Business Apps`. If you don't add a path, the bookmark is added to the default bookmark folder on the device.
     - **Title**: Enter a descriptive title for the bookmark.
 
