@@ -87,8 +87,14 @@ On Windows 10 and later, you can create a device configuration profile to contro
 For more information on this feature, see [Use DFCI profiles on Windows devices in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
 
 Applies to:
-
 - Windows 10 RS5 (1809) and newer on supported firmware
+
+### Device enrollment
+
+#### Toggle to only show Enrollment Status Page on devices provisioned by out-of-box experience (OOBE) <!--3959566-->
+You can now choose to only show the Enrollment Status Page on devices provisioned by Autopilot OOBE.
+
+To see the new toggle, choose **Intune** > **Device enrollment** > **Windows enrollment** > **Enrollment Status Page** > **Create Profile** > **Settings** > **Only show page to devices provisioned by out-of-box experience (OOBE)**.
 
 ## Week of October 14, 2019
 
