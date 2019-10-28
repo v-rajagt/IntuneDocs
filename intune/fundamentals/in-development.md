@@ -174,11 +174,6 @@ You'll be able to edit the **Group Tag** value for Autopilot devices:
 ### Target macOS user groups to require Jamf management <!-- 4061739 -->
 You'll be able to target specific groups of users to require their macOS devices to be managed by Jamf. This targeting will enable you to apply the Jamf compliance integration to a subset of macOS devices while other devices continue to be managed by Intune. Targeting will also let you gradually migrate users' devices from one mobile device management (MDM) system to the other.
 
-### Deploy software updates to macOS devices <!-- 3194876 -->
-You'll be able to deploy software updates to groups of macOS devices. This feature includes critical, firmware, configuration file, and other updates. You can send updates on the next device check-in. Or you can select a weekly schedule to deploy updates in or out of periods that you set. 
-
-This feature helps when you want to update devices outside standard work hours or outside hours when your help desk is fully staffed. You'll also get a detailed report of all macOS devices that have updates deployed. You can drill into the report by device to see the status of a particular update.
-
 <!-- ***********************************************-->
 ## Intune apps
 
