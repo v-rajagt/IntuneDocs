@@ -56,17 +56,12 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
-<<<<<<< HEAD
 <!-- ########################## -->
 
 ## Week of October 28, 2019
 
 ### Intune to support iOS 11 and later <!-- 4665324 idready wnready -->
 Intune enrollment and Company Portal now support iOS versions iOS 11 and later. Earlier versions aren't supported.
-
-=======
-## Week of October 28, 2019
->>>>>>> 3c84a3ae0701833fc97d662db0a50d766ec46c3e
 
 ### App management 
 
