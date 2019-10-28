@@ -44,8 +44,6 @@ As an Intune admin, you can use the **Help and Support** option to file an on-li
 
 The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal.
 
-![Intune blades](./media/get-support/intune-blades.png)
-
 The *Help and support* experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the previous *Help + support*, which remains in place for other services in Azure.
 
 To access Help and support, use the following options:
