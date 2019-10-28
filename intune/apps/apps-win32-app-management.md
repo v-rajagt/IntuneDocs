@@ -283,7 +283,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 1. In the **Add app** pane, verify that you configured the app information correctly.
 2. Select **Add** to upload the app to Intune.
 
-### Step 9: Assign the app
+### Step 10: Assign the app
 
 1. In the app pane, select **Assignments**.
 2. Select **Add Group** to open the **Add group** pane that is related to the app.
