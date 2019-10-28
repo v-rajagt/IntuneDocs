@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -56,8 +56,22 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
+## Week of October 28, 2019
+
+### App management 
+
+#### Dark Mode for iOS Company Portal <!-- 4911422 -->
+Dark Mode is available for the iOS Company Portal. Users can download company apps, manage their devices, and get IT support in the color scheme of their choice based on device settings. The iOS Company Portal will automatically match the end user's device settings for dark or light mode. For more information about the iOS Company Portal, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).
 
 <!-- ########################## -->
+
+## Week of October 28, 2019
+
+### Monitor and troubleshoot
+
+#### Updated support experience   <!-- 5012398 -->
+
+The in-console experience for [getting help and support for Intune](get-support.md) is updated and streamlined.  We've improved  the in-console search and feedback for common issues, and the workflow you use to contact support. When opening a support issue, you'll see real-time estimates for when you can expect a callback or email reply, and Premier and Unified support customers can easily specify a severity for their issue, to help get support faster.
 
 ## Week of October 21, 2019
 
@@ -76,7 +90,7 @@ For more information about these improvements, see the [Enterprise Mobility + Se
 ### App management
 
 #### Add Mobile Threat Defense apps to unenrolled devices <!-- 3005337 -->
-You can create an Intune app protection policy that may block, or selectively wipe the users corporate data based on the health of a device. The health of the device is determined using your chosen Mobile Threat Defense (MTD) solution. This capability exists today with Intune enrolled devices as a device compliance setting. With this new feature, we extend the threat detection from an Mobile Threat Defense vendor to function on unenrolled devices. For more information, see [Create Mobile Threat Defense app protection policy with Intune](~/protect/mtd-app-protection-policy.md).
+You can create an Intune app protection policy that may block, or selectively wipe the users corporate data based on the health of a device. The health of the device is determined using your chosen Mobile Threat Defense (MTD) solution. This capability exists today with Intune enrolled devices as a device compliance setting. With this new feature, we extend the threat detection from an Mobile Threat Defense vendor to function on unenrolled devices. On Android, this feature requires the latest Company Portal on the device. On iOS, this feature requires apps to integrate the latest Intune SDK (v 12.0.15+) and will happen on a rolling basis. For more information, see [Create Mobile Threat Defense app protection policy with Intune](~/protect/mtd-app-protection-policy.md).
 
 ### Device configuration
 
