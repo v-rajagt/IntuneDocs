@@ -11,6 +11,20 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
+### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
+
+We plan to remove the setting “Server-side logging for Siri commands” from the Intune console with the November update to the Intune service. This change aligns with Apple already having removed the setting on their side.
+
+#### How does this affect me?
+When the November update or 1911 rolls out around mid-November, you’ll see that this setting has been removed from the Device restrictions menu (Built-in Apps) for iOS configuration profiles, in the Intune console. It may appear in your policies and the targeted device’s management profile but the setting has no effect on your device. We do not anticipate much impact to functionality since it currently doesn’t work on devices even though you see it in the management profile.
+
+You can choose one of two paths:
+- If you wish to delete this setting from your policies, you can go to the profile that has this setting, make a minor edit and save the policy. The policy will recompute in the backend and the setting will be deleted from your policy.
+- If you choose not to take this action, end users will see this setting in the management profile of their device but the setting will have no effect.
+
+#### What can I do to prepare for this change?
+You can take action according to the section above or leave your policy as is. We’ll update our What’s New page and documentation when this change rolls out.
+
 ### End of support for legacy PC management
 
 Legacy PC management is going out of support on October 15, 2020. Upgrade devices to Windows 10 and reenroll them as MDM devices to keep them managed by Intune.
@@ -65,23 +79,6 @@ You do not need to take any action but can consider updating your IT-pro guidanc
 
 #### Additional information 
 https://aka.ms/intune_fullscreen
-
-### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
-Starting with the August release to the Intune service or 1908, we're adding in new "Deadline settings," which you can configure instead of the "Allow user to restart (engaged restart)" settings. We plan to disable the engaged-restart settings in the UI in 1909 or the September update and then completely remove them from the console toward the end of October.
-
-#### How does this affect me?
-If you manage Windows 10 devices in your environment:
-
-- With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged-restart settings.
-- When both these old and new settings are configured, the deadline settings values will override the engaged-restart setting values.
-- Deadline settings will replace the "Allow user to restart (engaged restart)" option in the console in the 1910 update.
-
-#### What can I do to prepare for this change?
-Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged-restart setting to "Not configured" to prepare for these settings being removed from the console in October.
-
-Update your documentation and any automation scripts if needed.
-
-We'll keep you updated and post a reminder to the message center before we remove the engaged-restart settings.
 
 ### Plan for change: Intune App SDK and app protection policies for Android moving to support Android 5.0 and higher in October <!--4911065 -->
 Intune will be moving to support Android 5.x (Lollipop) and higher in October. Update any wrapped apps with the latest Intune App SDK and update your devices.
