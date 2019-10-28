@@ -327,7 +327,18 @@ The following image notifies the end user that app changes are being made to the
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-management/apps-win32-app-09.png)    
 
 ## Set Win32 app availability based on a date and time
-You can configure the start time and deadline time for a required Win32 app. At the start time, Intune management extension will start the app content download and cache it. The app will be installed at the deadline time. For available apps, start time will dictate when the app is visible in Company Portal. In Intune, select **Client apps** > **Apps**. Then, select a specific Win32 app from the list or select **Add** to add a new app. From the app blade, select **Assignments** > **Add group**. Set the **Assignment type** to **Required** and then select **Included Groups**. Set **Make this app required for all users** to **Yes** and select **Edit** to modify the **End user experience** options. In the **Edit assignment** blade, set the **App availability** to **A specific date and time** and select your date and time. In addition, you can set the app installation deadline. 
+You can configure the start time and deadline time for a Win32 app. At the start time, Intune management extension will start the app content download and cache it. The app will be installed at the deadline time. For available apps, start time will dictate when the app is visible in Company Portal. 
+
+Set the app availability based on a date and time, using the following steps:
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. In the **Intune** blade, select **Client apps** > **Apps**.
+3. Select an existing **Windows app (Win32)** from the list. 
+4. From the app blade, select **Assignments** > **Add group**. 
+5. Set the **Assignment type** to **Required** and then select **Included Groups**. Note that app availability can be set based on the assignment type. You can choose that the app is **required** for the selected group(s), that the app is **available for enrolled devices** within the selected group(s), or the app must be **uninstalled** for the selected group(s).
+6. Set **Make this app required for all users** to **Yes** and select **Edit** to modify the **End user experience** options.
+7. In the **Edit assignment** blade, set the **App availability** to **A specific date and time** and select your date and time. This date and time specifies when the app is downloaded to the end users device.
+8. Set the **App installation deadline** to **A specific date and time** and select your date and time. This date and time specifies when the app is installed on the end users device. When more than one assignment is made for the same user, the app installation deadline time is picked based on the earliest time possible.
 
 ## Toast notifications for Win32 apps 
 If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
