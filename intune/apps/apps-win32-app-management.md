@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -262,7 +262,23 @@ The following steps provide guidance to help you add a Windows app to Intune.
     - **Success** – The return value that indicates the app was successfully installed.
 3. Select **OK** once you have added or modify your list of return codes.
 
-### Step 8: Add the app
+### Step 8: Configure user experience
+
+1. In the **Add app** pane, select **User experience** to specify the end user installation experience. 
+2. In the **Installation experience** pane, select the app install behavior.
+    - **System** – **System** context refers to all users of a Windows 10 device.
+    - **User** – **User** context refers to only a given user.  
+3. Enter a **Install retry count** value. This value is the specifies the number of times the app will attempt to install before failing.
+4. Enter a **Install retry interval (in minutes)** value. This value specifies the number of minutes to wait between installation attempts.
+5. Enter a **Max allowed run time (in minutes)** value. This value specifies the number of minutes used when attempting an installation.
+6. Select how you would like to restart the device by selecting **Enforce device reboot behavior**. 
+    - **Determine behavior based on return codes** – (Default selection) The installation will perform any action needed based on the installation return code.​
+    - **No specific action** – The installation won’t perform any action. **Note:** In this case it is possible to completely suppress a restart.​
+    - **The application install program might force a device restart** – The installation might force a restart.​
+    - **Intune will force a mandatory device restart** – The installation will always perform a restart​.
+7. Select **OK** once you have completed your installation experience selections for the app.
+
+### Step 9: Add the app
 
 1. In the **Add app** pane, verify that you configured the app information correctly.
 2. Select **Add** to upload the app to Intune.
