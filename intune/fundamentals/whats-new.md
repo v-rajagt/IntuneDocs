@@ -56,21 +56,31 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
+<!-- ########################## -->
 ## Week of October 28, 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management 
 
 #### Dark Mode for iOS Company Portal <!-- 4911422 -->
 Dark Mode is available for the iOS Company Portal. Users can download company apps, manage their devices, and get IT support in the color scheme of their choice based on device settings. The iOS Company Portal will automatically match the end user's device settings for dark or light mode. For more information about the iOS Company Portal, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management 
+#### Intune supports iOS 11 and later <!-- 4665324 idready wnready -->
+Intune enrollment and Company Portal now support iOS versions 11 and later. Older versions aren't supported.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Monitor and troubleshoot
 
 #### Updated support experience   <!-- 5012398 -->
 
 The in-console experience for [getting help and support for Intune](get-support.md) is updated and streamlined.  We've improved  the in-console search and feedback for common issues, and the workflow you use to contact support. When opening a support issue, you'll see real-time estimates for when you can expect a callback or email reply, and Premier and Unified support customers can easily specify a severity for their issue, to help get support faster.
 
+<!-- ########################## -->
 ## Week of October 21, 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Microsoft 365 Device Management
 
 #### Improved administration experience in Microsoft 365 Device Management
@@ -83,6 +93,7 @@ A refreshed and streamlined administration experience is now generally available
 
 For more information about these improvements, see the [Enterprise Mobility + Security blog post](https://go.microsoft.com/fwlink/?linkid=2109094) on the Microsoft Tech Community web site.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management
 
 #### Add Mobile Threat Defense apps to unenrolled devices <!-- 3005337 -->
@@ -106,6 +117,8 @@ You can now choose to only show the Enrollment Status Page on devices provisione
 
 To see the new toggle, choose **Intune** > **Device enrollment** > **Windows enrollment** > **Enrollment Status Page** > **Create Profile** > **Settings** > **Only show page to devices provisioned by out-of-box experience (OOBE)**.
 
+
+<!-- ########################## -->
 ## Week of October 14, 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
