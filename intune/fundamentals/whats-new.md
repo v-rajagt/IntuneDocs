@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -56,7 +56,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
-## Week of October 21, 2019
+## Week of October 28, 2019
 
 ### App management 
 
@@ -64,6 +64,43 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 Dark Mode is available for the iOS Company Portal. Users can download company apps, manage their devices, and get IT support in the color scheme of their choice based on device settings. The iOS Company Portal will automatically match the end user's device settings for dark or light mode. For more information about the iOS Company Portal, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).
 
 <!-- ########################## -->
+
+## Week of October 21, 2019
+
+### Microsoft 365 Device Management
+
+#### Improved administration experience in Microsoft 365 Device Management
+
+A refreshed and streamlined administration experience is now generally available in the Microsoft 365 Device Management specialist workspace at [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com), including:
+
+- **Updated navigation**: You will find a simplified 1st level navigation that logically groups features.
+- **New platform filters**: You can select a single platform, which shows only the policies and apps for the selected platform, on the Devices and Apps pages.
+- **A new home page**: Quickly see service health, state of your tenant, news, etc. on the new home page.
+
+For more information about these improvements, see the [Enterprise Mobility + Security blog post](https://go.microsoft.com/fwlink/?linkid=2109094) on the Microsoft Tech Community web site.
+
+### App management
+
+#### Add Mobile Threat Defense apps to unenrolled devices <!-- 3005337 -->
+You can create an Intune app protection policy that may block, or selectively wipe the users corporate data based on the health of a device. The health of the device is determined using your chosen Mobile Threat Defense (MTD) solution. This capability exists today with Intune enrolled devices as a device compliance setting. With this new feature, we extend the threat detection from an Mobile Threat Defense vendor to function on unenrolled devices. For more information, see [Create Mobile Threat Defense app protection policy with Intune](~/protect/mtd-app-protection-policy.md).
+
+### Device configuration
+
+#### New device firmware configuration interface profile for Windows 10 and later devices <!-- 2266073  -->
+
+On Windows 10 and later, you can create a device configuration profile to control settings and features (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform). In this update, there's a new device firmware configuration interface profile type that allows Intune to manage UEFI (BIOS) settings. We're in the process of rolling out this feature to all customers and expect to be completed by the end of next week.
+
+For more information on this feature, see [Use DFCI profiles on Windows devices in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
+
+Applies to:
+- Windows 10 RS5 (1809) and newer on supported firmware
+
+### Device enrollment
+
+#### Toggle to only show Enrollment Status Page on devices provisioned by out-of-box experience (OOBE) <!--3959566-->
+You can now choose to only show the Enrollment Status Page on devices provisioned by Autopilot OOBE.
+
+To see the new toggle, choose **Intune** > **Device enrollment** > **Windows enrollment** > **Enrollment Status Page** > **Create Profile** > **Settings** > **Only show page to devices provisioned by out-of-box experience (OOBE)**.
 
 ## Week of October 14, 2019
 
@@ -74,7 +111,12 @@ Dark Mode is available for the iOS Company Portal. Users can download company ap
 For available app installs on Android Enterprise work profile, dedicated, and fully managed devices you can view app installation status as well as the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](~/apps/app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](~/enrollment/android-enterprise-overview.md) and [Managed Google Play app type](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
 
 #### Microsoft Edge version 77 and later for Windows 10 and macOS (public preview) <!-- 3872025, 4678761  -->
-Microsoft Edge version 77 and later is now available to deploy to PCs running Windows 10 and macOS. The public preview offers **Dev** and **Beta** channels for Windows 10 and a **Beta** channel for macOS. The deployment is in English (EN) only, however end users can change the display language in the browser under **Settings** > **Languages**. Microsoft Edge is a Win32 app installed in system context and on like architectures (x86 app on x86 OS, and x64 app on x64 OS). In addition, automatic updates of the browser is **On** by default, and Microsoft Edge cannot be uninstalled. For more information, see [Add Microsoft Edge for Windows 10 to Microsoft Intune](~/apps/apps-windows-edge.md) and [Microsoft Edge documentation](https://go.microsoft.com/fwlink/?linkid=2103823).
+Microsoft Edge version 77 and later will be available to deploy to PCs running Windows 10 and macOS. 
+
+>[!NOTE]
+>The rollout for this feature has been delayed until later this month.
+
+The public preview offers **Dev** and **Beta** channels for Windows 10 and a **Beta** channel for macOS. The deployment is in English (EN) only, however end users can change the display language in the browser under **Settings** > **Languages**. Microsoft Edge is a Win32 app installed in system context and on like architectures (x86 app on x86 OS, and x64 app on x64 OS). In addition, automatic updates of the browser is **On** by default, and Microsoft Edge cannot be uninstalled. For more information, see [Add Microsoft Edge for Windows 10 to Microsoft Intune](~/apps/apps-windows-edge.md) and [Microsoft Edge documentation](https://go.microsoft.com/fwlink/?linkid=2103823).
 
 #### Update to app protection UI and iOS app provisioning UI <!-- 4102027, 4102029   -->
 The UI to create and edit app protection policies and iOS app provisioning profiles in Intune has been updated. UI changes include:
@@ -128,7 +170,7 @@ Applies to:
 - Android Enterprise work profile
 
 #### Create a global HTTP proxy on Android Enterprise device owner devices <!-- 4816339   -->
-On Android Enterprise devices, you can configure a global HTTP Proxy to meet your organization’s web browsing standards (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner > Device restrictions** for profile type > **Connectivity**). Once configured, all HTTP traffic will use this this proxy.
+On Android Enterprise devices, you can configure a global HTTP Proxy to meet your organization’s web browsing standards (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner > Device restrictions** for profile type > **Connectivity**). Once configured, all HTTP traffic will use this proxy.
 
 To configure this feature, and see all the settings you configure, go to [Android Enterprise device settings to allow or restrict features using Intune](../configuration/device-restrictions-android-for-work.md).
 
@@ -166,18 +208,12 @@ Applies to:
 Using Intune device type restrictions, you can use the device's OS version to specify which user devices will use Android Enterprise work profile enrollment or Android device administrator enrollment.  For more information, see [Set enrollment restrictions](../enrollment/enrollment-restrictions-set.md).
 
 #### Windows Autopilot deployment reports <!-- 3856172 -->
-A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report).
+A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). We're in the process of rolling out this feature to all customers and expect to be completed by the end of next week.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
-#### Edit device name value for Autopilot devices<!-- 4816775  -->
-You can edit the Device Name value for Azure AD Joined Autopilot devices.  For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### Edit Group Tag value for Autopilot devices<!-- 4816775  -->
-You can edit the Group Tag value for Autopilot devices. For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### New restrictions for renaming Windows devices <!-- 2640074  -->
+#### New restrictions for renaming Windows devices <!-- 3478938  -->
 When renaming a Windows device, you must follow new rules:
 - 15 characters or less (must be less than or equal to 63 bytes, not including trailing NULL)
 - Not null or an empty string
@@ -198,7 +234,7 @@ A new report to the Devices overview page displays how many Android devices have
 #### PKCS certificates for macOS  <!-- 1333650       -->
 You can now [use PKCS certificates with macOS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). You can select the PKCS certificate as a profile type for macOS, and deploy user and device certificates that have [customized subject and subject alternative name fields](../protect/certficates-pfx-configure.md#subject-name-format-for-macos).  
 
-PCKS certificate for macOS also support a new setting, _Allow All Apps Access_. With this setting you can enable all associated apps access to the private key of the certificate.  For more information about this setting, see the Apple documentation at https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
+PKCS certificate for macOS also support a new setting, _Allow All Apps Access_. With this setting you can enable all associated apps access to the private key of the certificate.  For more information about this setting, see the Apple documentation at https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
 
 ####   Derived Credentials to provision iOS mobile devices with certificates      <!--  1736036, 1736037, 1772050, 2777333         -->  
 Intune supports use of [derived credentials](../protect/derived-credentials.md) as an authentication method and for S/MIME signing and encryption for iOS devices. Derived credentials are an implementation of the *National Institute of Standards and Technology (NIST) 800-157* standard for deploying certificates to devices.  
