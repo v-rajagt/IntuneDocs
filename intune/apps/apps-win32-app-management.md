@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -325,6 +325,9 @@ The end user will see Windows Toast Notifications for the required and available
 The following image notifies the end user that app changes are being made to the device.
 
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+## Set Win32 app availability based on a date and time
+You can configure the start time and deadline time for a required Win32 app. At the start time, Intune management extension will start the app content download and cache it. The app will be installed at the deadline time. For available apps, start time will dictate when the app is visible in Company Portal. In Intune, select **Client apps** > **Apps**. Then, select a specific Win32 app from the list or select **Add** to add a new app. From the app blade, select **Assignments** > **Add group**. Set the **Assignment type** to **Required** and then select **Included Groups**. Set **Make this app required for all users** to **Yes** and select **Edit** to modify the **End user experience** options. In the **Edit assignment** blade, set the **App availability** to **A specific date and time** and select your date and time. In addition, you can set the app installation deadline. 
 
 ## Toast notifications for Win32 apps 
 If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
