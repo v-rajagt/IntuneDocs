@@ -284,7 +284,7 @@ This feature applies to:
 
 ### Settings apply to: All enrollment types
 
-- **SSO app extension type**: Choose the type of credential SSO app extension. When you save the SSO app extension profile, you can't change the SSO app extension type. Your options:
+- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
 
   - **Not configured**: App extensions aren't used. To disable an app extension, you can switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
   - **Credential**: Use a generic, customizable credential app extension to perform SSO. Be sure you know the extension ID for your organization’s SSO app extension.
@@ -319,7 +319,7 @@ This feature applies to:
 
 - **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.
 - **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
-- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
+- **Default realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
 
   > [!TIP]
   > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
