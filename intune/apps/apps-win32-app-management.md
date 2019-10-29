@@ -135,7 +135,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 
 ### Step 4: Configure app installation details
 1. In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
-2. Add the complete installation command line to install the app. 
+2. To configure the **Install command**, add the complete installation command line to install the app. 
 
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -144,10 +144,12 @@ The following steps provide guidance to help you add a Windows app to Intune.
     In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
 
-3. Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
+3. To configure the **Uninstall command**, add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
     For example:
     `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. Set the **Install behavior** to either **System** or **User**.
 
     > [!NOTE]
     > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
@@ -156,7 +158,13 @@ The following steps provide guidance to help you add a Windows app to Intune.
     > 
     > The Win32 app install and uninstall will be executed under admin privilege (by default) when the app is set to install in user context and the end user on the device has admin privileges.
 
-4. When you're finished, select **OK**.
+5. To configure the **Device restart behavior**, select one of the following options:
+    - **Determine behavior based on return codes**: Choose this option to restart the device based on the [return codes](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes) configuration settings.
+    - **No specific action**: Choose this option to suppress device restarts during the app installation of MSI-based apps.
+    - **App install may force a device restart**: Choose this option to allow the app installation to complete without suppressing restarts.
+    - **Intune will force a mandatory device restart**: Choose this option to always restart the device after a successfull app installation.
+
+6. When you're finished, select **OK**.
 
 ### Step 5: Configure app requirements
 
@@ -262,28 +270,12 @@ The following steps provide guidance to help you add a Windows app to Intune.
     - **Success** – The return value that indicates the app was successfully installed.
 3. Select **OK** once you have added or modify your list of return codes.
 
-### Step 8: Configure user experience
-
-1. In the **Add app** pane, select **User experience** to specify the end user installation experience. 
-2. In the **Installation experience** pane, select the app install behavior.
-    - **System** – **System** context refers to all users of a Windows 10 device.
-    - **User** – **User** context refers to only a given user.  
-3. Enter a **Install retry count** value. This value is the specifies the number of times the app will attempt to install before failing.
-4. Enter a **Install retry interval (in minutes)** value. This value specifies the number of minutes to wait between installation attempts.
-5. Enter a **Max allowed run time (in minutes)** value. This value specifies the number of minutes used when attempting an installation.
-6. Select how you would like to restart the device by selecting **Enforce device reboot behavior**. 
-    - **Determine behavior based on return codes** – (Default selection) The installation will perform any action needed based on the installation return code.​
-    - **No specific action** – The installation won’t perform any action. **Note:** In this case it is possible to completely suppress a restart.​
-    - **The application install program might force a device restart** – The installation might force a restart.​
-    - **Intune will force a mandatory device restart** – The installation will always perform a restart​.
-7. Select **OK** once you have completed your installation experience selections for the app.
-
-### Step 9: Add the app
+### Step 8: Add the app
 
 1. In the **Add app** pane, verify that you configured the app information correctly.
 2. Select **Add** to upload the app to Intune.
 
-### Step 10: Assign the app
+### Step 9: Assign the app
 
 1. In the app pane, select **Assignments**.
 2. Select **Add Group** to open the **Add group** pane that is related to the app.
