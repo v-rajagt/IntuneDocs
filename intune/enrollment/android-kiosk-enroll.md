@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
@@ -82,7 +83,7 @@ You can target apps and policies to either assigned or dynamic device groups. Yo
 4. In the **Dynamic membership rules** blade, fill out the fields as follows:
     - **Add dynamic membership rule**: Simple rule
     - **Add devices where**: enrollmentProfileName
-    - In the middle box, choose **Match**.
+    - In the middle box, choose **Equals**.
     - In the last field, enter the enrollment profile name that you created earlier.
     For more information about dynamic membership rules, see [Dynamic membership rules for groups in AAD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. Choose **Add query** > **Create**.

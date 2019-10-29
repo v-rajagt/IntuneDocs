@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 04/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
@@ -19,7 +20,7 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: davidra
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:

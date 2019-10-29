@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -33,8 +34,9 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 As an Intune administrator, you can create and manage enrollment restrictions that define what devices can enroll into management with Intune, including the:
-- number of devices
-- operating systems and versions
+- Number of devices.
+- Operating systems and versions.
+
 You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
 
 >[!NOTE]
@@ -53,7 +55,7 @@ The specific enrollment restrictions that you can create include:
 - Platform operating system version for iOS, Android device administrator, Android Enterprise work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android device administrator, Android Enterprise work profile, macOS, Windows, and Windows Mobile only).
+- Restrict [personally owned devices](device-enrollment.md#bring-your-own-device) (iOS, Android device administrator, Android Enterprise work profile, macOS, Windows, and Windows Mobile only).
 
 ## Default restrictions
 
@@ -74,8 +76,17 @@ Default restrictions are automatically provided for both device type and device 
     - Android device administrator and Android Enterprise work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
     - Windows supports major.minor.build.rev for Windows 10 only.
-    > [!Note]
-    > Windows 10 does not provide the rev number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
+    
+    > [!IMPORTANT]
+    > Android Enterprise (work profile) and Android device administrator platforms have the following behavior:
+    > - If both platforms are allowed for the same group, then users will be enrolled with a work profile if their device supports it, otherwise they will enroll as DA. 
+    > - If both platforms are allowed for the group and refined for specific and non-overlapping versions, then users will recieve the enrollment flow defined for their OS version. 
+    > - If both platforms are allowed, but blocked for the same versions, then users on devices with the blocked versions will be taken down the Android device administrator enrollment flow and then get blocked from enrollment and prompted to sign out. 
+    >
+    > Worth noting that neither work profile or device administrator enrollment will work unless the appropriate prequisites have been completed in Android Enrollment. 
+    
+   > [!Note]
+   > Windows 10 does not provide the rev number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
 
 8. Under **Personally owned**, choose **Allow** for the platforms that you want to permit as personally owned devices.
 9. Choose **Next** to go to the **Assignments** page.
@@ -156,6 +167,12 @@ The following personal enrollment methods will also be blocked:
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 \* These won't be blocked if registered with Autopilot.
+
+
+## Blocking personal iOS devices
+By default, Intune classifies iOS devices as personally-owned. To be classified as corporate-owned, an iOS device must fulfill one of the following conditions:
+- Registered with a serial number or IMEI.
+- Enrolled by using Automated Device Enrollment (formerly Device Enrollment Program)
 
 
 ## Change enrollment restriction priority

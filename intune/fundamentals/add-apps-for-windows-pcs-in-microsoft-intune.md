@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
@@ -29,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Add apps for Windows PCs that run the Intune software client
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
 

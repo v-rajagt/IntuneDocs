@@ -9,9 +9,10 @@ manager: dougeby
 ms.date: 12/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology:
-
+ms.assetid: 585a2f17-106b-4f02-adf7-05f08a92dbc1
 # optional metadata
 
 #ROBOTS:
@@ -81,7 +82,7 @@ Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices
 - To learn more about developing apps for Microsoft HoloLens, see [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
 
 > [!NOTE]
-> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
+> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](/hololens/holographic-store-apps).
 
 ## Device actions
 Intune has some built-in actions that allow IT administrators to do different tasks, locally on the device, or remotely using Intune in the Azure portal. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.

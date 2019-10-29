@@ -8,9 +8,10 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/15/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
@@ -112,7 +113,7 @@ For iOS devices, use the following key/value pairs:
 | **Values** | <ul><li>**Enabled**: The only account allowed is the managed user account defined by the [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) key.</li><li>**Disabled** (or any value that is not a case insensitive match to **Enabled**): Any account is allowed.</li></ul> |.
 
    > [!NOTE]
-   > You must use OneDrive for iOS 10.34 or later and Outlook for iOS 2.99.0 or later and the app must be targeted with [Intune app protection policies](app-protection-policy.md) when allowing only configured organization accounts with multi-identity.
+   > You must use OneDrive for iOS 10.34 or later, Outlook for iOS 2.99.0 or later or Edge for iOS 44.8.7 or later and the app must be targeted with [Intune app protection policies](app-protection-policy.md) when allowing only configured organization accounts with multi-identity.
 
 ## Enter XML data
 
