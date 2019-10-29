@@ -32,6 +32,9 @@ ms.collection: M365-identity-device-management
 
 View the Microsoft Edge web browser baseline settings that are supported by Microsoft Intune. The Microsoft Edge baseline defaults represent the recommended configuration for Microsoft Edge browsers, and might not match baseline defaults for other security baselines.
 
+> [!NOTE]
+> The Microsoft Edge baseline is in Public Preview. 
+
 ## Microsoft Edge
 
 - **Prevent bypassing Microsoft Defender SmartScreen prompts for sites**  
