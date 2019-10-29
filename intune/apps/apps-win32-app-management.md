@@ -312,6 +312,19 @@ If you choose not to **Automatically install** a dependency, the Win32 app insta
 
 Each dependency will adhere to Intune Win32 app retry logic (try to install 3 times after waiting for 5 minutes) and the global re-evaluation schedule.​ Also, dependencies are only applicable at the time of installing the Win32 app on the device. Dependencies are not applicable for uninstalling a Win32 app.​ To delete a dependency, you must click on the ellipses (three dots) to the left of the dependent app located at the end of the row of the dependency list.​ 
 
+## Win32 apps on Windows 10 S mode devices 
+ 
+You can install and run Win32 apps on Windows 10 S mode managed devices. By using the Windows Defender Application Control (WDAC) PowerShell tools, yYou can create one or more supplemental policies for Windows S mode. Sign the supplemental policies with the Device Guard Signing Portal and then upload and distribute the policies via Intune. As an alternative, you can sign the supplemental policies with a codesigning certificate from your organization.
+
+In Intune, you will find this capability by selecting **Client apps** > **Windows 10 S supplemental policies**. 
+
+
+
+
+
+
+
+
 ## Delivery Optimization
 
 Windows 10 1709 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and via Intune Device configuration. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
