@@ -326,8 +326,8 @@ The following image notifies the end user that app changes are being made to the
 
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-management/apps-win32-app-09.png)    
 
-## Set Win32 app availability based on a date and time
-You can configure the start time and deadline time for a Win32 app. At the start time, Intune management extension will start the app content download and cache it for required intent. The app will be installed at the deadline time. For available apps, start time will dictate when the app is visible in the Company Portal and content will be downloaded when the end user requests the app from the Company Portal. 
+## Set Win32 app availability and notifications
+You can configure the start time and deadline time for a Win32 app. At the start time, Intune management extension will start the app content download and cache it for required intent. The app will be installed at the deadline time. For available apps, start time will dictate when the app is visible in the Company Portal and content will be downloaded when the end user requests the app from the Company Portal. Additionally, you can enable a restart grace period. 
 
 Set the app availability based on a date and time for a required app using the following steps:
 
@@ -349,7 +349,12 @@ Set the app availability based on a date and time for a required app using the f
 9. In the **Edit assignment** blade, set the **Ender user notifications** to **Show all toast notifications**. Note that you can set **End user notifications** to **Show all toast notifications**, **Show toast notifications for computer restarts**, or **Hide all toast notifications**.
 10. set the **App availability** to **A specific date and time** and select your date and time. This date and time specifies when the app is downloaded to the end users device. 
 11. Set the **App installation deadline** to **A specific date and time** and select your date and time. This date and time specifies when the app is installed on the end users device. When more than one assignment is made for the same user or device, the app installation deadline time is picked based on the earliest time possible.
-12. Click **OK** > **OK** > **OK** > **Save** to add the assignment.
+12. Click **Enabled** next to the **Restart grace period**. The restart grace period starts as soon as the app install has been completed on the device.​ When disabled, the device can restart without warning. The grace period must not exceed the installation deadline.<br>You can customize the following options:
+    - **Device restart grace period (minutes)**: The deault value is 1440 minutes (24 hours). This value can be a maximum of 2 weeks.
+    - **Select when to display the restart countdown dialog box before the restart occurs (minutes)**: The default value is 15 minutes.
+    - **Allow user to snooze the restart notification**: You can choose **Yes** or **No**.
+        - **Select the snooze duration (minutes)**: The default value is 240 minutes (4 hours). The snooze value cannot be more than reboot grace period.
+13. Click **OK** > **OK** > **OK** > **Save** to add the assignment.
 
 ## Toast notifications for Win32 apps 
 If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
