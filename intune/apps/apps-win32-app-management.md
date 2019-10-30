@@ -341,9 +341,9 @@ Set the app availability based on a date and time for a required app using the f
 
     > [!NOTE]
     > **Assignment type** options included the following:<br>
-    > **Required**: You can choose to **make this app required for all users** and/or **make this app required on all devices**.<br>
-    > **Available for enrolled devices**: You can choose to **make Make this app available to all users with enrolled devices**.<br>
-    > **Uninstall**: You can choose to ***uninstall this app for all users** and/or **uninstall this app for all devices**.
+    > - **Required**: You can choose to **make this app required for all users** and/or **make this app required on all devices**.<br>
+    > - **Available for enrolled devices**: You can choose to **make Make this app available to all users with enrolled devices**.<br>
+    > - **Uninstall**: You can choose to ***uninstall this app for all users** and/or **uninstall this app for all devices**.
 
 8. To modify the **End user experience** options select **Edit**.
 9. In the **Edit assignment** blade, set the **Ender user notifications** to **Show all toast notifications**. Note that you can set **End user notifications** to **Show all toast notifications**, **Show toast notifications for computer restarts**, or **Hide all toast notifications**.
