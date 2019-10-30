@@ -53,7 +53,7 @@ The *Help and support* experience is similar to the experience seen in the [Micr
   - Select **Help and support** from any Intune blade or page.
 
   > [!NOTE]  
-  > If your instance of Intune is hosted on the private cloud for government, also known as a sovereign cloud like Azure Government, see [Intune support for private cloud for government](#intune-support-for-private-cloud-for-government), later in this article. The Intune *Help and support* experience won’t be available on the private cloud for government until later this year.
+  > If your instance of Intune is hosted on the private cloud for government, also known as a sovereign cloud like Azure Government, see [Intune support for private cloud for government](#intune-support-for-private-cloud-for-government), later in this article. The Intune *Help and support* experience won’t be available on the private cloud for government until next year.
 
 - **From the Device Management Dashboard:**
   - After you've selected a feature area for Intune, select the option for **Help and support**.
@@ -131,11 +131,22 @@ Selecting either a severity **A** or **Critical** issue limits you to a phone su
 
 ## Azure Help + support experience
 
-When you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the Azure portal, you open the Azure Help + support experience, which is distinct from the Intune Help and support experience.
+You can no longer use the Azure *Help + support* experience to get assistance with Intune, unless your subscription is on a private cloud for government.
+If your instance of Intune doesn't run on a private cloud for government, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents:
 
-Beginning in April of 2019, you can't access the Azure *Help + support* experience to get assistance with Intune, unless your subscription is on a private cloud for government. 
+- When you use the left navigation pane **Help + support**, or use the **?** option to open the **Help** pane and then select **Help + support**, you open the Azure **Help + support** page. From this page select **+ New support request** to open the *Basics* tab of the **Help + support + New support request** page.
+  
+  ![Help + support](./media/get-support/help-plus-support.png)
 
-If your instance of Intune doesn't run on a private cloud for government, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents.
+  On this page:
+
+  - For *Issue type*, select  **Technical**.
+  - For *Service*, select **Microsoft Intune**.
+
+  You are then presented with a link that redirects you to the [Intune Help and Support page](https://aka.ms/intunehelpsupport).
+  
+  ![New support request](./media/get-support/new-request.png)
+
 
 ## Intune support for private cloud for government
 
