@@ -284,10 +284,11 @@ The following steps provide guidance to help you add a Windows app to Intune.
     - **Required**: The app is installed on devices in the selected groups.
     - **Uninstall**: The app is uninstalled from devices in the selected groups.
 4. Select **Included Groups** and assign the groups that will use this app.
-5. In the **Assign** pane, select **OK** to complete the included groups selection.
-6. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
-7. In the **Add group** pane, select **OK**.
-8. In the app **Assignments** pane, select **Save**.
+5. In the **Assign** pane, select to assign based on users or devices. When you choose your assignments, you can also choose the **End user experience**. The **End user experience** allows you to set **End user notifications**, **Restart grace period**, **Availability**, and **Installation deadline**. For more information, see **Set Win32 app availability and notifications**.
+6. select **OK** to complete the included groups selection.
+7. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
+8. In the **Add group** pane, select **OK**.
+9. In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](apps-deploy.md) and [Monitor app information and assignments with Microsoft Intune](apps-monitor.md).
 
