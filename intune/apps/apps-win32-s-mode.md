@@ -67,7 +67,7 @@ To create a Windows 10 S mode supplemental policy, use the following steps:
     | Description | [Optional] The description of this policy. |
 
 5. Click **Next: Scope tags**.<br>
-   On the **Scope tags** page you can optionally configure scope tags to determine who can see the app policy in Intune. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](.~/fundamentals/scope-tags.md).
+   On the **Scope tags** page you can optionally configure scope tags to determine who can see the app policy in Intune. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](~/fundamentals/scope-tags.md).
 
 6. Click **Next: Assignments**.<br>
    The **Assignments** page allows you can assign the policy to users and devices. It is important to note that you can assign a policy to a device whether or not the device is managed by Intune.
@@ -78,7 +78,7 @@ Once the policy is created, you will see it added to the list of S mode suppleme
 
 ## Removal of S mode policy
 
-Currently, to remove the policy from the device, you must assign and deploy an empty policy to overwrite the existing S mode supplemental policy.
+Currently, to remove the S mode supplemental policy from the device, you must assign and deploy an empty policy to overwrite the existing S mode supplemental policy.
 
 ## Policy Reporting​
 
