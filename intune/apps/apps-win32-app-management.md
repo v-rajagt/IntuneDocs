@@ -135,7 +135,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 
 ### Step 4: Configure app installation details
 1. In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
-2. Add the complete installation command line to install the app. 
+2. To configure the **Install command**, add the complete installation command line to install the app. 
 
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -144,10 +144,12 @@ The following steps provide guidance to help you add a Windows app to Intune.
     In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
 
-3. Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
+3. To configure the **Uninstall command**, add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
     For example:
     `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. Set the **Install behavior** to either **System** or **User**.
 
     > [!NOTE]
     > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
@@ -156,7 +158,13 @@ The following steps provide guidance to help you add a Windows app to Intune.
     > 
     > The Win32 app install and uninstall will be executed under admin privilege (by default) when the app is set to install in user context and the end user on the device has admin privileges.
 
-4. When you're finished, select **OK**.
+5. To configure the **Device restart behavior**, select one of the following options:
+    - **Determine behavior based on return codes**: Choose this option to restart the device based on the [return codes](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes) configuration settings.
+    - **No specific action**: Choose this option to suppress device restarts during the app installation of MSI-based apps.
+    - **App install may force a device restart**: Choose this option to allow the app installation to complete without suppressing restarts.
+    - **Intune will force a mandatory device restart**: Choose this option to always restart the device after a successfull app installation.
+
+6. When you're finished, select **OK**.
 
 ### Step 5: Configure app requirements
 
@@ -276,10 +284,11 @@ The following steps provide guidance to help you add a Windows app to Intune.
     - **Required**: The app is installed on devices in the selected groups.
     - **Uninstall**: The app is uninstalled from devices in the selected groups.
 4. Select **Included Groups** and assign the groups that will use this app.
-5. In the **Assign** pane, select **OK** to complete the included groups selection.
-6. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
-7. In the **Add group** pane, select **OK**.
-8. In the app **Assignments** pane, select **Save**.
+5. In the **Assign** pane, select to assign based on users or devices. When you choose your assignments, you can also choose the **End user experience**. The **End user experience** allows you to set **End user notifications**, **Restart grace period**, **Availability**, and **Installation deadline**. For more information, see **Set Win32 app availability and notifications**.
+6. select **OK** to complete the included groups selection.
+7. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
+8. In the **Add group** pane, select **OK**.
+9. In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](apps-deploy.md) and [Monitor app information and assignments with Microsoft Intune](apps-monitor.md).
 
