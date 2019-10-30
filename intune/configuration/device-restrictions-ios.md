@@ -170,6 +170,9 @@ These settings are added to a device configuration profile in Intune, and then a
   iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
   
 - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
+
+Note needed here: The accepeted values for this setting are not configured, 2, 5, 10 or 15. If you submit any other value, then on the device you will see the closest lowest value to the value you put. This is an Apple limitation. For example, if you put 4, on the device you will see 2 minutes. If you put 14, you will see 10 minutes. If you put 15, you will see 15. 
+
 - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
 - **Password expiration (days)**: Enter the number of days before the device password must be changed.
 - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
