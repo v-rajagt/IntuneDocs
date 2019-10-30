@@ -134,14 +134,17 @@ Selecting either a severity **A** or **Critical** issue limits you to a phone su
 You can no longer use the Azure *Help + support* experience to get assistance with Intune, unless your subscription is on a private cloud for government.
 If your instance of Intune doesn't run on a private cloud for government, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents:
 
-- When you use the left navigation pane **Help + support**, or use the **?** option to open the **Help** pane and then select **Help + support**, you open the Azure **Help + support** page. From this page select **+ New support request** to open the *Basics* tab of the **Help + support + New support request** page.
-  
-  ![Help + support](./media/get-support/help-plus-support.png)
+When you use the left navigation pane **Help + support**, or use the **?** option to open the *Help* pane and then select **Help + support**, you open the Azure *Help + support* page. 
 
-  On this page:
 
-  - For *Issue type*, select  **Technical**.
-  - For *Service*, select **Microsoft Intune**.
+From this page select **+ New support request** to open the *Basics* tab of the *Help + support + New support request* page.
+
+![Help + support](./media/get-support/help-plus-support.png)
+
+On this page:
+
+- For *Issue type*, select  **Technical**.
+- For *Service*, select **Microsoft Intune**.
 
   You are then presented with a link that redirects you to the [Intune Help and Support page](https://aka.ms/intunehelpsupport).
   
