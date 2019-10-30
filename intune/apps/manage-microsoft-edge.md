@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -209,7 +210,7 @@ For ease of access, you can configure bookmarks that you’d like your users to 
 
 Here are some details:
 
-- These bookmarks only appear for users when they are using the corporate mode of Microsoft Edge. 
+- These bookmarks only appear for users when they are using the [corporate mode](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) of Microsoft Edge. 
 - These bookmarks can't be deleted or modified by users.
 - These bookmarks appear at the top of the list. Any bookmarks that users create appear below these bookmarks.
 - If you have enabled Application Proxy redirection, you can add Application Proxy web apps by using either their internal or external URL.

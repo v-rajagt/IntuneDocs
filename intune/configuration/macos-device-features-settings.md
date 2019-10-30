@@ -7,9 +7,10 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology:
 
@@ -45,7 +46,7 @@ This article lists these settings, and describes what each setting does. It also
 
 ## AirPrint
 
-### Settings apply to: Device enrollment
+### Settings apply to: Device enrollment and Automated device enrollment 
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use host names to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
 - **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
@@ -88,7 +89,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login window
 
-### Settings apply to: Device enrollment
+### Settings apply to: Device enrollment and Automated device enrollment 
 
 #### Window Layout
 
@@ -132,7 +133,7 @@ This feature applies to:
 
 ### Settings apply to: All enrollment types 
 
-- **SSO app extension type**: Choose the type of credential SSO app extension. When you save the SSO app extension profile, you can't change the SSO app extension type. Your options:
+- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
 
   - **Not configured**: App extensions aren't used. To disable an SSO app extension, switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
   - **Credential**: Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.  
@@ -146,7 +147,7 @@ This feature applies to:
 
   [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
 
-- **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+- **Realm**: Enter the name of your authentication realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
 - **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
 
   - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
@@ -166,7 +167,7 @@ This feature applies to:
 
 - **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.  
 - **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
-- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
+- **Default realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
 
   > [!TIP]
   > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.

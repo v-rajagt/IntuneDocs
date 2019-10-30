@@ -8,9 +8,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/06/2019
-
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology:
 ms.reviewer: shpate
@@ -62,6 +62,9 @@ To use Microsoft Defender ATP with Intune, be sure you have the following config
 - Licensed tenant for Enterprise Mobility + Security E3 and Windows E5 (or Microsoft 365 Enterprise E5)
 - Microsoft Intune environment, with [Intune managed](../enrollment/windows-enroll.md) Windows 10 devices that are also Azure AD joined
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and access to the Microsoft Defender Security Center (ATP portal)
+
+> [!NOTE]
+> Microsoft Defender ATP is not supported with Intune app protection policies.
 
 ## Enable Microsoft Defender ATP in Intune
 

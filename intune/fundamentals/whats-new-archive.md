@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 7/8/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
@@ -70,7 +71,7 @@ We're adding a setting that lets you customize the background appearance of the 
 To see the kiosk settings, see [Android Enterprise device restrictions](../configuration/device-restrictions-android-for-work.md).
 
 #### App protection policy assignment save and apply <!-- 3104570 -->
-You now have better control over your [app protection policy assignments](../apps/app-protection-policies.md#deploy-a-policy-to-users). When you select *Assignments* to set or edit the assignments of a policy, you must **Save** your configuration before the change applies. Use **Discard** to clear all changes you make without saving any changes to the Include or Exclude lists.  By requiring Save or Discard, only the users you intend are assigned an app protection policy.
+You now have better control over your [app protection policy assignments](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users). When you select *Assignments* to set or edit the assignments of a policy, you must **Save** your configuration before the change applies. Use **Discard** to clear all changes you make without saving any changes to the Include or Exclude lists.  By requiring Save or Discard, only the users you intend are assigned an app protection policy.
 
 #### New Microsoft Edge browser settings for Windows 10 and later <!-- 3174639 -->
 This update includes new settings to help control and manage the Microsoft Edge browser on your devices. For a list of these settings, see [Device restriction for Windows 10 (and newer)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).

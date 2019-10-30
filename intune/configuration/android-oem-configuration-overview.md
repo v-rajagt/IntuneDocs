@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority:
 ms.technology:
 ms.assetid: 
@@ -69,7 +70,7 @@ To use OEMConfig on your devices, be sure you have the following requirements:
 
 - An Android Enterprise device enrolled in Intune.
 - An OEMConfig app built by the OEM, and uploaded to Google Play. If it's not on Google Play, contact the OEM for more information.
-- The Intune administrator has role-based access control (RBAC) permissions for **Mobile apps** and **DeviceConfigurations**. These permissions are required because OEMConfig profiles use managed app configurations to manage device configurations.
+- The Intune administrator has role-based access control (RBAC) permissions for **Mobile apps**, **Device Configurations**, and the "read" permission under **Android for Work**. These permissions are required because OEMConfig profiles use managed app configurations to manage device configurations.
 
 ## Prepare the OEMConfig app
 
@@ -148,6 +149,7 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 | Zebra Technologies | com.zebra.oemconfig.common | [Zebra OEMConfig overview](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com.datalogic.oemconfig | [User Documentation for Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com.honeywell.oemconfig |  |
+| Kyocera | jp.kyocera.enterprisedeviceconfig |  |
 
 -----------------
 

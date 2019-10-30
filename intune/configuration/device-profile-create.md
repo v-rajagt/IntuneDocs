@@ -10,6 +10,7 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
@@ -80,6 +81,7 @@ This article:
        - [Identity protection](../protect/identity-protection-configure.md)  
        - [Kiosk](kiosk-settings.md)
        - [PKCS certificate](../protect/certficates-pfx-configure.md)
+       - [PKCS imported certificate](../protect/certificates-imported-pfx-configure.md)
        - [SCEP certificate](../protect/certificates-scep-configure.md)
        - [Trusted certificate](../protect/certificates-configure.md)
        - [Update policies](../software-updates-ios.md)
