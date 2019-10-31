@@ -40,9 +40,7 @@ For more information on configuration service provider support, visit the [Confi
 
 ## Intune supported operating systems
 
-You can manage devices running the following operating systems:
-
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+You can manage devices running the following operating systems.
 
 ### Supported Samsung Knox Standard devices
 
@@ -90,7 +88,6 @@ The following list of Samsung device models do not support Knox. They are enroll
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### Windows PC software client
 
 An [Intune software client](../manage-windows-pcs-with-microsoft-intune.md) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
@@ -116,20 +113,19 @@ Different administrative tasks require that you use one of the following adminis
 - [Azure portal](https://portal.azure.com/)
 
 The following browsers are supported for these portals:
+
 - Microsoft Edge (latest version)
 - Microsoft Internet Explorer 11
 - Safari (latest version, Mac only)
 - Chrome (latest version)
 - Firefox (latest version)
 
-
-
-
 ### Intune classic portal
 
 The Intune classic portal is only used for managing devices enrolled with the Intune PC software client (https://manage.microsoft.com). The Intune classic portal requires Silverlight browser support.
 
 The following Silverlight browsers support the Intune console:
+
 - Internet Explorer 10 or later
 - Google Chrome (versions prior to version 42)
 - Mozilla Firefox with Silverlight enabled (versions prior to version 56)
