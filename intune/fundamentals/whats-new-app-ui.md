@@ -45,6 +45,7 @@ If you're an employee or student, be sure to check out the screenshots and links
 ### Improved checklist design in Company Portal app for Android <!-- 5550857 -->  
 The setup checklist in the Company Portal app for Android has been updated with a lightweight design and new icons. The changes align with the recent updates made to the Company Portal app for iOS. Go to [Enroll with Android work profile](/intune-user-help/enroll-device-android-work-profile) and [Enroll your Android device](/intune-user-help/enroll-device-android-company-portal) for a look at the updated enrollment steps.  
 
+
 |Updated|Previous|
 |---|---|
 |![Example image of work profile setup in Company Portal, showing simplified checklist and new icons.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Example image of the previous work profile setup in Company Portal, showing a busier checklist.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|

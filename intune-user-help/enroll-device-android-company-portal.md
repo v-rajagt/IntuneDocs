@@ -75,9 +75,9 @@ During enrollment, you might be asked to choose a category that best describes h
 
 6. Your device begins enrolling. If you're using a Samsung Knox device, you'll be prompted to review and acknowledge the ELM Agent privacy policy first.   
 
-           ![Samsung Knox privacy policy](./media/and-enroll-7-knox-privacy-policy.png)  
+    ![Samsung Knox privacy policy](./media/and-enroll-7-knox-privacy-policy.png)  
 
-7. On the **Company Access Setup** screen, tap **CONTINUE**.  
+7. On the **Company Access Setup** screen, check that your device is enrolled. Then tap **CONTINUE**.  
 
     ![Example image of Company Portal, Company Access Setup screen, showing Get your device managed is complete.](./media/update-settings-1911.png)  
 

@@ -50,17 +50,17 @@ Find out more about [what happens when you create a work profile](what-happens-w
     * Your data privacy: Review and then tap **CONTINUE**.  
     * Upcoming steps: Review and then tap **NEXT**.  
 
-5. Review Google's terms for creating a work profile. Then tap **ACCEPT & CONTINUE**. The appearance of this screen will vary based on your device's Android version. 
+4. Review Google's terms for creating a work profile. Then tap **ACCEPT & CONTINUE**. The appearance of this screen will vary based on your device's Android version. 
 
     ![Screenshot of Google's work profile terms](./media/android-wp-05-1908.png)  
 
-6. Wait while your work profile is set up.  
+5. Wait while your work profile is set up.  
 
-       ![Screenshot of "Setting up work profile" screen.](./media/android-wp-05a-1908.png)  
+    ![Screenshot of "Setting up work profile" screen.](./media/android-wp-05a-1908.png)  
 
-   Depending on your version of Android, you might see an additional screen that indicates you're halfway through setup. If you see this screen, wait a few moments until you're redirected and signed in to the Company Portal app.  
+   Depending on your version of Android, you might see an additional screen. It'll indicate that you're halfway through setup. If you see this screen, wait a few moments until you're redirected and signed in to the Company Portal app.  
 
-     ![Screenshot of "You're halfway there" screen with redirection message.](./media/android-wp-05b-1908.png)  
+    ![Screenshot of "You're halfway there" screen with redirection message.](./media/android-wp-05b-1908.png)  
 
 6. On the **Company Access Setup** screen, check that your work profile is created. Then tap **CONTINUE**.  
 
