@@ -50,12 +50,16 @@ During enrollment, you might be asked to choose a category that best describes h
    ![Example image of the Company Portal, Terms screen, highlighting "Accept all" button.](./media/accept-terms-1911.png)  
 
 
-3. The next two screens provide information about:  
-    * Your data privacy: Review and then tap **CONTINUE**.  
-    * Upcoming steps: Review and then tap **NEXT**.  
+3. Review what your organization can and can't see. Then tap **CONTINUE**.
 
 
-4. Depending on your version of Android, you might be prompted to allow access to certain parts of your device. These prompts are required by Google and not controlled by Microsoft.  
+    ![Example image of Company Portal, We care about your privacy screen, highlighting the Continue button.](./media/android-privacy-screen-1911.png)  
+4. Review what to expect in the upcoming steps. Then tap **NEXT**.  
+
+    ![Example image of Company Portal, What's next screen, highlighting the Next button.](./media/android-whats-next-1911.png)  
+
+
+5. Depending on your version of Android, you might be prompted to allow access to certain parts of your device. These prompts are required by Google and not controlled by Microsoft.  
 
     Tap **Allow** for the following permissions:  
     * **Allow Company Portal to make and manage phone calls**: This permission enables your device to share its international mobile station equipment identity (IMEI) number with Intune, your organization's device management provider. It's safe to allow this permission. Microsoft will never make or manage phone calls.  
@@ -63,7 +67,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
     If you deny permission, you'll be prompted again the next time you sign in to Company Portal. To turn off these messages, select **Never ask again**. To manage app permissions, go to the Settings app > **Apps** > **Company Portal** > **Permissions** > **Phone**.  
 
-5. Activate the device admin app. 
+6. Activate the device admin app. 
 
     Company Portal needs device administrator permissions to securely manage your device. Activating the app lets your organization identify possible security issues, such as repeated failed attempts to unlock your device, and respond appropriately.  
 
@@ -73,19 +77,21 @@ During enrollment, you might be asked to choose a category that best describes h
 > Microsoft does not control the messaging on this screen. We understand that its phrasing can seem somewhat drastic. Company Portal can't specify which restrictions and access are relevant to your organization. If you have questions about how your organization uses the app, contact your IT support person. Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to find your organization's contact information.  
 
 
-6. Your device begins enrolling. If you're using a Samsung Knox device, you'll be prompted to review and acknowledge the ELM Agent privacy policy first.   
+7. Your device begins enrolling. If you're using a Samsung Knox device, you'll be prompted to review and acknowledge the ELM Agent privacy policy first.   
 
-    ![Samsung Knox privacy policy](./media/and-enroll-7-knox-privacy-policy.png)  
+    ![Example image of the Samsung Knox privacy policy screen that appears during enrollment.](./media/and-enroll-7-knox-privacy-policy.png)  
 
-7. On the **Company Access Setup** screen, check that your device is enrolled. Then tap **CONTINUE**.  
+8. On the **Company Access Setup** screen, check that your device is enrolled. Then tap **CONTINUE**.  
 
     ![Example image of Company Portal, Company Access Setup screen, showing Get your device managed is complete.](./media/update-settings-1911.png)  
 
-8. Your organization might require you to update your device settings. Tap **RESOLVE** to adjust a setting. When you're done updating settings, tap **CONTINUE**.  
+9. Your organization might require you to update your device settings. Tap **RESOLVE** to adjust a setting. When you're done updating settings, tap **CONTINUE**.  
 
    ![Example image of Company Portal, Update device settings, highlighting Resolve and Continue buttons.](./media/resolve-settings-1911.png)  
 
-9. When setup is complete, tap **DONE**.    
+10. When setup is complete, tap **DONE**.    
+
+    ![Example image of Company Portal, Company Access Setup screen, showing completed setup and highlighting Done button.](./media/da-enrollment-done-1911.png) 
 
 ## Next steps  
 
