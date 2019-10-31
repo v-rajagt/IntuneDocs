@@ -195,7 +195,7 @@ These settings are added to a device configuration profile in Intune, and then a
   If a value doesn't apply to iOS or iPadOS, then Apple uses the closest *lowest* value. For example, if you enter `4` minutes, then iPadOS devices use `2` minutes. If you enter `10` minutes, then iOS devices use `5` minutes. This is an Apple limitation.
   
   > [!NOTE]
-  > Currently, the Intune UI for this setting doesn't separate the iOS and iPadOS supported values. The UI will be updated in a future release.
+  > The Intune UI for this setting doesn't separate the iOS and iPadOS supported values. The UI might be updated in a future release.
 
 - **Password expiration (days)**: Enter the number of days before the device password must be changed.
 - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
