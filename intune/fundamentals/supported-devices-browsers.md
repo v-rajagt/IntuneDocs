@@ -47,7 +47,7 @@ You can manage devices running the following operating systems.
 To avoid Knox activation errors that prevent MDM enrollment, the Company Portal app only attempts Samsung Knox activation during MDM enrollment if the device appears in the [list of supported Knox devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Devices that don't support Samsung Knox activation enroll as standard Android devices. A Samsung device might have some model numbers that support Knox, while others don't. Verify Knox compatibility with your device reseller before you buy and deploy Samsung devices.
 
 > [!NOTE]
-> Enrolling Samsung Knox devices may require you to [enable access to Samsung servers](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+> Enrolling Samsung Knox devices may require you to [enable access to Samsung servers](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers).
 
 The following list of Samsung device models do not support Knox. They are enrolled as native Android devices by the Company Portal app for Android:
 
@@ -90,12 +90,12 @@ The following list of Samsung device models do not support Knox. They are enroll
 
 ### Windows PC software client
 
-An [Intune software client](../manage-windows-pcs-with-microsoft-intune.md) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
+An [Intune software client](manage-windows-pcs-with-microsoft-intune.md) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
 
 > [!Note]
 > Microsoft announced that Windows 7 support ends on January 14th 2020. On this date, Intune also retires support for devices running Windows 7.
 >
-> For more information, see [Intune plan for change: nearing end of support for Windows 7](whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+> For more information, see [Intune plan for change: nearing end of support for Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
 >
 > Microsoft Intune will retire support for the Silverlight-based Intune console on October 15, 2020. This retirement includes ending support for the Silverlight console configured PC software client (also known as the PC agent)
 >
