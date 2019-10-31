@@ -171,18 +171,31 @@ These settings are added to a device configuration profile in Intune, and then a
   
 - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
 
-- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. Your options:
+- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks.
 
-  - **Not configured** (Default): Intune doesn't touch this setting. By default, the OS may not configure this setting.
+  **iOS options**:  
+
+  - **Not configured** (Default): Intune doesn't touch this setting.
+  - **Immediately**: Screen locks after 30 seconds of inactivity.
+  - **1**: Screen locks after 1 minute of inactivity.
+  - **2**: Screen locks after 2 minutes of inactivity.
+  - **3**: Screen locks after 3 minutes of inactivity.
+  - **4**: Screen locks after 4 minutes of inactivity.
+  - **5**: Screen locks after 5 minutes of inactivity.
+    
+  **iPadOS options**:  
+
+  - **Not configured** (Default): Intune doesn't touch this setting.
+  - **Immediately**: Screen locks after 2 minutes of inactivity.
   - **2**: Screen locks after 2 minutes of inactivity.
   - **5**: Screen locks after 5 minutes of inactivity.
   - **10**: Screen locks after 10 minutes of inactivity.
   - **15**: Screen locks after 15 minutes of inactivity.
 
-  If you enter any other value, then the closest *lowest* value is used. For example, if you enter `4` minutes, then `2` minutes is used. If you enter `14` minutes, then `10` minutes is used. This is an Apple limitation.
+  If a value doesn't apply to iOS or iPadOS, then Apple uses the closest *lowest* value. For example, if you enter `4` minutes, then iPadOS devices use `2` minutes. If you enter `10` minutes, then iOS devices use `5` minutes. This is an Apple limitation.
   
   > [!NOTE]
-  > Currently, the Intune UI for this setting doesn't match the supported values. The UI will be updated in an upcoming release.
+  > Currently, the Intune UI for this setting doesn't separate the iOS and iPadOS supported values. The UI will be updated in a future release.
 
 - **Password expiration (days)**: Enter the number of days before the device password must be changed.
 - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
