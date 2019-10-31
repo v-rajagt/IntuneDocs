@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sign up or sign in to Microsoft Intune
-description: How to sign up for an Microsoft Intune subscription or sign in to start with your subscription.
+description: How to sign up for a Microsoft Intune subscription or sign in to start with your subscription.
 keywords:
 author: ErikjeMS
 ms.author: erikje
