@@ -186,6 +186,9 @@ Once you have registered your app within an Azure tenant, and it is showing up u
 6. Under **Delegated Permissions**, select the **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** checkbox.
 7. Click **Add permissions**.
 
+> [!NOTE]
+> If your app hits an error restricting you from signing in due to an error accessing this resource: https://intunemam.microsoftonline.com, please send a note to msintuneappsdk@microsoft.com with your app's Client ID. This is a manual approval process today.
+
 ### Badge your app (optional)
 
 After validating that Intune app protection policies work in your app, you can badge your app icon with the Intune app protection logo.
