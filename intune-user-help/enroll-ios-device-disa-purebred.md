@@ -86,7 +86,7 @@ You'll also need to contact a Purebred agent or representative during setup.
     b. Click **Open** to open the Purebred app.  
 
     ![Example screenshot of the Company Portal Set up mobile smart card access screen.](./media/smart-card-open-disa-purebred.png)  
-9. When prompted to allow Company Portal to open the Pure bred Registration app, select **Open**.   
+9. When prompted to allow Company Portal to open the Purebred Registration app, select **Open**.   
 
     ![Example screenshot of the Company Portal prompt to open DISA Purebred app.](./media/open-app-prompt-disa-purbred.png)  
 10. When the app works, work with your organization's Purebred agent to configure and download the Purebred pre-enrollment configuration profile.   
