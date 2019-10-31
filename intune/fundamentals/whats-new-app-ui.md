@@ -48,14 +48,13 @@ The setup checklist in the Company Portal app for Android has been updated with 
 The following screens show the updated checklist for Android work profile enrollment:
 
 |Updated|Previous|  
-|---|---|
+|---|---|  
 |![Example image of work profile setup in Company Portal, showing simplified checklist and new icons.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Example image of the previous work profile setup in Company Portal, showing a busier checklist.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
 
 The following screens show the updated checklist for Android device administrator enrollment:  
 
 |Updated|Previous|  
-|---|---|
-|![Example image of work profile setup in Company Portal, showing simplified checklist and new icons.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Example image of the previous work profile setup in Company Portal, showing a busier checklist.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|
+|---|---|  
 |![Example image of Android device admin setup in Company Portal, showing simplified checklist and new icons.](./media/whats-new-app-ui/android-da-checklist-1911.png)|![Example image of the previous Android device admin setup in Company Portal, showing a busier checklist.](./media/whats-new-app-ui/android-da-checklist-1904.png)|  
 
 ## Week of September 9, 2019

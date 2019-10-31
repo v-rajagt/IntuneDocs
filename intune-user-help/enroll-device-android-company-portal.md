@@ -71,7 +71,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
     Company Portal needs device administrator permissions to securely manage your device. Activating the app lets your organization identify possible security issues, such as repeated failed attempts to unlock your device, and respond appropriately.  
 
-    ![Example image of the Activate device administrator screen, highlighing the activate button.](./media/activate-da-app-1911.png)  
+    ![Example image of the Activate device administrator screen, highlighting the activate button.](./media/activate-da-app-1911.png)  
 
 > [!NOTE]
 > Microsoft does not control the messaging on this screen. We understand that its phrasing can seem somewhat drastic. Company Portal can't specify which restrictions and access are relevant to your organization. If you have questions about how your organization uses the app, contact your IT support person. Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to find your organization's contact information.  
@@ -102,4 +102,4 @@ Before you try to install a school or work app, go to **Settings** > **Security*
 
 If you get an error while you try to enroll your device in Intune, you can [email your company support](send-logs-to-your-it-admin-by-email-android.md).  
 
-Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

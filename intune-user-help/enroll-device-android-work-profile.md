@@ -61,7 +61,7 @@ Find out more about [what happens when you create a work profile](what-happens-w
 
     ![Screenshot of "Setting up work profile" screen.](./media/android-wp-05a-1908.png)  
 
-   Depending on your version of Android, you might see an additional screen. It'll indicate that you're halfway through setup. If you see this screen, wait a few moments until you're redirected and signed in to the Company Portal app.  
+   Depending on your version of Android, you might see an additional screen. It will indicate that you're halfway through setup. If you see this screen, wait a few moments until you're redirected and signed in to the Company Portal app.  
 
     ![Screenshot of "You're halfway there" screen with redirection message.](./media/android-wp-05b-1908.png)  
 
