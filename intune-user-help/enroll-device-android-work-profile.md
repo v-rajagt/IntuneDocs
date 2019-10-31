@@ -44,14 +44,14 @@ Find out more about [what happens when you create a work profile](what-happens-w
 
 2. On the **Company Access Setup** screen, tap **BEGIN**.  
 
-    ![Screenshot of Company Access Setup screen](./media/company-access-setup-wp-1911.png)  
+    ![Screenshot of Company Access Setup screen](./media/access-setup-work-profile-1911.png)  
 
 3. Review what your organization can and can't see. Then tap **CONTINUE**. 
 
     ![Example image of Company Portal, We care about your privacy screen, highlighting the Continue button.](./media/android-privacy-screen-1911.png)  
 4. Review what you can expect in the upcoming steps. Then tap **NEXT**.  
 
-     ![Example image of Company Portal, What's next screen, highlighting the Next button.](./media/android-wp-04-1908.png)  
+    ![Example image of Company Portal, What's next screen, highlighting the Next button.](./media/android-wp-04-1908.png)  
 
 5. Review Google's terms for creating a work profile. Then tap **ACCEPT & CONTINUE**. The appearance of this screen will vary based on your device's Android version. 
 
@@ -80,7 +80,7 @@ Find out more about [what happens when you create a work profile](what-happens-w
 
 10. When setup is complete, tap **DONE**.  
 
-    ![Example image of Company Portal, Company Access Setup screen, showing completed setup and highlighting Done button.](./media/wp-enrollment-done-1911.png)  
+    ![Example image of Company Portal, Company Access Setup screen, showing completed setup and highlighting Done button.](./media/work-profile-done-1911.png)  
 
 
 ## Next steps  

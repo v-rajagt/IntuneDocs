@@ -71,7 +71,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
     Company Portal needs device administrator permissions to securely manage your device. Activating the app lets your organization identify possible security issues, such as repeated failed attempts to unlock your device, and respond appropriately.  
 
-    ![Example image of the Activate device administrator screen, highlighting the activate button.](./media/activate-da-app-1911.png)  
+    ![Example image of the Activate device administrator screen, highlighting the activate button.](./media/activate-device-administrator-1911.png)  
 
 > [!NOTE]
 > Microsoft does not control the messaging on this screen. We understand that its phrasing can seem somewhat drastic. Company Portal can't specify which restrictions and access are relevant to your organization. If you have questions about how your organization uses the app, contact your IT support person. Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to find your organization's contact information.  
@@ -91,7 +91,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
 10. When setup is complete, tap **DONE**.    
 
-    ![Example image of Company Portal, Company Access Setup screen, showing completed setup and highlighting Done button.](./media/da-enrollment-done-1911.png) 
+    ![Example image of Company Portal, Company Access Setup screen, showing completed setup and highlighting Done button.](./media/android-enrollment-done-1911.png) 
 
 ## Next steps  
 
