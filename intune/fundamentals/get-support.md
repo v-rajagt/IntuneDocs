@@ -40,6 +40,20 @@ As an Intune admin, you can use the **Help and Support** option to file an on-li
 >
 > For information about troubleshooting issues related to Microsoft Intune, see the [Troubleshoot section](help-desk-operators.md) of the Intune documentation.
 
+## Known issues for creating support incidents
+
+If your account has the required permissions but fails to successfully access Help and Support, or create or manage a support incident, review the following known issues, and resolutions:
+
+- Stale user token for your account. To resolve this issue, sign out of all active console sessions, sign in again, and then attempt to create or manage a support incident.
+- Multiple active sessions. If you're signed in with more than one user or session, sign out all but one console. Then, with a single active session, attempt to create or manage a support incident.
+
+Additional actions that might be necessary to resolve access issues:
+
+- Clear all cookies for your active browser session, and then retry creating or managing a support incident.
+- Use an InPrivate browsing session to sign in to Intune, and try to create or manage a support incident.
+
+If the preceding workarounds don't help, go to [Microsoft 365 admin center](https://admin.microsoft.com) and create a support ticket from there. We're currently working on a fix that will be available in late summer.
+
 ## Help and support experience  
 
 The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
