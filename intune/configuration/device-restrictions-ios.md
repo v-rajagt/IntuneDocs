@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -171,9 +171,19 @@ These settings are added to a device configuration profile in Intune, and then a
   
 - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
 
-Note needed here: The accepeted values for this setting are not configured, 2, 5, 10 or 15. If you submit any other value, then on the device you will see the closest lowest value to the value you put. This is an Apple limitation. For example, if you put 4, on the device you will see 2 minutes. If you put 14, you will see 10 minutes. If you put 15, you will see 15. 
+- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. Your options:
 
-- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
+  - **Not configured** (Default): Intune doesn't touch this setting. By default, the OS may not configure this setting.
+  - **2**: Screen locks after 2 minutes of inactivity.
+  - **5**: Screen locks after 5 minutes of inactivity.
+  - **10**: Screen locks after 10 minutes of inactivity.
+  - **15**: Screen locks after 15 minutes of inactivity.
+
+  If you enter any other value, then the closest *lowest* value is used. For example, if you enter `4` minutes, then `2` minutes is used. If you enter `14` minutes, then `10` minutes is used. This is an Apple limitation.
+  
+  > [!NOTE]
+  > Currently, the Intune UI for this setting doesn't match the supported values. The UI will be updated in an upcoming release.
+
 - **Password expiration (days)**: Enter the number of days before the device password must be changed.
 - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
 - **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
