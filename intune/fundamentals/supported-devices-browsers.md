@@ -40,7 +40,9 @@ For more information on configuration service provider support, visit the [Confi
 
 ## Intune supported operating systems
 
-You can manage devices running the following operating systems.
+You can manage devices running the following operating systems:
+
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### Supported Samsung Knox Standard devices
 
