@@ -75,7 +75,7 @@ Find out more about [what happens when you create a work profile](what-happens-w
 
 9. Your organization might require you to update your device settings. Tap **RESOLVE** to adjust a setting. When you're done updating settings, tap **CONTINUE**.    
 
-    ![Example image of Company Portal, Update device settings screen, highligting Resolve and Continue buttons.](./media/resolve-settings-1911.png) 
+    ![Example image of Company Portal, Update device settings screen, highlighting Resolve and Continue buttons.](./media/resolve-settings-1911.png) 
 
 
 10. When setup is complete, tap **DONE**.  
