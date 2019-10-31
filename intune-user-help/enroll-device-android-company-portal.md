@@ -45,7 +45,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
 1. Open the Company Portal app and sign in with your work or school account.  
 
-2. If prompted to accept your organization's terms and conditions, tap **ACCEPT ALL**.  
+2. If you're prompted to accept your organization's terms and conditions, tap **ACCEPT ALL**.  
 
    ![Example image of the Company Portal, Terms screen, highlighting "Accept all" button.](./media/accept-terms-1911.png)  
 
@@ -58,8 +58,8 @@ During enrollment, you might be asked to choose a category that best describes h
 4. Depending on your version of Android, you might be prompted to allow access to certain parts of your device. These prompts are required by Google and not controlled by Microsoft.  
 
     Tap **Allow** for the following permissions:  
-    * **Allow Company Portal to make and manage phone calls**: It is safe to tap **ALLOW**. Microsoft will never make or manage your phone calls.  This permission enables your device to share its international mobile station equipment identity (IMEI) number with Intune, your organization's device management provider. The IMEI number is like a serial number and uniquely identifies your mobile device.   
-    * **Allow Company Portal to access your contacts**: It is safe to tap **ALLOW**. Microsoft will never access your contacts. This permission lets the Company Portal app create, use, and manage your work account.  
+    * **Allow Company Portal to make and manage phone calls**: This permission enables your device to share its international mobile station equipment identity (IMEI) number with Intune, your organization's device management provider. It's safe to allow this permission. Microsoft will never make or manage phone calls.  
+    * **Allow Company Portal to access your contacts**: This permission lets the Company Portal app create, use, and manage your work account.  It's safe to allow this permission. Microsoft will never access your contacts. 
 
     If you deny permission, you'll be prompted again the next time you sign in to Company Portal. To turn off these messages, select **Never ask again**. To manage app permissions, go to the Settings app > **Apps** > **Company Portal** > **Permissions** > **Phone**.  
 
@@ -67,7 +67,8 @@ During enrollment, you might be asked to choose a category that best describes h
 
     Company Portal needs device administrator permissions to securely manage your device. Activating the app lets your organization identify possible security issues, such as repeated failed attempts to unlock your device, and respond appropriately.  
 
-    ![Activate device administrator screen](./media/activate-da-app-1911.png)  
+    ![Example image of the Activate device administrator screen, highlighing the activate button.](./media/activate-da-app-1911.png)  
+
 > [!NOTE]
 > Microsoft does not control the messaging on this screen. We understand that its phrasing can seem somewhat drastic. Company Portal can't specify which restrictions and access are relevant to your organization. If you have questions about how your organization uses the app, contact your IT support person. Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to find your organization's contact information.  
 
@@ -78,11 +79,11 @@ During enrollment, you might be asked to choose a category that best describes h
 
 7. On the **Company Access Setup** screen, tap **CONTINUE**.  
 
-    ![Example screeshot of Company Portal, Company Access Setup screen, showing Get your device managed is complete.](./media/update-settings-1911.png)  
+    ![Example image of Company Portal, Company Access Setup screen, showing Get your device managed is complete.](./media/update-settings-1911.png)  
 
 8. Your organization might require you to update your device settings. Tap **RESOLVE** to adjust a setting. When you're done updating settings, tap **CONTINUE**.  
 
-   ![Example screenshot of Company Portal, Update device settings, highlighting Resolve and Continue buttons.](./media/resolve-settings-1911.png)  
+   ![Example image of Company Portal, Update device settings, highlighting Resolve and Continue buttons.](./media/resolve-settings-1911.png)  
 
 9. When setup is complete, tap **DONE**.    
 
