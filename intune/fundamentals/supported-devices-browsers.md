@@ -94,11 +94,11 @@ An [Intune software client](../manage-windows-pcs-with-microsoft-intune.md) can 
 
 > [!Note]
 > Microsoft announced that Windows 7 support ends on January 14th 2020. On this date, Intune also retires support for devices running Windows 7.
-
+>
 > For more information, see [Intune plan for change: nearing end of support for Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
 > Microsoft Intune will retire support for the Silverlight-based Intune console on October 15, 2020. This retirement includes ending support for the Silverlight console configured PC software client (also known as the PC agent)
-
+>
 > For more information, see [Microsoft Intune ending support for the Silverlight-based admin console](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
@@ -109,7 +109,7 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 Different administrative tasks require that you use one of the following administrative websites.
 
-- [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure portal](https://portal.azure.com/)
 
 The following browsers are supported for these portals:
