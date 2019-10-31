@@ -150,3 +150,6 @@ View the Microsoft Edge web browser baseline settings that are supported by Micr
   Enables user-level installation of native messaging hosts. 
   - If you disable this policy, Microsoft Edge will only use native messaging hosts installed on the system level. By default, if you don't configure this policy, Microsoft Edge will allow usage of user-level native messaging hosts.
 
+## Next steps
+
+[Ues security baselines in Intune](security-baselines.md)
