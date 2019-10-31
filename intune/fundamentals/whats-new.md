@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -101,6 +101,14 @@ For more information about these improvements, see the [Intune Customer Success 
 #### Intune supports iOS 11 and later <!-- 4665324  -->
 
 Intune enrollment and Company Portal now support iOS versions 11 and later. Older versions aren't supported.
+
+### Device security
+
+#### Microsoft Edge baseline (Preview)    <!--  3787164  -->
+
+We've added a security baseline Preview for [Microsoft Edge settings](../protect/security-baseline-settings-edge.md). 
+
+
 
 ### Monitor and troubleshoot
 
