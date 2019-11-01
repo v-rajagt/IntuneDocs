@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -30,9 +30,6 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-> [!Note]
-> Each [monthly update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) may take several days to rollout. Some features may roll out over several weeks, and might not be available to all customers immediately.
-
 When you use Intune to manage Autopilot devices, you can manage UEFI (BIOS) settings after they're enrolled, using the Device Firmware Configuration Interface (DFCI). For an overview of benefits, scenarios, and prerequisites, see [Overview of DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
 DFCI [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface).
@@ -49,7 +46,7 @@ This feature applies to:
 
 ## Before you begin
 
-- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update you install. Work with your device vendors to determine the manufacturers that support DFCI, or the firmware version needed to use DFCI.
+- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update you install. Work with your device vendors to determine [the manufacturers that support DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci), or the firmware version needed to use DFCI.
 
 - The device must be registered for Windows Autopilot by a [Microsoft Cloud Solution Provider (CSP) partner](https://partner.microsoft.com/cloud-solution-provider), or registered directly by the OEM. 
 
