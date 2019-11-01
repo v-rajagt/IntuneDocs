@@ -60,7 +60,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
-### Improved checklist design in Company Portal app for Android<!-- 5550857 -->  
+#### Improved checklist design in Company Portal app for Android<!-- 5550857 -->  
 The setup checklist in the Company Portal app for Android has been updated with a lightweight design and new icons. The changes align with the recent updates made to the Company Portal app for iOS. We're in the process of rolling out the app updates to all customers and expect to be completed by the end of next week. For a side-by-side comparison of the changes, see [What's new in the app UI](whats-new-app-ui.md). For a look at the updated enrollment steps, see [Enroll with Android work profile](/intune-user-help/enroll-device-android-work-profile) and [Enroll your Android device](/intune-user-help/enroll-device-android-company-portal).  
 
 #### Win32 apps on Windows 10 S mode devices<!-- 3747604 --> 
