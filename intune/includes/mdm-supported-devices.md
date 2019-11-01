@@ -5,12 +5,8 @@
 - Mac OS X 10.12 and later
 
 ### Google
-- Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
-
-  A full list of verified Samsung Knox Standard devices is available in the [Android and Samsung Knox Standard policy settings](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
-
-
-- Android enterprise [requirements](https://support.google.com/work/android/answer/6174145?hl=en).
+- Android 5.0 and later (including Samsung KNOX Standard 2.4 and higher: [requirements](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android enterprise: [requirements](https://support.google.com/work/android/topic/9428066)
 
 ### Microsoft
 
