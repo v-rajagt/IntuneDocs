@@ -27,8 +27,8 @@ ms.collection: M365-identity-device-management
 
 By assigning the S mode supplemental policy in Intune, you enable the device to make an exception to the device's existing S mode policy, which allows the uploaded corresponding signed app catalog. The policy sets an allow list of apps (the app catalog) that can be used on the S mode device.
 
-## Prerequisites
-- Win32 apps on S mode devices are only supported on Windows 10 November 2019 Update (build 18363) or later versions.
+> [!NOTE]
+> Win32 apps on S mode devices are only supported on Windows 10 November 2019 Update (build 18363) or later versions.
 
 <!-- Add WDAC tooling diagram  -->
 
