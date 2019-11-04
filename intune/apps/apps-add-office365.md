@@ -146,7 +146,7 @@ If you selected the **Enter XML data** option under the **Setting format** dropd
 
 ## Finish up
 
-When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list. The next step is to assign the apps to the groups you choose. For more information, see [Assign apps to groups](deploy-apps.md).
+When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list. The next step is to assign the apps to the groups you choose. For more information, see [Assign apps to groups](~/apps/apps-deploy.md).
 
 ## Deployment details
 
