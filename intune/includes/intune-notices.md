@@ -11,7 +11,7 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
-### Plan for Change: Updated experience when enrolling Android Enterprise dedicated devices in Intune<!-5198878->
+### Plan for Change: Updated experience when enrolling Android Enterprise dedicated devices in Intune<!--5198878-->
 With the November or 1911 release to Intune, we’re adding support for SCEP device certificate deployment to Android Enterprise dedicated devices to enable certificate-based access to Wi-Fi profiles. This change also involves some minor changes the flow when enrolling Android Enterprise dedicated devices.
 
 #### How does this affect me?
@@ -23,7 +23,7 @@ If you manage Android Enterprise dedicated devices in your environment, you will
 #### What can I do to prepare for this change?
 You should plan to update your end user guidance and let your helpdesk know of this change. Click Additional Information for more details and screenshots. We’ll update our What’s New page when this change starts to roll out.
 
-#### Additional Information
+#### Additional information
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
