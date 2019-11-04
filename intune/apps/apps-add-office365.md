@@ -146,7 +146,7 @@ If you selected the **Enter XML data** option under the **Setting format** dropd
 
 ## Finish up
 
-When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list. The next step is to assign the apps to the groups you choose. For more information, see [Assign apps to groups](~/apps/deploy-apps.md).
+When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list. The next step is to assign the apps to the groups you choose. For more information, see [Assign apps to groups](deploy-apps.md).
 
 ## Deployment details
 
@@ -188,17 +188,17 @@ Once you can conclude that both Intune and the network infrastructure work as ex
 
 - The target device must run on Windows 10 Creators Update or later.
 - Nno existing Office apps are opened while Intune deploys the applications.
-- Existing MSI versions of Office have been properly removed from the device. Intune utilizes Office Click-to-Run which is not compatible with Office MSI. This behavior is further mentioned in this document:
+- Existing MSI versions of Office have been properly removed from the device. Intune utilizes Office Click-to-Run which is not compatible with Office MSI. This behavior is further mentioned in this document:<br>
   [Office installed with Click-to-Run and Windows Installer on same computer isn't supported](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - The sign-in user should have permission to install applications on the device.
-- Confirm there are no issues based on the Windows Event Viewer log Windows Logs -> Applications.
-- Capture Office installation verbose logs during the installation. To do this, follow these steps:
-      1. Activate verbose logging for Office installation on the target machines. To do this, run the following command to modify the registry:
-        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`
-    a. Deploy the Office 365 Suite to the target devices again.
-    b. Wait approximately 15 to 20 minutes and go to the **%temp%** folder and the **%windir%\temp** folder, sort by **Date Modified**, pick the *{Machine Name}-{TimeStamp}.log* files that are modified according to your repro time.
-    c. Run the following command to disable verbose log:
-        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`
+- Confirm there are no issues based on the Windows Event Viewer log **Windows Logs** -> **Applications**.
+- Capture Office installation verbose logs during the installation. To do this, follow these steps:<br>
+    1. Activate verbose logging for Office installation on the target machines. To do this, run the following command to modify the registry:<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. Deploy the Office 365 Suite to the target devices again.<br>
+    3. Wait approximately 15 to 20 minutes and go to the **%temp%** folder and the **%windir%\temp** folder, sort by **Date Modified**, pick the *{Machine Name}-{TimeStamp}.log* files that are modified according to your repro time.<br>
+    4. Run the following command to disable verbose log:<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
         The verbose logs can provide further detailed information on the installation process.
 
 ## Errors during installation of the app suite
