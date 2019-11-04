@@ -136,7 +136,7 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
     The app(s) you have selected will appear in the public and custom apps list. 
 
-5. Click **Review + create** to reviw the apps selected for this policy.
+5. Click **Review + create** to review the apps selected for this policy.
 
 6. When you are done, click **Save** to update the app protection policy.
  
@@ -154,7 +154,7 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 6. To delete groups that were added previously, on either the *Include* or *Exclude* tabs, select the ellipsis (...) and select **Delete**.
 
-7. Click **Review + create** to reviw the user groups selected for this policy.
+7. Click **Review + create** to review the user groups selected for this policy.
 
 8. After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Cancel** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
 
@@ -166,7 +166,7 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 3. Next to the section corresponding to the settings you want to change, select **Edit**. Then change the settings to new values.
 
-7. Click **Review + create** to reviw the udated settings for this policy.
+7. Click **Review + create** to review the updated settings for this policy.
 
 4. Select the **Save** to save your changes. Repeat the process to select a settings area and modify and then save your changes, until all your changes are complete. You can then close the *Intune App Protection - Properties* pane. 
 
@@ -181,10 +181,10 @@ To create these policies, browse to **Client apps** > **App protection policies*
 
 - **Unmanaged**: Unmanaged devices are devices where Intune MDM management has not been detected. This includes devices managed by third-party MDM vendors.
 - **Intune managed devices**: Managed devices are managed by Intune MDM.
-- **Android device administrator**: Intune-managed devices using the Android Device Adminstration API.
+- **Android device administrator**: Intune-managed devices using the Android Device Administration API.
 - **Android Enterprise**: Intune-managed devices using Android Enterprise Work Profiles or Android Enterprise Full Device Management.
 
-> Note
+> [!NOTE]
 > Android devices will prompt to install the Intune Company Portal app regardless of which Device type is chosen. For example, if you select 'Android Enterprise' then users with unmanaged Android devices will still be prompted.
 
 For iOS, additional app configuration settings are required to target app protection policy (APP) settings to apps on Intune enrolled devices:
