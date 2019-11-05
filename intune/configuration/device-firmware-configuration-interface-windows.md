@@ -131,9 +131,9 @@ This profile includes the DFCI settings you configure.
 
 After the profiles are created, they're [ready to be assigned](../configuration/device-profile-assign.md). Be sure to assign the profiles to your Azure AD security groups that include your DFCI devices.
 
-The next time the device syncs, or the device reboots, the DFCI profile settings are applied. After the policy applies, reboot the device.
+When the device runs the Windows Autopilot, DFCI may force a reboot during the Enrollment Status Page. This first reboot enrolls UEFI to Intune. Once setup completes, you can confirm the enrollment by rebooting the device and verifying UEFI is managed. Use the device manufacturer’s instructions to open the UEFI menu.
 
-When the device runs the Windows device setup, DFCI may force a reboot during the Enrollment Status Page. Once setup completes, you can confirm the DFCI settings are active by rebooting the device. Then, use the device manufacturer’s instructions to open the UEFI menu.
+The next time the device syncs with Intune, Windows will receive the DFCI settings. Next, a device reboot is required for UEFI to recieved the DFCI settings from Windows.
 
 ## Update existing DFCI settings
 
