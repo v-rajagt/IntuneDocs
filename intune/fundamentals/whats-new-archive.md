@@ -283,7 +283,7 @@ You can now search for an exact device name. Go to **Intune** > **Devices** > **
 #### Support for additional connectors on the Tenant Status page<!-- 3617202  -->
 The [Tenant Status page](../tenant-status.md) now displays status information for additional connectors, including *Windows Defender Advanced Threat Protection* (ATP) and other Mobile Threat Defense connectors.
 
-### Support for the Power BI Compliance app from the Data Warehouse blade in Microsoft Intune<!-- 4260871 -->
+#### Support for the Power BI Compliance app from the Data Warehouse blade in Microsoft Intune<!-- 4260871 -->
 Previously, the **Download Power BI file** link in the **Intune Data Warehouse** blade downloaded an Intune Data Warehouse report (.pbix file). This report has been replaced with the Power BI Compliance app. The Power BI Compliance app will not require special loading or setup. It will open directly in the Power BI online portal and display data specifically for your Intune tenant based on your credentials. In Intune, select the **Set up Intune Data Warehouse** link on the right side of the Intune blade. Then, click **Get Power BI App**. For more information, see [Connect to the Data Warehouse with Power BI](../developer/reports-proc-get-a-link-powerbi.md).
 
 
@@ -504,7 +504,7 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](../apps/app-protection-policy-settings-ios.md) and [Android settings](../apps/app-protection-policy-settings-android.md).
 
-### Additional settings for Outlook<!-- 3301182  -->
+#### Additional settings for Outlook<!-- 3301182  -->
 You can now configure the following additional settings for Outlook for iOS and Android using Intune:
 
 - Only allow work or school accounts to be used in Outlook in iOS and Android
@@ -527,7 +527,7 @@ You can delete managed Google Play apps from Microsoft Intune. To delete a manag
 #### Managed Google Play app type<!-- 1352580 -->
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.  In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
 
-### Default Android PIN keyboard<!-- 3802457 -->
+#### Default Android PIN keyboard<!-- 3802457 -->
 For end users who have set an Intune App Protection Policy (APP) PIN on their Android devices with PIN type of 'Numeric', they will now see the default Android keyboard instead of the fixed Android keyboard UI that was previously designed. This change was made to be consistent when using default keyboards on both Android and iOS, for both PIN types of 'Numeric' and/or 'Passcode'. For more information about end user Access settings on Android, such as APP PIN, see [Android access requirements](../apps/app-protection-policy-settings-android.md#access-requirements).
 
 
