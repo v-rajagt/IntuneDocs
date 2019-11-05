@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -28,14 +28,15 @@ ms.custom: intune-azure
 
 ms.collection: M365-identity-device-management
 ---
-# Use a custom device profile to create a WiFi profile with a pre-shared key - Intune
+# Use a custom device profile to create a WiFi profile with a pre-shared key in Intune
+
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks, or wireless LANs. With Intune, you can create a WiFi profile using a pre-shared key. To create the profile, use the **Custom device profiles** feature within Intune. This article also includes some examples of how to create an EAP-based Wi-Fi profile.
+Pre-shared keys (PSK) are typically used to authenticate users in WiFi networks, or wireless LANs. With Intune, you can create a WiFi profile using a pre-shared key. To create the profile, use the **Custom device profiles** feature within Intune. This article also includes some examples of how to create an EAP-based Wi-Fi profile.
 
 > [!IMPORTANT]
->- Using a pre-shared key with Windows 10 causes a remediation error to appear in Intune. When this happens, the Wi-Fi profile is properly assigned to the device, and the profile works as expected.
->- If you export a Wi-Fi profile that includes a pre-shared key, be sure the file is protected. The key is in plain text, so it's your responsibility to protect the key.
+> - Using a pre-shared key with Windows 10 causes a remediation error to show in Intune. When this happens, the Wi-Fi profile is properly assigned to the device, and the profile works as expected.
+> - If you export a Wi-Fi profile that includes a pre-shared key, be sure the file is protected. The key is in plain text, so it's your responsibility to protect the key.
 
 ## Before you begin
 
@@ -45,7 +46,8 @@ Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks
 - PSK requires a string of 64 hexadecimal digits, or a passphrase of 8 to 63 printable ASCII characters. Some characters, such as asterisk ( * ), aren't supported.
 
 ## Create a custom profile
-You can create a custom profile with a pre-shared key for Android, Windows, or an EAP-based Wi-Fi profile. To create the profile using the Azure portal, see [Create custom device settings](custom-settings-configure.md). When you create the device profile, choose **Custom** for your device platform. Don't select the Wi-Fi profile. When you choose custom, be sure to: 
+
+You can create a custom profile with a pre-shared key for Android, Windows, or an EAP-based Wi-Fi profile. To create the profile, see [Create custom device settings](custom-settings-configure.md). When you create the device profile, choose **Custom** for your device platform. Don't select the Wi-Fi profile. When you choose custom, be sure to: 
 
 1. Enter a name and description of the profile.
 2. Add a new OMA-URI setting with the following properties: 

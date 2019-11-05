@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -67,8 +67,8 @@ Users who have email accounts automatically configured can't send pictures or im
 
 ### Intune solution
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device Configuration** > **Profiles**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles**.
 3. Select your email profile > **Properties** > **Settings**.
 4. Set the **Allow e-mail to be sent from third-party applications** setting to **Enable**.
 
