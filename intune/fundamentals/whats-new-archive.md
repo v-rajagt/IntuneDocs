@@ -132,7 +132,7 @@ To see these features, go to [Microsoft Edge Browser device restriction settings
 Applies to: Windows 10 and later
 
 #### Expanded support for Android Enterprise fully managed devices  (Preview)<!--   3903241, 3903244, 3903246   -->
-Still in a public preview, we've expanded our support of Android Enterprise fully managed devices ([first announced in January of 2019](whats-new.md#week-of-january-14-2019) to include the following:
+Still in a public preview, we've expanded our support of Android Enterprise fully managed devices first announced in January of 2019 to include the following:
 
 - On fully managed and dedicated devices, you can create [compliance policies](../protect/compliance-policy-create-android-for-work.md) to include password rules and operating system requirements (**Device compliance** > **Policies** > **Create policy** > **Android Enterprise** for platform > **Device owner** for profile type).
 
