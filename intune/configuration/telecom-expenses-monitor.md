@@ -57,7 +57,7 @@ To use the Datalert service with Intune, there are some configuration settings i
 
 ## Prerequisites
 
-- A subscription to Microsoft Intune, and access to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) in the Azure portal
+- A subscription to Microsoft Intune, and access to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 - A subscription to [Datalert](http://www.datalert.biz/) (opens Datalert's web site)
 
 ## Telecom expense management providers
@@ -112,9 +112,9 @@ Intune integrates with the following telecom expense management provider:
 
 After you complete Step 1, your connection is automatically enabled. In Intune, the connection status shows **Active**. To confirm the status is active, use the following steps:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Telecom Expense Management**. Look for the **Active** connection status:
+2. Select **Tenant administration** > **Connectors and tokens** > **Telecom Expense Management**. Look for the **Active** connection status:
 
    ![Intune page showing datalert connection status Active](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -186,7 +186,7 @@ For the end-user experience, the following articles may help:
 
 ## Turn off the Datalert service
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Device configuration** > **Telecom Expense Management**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Tenant administration** > **Connectors and tokens** > **Telecom Expense Management**.
 2. Set **Enable Telecom Expense Management and block cellular or roaming data on devices that exceed usage quotas you configure** to **Disable**.
 3. **Save** your changes.
 
