@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Install apps on your device from the Company Portal app for Windows.
     * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.  
     * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured. View, sort, and filter the apps. Search results are sorted automatically by relevancy.  
     * **App categories**: Select this page in the navigation pane to choose apps based on type or function. Apps are sorted under categories such as **Featured**, **Education**, and **Productivity**.  
-    * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
+    * **Search for apps**: A static search bar sits in the app's navigation pane. To find your available apps, search by app name or publisher.  
 
 3. Select an app.   
 4. On the apps details page, click **Install**. After installation is done, you'll see an **Installed** status.  
@@ -73,10 +73,10 @@ Share and recommend apps to your work or school contacts. The following steps de
 
 After you share, the recipient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
-## Available and required apps
-Apps are assigned to you by your organization, and labeled in Company Portal as either **Available** or **Required**. 
+## Optional and required apps
+Apps are assigned to you by your organization. Your organization will require you to have some apps and will make other apps optional. To find out which apps are required versus optional, go to **Installed apps** and look under the column **Required by your organization**.  
 
-* Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
+* Optional apps: These apps are selected by your organization and are appropriate and useful for work or school. They're made available to you but it's up to you whether you want to install them. These are the only kind of apps you'll find in the Company Portal to install. 
 
 * Required apps: These apps are necessary for work and school and are deployed directly to your device. These apps are automatically installed for you without intervention. 
 
@@ -90,7 +90,7 @@ If there's an app you need, but don't see in Company Portal, request it. Find co
 ## View installed apps  
 View a list of all apps installed on your device. The **Installed apps** page lists the following details about each app:
 
-* Name: The name of the app. Available apps include a link to the **App details** page.
+* Name: The name of the app. Optional apps include a link to the **App details** page.
 * Assignment type: How the app is assigned and made available to you. 
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
