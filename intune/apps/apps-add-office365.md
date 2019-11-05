@@ -187,7 +187,7 @@ In addition, monitor the size of the directory *C:\Program Files\Microsoft Offic
 Once you can conclude that both Intune and the network infrastructure work as expected, you should further analyze the issue from an OS perspective. Consider the following conditions:
 
 - The target device must run on Windows 10 Creators Update or later.
-- Nno existing Office apps are opened while Intune deploys the applications.
+- No existing Office apps are opened while Intune deploys the applications.
 - Existing MSI versions of Office have been properly removed from the device. Intune utilizes Office Click-to-Run which is not compatible with Office MSI. This behavior is further mentioned in this document:<br>
   [Office installed with Click-to-Run and Windows Installer on same computer isn't supported](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - The sign-in user should have permission to install applications on the device.
