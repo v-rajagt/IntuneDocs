@@ -56,7 +56,9 @@ App protection polices are only applied in the work context. Therefore, the app 
 
 Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
 
-When there is a managed account in an application:
+Users on an Intune MDM managed device assigned with app protection policy will only be able to add their account is managed.  They will not be able to switch to a different managed account.  This will also apply to devices managed by a third party EMM where the admin has sent down the IntuneMAMUPN value over app configuration.  
+
+In all other scenarios when there is a managed account in an application:
 
 - If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
 - If the IT admin adds policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
