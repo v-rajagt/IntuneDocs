@@ -84,27 +84,30 @@ Create update rings that specify how and when Windows as a Service updates your 
 Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
 
 ### Create and assign update rings
-<!-- Start of Intune Azure  procedure:
+<!-- Start of Intune Azure  procedure -->
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and then select **Software updates** > **Windows 10 Update Rings** > **Create**.  
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
-2. On the Basics tab, specify a name, a description (optional), and then select **Next**.  
+2. Select **Software updates** > **Windows 10 Update Rings** > **Create**.  
+
+3. Under **Basics**, specify a name, a description (optional), and then select **Next**.  
 
    ![Create Windows 10 update ring workflow](./media/windows-update-for-business-configure/basics-tab.png)
 
-3. On the **Update ring settings** tab, configure settings for your business needs. For information about the available settings, see [Windows update settings](windows-update-settings.md). After configuring *Update* and *User experience* settings, select **Next**.  
+4. Under **Update ring settings**, configure settings for your business needs. For information about the available settings, see [Windows update settings](windows-update-settings.md). After configuring *Update* and *User experience* settings, select **Next**.  
 
-4. On the **Scope tags** tab, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring.  
+5. Under **Scope tags**, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring.  
 
    - On the **Select tags** pane, choose one or more tags, and then click **Select** to add them to the update ring and return to the *Scope tags* pane.  
 
    When ready, select **Next** to continue to *Assignments*. 
 
-5. On the **Assignments** tab, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.  
+6. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.  
 
-6. On the **Review + create** tab, review the settings and select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
+7. Under **Review + create**, review the settings and select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
 
--- end of Intune Azure procedure -->
+<!-- end of Intune Azure procedure -->
+<!-- START OF MEMAC procedure
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center]( https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -123,10 +126,17 @@ Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You
 
 7. Under**Review + create**, review the settings and then select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
 
+-- END OF MEMAC procedure -->
 
 ### Manage your Windows 10 Update rings
+<!-- EMAC path 
 
 In the portal, navigate to **Devices** > **Windows** > **Windows 10 Update Rings** and select the policy that you want to manage.  The policy opens to its **Overview** page.
+
+end EMAC path -->
+<!-- Start Azure path -->
+In the portal, you can select a Windows 10 Update Ring to open its **Overview** pane. From this pane, you can view the rings assignment status and take additional actions to manage the ring.
+<!-- end Azure Path -->
 
 From this page, you can view the rings assignment status and select the following actions from the top of the Overview pane to manage the update ring:
 
@@ -243,20 +253,38 @@ When a device receives a feature update deployment policy:
 Feature update deployments aren't supported with Windows Autopilot.
 
 ### Create and assign feature update deployments
+<!-- Start of Intune Azure  path  -->
+
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+
+2. Select **Software updates** > **Feature update deployments** > **Create**.  
+
+<!-- end of Intune Azure path -->
+<!-- START OF MEMAC path
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Windows** > **Feature update deployment** > **Create**.
+-- END OF MEMAC path -->
 
-2. Under **Basics**, specify a name, a description (optional), and for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
+3. Under **Basics**, specify a name, a description (optional), and for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
 
 4. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Select **Next** to continue.
 
 5. Under **Review + create**, review the settings and select **Create** when ready to save the feature update deployment.  
 
-### Manage a feature update deployment
 
-In the portal, you can navigate to **Devices** > **Windows** > **Feature update deployments** and select the policy that you want to manage. The policy opens to its **Overview** pane.
+
+### Manage a feature update deployment
+<!-- Start of Intune Azure  path  -->
+In the admin center, you can select a Windows 10 Update Ring to open its **Overview** pane. From this pane, you can view the rings assignment status and take additional actions to manage the ring.
+<!-- end of Intune Azure path -->
+<!-- START OF MEMAC path
+
+In the admin center, go to **Devices** > **Windows** > **Feature update deployments** and select the policy that you want to manage. The policy opens to its **Overview** pane.
+
+-- END OF MEMAC path -->
 
 From this pane, you can:
 
