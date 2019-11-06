@@ -4,12 +4,27 @@ description: include file
 author: ErikjeMS  
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 03/28/2019
+ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
 ---
 
 These notices provide important information that can help you prepare for future Intune changes and features.
+
+### Plan for Change: Updated experience when enrolling Android Enterprise dedicated devices in Intune<!--5198878-->
+With the November or 1911 release to Intune, we’re adding support for SCEP device certificate deployment to Android Enterprise dedicated devices to enable certificate-based access to Wi-Fi profiles. This change also involves some minor changes the flow when enrolling Android Enterprise dedicated devices.
+
+#### How does this affect me?
+If you manage Android Enterprise dedicated devices in your environment, you will start to see some changes roll out in November.
+
+- For new Android Enterprise dedicated device enrollments: End users will see a different set of steps on devices during enrollment. Enrollment will still start the way it does today (with QR, NFC, Zero-touch, or device identifier) but after the November service release, there will be a mandatory app install step.
+- For existing Android devices enrolled as dedicated devices: Intune will start to automatically install the Microsoft Intune app on devices starting in early November. You don't need to take any action. The app will automatically download and install on devices. 
+
+#### What can I do to prepare for this change?
+You should plan to update your end user guidance and let your helpdesk know of this change. Click Additional Information for more details and screenshots. We’ll update our What’s New page when this change starts to roll out.
+
+#### Additional information
+[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
 
@@ -100,7 +115,7 @@ Below find a list of common devices enrolled in Intune that run Android version 
 #### What do I need to do to prepare for this change?
 Wrap your apps with the latest Intune App SDK. You may also set the "Require minimum OS version (Warning only)" conditional launch setting to notify end users on personal devices to upgrade.
 
-### Intune plan for change: Nearing end of support for Windows 7 <!-- 3042987 -->
+### Intune plan for change: Nearing end of support for Windows 7<!-- 3042987 -->
 As we messaged in MC148476, posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches its end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7 so we can focus our investment on supporting newer technologies and providing great new end-user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020 to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 #### How does this affect me?
