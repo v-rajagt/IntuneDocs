@@ -106,20 +106,22 @@ Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You
 
 -- end of Intune Azure procedure -->
 
-1. Sign in to [Microsoft Endpoint Management admin center]( https://go.microsoft.com/fwlink/?linkid=2109431) and then select **Devices** > **Windows** > **Windows 10 Update Rings** > **Create**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center]( https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. On the *Basics* tab, specify a name, a description (optional), and then select **Next**.
+2. Select **Devices** > **Windows** > **Windows 10 Update Rings** > **Create**.
+
+3. Under *Basics*, specify a name, a description (optional), and then select **Next**.
   ![Create an update ring]( ./media/windows-update-for-business-configure/basics-tab.png)
   
-3. On the **Update ring settings** tab, configure settings for your business needs. For information about the available settings, see Windows update settings. After configuring *Update and User experience* settings, select **Next**.
+4. Under **Update ring settings**, configure settings for your business needs. For information about the available settings, see Windows update settings. After configuring *Update and User experience* settings, select **Next**.
 
-4. On the **Scope tags** tab, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring. Choose one or more tags, and then click **Select** to add them to the update ring and return to the *Scope tag*s page.
+5. Under **Scope tags**, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring. Choose one or more tags, and then click **Select** to add them to the update ring and return to the *Scope tag*s page.
 
    When ready, select **Next** to continue to *Assignments*.
 
-5. On the **Assignments** tab, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.
+6. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.
 
-6. On the **Review + create** tab, review the settings and then select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
+7. Under**Review + create**, review the settings and then select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
 
 
 ### Manage your Windows 10 Update rings
@@ -242,14 +244,15 @@ Feature update deployments aren't supported with Windows Autopilot.
 
 ### Create and assign feature update deployments
 
-1. Sign in to Microsoft Endpoint Management admin center and then select **Devices** > **Windows** > **Feature update deployment** > **Create**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. On the **Basics** tab, specify a name, a description (optional).
-3. For **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
+2. Select **Devices** > **Windows** > **Feature update deployment** > **Create**.
 
-4. On the **Assignments** tab, choose **+ Select groups to include** and then assign the update ring to one or more groups. Select **Next** to continue.
+2. Under **Basics**, specify a name, a description (optional), and for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
 
-5. On the **Review + create** tab, review the settings and select **Create** when ready to save the feature update deployment.  
+4. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Select **Next** to continue.
+
+5. Under **Review + create**, review the settings and select **Create** when ready to save the feature update deployment.  
 
 ### Manage a feature update deployment
 
