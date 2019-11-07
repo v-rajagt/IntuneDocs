@@ -252,14 +252,14 @@ The PKCS certificates you'll deploy for Intune managed devices must be chained w
       - **Platform** to deploy the profile to
       - Set **Profile type** to **Trusted certificate**
 
-   f. Select **Settings**, and then browse to the trusted root CA certificate .cer file you exported for use with this certificate profile, and then select **OK**.
+   d. Select **Settings**, and then browse to the trusted root CA certificate .cer file you exported for use with this certificate profile, and then select **OK**.
 
-   g. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
+   e. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
       - **Computer certificate store - Root**
       - **Computer certificate store - Intermediate**
       - **User certificate store - Intermediate**
 
-   h. When you're done, select **OK**, go back to the **Create profile** pane, and select **Create**.  
+   f. When you're done, select **OK**, go back to the **Create profile** pane, and select **Create**.  
 
   The profile appears in the list of profiles in the **Device configuration – Profiles** pane, with a profile type of **Trusted certificate**.  Be sure to assign this profile to devices that will receive certificates. To assign the profile to groups, see [Assign device profiles](../configuration/device-profile-assign.md).
 
