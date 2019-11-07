@@ -5,7 +5,7 @@ keywords:
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -67,22 +67,26 @@ When you use Intune to deploy an **imported PFX certificate** to a user, there a
 
 ## Download, install, and configure the PFX Certificate Connector for Microsoft Intune
 
-1. In the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portal, select **Device configuration** > **Certification Connectors** > **Add**
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Select **Tenant administration** > **Connectors and tokens** > **Certificate connectors** > **Add**.
 
    ![PFX Certificate Connector for Microsoft Intune download](./media/certificates-imported-pfx-configure/download-imported-pfxconnector.png)
 
-2. Follow the guidance to download the *PFX Certificate Connector for Microsoft Intune* to a location that's accessible from the server where you're going to install the connector.
-3. After the download completes, sign in to the server and run the installer (PfxCertificateConnectorBootstrapper.exe).  
+3. Follow the guidance to download the *PFX Certificate Connector for Microsoft Intune* to a location that's accessible from the server where you're going to install the connector.
+
+4. After the download completes, sign in to the server and run the installer (PfxCertificateConnectorBootstrapper.exe).  
    - When you accept the default installation location, the connector installs to `Program Files\Microsoft Intune\PFXCertificateConnector`.
    - The connector service runs under the local system account. If a proxy is required for internet access, confirm that the local service account can access the proxy settings on the server.
 
-4. The PFX Certificate Connector for Microsoft Intune opens the **Enrollment** tab after installation. To enable the connection to Intune, **Sign In**, and enter an account with Azure global administrator or Intune administrator permissions.
+5. The PFX Certificate Connector for Microsoft Intune opens the **Enrollment** tab after installation. To enable the connection to Intune, **Sign In**, and enter an account with Azure global administrator or Intune administrator permissions.
 
    > [!WARNING]
    > By default, in Windows Server **IE Enhanced Security Configuration** is set to **On** which can cause issues with the sign-in to Office 365.
 
-5. Close the window.
-6. In the Intune portal, go back to **Device Configuration** > **Certification Connectors**. In a few moments, a green check mark appears and the **Connection status** is **Active**. The connector server can now communicate with Intune.
+6. Close the window.
+
+7. In the Microsoft Endpoint Manager Admin Center, go back to **Tenant administration** > **Connectors and tokens** > **Certificate connectors**. In a few moments, a green check mark appears and the connection status updates. The connector server can now communicate with Intune.
 
 ## Import PFX Certificates to Intune
 
@@ -181,22 +185,25 @@ For more information about other available commands, see the readme file at [PFX
 
 After importing the certificates to Intune, create a **PKCS imported certificate** profile, and assign it to Azure Active Directory groups.
 
-1. In the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portal, got to **Device configuration** > **Profiles** > **Create profile**.
-2. Enter the following properties:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Select **Devices** > **Configuration profile** > **Create profile**.
+
+3. Enter the following properties:
 
    - **Name** for the profile
    - Optionally set a description
    - **Platform** to deploy the profile to
    - Set **Profile type** to **PKCS imported certificate**
 
-3. Go to **Settings**, and enter the following properties:
+4. Select **Settings**, and enter the following properties:
 
    - **Intended purpose**: Specify the intended purpose of the certificates that are imported for this profile. Administrators can import certificates with different intended purposes (like S/MIME signing or S/MIME encryption). The intended purpose selected in the certificate profile matches the certificate profile with the right imported certificates. Intended purpose is a tag to group imported certificates together and doesn't guarantee that certificates imported with that tag will meet the intended purpose.  
    - **Certificate validity period**: Unless the validity period was changed in the certificate template, this option defaults to one year.  
    - **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.  
 
-4. Select **OK** > **Create** to save your profile.
-5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](../configuration/device-profile-assign.md).
+5. Select **OK** > **Create** to save your profile.
 
+## Next steps
 
-
+The profile is created, but it's not doing anything yet. [Assign](../configuration/device-profile-assign.md) the new device profile.
