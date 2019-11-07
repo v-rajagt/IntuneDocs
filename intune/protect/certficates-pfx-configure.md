@@ -146,7 +146,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Tenant administration** > ** > **Certification connectors** > **Add**.
+2. Select **Tenant administration** > **Connectors and tokens** > **Certificate connectors** > **+ Add**.
 
 3. Click *Download the certificate connector software* for the connector for PKCS #12, and save the file to a location you can access from the server where you're going to install the connector.
 
