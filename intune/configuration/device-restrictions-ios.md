@@ -134,9 +134,6 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Password
 
-> [!NOTE]
-> In a future release, these password settings in the Intune UI are being updated to match the enrollment type.
-
 ### Settings apply to: All enrollment types
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows users to access the device without entering a password.
