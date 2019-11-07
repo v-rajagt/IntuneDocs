@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -42,16 +42,16 @@ Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.co
 ## Create an iOS email profile
 
 1. Select **Devices** > **Configuration profiles** > **Create profile**.
-   
+
    ![Create an email profile for iOS](./media/quickstart-email-profile/ios-create-profile.png)
 
 2. Under **Name**, enter a descriptive name for the new profile. For this example, enter **iOS require work email**.
 3. Enter the following profile information:
-   - For **Description**, enter **Require iOS devices to use work email**.
-   - For **Platform**, select **iOS**.
-   - For **Profile type**, select **Email**.
-    
-     ![Create an email profile for use with iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
+    - For **Description**, enter **Require iOS devices to use work email**.
+    - For **Platform**, select **iOS**.
+    - For **Profile type**, select **Email**.
+
+        ![Create an email profile for use with iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
 
 4. Select **Settings**, and enter the following settings (leave the defaults for other settings):
    - **Email server**: For this quickstart, enter **outlook.office365.com**. This setting specifies the Exchange location (URL) of the email server that the iOS mail app will use to connect to email.
@@ -59,8 +59,8 @@ Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.co
    - **Username attribute from AAD**: This name is the attribute Intune gets from Azure Active Directory (Azure AD). Intune dynamically generates the username for this profile using this name. For this quickstart, we’ll assume that we want the **User Principal Name** to be used as the username for the profile (for example, user1@contoso.com).
    - **Email address attribute from AAD**: This setting is the email address from Azure AD that will be used to sign in to Exchange. For this quickstart, select **User Principal Name**.
    - **Authentication method**: For this quickstart, select **Username and password**. (You can also choose **Certificate** if you’ve already set up a certificate for Intune.)
-    
-     ![Create an email profile for iOS use](./media/quickstart-email-profile/ios-email-profile.png)
+
+        ![Create an email profile for iOS use](./media/quickstart-email-profile/ios-email-profile.png)
 
 5. Select **OK** > **Create**. The new profile appears on the profiles list with the dashboard displayed so you can monitor how the profile has been assigned to iOS devices and iOS users.
 6. Select **Assignments**.
