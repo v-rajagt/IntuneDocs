@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll your macOS device in Intune with Company Portal | Microsoft Docs
-description: Describes how to enroll a macOS device in Intune with Company Portal app
+title: Enroll your Mac with Intune Company Portal | Microsoft Docs
+description: Learn how to enroll your Mac in Intune with the Company Portal app.
 keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,82 +29,80 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Enroll your macOS device in Intune with the Company Portal app
+# Enroll your macOS device using the Company Portal app  
 
-Enroll your macOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
+Enroll your macOS device with the Intune Company Portal app to gain secure access to your work or school email, files, and apps.
 
-Organizations often require you to get your device managed before you can access proprietary data from it. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings.  
+Organizations typically require you to enroll your device before you can access proprietary data. After your device is enrolled, it becomes *managed*. Your organization can assign policies and apps to the device through a mobile device management (MDM) provider, such as Intune. To get continuous access to work or school information on your device, you must configure your device to match your organization’s policy settings.  
 
-This article describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet your organization's requirements.  
-</br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
+This article describes how to use the Company Portal app for macOS to enroll, configure, and maintain your device so that you meet your organization's requirements.  
+
 
 ## What to expect from the Company Portal app
 
-During initial setup, the app requires that you authenticate yourself with your organization. It then informs you of any device settings you must make. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
+During initial setup, the Company Portal app requires you to sign in and authenticate yourself with your organization. Company Portal then informs you of any device settings you need to configure to meet your organization's requirements. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
 
-After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. App protection policies like this one are common in organizations, and often require you to uninstall untrusted apps before you can regain access.
+After you enroll your device, Company Portal will always make sure that your device is protected according to your organization's requirements. For example, if you install an app from an untrusted source, Company Portal will alert you and might restrict access to your organization's resources. App protection policies like this one are common. To regain access, you'll likely need to to uninstall the untrusted app. 
 
-If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, the Company Portal app will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
+If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, Company Portal will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
 
 To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
 
-## Get your device managed  
-Use the following steps to enroll macOS devices running macOS 10.12 and later.   
+## Get your macOS device managed  
+Use the following steps to enroll your macOS device with your organization. Your device must be running macOS 10.12 or later.   
+
+> [!NOTE]
+> Throughout this process, you might be prompted to allow Company Portal to use confidential information that's stored in your keychain. These prompts are part of Apple security, and are present on devices running macOS Catalina 10.15 and later. When you get the prompt, type in your password and select **Always Allow**. If you press enter or return on your keyboard, the prompt will instead select **Allow**, which may result in additional prompts.  **Katelynn, is my rewrite accurate? Also when I googled these prompts, I see that these occurred as far back as 2016. Was Catalina around back then? If not, thinking we should just remove that part and just have that they are a part of Apple security. Also, do device users need to enter their device password or keychain password? Or are they one in the same?**
+
+### Download and install Compnay Portal  
+1. Visit aka.ms/EnrollMyMac.  
+2. The CompanyPortal_2.0.190901-Installer.pkg will download. Launch the installer and continue through the steps. 
+3. Agree to the software license agreement. 
+4. Authenticate to install the software.   **Katelynn what action do the users take to "authenticate" here? DO they just sign in to something or are we being generic because there are multiple ways for them to authenticate in this step?**
+5. Open Company Portal. If you can’t find the app, search for it in Spotlight.  
 
 
-1. To access the Company Portal website, open a new window in __Safari__, and go to https://portal.manage.microsoft.com.  
-
-2. Sign in to the Company Portal website with your work or school account.
-
-   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+### Enroll your Mac  
 
 
-3. Go to the top left-corner of the page and click **Menu** > **Devices**.  
+1. Sign in to Company Portal with your work or school account.  
+2. Select **Begin**.  
 
-4. The __Devices__ page, will show either a list of managed devices, or a banner. What you see depends on if you already have a managed device. 
-    * To add a device that's not listed, select the banner that reads, **Tap here to tell us which device you're using or add a new device.**
-    * If you don't have any devices, the banner reads: **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
+    ![Example screenshot of Company Portal screen., highlighting "Begin" button.](./media/company-portal-mac-begin-1911.PNG)  
+3. Review what your organization can and can't see on your enrolled device. Then select **Continue**.  
+4. Follow the instructions on the **Install management profile** screen.  
 
-     ![A screenshot of the Devices page, with a red square around the banner option to highlight  where to click.](./media/CP-enroll-MACOS-1808.png)  
-5. Complete the step below that matches the message you currently see in the Company Portal.  
-    * If you're adding a device for the first time, you'll be prompted to download the Company Portal app on your device. Click **Download** to continue.  
+    ![Example screenshot of Company Portal, Install management profile screen, highlighting 3 steps.](./media/install-mgmt-profile-mac-1911.PNG)  
+5. After you've installed the management profile, return to Company Portal.   
+6. Your organization might require you to update your device settings. When you're done updating settings, tap **Check settings**.    **Katelynn, where does the *How to resolve this* link take users? If it's a specific doc, can you let me know which one?**  
 
-         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  
+       ![Example screenshot of Company Portal, Update device settings screen, highlighting "Check settings" button.](./media/update-settings-mac-1911.PNG)  
+7. When setup is complete, tap **DONE**.  
 
-    * If you already have a managed macOS device, you'll receive a prompt with a list of your currently managed macOS devices. Select **My device isn't listed here** > **Download** to download the Company Portal app on the device you're adding.  
+   ![Example screenshot of Company Portal, "You're all set!" screen, highlighting "Done" button.](./media/setup-done-mac-1911.PNG)  
 
-         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select *My device isn't listed here* or a specific device from the middle of the page. A blue Download button appears at the bottom left of the prompt, and a gray Cancel button appears at the bottom right](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Your device will check to make sure that the installation file **CompanyPortal.pkg** is safe to open. After it's complete, open the installer and complete the installation.  
+ ## Troubleshooting and feedback   
 
-7. When the installer has finished, go to the **Launchpad** and open **Company Portal**.  
+If you run into issues during enrollment, you can send Microsoft information about what went wrong. **Katelynn, why do they want to do this--is it purely just to report an app issue? Or will they get some kind of personal resolution from it?**  Go to **Help** > **Send Diagnostic Report**.     **Katelynn, doublechecking... is "Send Diagnostic Report" really all caps as its written here?**
 
-8. Your macOS device will prompt you to confirm that you want to open the Company Portal app. Click **Open**.  
+You will receive an incident ID, and you can email the details of the issue to your IT support person.  **Katelynn, do they need to type the details of the issue themselves, as they experienced it, or will they actually have a diagnostic report that they can just attach to the email? Do they include the incident ID in the email or is that just for them to write down for their records?** Look for their contact information on the **Contact** page in the Company Portal app, or check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  **Katelynn, here is another article we might want to update. Can you review to make sure it's still accurate?: https://docs.microsoft.com/en-us/intune-user-help/send-errors-macos**  
+ 
 
-   > [!TIP]
-   > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. If your computer refuses to open the Company Portal app, [turn off Gatekeeper](https://support.apple.com/HT202491). Then open the app.
+Additionally, the Microsoft Intune Company Portal team would love to hear your feedback. Go to **Help** > **Send Feedback** to share your thoughts and ideas.  
 
-9. The first screen you see in the Company Portal app prompts you to **Sign In**. Use the same work or school account you used to sign in to the Company Portal website.
+## Unverified profiles  
+When you view the installed mobile device management (MDM) profiles in **System Preferences** > **Profiles**, some profiles might show an unverified status. As long as the management profile shows a verified status, you don’t need to be concerned.  
 
-10. The Company Portal confirms your account information, and shows your **Device Enrollment** and **Device Compliance** statuses. Yellow triangles highlight the actions you need to take to secure your macOS device for school or work. Click **Begin** to start enrollment. 
+The management profile is what defines the MDM channel connection. As long as the management profile is verified, any other profiles delivered to the machine via that channel inherit the security traits of the management profile.  
 
-11. If prompted, type in your computer's sign-in information.  
-
-It might take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
-
-## Unverified profiles
-When you view the installed mobile device management (MDM) profiles for your macOS device, some profiles might show an **Unverified** status. As long as the **Management profile** shows a **Verified** status, you don’t need to be concerned.  
-
-The management profile is what defines the MDM channel connection. As long as the management profile is verified, any other profiles delivered to the machine, via that channel, inherit the security traits of the management profile.
-
-Also, because those other profiles don’t require individual verifications, they're more quickly generated and delivered to devices. 
+Also, because those other profiles don’t require individual verifications or manual installation, they're generated and delivered to devices quicker.   **Katelynn, do you think this last sentence is useful to the typical device user? I'm a macOS user and I don't understand this part at all, nor do I care. Haha! But if you think the majority will find it useful, it's fine to keep in.** 
 
 ## Updating the Company Portal app
 
-Updating the Company Portal app is done the same way as any other Office app, through Microsoft AutoUpdate for Mac. Find out more about [updating Microsoft apps for macOS here](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+Updating the Company Portal app is done the same way as any other Office app, through Microsoft AutoUpdate for macOS. Find out more about [updating Microsoft apps for macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
 ## Next Steps  
-Need additional help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 
