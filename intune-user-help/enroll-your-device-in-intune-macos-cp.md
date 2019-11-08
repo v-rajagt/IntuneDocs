@@ -76,7 +76,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 5. After you've installed the management profile, return to Company Portal.   
 6. Your organization might require you to update your device settings. When you're done updating settings, tap **Check settings**.    **Katelynn, where does the *How to resolve this* link take users? If it's a specific doc, can you let me know which one?**  
 
-       ![Example screenshot of Company Portal, Update device settings screen, highlighting "Check settings" button.](./media/update-settings-mac-1911.PNG)  
+    ![Example screenshot of Company Portal, Update device settings screen, highlighting "Check settings" button.](./media/update-settings-mac-1911.PNG)  
 7. When setup is complete, tap **DONE**.  
 
    ![Example screenshot of Company Portal, "You're all set!" screen, highlighting "Done" button.](./media/setup-done-mac-1911.PNG)  
