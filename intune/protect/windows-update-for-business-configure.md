@@ -2,12 +2,12 @@
 # required metadata
 
 title: Configure Windows Update for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Manage Windows 10 Software Updates by using update rings and feature update deployment policy. You can review compliance, and  pause update installation with Windows Update for Business settings using Microsoft Intune.
+description: Manage Windows 10 Software Updates by using update rings and feature updates policy. You can review compliance, and  pause update installation with Windows Update for Business settings using Microsoft Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -39,9 +39,9 @@ Intune provides the following policy types to manage updates:
 
 - **Windows 10 update ring**: This policy is a collection of settings that configures when Windows 10 updates get installed.
 
-- **Feature update deployments (public preview)**: This policy brings devices to the Windows version you specify and freezes the feature set on those devices until you choose to update them to a later Windows version.  While the feature version remains static, devices can continue to install quality and security updates that are available for their feature version.
+- **Windows 10 feature updates (public preview)**: This policy brings devices to the Windows version you specify and freezes the feature set on those devices until you choose to update them to a later Windows version.  While the feature version remains static, devices can continue to install quality and security updates that are available for their feature version.
 
-You assign policies for update rings and feature update deployments to groups of devices. You can use both policy types in the same Intune environment to manage software updates for your Windows 10 devices and to create an update strategy that mirrors your business needs.
+You assign policies for Windows 10 update rings and Windows 10 feature updates to groups of devices. You can use both policy types in the same Intune environment to manage software updates for your Windows 10 devices and to create an update strategy that mirrors your business needs.
 
 For more information, see [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -50,12 +50,12 @@ For more information, see [Manage updates using Windows Update for Business](htt
 The following prerequisites must be met to use Windows updates for Windows 10 devices in Intune.
 
 - Windows 10 PCs must run the following Windows 10 versions:
-  - **Update rings**: version 1607 or later
-  - **Feature update deployment**: version 1703 or later
+  - **Windows 10 update rings**: version 1607 or later
+  - **Windows 10 feature updates**: version 1703 or later
 
 - Windows Update supports the following Windows 10 editions:
   - Windows 10
-  - Windows 10 Team - for Surface Hub devices (doesn't support *feature update deployments*)
+  - Windows 10 Team - for Surface Hub devices (doesn't support *Windows 10 feature updates*)
   - Windows Holographic for Business
 
     Windows Holographic for Business supports a subset of settings for Windows updates, including:
@@ -84,30 +84,6 @@ Create update rings that specify how and when Windows as a Service updates your 
 Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
 
 ### Create and assign update rings
-<!-- Start of Intune Azure  procedure -->
-
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-
-2. Select **Software updates** > **Windows 10 Update Rings** > **Create**.  
-
-3. Under **Basics**, specify a name, a description (optional), and then select **Next**.  
-
-   ![Create Windows 10 update ring workflow](./media/windows-update-for-business-configure/basics-tab.png)
-
-4. Under **Update ring settings**, configure settings for your business needs. For information about the available settings, see [Windows update settings](windows-update-settings.md). After configuring *Update* and *User experience* settings, select **Next**.  
-
-5. Under **Scope tags**, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring.  
-
-   - On the **Select tags** pane, choose one or more tags, and then click **Select** to add them to the update ring and return to the *Scope tags* pane.  
-
-   When ready, select **Next** to continue to *Assignments*. 
-
-6. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.  
-
-7. Under **Review + create**, review the settings and select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
-
-<!-- end of Intune Azure procedure -->
-<!-- START OF MEMAC procedure
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center]( https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -126,17 +102,9 @@ Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You
 
 7. Under**Review + create**, review the settings and then select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
 
--- END OF MEMAC procedure -->
-
 ### Manage your Windows 10 Update rings
-<!-- EMAC path 
 
 In the portal, navigate to **Devices** > **Windows** > **Windows 10 Update Rings** and select the policy that you want to manage.  The policy opens to its **Overview** page.
-
-end EMAC path -->
-<!-- Start Azure path -->
-In the portal, you can select a Windows 10 Update Ring to open its **Overview** pane. From this pane, you can view the rings assignment status and take additional actions to manage the ring.
-<!-- end Azure Path -->
 
 From this page, you can view the rings assignment status and select the following actions from the top of the Overview pane to manage the update ring:
 
@@ -205,7 +173,6 @@ An Intune administrator can use **Uninstall** to uninstall (roll back) the lates
 > - Windows devices start removal of updates as soon as they receive the change in Intune policy. Update removal isn't limited to maintenance schedules, even when they're configured as part of the update ring.
 > - If the update removal requires a device restart, the device  restarts without offering device users an option to delay.
 
-
 For Uninstall to be successful:
 
 - A device must run the Windows 10 April 2018 update (version 1803) or later.
@@ -220,7 +187,7 @@ Consider the following when you use Uninstall:
 
 - On a Windows 10 device, after a quality update is successfully rolled back, device users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.
 
-- For Feature updates specifically, the time you can uninstall the feature update is limited from 2-60 days. This period is configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)**. You can't roll back a feature update that's been installed on a device after the feature update has been installed for longer than the configured uninstall period.
+- For Feature updates specifically, the time you can uninstall the update is limited from 2-60 days. This period is configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)**. You can't roll back a feature update that's been installed on a device after the update has been installed for longer than the configured uninstall period.
 
   For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they've removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command before exceeding the 20-day uninstall period.
 
@@ -228,68 +195,50 @@ For more information about Windows Update policies, see [Update CSP](https://doc
 
 ##### To uninstall the latest Windows 10 update
 
-1. While viewing the overview page for a paused Update Ring, select **Uninstall**.  
-2. Select from the available options to uninstall either **Feature** or **Quality** updates, and then select **OK**.  
-3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.  
+1. While viewing the overview page for a paused Update Ring, select **Uninstall**.
+2. Select from the available options to uninstall either **Feature** or **Quality** updates, and then select **OK**.
+3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.
 
-## Feature update deployments (public preview)
+## Windows 10 feature updates (public preview)
 
-With *feature update deployment*, you select the Windows feature version that you want devices to remain at, like Windows 10 version 1803 or version 1809. You can set a feature level of 1803 or later.
+With *Windows 10 feature updates*, you select the Windows feature version that you want devices to remain at, like Windows 10 version 1803 or version 1809. You can set a feature level of 1803 or later.
 
-When a device receives a feature update deployment policy:
+When a device receives a Windows 10 feature updates policy:
 
 - The device will update to the version of Windows specified in the policy. A device that already runs a later version of Windows remains at its current version. By freezing the version, the devices feature set remains stable for the duration of the policy.
 
 - While the installed version of Windows remains set, devices can still receive and install quality and security updates for their Windows version for the duration of support for that version, which helps you to keep devices current and secure.
 
-- Unlike using Pause with an update ring, which expires after 35 days, the feature update deployment remains in effect. Devices won’t install a new Windows version until you modify or remove the feature update deployment policy. If you edit the policy to specify a newer version, devices can then install the features from that Windows version.
+- Unlike using *Pause* with an update ring, which expires after 35 days, the Windows 10 feature updates policy remains in effect. Devices won’t install a new Windows version until you modify or remove the Windows 10 feature updates policy. If you edit the policy to specify a newer version, devices can then install the features from that Windows version.
 
 > [!IMPORTANT]
-> When you deploy both a *feature update deployment* and an *update ring* to the same device, review the update ring for the following configurations:
+> When you deploy both a *Windows 10 feature update* and a *Windows 10 update ring* policy to the same device, review the update ring for the following configurations:
 >
 > - The **Feature update deferral period (days)** must be set to **0**
 > - Feature updates for the update ring must be *running*. They must not be paused.
 
-Feature update deployments aren't supported with Windows Autopilot.
+Windows 10 Feature updates aren't supported with Windows Autopilot.
 
-### Create and assign feature update deployments
-<!-- Start of Intune Azure  path  -->
-
-
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-
-2. Select **Software updates** > **Feature update deployments** > **Create**.  
-
-<!-- end of Intune Azure path -->
-<!-- START OF MEMAC path
+### Create and assign Windows 10 feature updates
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Windows** > **Feature update deployment** > **Create**.
--- END OF MEMAC path -->
+2. Select **Devices** > **Windows** > **Windows 10 Feature updates** > **Create**.
 
 3. Under **Basics**, specify a name, a description (optional), and for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
 
 4. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Select **Next** to continue.
 
-5. Under **Review + create**, review the settings and select **Create** when ready to save the feature update deployment.  
+5. Under **Review + create**, review the settings and select **Create** when ready to save the Windows 10 feature updates policy.  
 
+### Manage Windows 10 Feature updates
 
-
-### Manage a feature update deployment
-<!-- Start of Intune Azure  path  -->
-In the admin center, you can select a Windows 10 Update Ring to open its **Overview** pane. From this pane, you can view the rings assignment status and take additional actions to manage the ring.
-<!-- end of Intune Azure path -->
-<!-- START OF MEMAC path
-
-In the admin center, go to **Devices** > **Windows** > **Feature update deployments** and select the policy that you want to manage. The policy opens to its **Overview** pane.
-
--- END OF MEMAC path -->
+In the admin center, go to **Devices** > **Windows** > **Windows 10 Feature updates** and select the policy that you want to manage. The policy opens to its **Overview** pane.
 
 From this pane, you can:
 
 - Select **Delete** to delete the policy from Intune and remove it from devices.
-- Select **Properties** to modify the deployment.  On the *Properties* pane, select **Edit** to open the *Deployment settings or Assignments*, where you can then modify the deployment. 
+- Select **Properties** to modify the deployment.  On the *Properties* pane, select **Edit** to open the *Deployment settings or Assignments*, where you can then modify the deployment.
 - Select **End user update status** to view information about the policy.
 
 ## Migrate update settings to the Azure portal
