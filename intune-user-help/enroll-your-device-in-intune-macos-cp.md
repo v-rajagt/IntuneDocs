@@ -54,7 +54,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 > [!NOTE]
 > Throughout this process, you might be prompted to allow Company Portal to use confidential information that's stored in your keychain. These prompts are part of Apple security, and are present on devices running macOS Catalina 10.15 and later. When you get the prompt, type in your password and select **Always Allow**. If you press enter or return on your keyboard, the prompt will instead select **Allow**, which may result in additional prompts.  **Katelynn, is my rewrite accurate? Also when I googled these prompts, I see that these occurred as far back as 2016. Was Catalina around back then? If not, thinking we should just remove that part and just have that they are a part of Apple security. Also, do device users need to enter their device password or keychain password? Or are they one in the same?**
 
-### Download and install Compnay Portal  
+### Install Company Portal app  
 1. Visit aka.ms/EnrollMyMac.  
 2. The CompanyPortal_2.0.190901-Installer.pkg will download. Launch the installer and continue through the steps. 
 3. Agree to the software license agreement. 
