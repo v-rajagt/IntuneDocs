@@ -89,7 +89,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 
  ## Troubleshooting and feedback   
 
-If you run into issues during enrollment, go to **Help** > **Send Diagnostic Report** to report the issue to Microsoft. This information helps us improve the product. If your IT support person contact Microsoft about the problem you've reported, we can help them resolve it.    
+If you run into issues during enrollment, go to **Help** > **Send Diagnostic Report** to report the issue to Microsoft. This information is used to help improve the app. Should your IT support person reach out for help, Microsoft will use this information to help resolve the problem.         
 
 After you report the problem to Microsoft, you can send the details of your experience to your IT support person. Select **Email Details**. Type in what you experienced in the body of the email. To find your support person's email address, go to the Company Portal app > **Contact**. Or check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
  
