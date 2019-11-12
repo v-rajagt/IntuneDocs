@@ -45,7 +45,7 @@ You need the following to configure Conditional Access with Jamf Pro:
 
 - Jamf Pro 10.1.0 or later
 - [Company Portal app for macOS](https://aka.ms/macoscompanyportal)
-- macOS devices with OS X 10.11 Yosemite or later
+- macOS devices with OS X 10.12 Yosemite or later
 
 ### Network ports
 
@@ -129,12 +129,19 @@ To complete this procedure, you must have administrator access to the console fo
 
 5. In Intune, go to the **Partner device management** page. Under **Connector Settings** configure groups for assignment:
 
-   - Select **Include** and specify groups of devices that you want to enroll with Jamf.
-   - Use **Exclude** to select groups of devices that won’t enroll with Jamf and instead will enroll directly with Intune. *Exclude* overrides *Include*, which means any device that is in both groups is excluded from Jamf and directed to enroll with Intune.
+   - Select **Include** and specify which User groups you want to target for macOS enrollment with Jamf.
+   - Use **Exclude** to select groups of Users that won’t enroll with Jamf and instead will enroll their Macs directly with Intune. 
+   
+   *Exclude* overrides *Include*, which means any device that is in both groups is excluded from Jamf and directed to enroll with Intune.
+
+   >[!NOTE]
+   > This method of including and excluding user groups affects the enrollment experience of the user. Any user with a Mac thats already enrolled in either Jamf or Intune who is then targeted to enroll with the other MDM must unenroll their device and then re-enroll it with the new MDM before management of the device works properly. 
 
 6. Select **Evaluate** to determine how many devices will be enrolled with Jamf, based on your group configurations.
 
-7. Select **Save** when you’re ready to apply the configuration.  
+7. Select **Save** when you’re ready to apply the configuration.
+
+8. To proceed, you will next need to use [Jamf to deploy the Company Portal for Mac](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) so that users can register their devices to Intune.
 
 ## Set up compliance policies and register devices
 
