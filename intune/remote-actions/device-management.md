@@ -75,7 +75,7 @@ The actions available depend on the device platform, and the configuration of th
   - [Remote control for Android](teamviewer-support.md)
   - [Synchronize device](device-sync.md)
   - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
-  - [BitLocker key rotation](../protect/encrypt-devices#rotate-bitlocker-recovery-keys)  (Windows only)
+  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
 
 ## Next steps
 
