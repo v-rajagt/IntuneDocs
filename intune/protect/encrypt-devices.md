@@ -58,22 +58,22 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 2. Select **Devices** > **All devices** > **Configuration profiles** > **Create profile**.
 
-2. Set the following options:  
+3. Set the following options:  
 
    - Platform: macOS  
    - Profile type: Endpoint protection
 
-3. Select **Settings** > **FileVault**.
+4. Select **Settings** > **FileVault**.
 
-4. For *FileVault*, select **Enable**.
+5. For *FileVault*, select **Enable**.
 
-5. For *Recovery key type*, only **Personal key** is supported.
+6. For *Recovery key type*, only **Personal key** is supported.
 
    Consider adding a message to help guide end-users on how to retrieve the recovery key for their device. This information can be useful for your end-users when you use the setting for Personal recovery key rotation, which can automatically generate a new recovery key for a device periodically.
 
    For example: To retrieve a lost or recently rotated recovery key, sign in to the Intune Company Portal website from any device. In the portal, go to *Devices* and select the device that has FileVault enabled, and then select *Get recovery key*. The current recovery key is displayed.
 
-6. Configure the remaining [FileVault settings](endpoint-protection-macos.md#filevault) to meet your business needs, and then select **OK**.
+7. Configure the remaining [FileVault settings](endpoint-protection-macos.md#filevault) to meet your business needs, and then select **OK**.
 
    > [!IMPORTANT]
    > There is a known issue when the setting **Disable prompt at sign out** is set to *Enable*. When set to *Enable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports it's **Profile State Summary** as **Error** with no further details.
@@ -82,7 +82,7 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
    >
    > This issue will be resolved in a future update.
 
-7. Complete configuration of additional settings, and then save the profile.
+8. Complete configuration of additional settings, and then save the profile.
 
 ### Manage FileVault  
 
@@ -106,16 +106,16 @@ Configure BitLocker when you create a [device configuration profile](../configur
 
 2. Select **Devices** > **All devices** > **Configuration profiles** > **Create profile**.
 
-2. Set the following options:
+3. Set the following options:
 
    - Platform: Windows 10 and later
    - Profile type: Endpoint protection
 
-3. Select **Settings** > **Windows Encryption**.
+4. Select **Settings** > **Windows Encryption**.
 
-4. Configure settings for BitLocker to meet your business needs, and then select **OK**.
+5. Configure settings for BitLocker to meet your business needs, and then select **OK**.
 
-5. Complete configuration of additional settings, and then save the profile.
+6. Complete configuration of additional settings, and then save the profile.
 
 ### Manage BitLocker  
 
