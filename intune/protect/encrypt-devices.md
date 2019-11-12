@@ -102,7 +102,7 @@ Configure BitLocker when you create a [device configuration profile](../configur
 
 ### How to configure Windows 10 BitLocker
 
-1 Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **All devices** > **Configuration profiles** > **Create profile**.
 
