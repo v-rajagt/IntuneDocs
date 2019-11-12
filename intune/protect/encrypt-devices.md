@@ -133,10 +133,12 @@ Devices must meet the following prerequisites to support rotation of the BitLock
 
 - Devices must run Windows 10 version 1909 or later
 
-- Azure AD-joined and Hybrid-joined devices must have support for key rotation enabled. You can use a device configuration policy for Windows 10 Endpoint Protection  to enable support by using the following setting:
+- Azure AD-joined and Hybrid-joined devices must have support for key rotation enabled:
 
-  - Client-driven recovery password rotation
+  - **Client-driven recovery password rotation**
 
+  This setting is found under *Windows Encryption* as part of a device configuration policy for Windows 10 Endpoint Protection.
+  
 #### To rotate the BitLocker recovery key
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
