@@ -58,11 +58,11 @@ Use the following steps to enroll your macOS device with your organization. Your
 1. Go to [Enroll My Mac](https://go.microsoft.com/fwlink/?linkid=853070).  
 2. The Company Portal installer .pkg file will download. Open the installer and continue through the steps. 
 3. Agree to the software license agreement. 
-4. Enter your password or registered fingerprint to install the software.  
+4. Enter your device password or registered fingerprint to install the software.  
 5. Open Company Portal. 
 
 > [!IMPORTANT]
-> Microsoft AutoUpdate might open and update your Microsoft software. After all updates are installed, open the Company Portal app. For the best setup experience, install the latest versions of Microsoft AutoUpdate and Company Portal.  
+> Microsoft AutoUpdate might open to update your Microsoft software. After all updates are installed, open the Company Portal app. For the best setup experience, install the latest versions of Microsoft AutoUpdate and Company Portal.  
 
 
 ### Enroll your Mac  
@@ -77,14 +77,14 @@ Use the following steps to enroll your macOS device with your organization. Your
 5. Your device's system preferences will open. Select **Install** and then select **Install** again. If prompted to, enter your device password.  
 
     ![Example screenshot of macOS system preferences, installation prompt, highlighting "Install" button.](./media/system-preference-install-1911.PNG)  
-1. Once the profile is installed, it'll appear in the profiles list under **Management Profile.**  
+6. Once the profile is installed, it'll appear in the profiles list under **Management Profile.**  
 
    ![Example screenshot of macOS system preferences, Profiles screen, highlighting the installed management profile.](./media/system-preference-verify-1911.PNG)   
-5. Return to Company Portal.   
-6. Your organization might require you to update your device settings. When you're done updating settings, tap **Check settings**.  
+7. Return to Company Portal.   
+8. Your organization might require you to update your device settings. When you're done updating settings, tap **Check settings**.  
 
     ![Example screenshot of Company Portal, Update device settings screen, highlighting "Check settings" button.](./media/update-settings-mac-1911.PNG)  
-7. When setup is complete, tap **DONE**.  
+9. When setup is complete, tap **DONE**.  
 
 
  ## Troubleshooting and feedback   
