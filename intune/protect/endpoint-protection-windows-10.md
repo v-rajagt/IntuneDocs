@@ -449,8 +449,6 @@ Microsoft Edge must be installed on the device.
  
 ### Windows Settings  
 
-These encryption settings apply to all versions of Windows 10.  
-
 - **Encrypt devices**  
   **Default**: Not configured  
   BitLocker CSP: [RequireDeviceEncryption](https://go.microsoft.com/fwlink/?linkid=872523)  
