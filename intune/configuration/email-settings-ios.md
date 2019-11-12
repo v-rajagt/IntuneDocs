@@ -120,10 +120,7 @@ This article lists and describes all the email settings available for devices ru
   - **Disable S/MIME** (default): Doesn't use an S/MIME email certificate to encrypt and decrypt emails.
   - **Enable S/MIME**: Allows users to sign and/or encrypt email in the iOS native mail application. Also enter:
 
-    - **S/MIME signing enabled**: **Enable** allows users to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender. **Disable** (default) doesn't allow users to digitally sign the message.
-
-    When set to **Enable**, also enter:
-
+    - **S/MIME signing enabled**: **Disable** (default) doesn't allow users to digitally sign the message. **Enable** allows users to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender.
       - **Allow user to change setting**: **Enable** allows users to change if signing is enabled. **Disable** (default) prevents users from changing the signing.
       - **Signing certificate type**: Your options:
         - **Not configured**: Intune doesn't update or change this setting.
@@ -132,28 +129,25 @@ This article lists and describes all the email settings available for devices ru
         - **Certificates**: Select an existing PKCS or SCEP certificate profile that's used for signing email messages.
       - **Allow user to change setting**: **Enable** allows users to change the signing certificate. **Disable** (default) prevents users from changing the signing certificate, and forces users to use the certificate you configured.
 
-      This feature applies to:
-
-      - iOS 12 and newer
-      - iPadOS 12 and newer
+        This feature applies to:  
+        - iOS 12 and newer
+        - iPadOS 12 and newer
 
     - **Encrypt by default**: **Enable** encrypts all messages as the default behavior. **Disable** (default) doesn't encrypt all messages as the default behavior.
       - **Allow user to change setting**: **Enable** allows users to change the default encryption behavior. **Disable** prevents users from changing the encryption default behavior, and forces users to use the setting you configured.
 
-      This feature applies to:  
-      - iOS 12 and newer
-      - iPadOS 12 and newer
+        This feature applies to:  
+        - iOS 12 and newer
+        - iPadOS 12 and newer
 
     - **Force per-message encryption**: Per-message encryption allows users to choose which emails are encrypted before being sent. Your options:
-      - **Enable**: Shows the per-message encryption option when creating a new email. Users can then choose to opt-in or opt-out of per-message encryption.
+        - **Enable**: Shows the per-message encryption option when creating a new email. Users can then choose to opt-in or opt-out of per-message encryption.
 
-        If the **Encrypt by default** setting is also enabled, enabling per-message encryption allows users to opt out of encryption per message.
+          If the **Encrypt by default** setting is also enabled, enabling per-message encryption allows users to opt out of encryption per message.
 
-      - **Disable** (default) prevents the per-message encryption option from showing.
+        - **Disable** (default) prevents the per-message encryption option from showing.
 
-        If the **Encrypt by default** setting is also disabled, enabling per-message encryption allows users to opt in to encryption per message.
-
-    Also enter:
+          If the **Encrypt by default** setting is also disabled, enabling per-message encryption allows users to opt in to encryption per message.
 
       - **Encryption certificate type**: Your options:
         - **Not configured**: Intune doesn't update or change this setting.
