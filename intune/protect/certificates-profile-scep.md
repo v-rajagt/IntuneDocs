@@ -61,7 +61,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
    3. You can't use Intune to revoke certificates that were provisioned by SCEP certificate profiles for Device Owners. You can manage revocation through an external process or directly with the certification authority. 
 
-   4. For Android Enterprise dedicated devices, SCEP certificates are supported for Wi-Fi network configuration and authentication only.  SCEP certs on Android Enterprise dedicated devices are not supported for VPN or app authentication.   
+   4. For Android Enterprise dedicated devices, SCEP certificate profiles are supported for Wi-Fi network configuration and authentication only.  SCEP certificate profiles on Android Enterprise dedicated devices are not supported for VPN or app authentication.   
 
    
 7. Select **Settings**, and then complete the following configurations:
