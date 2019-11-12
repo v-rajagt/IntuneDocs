@@ -42,7 +42,7 @@ This article describes how to use the Company Portal app for macOS to enroll, co
 
 During initial setup, the Company Portal app requires you to sign in and authenticate yourself with your organization. Company Portal then informs you of any device settings you need to configure to meet your organization's requirements. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
 
-After you enroll your device, Company Portal will always make sure that your device is protected according to your organization's requirements. For example, if you install an app from an untrusted source, Company Portal will alert you and might restrict access to your organization's resources. App protection policies like this one are common. To regain access, you'll likely need to to uninstall the untrusted app. 
+After you enroll your device, Company Portal will always make sure that your device is protected according to your organization's requirements. For example, if you install an app from an untrusted source, Company Portal will alert you and might restrict access to your organization's resources. App protection policies like this one are common. To regain access, you'll likely need uninstall the untrusted app. 
 
 If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, Company Portal will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
 
@@ -77,7 +77,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 5. Your device's system preferences will open. Select **Install** and then select **Install** again. If prompted to, enter your device password.  
 
     ![Example screenshot of macOS system preferences, installation prompt, highlighting "Install" button.](./media/system-preference-install-1911.PNG)  
-6. Once the profile is installed, it'll appear in the profiles list under **Management Profile.**  
+6. Once the profile is installed, it will appear in the profiles list under **Management Profile.**  
 
    ![Example screenshot of macOS system preferences, Profiles screen, highlighting the installed management profile.](./media/system-preference-verify-1911.PNG)   
 7. Return to Company Portal.   
@@ -89,7 +89,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 
  ## Troubleshooting and feedback   
 
-If you run into issues during enrollment, go to **Help** > **Send Diagnostic Report** to report the issue to Microsoft. This information is used to help improve the app. Should your IT support person reach out for help, Microsoft will use this information to help resolve the problem.         
+If you run into issues during enrollment, go to **Help** > **Send Diagnostic Report** to report the issue to Microsoft app developers. This information is used to help improve the app. They'll also use this information to help resolve the problem if your IT support person reaches out to them for help.  
 
 After you report the problem to Microsoft, you can send the details of your experience to your IT support person. Select **Email Details**. Type in what you experienced in the body of the email. To find your support person's email address, go to the Company Portal app > **Contact**. Or check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
  
