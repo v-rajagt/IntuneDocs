@@ -147,7 +147,7 @@ Devices must meet the following prerequisites to support rotation of the BitLock
 
 ## Next steps
 
-Create [a device compliance](compliance-policy-create-windows.md) policy
+Create [a device compliance](compliance-policy-create-windows.md) policy.
 
 Use the encryption report, to manage:
 
