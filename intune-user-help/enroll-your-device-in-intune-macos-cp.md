@@ -74,7 +74,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 4. On the **Install management profile** screen, select **Download profile**.   
 
     ![Example screenshot of Company Portal, Install management profile screen, highlighting "Download profile" button.](./media/install-mgmt-profile-mac-1911.PNG)   
-5. Your device's system preferences will open. Select **Install** and then select **Install** again. If prompted to, enter your device password.  
+5. Your device's system preferences will open. Select **Install** and then select **Install** again. If you're prompted to, enter your device password.  
 
     ![Example screenshot of macOS system preferences, installation prompt, highlighting "Install" button.](./media/system-preference-install-1911.PNG)  
 6. Once the profile is installed, it will appear in the profiles list under **Management Profile.**  
@@ -84,7 +84,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 8. Your organization might require you to update your device settings. When you're done updating settings, select **Check settings**.  
 
     ![Example screenshot of Company Portal, Update device settings screen, highlighting "Check settings" button.](./media/update-settings-mac-1911.PNG)  
-9. When setup is complete, select**DONE**.  
+9. When setup is complete, select **DONE**.  
 
 
  ## Troubleshooting and feedback   
