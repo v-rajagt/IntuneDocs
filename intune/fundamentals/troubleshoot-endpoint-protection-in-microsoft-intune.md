@@ -4,8 +4,8 @@
 title: Common endpoint protection messages in Microsoft Intune - Azure | Microsoft Docs
 description: See common messages and possible solution when using and troubleshooting endpoint protection and Microsoft Defender in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 11/13/2019
 ms.topic: troubleshooting
