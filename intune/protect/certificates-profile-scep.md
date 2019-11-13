@@ -118,7 +118,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
         Format options for the Subject name format include the following variables:
 
-        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId​}}** - Either variable can be used to identify a device by its Azure AD ID. 
+        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId​}}** - Either variable can be used to identify a device by its Azure AD ID.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
