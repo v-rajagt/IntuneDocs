@@ -1892,11 +1892,11 @@ The following settings are either:
   - **E-Mail invitation method**
 
 
-*[New]* [**Microsoft Defender**](#windows-defender):
+*[New]* [**Microsoft Defender**](#microsoft-defender):
 - **Adobe Reader Launch in a child process**  
 - **Office communication apps launch in a child process** 
 
-*[New]* [**Microsoft Defender Firewall**](#windows-defender-firewall)
+*[New]* [**Microsoft Defender Firewall**](#microsoft-defender-firewall)
 - **Firewall profile domain**  
   - **Inbound connections blocked**  
   - **Outbound connections required**  
