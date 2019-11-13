@@ -46,14 +46,14 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - [Set the MDM Authority](../fundamentals/mdm-authority-set.md)
 - [Create groups](../fundamentals/groups-add.md)
 - [Configure the Company Portal](../apps/company-portal-app.md)
-- Assign user licenses in the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Assign user licenses in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## User-owned macOS devices (BYOD)
 
 You can let users enroll their own personal devices into Intune management. This is known as “bring your own device” or BYOD. After you’ve completed the prerequisites and assigned user licenses, your users can enroll their devices by:
 - going to the [Company Portal website](https://portal.manage.microsoft.com) or
-- downloading the Mac Company Portal app at [aka.ms/EnrollMyMac](http://aka.ms/EnrollMyMac).
+- downloading the Mac Company Portal app at [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac).
 
 You can also send your users a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
@@ -86,7 +86,7 @@ User Approved MDM enrollment is a type of macOS enrollment that you can use to m
 
 All devices, including devices that don't use the Device Enrollment Program (DEP), must be User Approved. This process requires installation and approval of Apple's management profile.
 
-For devices enrolled in November 2019 or later, the macOS Company Portal will prompt the user to install and approve the management profile [during the enrollment process](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-macos-cp). Instructions to install the management profile are available in the macOS Company Portal app.
+For devices enrolled in November 2019 or later, the macOS Company Portal will prompt the user to install and approve the management profile [during the enrollment process](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). Instructions to install the management profile are available in the macOS Company Portal app.
 
 For devices enrolled prior to November 2019, users must go back and make sure that they approved the management profile. If they did not, they must do so now. To approve it, users must go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
 
