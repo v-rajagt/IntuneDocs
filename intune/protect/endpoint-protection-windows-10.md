@@ -1,12 +1,12 @@
 ---
 # required metadata
 title: Protection settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
-description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender features, including Application Guard, Firewall, SmartScreen, encryption and BitLocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
+description: On Windows 10 devices, use or configure endpoint protection settings to enable Microsoft Defender features, including Application Guard, Firewall, SmartScreen, encryption and BitLocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -28,13 +28,11 @@ ms.collection: M365-identity-device-management
 ms.reviewer: karthig
 ---
 
-# Windows 10 (and later) settings to protect devices using Intune  
+# Windows 10 (and later) settings to protect devices using Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Microsoft Defender.  
 
-Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
-
-To configure Windows Defender Antivirus, see [Windows 10 device restrictions](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
+To configure Microsoft Defender Antivirus, see [Windows 10 device restrictions](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## Before you begin  
 
@@ -42,9 +40,9 @@ To configure Windows Defender Antivirus, see [Windows 10 device restrictions](..
 
 For more information about configuration service providers (CSPs), see [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## Windows Defender Application Guard  
+## Microsoft Defender Application Guard  
 
-While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.  
+While using Microsoft Edge, Microsoft Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.  
 
 Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.  
 
@@ -127,7 +125,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
   - **Enable** - Users can download files from the virtualized browser onto the host operating system.  
   - **Not configured** - Keeps the files local on the device, and doesn't download files to the host file system.  
 
-## Windows Defender Firewall  
+## Microsoft Defender Firewall  
  
 ### Global settings  
 
@@ -201,7 +199,7 @@ The following settings are each listed in this article a single time, but all ap
 
 #### General settings  
 
-- **Windows Defender Firewall**  
+- **Microsoft Defender Firewall**  
   **Default**: Not configured  
   Firewall CSP: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -229,7 +227,7 @@ The following settings are each listed in this article a single time, but all ap
   **Default**: Not configured  
   Firewall CSP: [Shielded](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Not configured**  
-    - **Block** - When the Windows Defender Firewall is on and this setting is set to *Block*, all incoming traffic is blocked, regardless of other policy settings. 
+    - **Block** - When the Microsoft Defender Firewall is on and this setting is set to *Block*, all incoming traffic is blocked, regardless of other policy settings. 
     - **Allow** - When set to *Allow*, this setting is turned off - and incoming traffic is allowed based on other policy settings.
 
 - **Unicast responses to multicast broadcasts**  
@@ -269,7 +267,7 @@ The following settings are each listed in this article a single time, but all ap
 
 #### Rule merging  
 
-- **Authorized application Windows Defender Firewall rules from the local store**  
+- **Authorized application Microsoft Defender Firewall rules from the local store**  
   **Default**: Not configured  
   Firewall CSP: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -278,7 +276,7 @@ The following settings are each listed in this article a single time, but all ap
   - **Allow** -
    Choose **Enable** Applies firewall rules in the local store so they're recognized and enforced.  
 
-- **Global port Windows Defender Firewall rules from the local store**  
+- **Global port Microsoft Defender Firewall rules from the local store**  
   **Default**: Not configured  
   Firewall CSP: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -286,7 +284,7 @@ The following settings are each listed in this article a single time, but all ap
   - **Block** - The global port firewall rules in the local store are ignored and not enforced.  
   - **Allow** - Apply global port firewall rules in the local store to be recognized and enforced.  
 
-- **Windows Defender Firewall rules from the local store**  
+- **Microsoft Defender Firewall rules from the local store**  
   **Default**: Not configured  
   Firewall CSP: [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -427,7 +425,7 @@ Specify the local and remote ports to which this rule applies.
   Specify a list of authorized local users for this rule. A list of authorized users can't be specified if this rule applies to a Windows service.  
 
 
-## Windows Defender SmartScreen settings  
+## Microsoft Defender SmartScreen settings  
  
 Microsoft Edge must be installed on the device.  
 
@@ -779,7 +777,7 @@ These settings apply specifically to removable data drives.
     - **Block** - Block write access to devices configured in another organization.  
     - **Not configured** - Deny write access.  
  
-## Windows Defender Exploit Guard  
+## Microsoft Defender Exploit Guard  
 
 Use [exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) to manage and reduce the attack surface of apps used by your employees.  
 
@@ -975,12 +973,11 @@ Block outbound connections from any app to IP addresses or domains with low repu
 
   The intent of this setting is to protect end users from apps with access to phishing scams, exploit-hosting sites, and malicious content on the Internet. It also prevents third-party browsers from connecting to dangerous sites.  
 
-  - **Not configured** - Disable this feature. Users and apps aren't blocked from connecting to dangerous domains. Administrators can't see this activity in Windows Defender Security Center.  
-  - **Enable** -  Turn on network protection, and block users and apps from connecting to dangerous domains. Administrators can see this activity in Windows Defender Security Center.  
-  - **Audit only**: - Users and apps aren't blocked from connecting to dangerous domains. Administrators can see this activity in Windows Defender Security Center.  
+  - **Not configured** - Disable this feature. Users and apps aren't blocked from connecting to dangerous domains. Administrators can't see this activity in Microsoft Defender Security Center.  
+  - **Enable** -  Turn on network protection, and block users and apps from connecting to dangerous domains. Administrators can see this activity in Microsoft Defender Security Center.  
+  - **Audit only**: - Users and apps aren't blocked from connecting to dangerous domains. Administrators can see this activity in Microsoft Defender Security Center.  
 
 ### Exploit protection  
- 
 
 - **Upload XML**  
   **Default**: *Not configured*  
@@ -989,7 +986,7 @@ Block outbound connections from any app to IP addresses or domains with low repu
 
   - *PowerShell* - Use one or more of the *Get-ProcessMitigation*, *Set-ProcessMitigation*, and *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlets. The cmdlets configure mitigation settings, and export an XML representation of them.  
 
-  - *Windows Defender Security Center UI* - In the Windows Defender Security Center, click on App & browser control and then scroll to the bottom of the resulting screen to find Exploit Protection. First, use the System settings and Program settings tabs to configure mitigation settings. Then, find the Export settings link at the bottom of the screen to export an XML representation of them.  
+  - *Microsoft Defender Security Center UI* - In the Microsoft Defender Security Center, click on App & browser control and then scroll to the bottom of the resulting screen to find Exploit Protection. First, use the System settings and Program settings tabs to configure mitigation settings. Then, find the Export settings link at the bottom of the screen to export an XML representation of them.  
 
 - **User editing of the exploit protection interface**  
   **Default**: Not configured  
@@ -999,9 +996,9 @@ Block outbound connections from any app to IP addresses or domains with low repu
   - **Block** -  Upload an XML file that allows you to configure memory, control flow, and policy restrictions. The settings in the XML file can be used to block an application from exploits.  
   - **Not configured** - No custom configuration is used.  
 
-## Windows Defender Application Control  
+## Microsoft Defender Application Control  
 
-Choose additional apps that either need to be audited by, or can be trusted to run by Windows Defender Application Control. Windows components and all apps from Windows store are automatically trusted to run.  
+Choose additional apps that either need to be audited by, or can be trusted to run by Microsoft Defender Application Control. Windows components and all apps from Windows store are automatically trusted to run.  
 
 
 - **Application control code integrity policies**  
@@ -1016,9 +1013,9 @@ Choose additional apps that either need to be audited by, or can be trusted to r
  
   - **Audit only** - Applications aren't blocked. All events are logged in the local client's logs.  
 
-## Windows Defender Credential Guard  
+## Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard protects against credential theft attacks. It isolates secrets so that only privileged system software can access them.  
+Microsoft Defender Credential Guard protects against credential theft attacks. It isolates secrets so that only privileged system software can access them.  
 
 - **Credential Guard**  
   **Default**: Disable  
@@ -1040,19 +1037,19 @@ Windows Defender Credential Guard protects against credential theft attacks. It 
   - **Secure Boot with Directory Memory Access**  
     Turns on VBS with Secure Boot and direct memory access (DMA) protections. DMA protections require hardware support, and are only enabled on correctly configured devices.  
 
-## Windows Defender Security Center  
+## Microsoft Defender Security Center  
 
-Windows Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and run some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.  
+Microsoft Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and run some configuration for each of the features. Find out more in the [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.  
 
-### Windows Defender Security Center app and notifications  
+### Microsoft Defender Security Center app and notifications  
 
-Block end-user access to the various areas of the Windows Defender Security Center app. Hiding a section also blocks related notifications.  
+Block end-user access to the various areas of the Microsoft Defender Security Center app. Hiding a section also blocks related notifications.  
 
 - **Virus and threat protection**  
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Configure if end users can view the Virus and threat protection area in the Windows Defender Security Center. Hiding this section will also block all notifications related to Virus and threat protection.  
+  Configure if end users can view the Virus and threat protection area in the Microsoft Defender Security Center. Hiding this section will also block all notifications related to Virus and threat protection.  
 
   - **Not configured**  
   - **Hide**  
@@ -1061,7 +1058,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Configure if end users can view the Ransomware protection area in the Windows Defender Security Center. Hiding this section will also block all notifications related to Ransomware protection.  
+  Configure if end users can view the Ransomware protection area in the Microsoft Defender Security Center. Hiding this section will also block all notifications related to Ransomware protection.  
 
   - **Not configured**  
   - **Hide**  
@@ -1070,7 +1067,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Configure if end users can view the Account protection area in the Windows Defender Security Center. Hiding this section will also block all notifications related to Account protection.  
+  Configure if end users can view the Account protection area in the Microsoft Defender Security Center. Hiding this section will also block all notifications related to Account protection.  
 
   - **Not configured**  
   - **Hide**  
@@ -1079,7 +1076,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Configure if end users can view the Firewall and network protection area in the Windows Defender Security center. Hiding this section will also block all notifications related to Firewall and network protection.  
+  Configure if end users can view the Firewall and network protection area in the Microsoft Defender Security center. Hiding this section will also block all notifications related to Firewall and network protection.  
 
   - **Not configured**  
   - **Hide**  
@@ -1088,7 +1085,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Configure if end users can view the App and browser control area in the Windows Defender Security center. Hiding this section will also block all notifications related to App and browser control.  
+  Configure if end users can view the App and browser control area in the Microsoft Defender Security center. Hiding this section will also block all notifications related to App and browser control.  
 
   - **Not configured**  
   - **Hide**  
@@ -1097,7 +1094,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Configure if end users can view the Hardware protection area in the Windows Defender Security Center. Hiding this section will also block all notifications related to Hardware protection.  
+  Configure if end users can view the Hardware protection area in the Microsoft Defender Security Center. Hiding this section will also block all notifications related to Hardware protection.  
 
   - **Not configured**  
   - **Hide**  
@@ -1106,7 +1103,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Configure if end users can view the Device performance and health area in the Windows Defender Security center. Hiding this section will also block all notifications related to Device performance and health.  
+  Configure if end users can view the Device performance and health area in the Microsoft Defender Security center. Hiding this section will also block all notifications related to Device performance and health.  
   
   - **Not configured**  
   - **Hide**  
@@ -1115,7 +1112,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configure if end users can view the Family options area in the Windows Defender Security center. Hiding this section will also block all notifications-related to Family options.  
+  Configure if end users can view the Family options area in the Microsoft Defender Security center. Hiding this section will also block all notifications-related to Family options.  
   
   - **Not configured**  
   - **Hide**  
@@ -1124,7 +1121,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  Choose which notifications to display to end users. Non-critical notifications include summaries of Windows Defender Antivirus activity, including notifications when scans have completed. All other notifications are considered critical.  
+  Choose which notifications to display to end users. Non-critical notifications include summaries of Microsoft Defender Antivirus activity, including notifications when scans have completed. All other notifications are considered critical.  
 
   - **Not configured**  
   - **Block non-critical notifications**  
@@ -1164,7 +1161,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
 
 ### IT contact Information  
 
-Provide IT contact information to appear in the Windows Defender Security Center app and the app notifications.  
+Provide IT contact information to appear in the Microsoft Defender Security Center app and the app notifications.  
 
 You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. Enter the **IT organization name**, and at least one of the following contact options:  
 
