@@ -482,7 +482,7 @@ Base settings are universal BitLocker settings for all types of data drives. The
   When set to *Block*, you can then configure the following setting:  
 
   - **Allow standard users to enable encryption during Azure AD Join**  
-    *This setting only applies to Azure Active Directory Joined (Azure ADJ) devices, and is depends on the previous setting, `Warning for other disk encryption`.*  
+    *This setting only applies to Azure Active Directory Joined (Azure ADJ) devices, and depends on the previous setting, `Warning for other disk encryption`.*  
     **Default**: Not configured  
     BitLocker CSP: [AllowStandardUserEncryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -1296,7 +1296,7 @@ Use these options to configure the local security settings on Windows 10 devices
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_MachineInactivityLimit](https://go.microsoft.com/fwlink/?linkid=867891)  
 
 
-  Enter the maximum minutes of inactivity on the interactive desktop’s sign in screen until the screen saver starts. (**0** - **99999**)  
+  Enter the maximum minutes of inactivity on the interactive desktop’s sign-in screen until the screen saver starts. (**0** - **99999**)  
 
 - **Require CTRL+ALT+DEL to log on**  
   **Default**: Not configured  
@@ -1762,7 +1762,7 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
   CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
 
-  This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client..
+  This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client.
   - **Not configured**
   - **Allow**
 
