@@ -1648,7 +1648,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Access Credential Manager as trusted caller**  
   **Default**: Not configured  
-  CSP: [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+  CSP: [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
 
   This user right is used by Credential Manager during Backup and Restore operations. Users' saved credentials might be compromised if this privilege is given to other entities.
   - **Not configured**
@@ -1656,7 +1656,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Allow local log on**  
   **Default**: Not configured  
-  CSP: [UserRights/AllowLocalLogOn](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+  CSP: [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
 
   This user right determines which users can log on to the computer.
   - **Not configured**
@@ -1664,7 +1664,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Allow Access From Network**  
   **Default**: Not configured  
-  CSP: [UserRights/AccessFromNetwork](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+  CSP: [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
 
   This user right determines which users and groups are allowed to connect to the computer over the network.
   - **Not configured**
@@ -1672,7 +1672,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Act As Part Of The OS**  
   **Default**: Not configured  
-  CSP: [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+  CSP: [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
 
   Act As Part Of The OS
   - **Not configured**
@@ -1680,7 +1680,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Backup files and directories**  
   **Default**: Not configured  
-  CSP: [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+  CSP: [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
 
   This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories.
   - **Not configured**
@@ -1688,7 +1688,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Change the system time**  
   **Default**: Not configured  
-  CSP: [UserRights/ChangeSystemTime](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+  CSP: [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
 
   This user right determines which users and groups can change the time and date on the internal clock of the computer.
   - **Not configured**
@@ -1696,7 +1696,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Create global objects**  
   **Default**: Not configured  
-  CSP: [UserRights/CreateGlobalObjects](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+  CSP: [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
 
   This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption.
   - **Not configured**
@@ -1704,7 +1704,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Create pagefile**  
   **Default**: Not configured  
-  CSP: [UserRights/CreatePageFile](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+  CSP: [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
 
   This user right determines which users and groups can call an internal API to create and change the size of a page file.
   - **Not configured**
@@ -1712,7 +1712,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Create permanent shared objects**  
   **Default**: Not configured  
-  CSP: [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+  CSP: [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
 
   This user right determines which accounts can be used by processes to create a directory object using the object manager.
   - **Not configured**
@@ -1720,7 +1720,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Create symbolic links**  
   **Default**: Not configured  
-  CSP: [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+  CSP: [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
 
   This user right determines if the user can create a symbolic link from the computer to which they are logged on.
   - **Not configured**
@@ -1728,7 +1728,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Create tokens**  
   **Default**: Not configured  
-  CSP: [UserRights/CreateToken](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+  CSP: [UserRights/CreateToken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
 
   This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token.
   - **Not configured**
@@ -1736,7 +1736,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Debug programs**  
   **Default**: Not configured  
-    CSP: [UserRights/DebugPrograms](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+    CSP: [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
 
   This user right determines which users can attach a debugger to any process or to the kernel.
   - **Not configured**
@@ -1744,7 +1744,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Deny Access From Network**  
   **Default**: Not configured  
-  CSP: [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+  CSP: [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
 
   This user right determines which users are prevented from accessing a computer over the network.
   - **Not configured**
@@ -1752,7 +1752,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Deny log on as a service**  
   **Default**: Not configured  
-  CSP: [UserRights/DenyLocalLogOn](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+  CSP: [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
 
   This security setting determines which service accounts are prevented from registering a process as a service.
   - **Not configured**
@@ -1760,7 +1760,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Deny log on through Remote Desktop Services**  
   **Default**: Not configured  
-  CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+  CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
 
   This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client.
   - **Not configured**
@@ -1768,7 +1768,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Enable delegation**  
   **Default**: Not configured  
-  CSP: [UserRights/EnableDelegation](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+  CSP: [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
 
  This user right determines which users can set the Trusted for Delegation setting on a user or computer object.
   - **Not configured**
@@ -1776,7 +1776,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Generate security audits**  
   **Default**: Not configured  
-  CSP: [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+  CSP: [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
 
   This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.
   - **Not configured**
@@ -1784,7 +1784,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Impersonate a client**  
   **Default**: Not configured  
-  CSP: [UserRights/ImpersonateClient](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+  CSP: [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
 
   Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
   - **Not configured**
@@ -1792,7 +1792,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Increase scheduling priority**  
   **Default**: Not configured  
-  CSP: [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+  CSP: [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
 
   This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process.
   - **Not configured**
@@ -1800,7 +1800,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Load and unload device drivers**  
   **Default**: Not configured  
-  CSP: [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+  CSP: [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
 
   This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode.
   - **Not configured**
@@ -1808,7 +1808,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Lock pages in memory**  
   **Default**: Not configured  
-  CSP: [UserRights/LockMemory](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+  CSP: [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
 
   This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk.
   - **Not configured**
@@ -1816,7 +1816,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Manage auditing and security log**  
   **Default**: Not configured  
-  CSP: [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+  CSP: [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
 
   This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys.
   - **Not configured**
@@ -1824,7 +1824,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Perform volume maintenance tasks**  
   **Default**: Not configured  
-  CSP: [UserRights/ManageVolume](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+  CSP: [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
 
   This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation.
   - **Not configured**
@@ -1832,7 +1832,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Modify firmware environment values**  
   **Default**: Not configured  
-  CSP: [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+  CSP: [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
 
   This user right determines who can modify firmware environment values.
   - **Not configured**
@@ -1840,7 +1840,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Modify an object label**  
   **Default**: Not configured  
-  CSP: [UserRights/ModifyObjectLabel](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+  CSP: [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
 
   This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users.
   - **Not configured**
@@ -1848,7 +1848,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Profile single process**  
   **Default**: Not configured  
-  CSP: [UserRights/ProfileSingleProcess](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+  CSP: [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
 
   This user right determines which users can use performance monitoring tools to monitor the performance of system processes.
   - **Not configured**
@@ -1856,7 +1856,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Remote shutdown**  
   **Default**: Not configured  
-  CSP: [UserRights/RemoteShutdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+  CSP: [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
 
   This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service.
   - **Not configured**
@@ -1864,7 +1864,7 @@ Use these options to configure the local security settings on Windows 10 devices
   
 - **Restore files and directories**  
   **Default**: Not configured  
-  CSP: [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  CSP: [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
   
   This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object.
   - **Not configured**
@@ -1872,7 +1872,7 @@ Use these options to configure the local security settings on Windows 10 devices
   
 - **Take ownership of files or objects**  
   **Default**: Not configured  
-  CSP: [UserRights/TakeOwnership](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+  CSP: [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
 
   This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads.
   - **Not configured**
