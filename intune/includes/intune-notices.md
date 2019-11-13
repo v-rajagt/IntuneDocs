@@ -12,7 +12,7 @@ ms.custom: include file
 These notices provide important information that can help you prepare for future Intune changes and features.
 
 
-### Take Action: Use Microsoft Edge for your Protected Intune Browser Experience 
+### Take Action: Use Microsoft Edge for your Protected Intune Browser Experience<!--5728447-->
 As we have been sharing over the past year, Microsoft Edge mobile supports the same set of management features as the Managed Browser, while providing a much-improved end user experience. To make way for the robust experiences provided in Microsoft Edge, we will be retiring the Intune Managed Browser. Starting on January, 27, 2020, Intune will no longer support the Intune Managed Browser.  
 
 #### How does this affect me? 
