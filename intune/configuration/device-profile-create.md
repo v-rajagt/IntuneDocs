@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -87,7 +87,7 @@ This article:
        - [Update policies](../software-updates-ios.md)
        - [VPN](vpn-settings-configure.md)
        - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](../protect/advanced-threat-protection.md)
+       - [Microsoft Defender ATP](../protect/advanced-threat-protection.md)
        - [Windows Information Protection](../protect/windows-information-protection-configure.md)
 
      For example, if you select **iOS/iPadOS** for the platform, your profile type options look similar to the following profile:
