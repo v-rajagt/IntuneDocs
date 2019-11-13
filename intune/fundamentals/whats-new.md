@@ -56,6 +56,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
+## Week of November 11, 2019
+
+### App management
+
+#### Web apps launched from the Windows Company Portal app<!-- 5030972 -->
+End-users can now launch web apps directly from the Windows Company Portal app. End-users can select the web app and then choose the option **Open in browser**. The published web URL is opened directly in a web browser. This functionality will be rolled out over the next week. For more information about Web apps, see [Add web apps to Microsoft Intune](~/apps/web-app.md).
+
 ## Week of November 4, 2019
 
 ### Device security
