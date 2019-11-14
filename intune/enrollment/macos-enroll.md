@@ -84,9 +84,9 @@ For VMware Fusion, you need to [edit the .vmx file](https://kb.vmware.com/s/arti
 ## User Approved enrollment
 User Approved MDM enrollment is a type of macOS enrollment that you can use to manage certain security-sensitive settings. For more information, see [Apple's support documentation](https://support.apple.com/HT208019).
 
-Starting in November 2019, all new device enrollments will be User Approved because the user must manually install the management profile in order to successfully enroll. During [the enrollment process](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp), the user will install the Apple management profile in **System Preferences**. Even devices that don't use Automated Device Enrollment will install the profile. Instructions to install the management profile are available in the macOS Company Portal app.
+Starting in November 2019, all new user-owned macOS enrollments will be User Approved because the user must manually install the management profile in order to successfully enroll. During [the enrollment process](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp), the user will install the Apple management profile in **System Preferences** > **Profiles**.  Instructions to install the management profile are available in the macOS Company Portal app.
 
-For devices enrolled prior to November 2019, User Approved enrollment is not required. However, users can go back and approve the management profile. To approve it, go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
+Devices enrolled prior to November 2019 might not be User Approved if the user didn't manually approve the management profile. However, users can go back and approve the management profile by going to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
 
 ### Find out if a device is User Approved
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
