@@ -131,7 +131,6 @@ Azure Active Directory has a different CNAME that it uses for device registratio
 
 For more information about device registration, see
 [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
-Hopefully this information helps clarify the CNAMEs and FQDNs needed for auto-discovery.
 
 ## Next steps
 
