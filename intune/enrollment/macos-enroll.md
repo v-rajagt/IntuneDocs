@@ -88,7 +88,7 @@ Starting in November 2019, all new device enrollments, including devices that do
 
 For devices enrolled in November 2019 or later, the macOS Company Portal will prompt the user to install and approve the management profile [during the enrollment process](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). Instructions to install the management profile are available in the macOS Company Portal app.
 
-For devices enrolled prior to November 2019, User Approved enrollment is not required. However, users can go back and approve the management profile. To approve it, go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
+For devices enrolled prior to November 2019, User Approved enrollment is not required. However, users can go back and approve the management profile. This will give their organization the ability to manage certain security-sensitive settings on the device. To approve it, go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
 
 ### Find out if a device is User Approved
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
