@@ -50,7 +50,7 @@ You can use an Intune app configuration policy to configure Google Chrome for An
 
 For additional details about adding a Managed Google Play app to Intune, see [Managed Google Play store apps](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps).
 
-## Add an app configuration policy for managed Android Enterprise devices
+## Add app configuration for managed AE devices
 
 1. From the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) pane, select **App configuration policies** > **Add**.
 2. Add your policy name, choose **Managed devices** under Device enrollment type and **Android** under Platform.
@@ -67,7 +67,7 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 
     Below is the example of the common settings:
     - **Block access to a list of URLs**: `["*"]`
-    - **Allow access to a list of URLs**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Allow access to a list of URLs**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Managed Bookmarks**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Incognito mode availability**: `Incognito mode disabled`
 
@@ -75,7 +75,7 @@ For additional details about adding a Managed Google Play app to Intune, see [Ma
 
     ![Common settings](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    The above settings create bookmarks and allow access to all websites except `baidu.com`, `yahoo.com` and `chrome://`.
+    The above settings create bookmarks and block access to all URLs except `baidu.com`, `yahoo.com`, `chromium.org`, and `chrome://`.
 
 5. Click **OK** and **Add** to add your configuration policy to Intune.
 6. Assign this configuration policy to a user group. For more information, see [Assign apps to groups with Microsoft Intune](~/apps/apps-deploy.md). 
