@@ -84,11 +84,11 @@ For VMware Fusion, you need to [edit the .vmx file](https://kb.vmware.com/s/arti
 ## User Approved enrollment
 User Approved MDM enrollment is a type of macOS enrollment that you can use to manage certain security-sensitive settings. For more information, see [Apple's support documentation](https://support.apple.com/HT208019).
 
-Starting in November 2019, all new device enrollments, including devices that don't use the Automated Device Enrollment, must use the User Approved process. This process requires installation and approval of Apple's management profile.
+Starting in November 2019, all new device enrollments, including devices that don't use Automated Device Enrollment, will be User Approved by default. During the enrollment process, the user will install and approve the Apple management profile in **System Preferences**.
 
 For devices enrolled in November 2019 or later, the macOS Company Portal will prompt the user to install and approve the management profile [during the enrollment process](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). Instructions to install the management profile are available in the macOS Company Portal app.
 
-For devices enrolled prior to November 2019, User Approved enrollment is not required. However, users can go back and approve the management profile. This will give their organization the ability to manage certain security-sensitive settings on the device. To approve it, go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
+For devices enrolled prior to November 2019, User Approved enrollment is not required. However, users can go back and approve the management profile. To approve it, go to **System Preferences** > **Profiles** > choose the **Management Profile** > **Approve**.
 
 ### Find out if a device is User Approved
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
