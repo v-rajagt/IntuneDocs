@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 01/03/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
