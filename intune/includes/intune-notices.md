@@ -60,25 +60,6 @@ You should plan to update your end user guidance and let your helpdesk know of t
 #### Additional information
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
-
-We plan to remove the setting "Server-side logging for Siri commands" from the Intune console with the November update to the Intune service. This change aligns with Apple already having removed the setting on their side.
-
-#### How does this affect me?
-When the November update or 1911 rolls out around mid-November, you’ll see that this setting has been removed from the Device restrictions menu (Built-in Apps) for iOS configuration profiles, in the Intune console. It may appear in your policies and the targeted device’s management profile but the setting has no effect on your device. We do not anticipate much impact to functionality since it currently doesn’t work on devices even though you see it in the management profile.
-
-You can choose one of two paths:
-- If you wish to delete this setting from your policies, you can go to the profile that has this setting, make a minor edit and save the policy. The policy will recompute in the backend and the setting will be deleted from your policy.
-- If you choose not to take this action, end users will see this setting in the management profile of their device but the setting will have no effect.
-
-#### What can I do to prepare for this change?
-You can take action according to the section above or leave your policy as is. We’ll update our What’s New page and documentation when this change rolls out.
-
-### End of support for legacy PC management
-
-Legacy PC management is going out of support on October 15, 2020. Upgrade devices to Windows 10 and reenroll them as MDM devices to keep them managed by Intune.
-
-[Learn more](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### Decreasing support for Android device administrator 
 Android device administrator (sometimes referred to "legacy" Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
@@ -116,18 +97,6 @@ Ask end users of Android devices that have not updated to update the Company Por
 #### Additional information
 https://firebase.google.com/docs/cloud-messaging/
 
-
-### New full-screen experience coming to Intune <!--4593669-->
-We're rolling out updated create and edit UI experiences to Intune in the Azure portal. This new experience will simplify the existing workflows by using a wizard-style format condensed within one blade. This update will do away with "blade sprawl" or any create and edit flows that require you to drill down into deep blade journeys. The create workflows will also be updated to include assignments (except for app assignment).
-
-#### How does this affect me?
-The full-screen experience will be rolled out to Intune both at portal.azure.com and devicemanagement.microsoft.com over the next few months. This update to the UI will not impact functionality of your existing policies and profiles, but you will see a slightly modified workflow. When you create new policies, for example, you will be able to set some assignments as part of this flow instead of doing so after creating the policy. See the blog post at *Additional information* for screenshots of what the new experience will look like in the console.
-
-#### What can I do to prepare for this change?
-You do not need to take any action but can consider updating your IT-pro guidance if necessary. We'll update our documentation as this experience rolls out to various blades in Intune on the Azure portal.
-
-#### Additional information 
-https://aka.ms/intune_fullscreen
 
 ### Plan for change: Intune App SDK and app protection policies for Android moving to support Android 5.0 and higher in an upcoming release <!--4911065 -->
 Intune will be moving to support Android 5.x (Lollipop) and higher in an upcoming release. Update any wrapped apps with the latest Intune App SDK and update your devices.
