@@ -85,19 +85,6 @@ To avoid the reduction in functionality coming in the summer of 2020, we recomme
 - [Google's guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google's documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation)
 
-### Update your Android Company Portal app to the latest version <!--4536963-->
-Intune periodically releases updates to the Android Company Portal app. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google's change from their existing notification platform to Google's Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their Company Portal app to at least the November 2018 release to continue communicating with the Google Play store.
-
-#### How does this affect me?
-Our telemetry indicates you have devices with a Company Portal version earlier than 5.0.4269.0. If this version or later of the Company Portal app is not installed, IT-pro-initiated device actions like wipe, reset password, available and required app installs, and certificate enrollment may not work as expected. If your devices are MDM-enrolled in Intune, then you can see the Company Portal versions and users by going to Client apps – Discovered apps. Selecting earlier versions of the Company Portal app will allow you to see which end users have the devices that haven't updated the Company Portal app.
-
-#### What do I need to do to prepare for this change?
-Ask end users of Android devices that have not updated to update the Company Portal app through Google Play. Notify your help desk in case a user has not kept auto-updating the Company Portal app. See the link in *Additional information* for more on Google's FCM platform and change.
-
-#### Additional information
-https://firebase.google.com/docs/cloud-messaging/
-
-
 ### Plan for change: Intune App SDK and app protection policies for Android moving to support Android 5.0 and higher in an upcoming release <!--4911065 -->
 Intune will be moving to support Android 5.x (Lollipop) and higher in an upcoming release. Update any wrapped apps with the latest Intune App SDK and update your devices.
 
