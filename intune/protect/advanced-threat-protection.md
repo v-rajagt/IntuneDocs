@@ -197,6 +197,12 @@ Next, monitor the state of devices that have the Microsoft Defender ATP complian
 
 3. Find your Microsoft Defender ATP policy in the list, and see which devices are compliant or noncompliant.
 
+You can also use the *operational* report for noncompliant devices from the same location:
+
+1. Select **Devices** > **Monitor** > **Noncompliant devices**.
+
+For more information about reports, see [Intune reports](../fundamentals/reports.md).
+
 ## View onboarding status
 
 To view the onboarding status of all Intune-managed Windows 10 devices, you can go to **Device compliance** > **Microsoft Defender ATP**. From this page, you can also initiate the creation of a device configuration profile for onboarding more devices to Microsoft Defender ATP.
