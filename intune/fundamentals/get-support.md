@@ -9,7 +9,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -62,7 +62,7 @@ The *Help and support* experience is similar to the experience seen in the [Micr
 
     ![Select your service](./media/get-support/select-a-service.png)
 
-    After you select a service, you'll see the *Help and support* page for that service where you can specify details to [find solutions](#find-solutions) for a specific problem .
+    After you select a service, you'll see the *Help and support* page for that service where you can specify details to [find solutions](#find-solutions) for a specific problem.
 
     When the results of your search don't seem to match expectations for your service, check to ensure the correct service was selected. The service selection appears just after *Help and support*.  If the right service wasn't selected, click on *Select a service* to return to the service selection drop-down.
 
@@ -203,7 +203,7 @@ You can view your support requests from within the Azure portal. However, limite
 
 1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
-2. On the **Help + support** page you can view the list of **Recent support requests**.
+2. On the **Help + support** page, you can view the list of **Recent support requests**.
 
    > [!IMPORTANT]  
    > Private cloud for government customers can only view the 15-digit support case number, and the incident status. All case communications and tracking of work or alerts are sent by email and reference the 8-digit support case number that is created as a mirror of the support case opened from within the Intune console.
