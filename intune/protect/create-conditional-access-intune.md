@@ -113,7 +113,7 @@ A Conditional Access policy specifies the app or services you want to protect, t
 
 12. Select **Create**.
 
-## See also
+## Next steps
 
 [App-based Conditional Access with Intune](app-based-conditional-access-intune.md)
 

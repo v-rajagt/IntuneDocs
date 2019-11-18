@@ -122,6 +122,6 @@ Before you can use the following procedure to set up Exchange on-premises access
 
 Next, create a compliance policy and assign it to the users for Intune to evaluate their mobile devices, See [Get started with device compliance](device-compliance-get-started.md).
 
-## See also
+## Next steps
 
 [Troubleshooting Intune On-Premises Exchange Connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
