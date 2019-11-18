@@ -238,22 +238,22 @@ See the instructions for [using Microsoft Intune app configuration policies for 
 
 Sign in to your RADAR Wandera portal and browse to **Settings** > **EMM Integration** > **App Push**. Select **Intune**, and then copy the content below and paste it into the configuration policy body.  
 
-     ```
-     <dict><key>secretKey</key>
-     <string>SeeRADAR</string>
-     <key>apiKey</key>
-     <string> SeeRADAR </string>
-     <key>customerId</key>
-     <string> SeeRADAR </string>
-     <key>email</key>
-     <string>{{mail}}</string>
-     <key>firstName</key>
-     <string>{{username}}</string>
-     <key>lastName</key>
-     <string></string>
-     <key>activationType</key>
-     <string>PROVISION_THEN_AWP</string></dict>
-     ```
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>
+  ```
 
 ## Assign apps to groups
 
