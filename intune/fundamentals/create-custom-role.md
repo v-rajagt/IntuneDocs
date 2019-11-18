@@ -64,9 +64,9 @@ You can also copy an existing role.
 
 2. Select **Roles** > **All roles** > select a role in the list > **Duplicate**.
 
-3. Under **Duplicate role**, enter a name and description for the new role. Make sure to use a unique name.
+3. Under **Duplicate role**, enter a name. Make sure to use a unique name.
 
-4. All the permissions and scope tags from the original role will already be selected. If you want to make changes to these areas, you can configure **Permissions** and **Scope (Tags)**.
+4. All the permissions and scope tags from the original role will already be selected. You can subsequently change the duplicate role's **Name**, **Description**, **Permissions**, and **Scope (Tags)**.
 
 5. Select **Create**. 
 
