@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -54,16 +54,16 @@ App protection polices are only applied in the work context. Therefore, the app 
 
 ## Manage user accounts on the device
 
-Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
+Intune app protection policies limit users to one managed work or school account per app. App protection policies don't limit the number of unmanaged accounts a user can add to an app.  
 
-Users on an Intune MDM managed device assigned with app protection policy will only be able to add their account is managed.  They will not be able to switch to a different managed account.  This will also apply to devices managed by a third party EMM where the admin has sent down the IntuneMAMUPN value over app configuration.  
+- If a user attempts to add a second managed account, the user is asked to select which managed account to use. If the user adds the second account, the first account is removed.
+- If you add protection policies to another one of your user's accounts, the user is asked to select which managed account to use. The other account is removed. 
 
-In all other scenarios when there is a managed account in an application:
+Some users won't get the option to switch or select between managed accounts. The option is not available on devices that are:
+* Managed by Intune  
+* Managed by third-party enterprise mobilitiy management solutions and configured with the IntuneMAMUPN setting 
 
-- If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
-- If the IT admin adds policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
-
-Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
+The following example scenario describes how multiple user accounts are treated:  
 
 User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy first. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X and add the user account that's associated with Company Y.
 
