@@ -48,7 +48,7 @@ Before you can configure Conditional Access, verify the following configurations
 
 - The connector for an on-premises Exchange organization can install on any machine as long as that machine can communicate with the Exchange server.
 
-- The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer because of the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
+- The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly. We recommend you install it on a separate computer because of the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
@@ -62,7 +62,7 @@ Before you can configure Conditional Access, verify the following configurations
 
 - If the device doesn't meet Conditional Access settings, the user is presented with one of the following messages when they sign in:
   - If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message displays with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
-  - If the device isn't compliant, a message displays that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
+  - If the device isn't compliant, a message displays that directs the user to the Intune Company Portal website, or the Company Portal app. From the company portal, they can find information about the problem and how to remediate it.
 
 ### Support for mobile devices
 
@@ -92,7 +92,7 @@ Before you can use the following procedure to set up Exchange on-premises access
 
    Members of the groups you select have the Conditional Access policy for Exchange on-premises access applied to them. Users who receive this policy must enroll their devices in Intune and be compliant with the compliance profiles before they can access Exchange on-premises.
 
-5. To exclude groups, choose **Select groups to exclude**, and then select one or more groups that are exempt from requirements to enroll devices and be compliant with the compliance profiles before accessing Exchange on-premises. 
+5. To exclude groups, choose **Select groups to exclude**, and then select one or more groups that are exempt from requirements to enroll devices and to be compliant with the compliance profiles before accessing Exchange on-premises. 
 
 6. Next, configure settings for the Intune on-premises Exchange connector.  Under **Setup** on the *Exchange on-premises access* window, select **Exchange ActiveSync on-premises connector** and then select the connector for the Exchange organization that you want to configure.
 
