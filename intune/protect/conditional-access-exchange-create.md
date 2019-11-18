@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -30,8 +30,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Create a Conditional Access policy for Exchange on-premises and legacy Exchange Online Dedicated
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 This article shows you how to configure Conditional Access for Exchange on-premises based on device compliance.
 
@@ -74,7 +72,7 @@ Before you can configure Conditional Access, verify the following configurations
 - EAS mail clients **Android work profile devices:** Only **Gmail** and **Nine Work for Android Enterprise** in the **work profile** are supported on Android work profile devices. For Conditional Access to work with Android work profiles, you must deploy an email profile for the Gmail or Nine Work for Android Enterprise app, and also deploy those apps as a required installation.
 
 > [!NOTE]
-> Microsoft Outlook for Android and iOS is not supported via the Exchange on-premises connector. If you want to leverage Azure Active Directory Conditional Access policies and Intune App Protection Policies with Outlook for iOS and Android for your on-premises mailboxes, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
+> Microsoft Outlook for Android and iOS is not supported via the Exchange on-premises connector. If you want to leverage Azure Active Directory Conditional Access policies and Intune App Protection Policies with Outlook for iOS and Android for your on-premises mailboxes, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ### Support for PCs
 
@@ -84,19 +82,19 @@ The native **Mail** application on Windows 8.1 and later (when enrolled into MDM
 
 Before you can use the following procedure to set up Exchange on-premises access control, you must install and configure at least one [Intune on-premises Exchange connector](exchange-connector-install.md) for Exchange on-premises.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Go to **Exchange access**, and then select **Exchange On-premises access**. 
+2. Go to **Tenant administration** > **Exchange access**, and then select **Exchange On-premises access**.
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Under **Assignment**, choose **Select groups to include**, and then select one or more groups to configure access. 
+4. Under **Assignment**, choose **Select groups to include**, and then select one or more groups to configure access.
 
    Members of the groups you select have the Conditional Access policy for Exchange on-premises access applied to them. Users who receive this policy must enroll their devices in Intune and be compliant with the compliance profiles before they can access Exchange on-premises.
 
 5. To exclude groups, choose **Select groups to exclude**, and then select one or more groups that are exempt from requirements to enroll devices and be compliant with the compliance profiles before accessing Exchange on-premises. 
 
-6. Next, configure settings for the Intune on-premises Exchange connector.  Under **Setup** on the **Exchange access pane**, select **Exchange ActiveSync on-premises connector** and then select the connector for the Exchange organization that you want to configure.
+6. Next, configure settings for the Intune on-premises Exchange connector.  Under **Setup** on the *Exchange on-premises access* window, select **Exchange ActiveSync on-premises connector** and then select the connector for the Exchange organization that you want to configure.
 
 7. Under **Settings**, choose **User notifications** to modify the default email message that’s sent to users if their device isn't compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
    > [!TIP]
