@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -29,11 +29,11 @@ ms.collection: M365-identity-device-management
 The Microsoft Intune reports workload provides details about device compliance, device health, and device trends. In addition, you can create custom device reports to obtain more specific data. The information these reports provide will allow you to more effectively and proactively monitor the health and activity of endpoints across your organization. 
 
 > [!NOTE]
-> The Intune reporting changes will roll out gradually over a period to help customers prepare and adapt to the new structure.
+> The Intune reporting changes will roll out gradually over a period of time to help you prepare and adapt to the new structure.
 
 The report types are organized into the following focus areas:
-- **Operational** - Provides timely, focused data that helps you focus and take action on non-compliant devices. Admins, subject matter experts, and helpdesk will find these reports most helpful.
-- **Organizational** - Provides a broader summary of the overall device management state. Managers and admins will find these reports most helpful.
+- **Operational** - Provides timely, targeted data that helps you focus and take action. Admins, subject matter experts, and helpdesk will find these reports most helpful.
+- **Organizational** - Provides a broader summary of the an overall view, such as device management state. Managers and admins will find these reports most helpful.
 - **Historical** - Provides patterns and trends over a period of time. Managers and admins will find these reports most helpful.
 - **Specialist** - Allows you to use raw data to create your own custom reports. Admins will find these reports most helpful.
 
@@ -45,14 +45,14 @@ The **Reports** workload provides a consistent and more comprehensive reporting 
 
 ### Who can access the data?
 
-Users with the following permissions can review audit logs:
+Users with the following permissions can review logs:
 
 - Global Administrator
 - Intune Service Administrator
-- Administrators assigned to an Intune role with **Audit data** - **Read** permissions
+- Administrators assigned to an Intune role with **Read** permissions
 
 ## Non-compliant devices report (Operational)
-The Non-compliant devices report surfaces data typically used by Helpdesk or admin roles to identify problems and help remediate issues. The data found in these reports is timely, calls out unexpected behavior, and is meant to be actionable. The report is available alongside the workload, making the non-compliant devices report accessible without browsing away from active workflows. This report provides filtering, searching, paging, and sorting capabilities.
+The Non-compliant devices report surfaces data typically used by Helpdesk or admin roles to identify problems and help remediate issues. The data found in these reports is timely, calls out unexpected behavior, and is meant to be actionable. The report is available alongside the workload, making the non-compliant devices report accessible without browsing away from active workflows. This report provides filtering, searching, paging, and sorting capabilities. The summary page shows dashboard tiles for the aggregated metrics. 
 
 You can view the **Noncompliant devices** report using the following steps:
 
@@ -60,6 +60,18 @@ You can view the **Noncompliant devices** report using the following steps:
 2. Select **Device compliance** > **Noncompliant devices**.
 
     ![Noncompliant device report](./media/intune-reports/intune-reports-02.png)
+
+To see a generated report of device state, you can use the following steps:
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Select **Reports** to view the reports summary.
+3. Select **Device compliance**.
+4. Select the **Compliance status**, **OS**, and **Ownership** filters to refine your report.
+5. Click **Generate report** (or **Generate again**) to retrieve current data.
+
+    ![Device compliance report](./media/intune-reports/intune-reports-02a.png)
+
+    > [!NOTE]
+    > This **Device compliance** report provides a time stamp of when the report was last generated. 
 
 For related information, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](~/protect/advanced-threat-protection.md).
 
@@ -74,7 +86,7 @@ The device compliance report is available as the summary report in the **Reports
     ![Intune Reports summary](./media/intune-reports/intune-reports-01.png)
 
 ## Device compliance trend report (Historical)
-Device compliance trend reports are more likely to be used by admins and architects to identify long term trends for device compliance. The aggregated data is displayed over a period of time, and is useful for making future investment decisions, driving process improvements, or prompting investigation into any anomalies. Filters can also be applied to see specific trends.
+Device compliance trend reports are more likely to be used by admins and architects to identify long term trends for device compliance. The aggregated data is displayed over a period of time, and is useful for making future investment decisions, driving process improvements, or prompting investigation into any anomalies. Filters can also be applied to see specific trends and drill down is a capability to help troubleshoot. The data provided by this report is a snapshot of the current tenant state (near real-time). 
 
 A device compliance trend report for device compliance trends can show the trend of device compliance states over a period of time. You can identify where compliance peaks occurred and focus your time and effort accordingly.
 
@@ -89,22 +101,29 @@ You can view the **Trends** report using the following steps:
 You can customize your own reports to get the data you want. The data in your reports will optionally be available via [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) using [Log Analytics](reports.md#log-analytics) and [Azure Monitor workbooks](reports.md#workbooks). These solutions allow you to create custom queries, configure alerts, and make dashboards to show the device compliance data in the manner you want. Additionally, you can retain the activity logs in your Azure storage account, integrate with the reports using [security information and event management (SIEM) tools](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration), and correlate the reports to Azure AD activity logs. Azure Monitor workbooks can be used in addition to importing dashboards for custom reporting needs.
 
 > [!NOTE]
-> Complex reporting functionality may require an Azure subscription.
+> Complex reporting functionality require an Azure subscription.
 
 An example specialist report would corelate device ownership data with platform enrollment data in a custom report. Then, this custom report could be displayed on an existing dashboard in the Azure Active Directory portal.
 
 You can create and view custom reports using the following steps:
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** > **Diagnostic settings** to view or add a [diagnostic setting](reports.md#diagnostic-settings).
+2. Select **Reports** > **Diagnostic settings** add a [diagnostic setting](reports.md#diagnostic-settings).
 
     ![Intune Reports summary](./media/intune-reports/intune-reports-04.png)
 
-3. Next, select **Log analytics** to create and run a new log query using [Log Analytics](reports.md#log-analytics).
+3. Click **Add diagnostic setting** to display the **Diagnostic settings** pane. 
+4. Add a **Name** for the diagnostic settings. 
+5. Select the **Send to Log Analytics** and **DeviceComplianceOrg** settings.
+
+    ![Intune Reports summary](./media/intune-reports/intune-reports-04a.png)
+
+6. Click **Save**.
+7. Next, select **Log analytics** to create and run a new log query using [Log Analytics](reports.md#log-analytics).
 
    ![Log Analytics - Log query](./media/intune-reports/intune-reports-05.png)
 
-4. Select **Workbooks** to create or open an interactive report using [Azure Monitor workbooks](reports.md#workbooks)
+8. Select **Workbooks** to create or open an interactive report using [Azure Monitor workbooks](reports.md#workbooks).
 
    ![Workbooks - Interactive reports](./media/intune-reports/intune-reports-06.png)
 
@@ -128,6 +147,7 @@ Workbooks combine text, Analytics queries, Azure Metrics, and parameters into 
 ## Next steps
 
 Learn more about the following technologies:
+- [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Intune-announces-powerful-new-reporting-framework/ba-p/964256)
 - [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
 - [What is Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
 - [Log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
