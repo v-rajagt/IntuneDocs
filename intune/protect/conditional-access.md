@@ -31,8 +31,6 @@ ms.collection: M365-identity-device-management
 
 # Learn about Conditional Access and Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 Conditional Access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. In this topic, learn about device-based and app-based Conditional Access, and find common scenarios for using Conditional Access with Intune.
 
 Enterprise Mobility + Security (EMS) Conditional Access is not a standalone product, it’s a solution that takes part on all services and products that are part of the EMS. It provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
