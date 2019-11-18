@@ -84,7 +84,7 @@ Be sure the device supports OEMConfig, the correct OEMConfig app is added to Int
 
 ## Create an OEMConfig profile
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
@@ -145,7 +145,7 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 
 | OEM | Bundle ID | OEM Documentation (if available) |
 | --- | --- | ---|
-| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Zebra Technologies | com.zebra.oemconfig.common | [Zebra OEMConfig overview](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com.datalogic.oemconfig | [User Documentation for Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com.honeywell.oemconfig |  |

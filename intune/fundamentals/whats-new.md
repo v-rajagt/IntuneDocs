@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -55,6 +55,27 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+
+## Week of November 11, 2019  
+
+### App management  
+
+#### Improved macOS enrollment experience in Company Portal <!-- 5074349 WNready -->  
+The Company Portal for macOS enrollment experience has a simpler enrollment process that aligns more closely with the Company Portal for iOS enrollment experience. Device users now see:  
+
+* A sleeker user interface.  
+* An improved enrollment checklist.  
+* Clearer instructions about how to enroll their devices.  
+* Improved troubleshooting options.  
+
+#### Web apps launched from the Windows Company Portal app<!-- 5030972 -->
+End-users can now launch web apps directly from the Windows Company Portal app. End-users can select the web app and then choose the option **Open in browser**. The published web URL is opened directly in a web browser. This functionality will be rolled out over the next week. For more information about Web apps, see [Add web apps to Microsoft Intune](~/apps/web-app.md).  
+
+
+#### New assignment type column in Company Portal for Windows 10 <!-- 5459950 WNready -->
+The Company Portal > **Installed Apps** > **Assignment type** column has been renamed to **Required by your organization**.  Under that column, users will see a **Yes** or **No** value to indicate that an app is either required or made optional by their organization. These changes were made because device users were confused about the concept of available apps. Your users can find more information about installing apps from Company Portal in [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows). For more  information about configuring the Company Portal app for your users, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).  
+
 
 ## Week of November 4, 2019
 
@@ -142,7 +163,7 @@ You can create an Intune app protection policy that may block, or selectively wi
 
 ### Device configuration
 
-#### New device firmware configuration interface profile for Windows 10 and later devices<!-- 2266073  -->
+#### New device firmware configuration interface profile for Windows 10 and later devices (public preview)<!-- 2266073  -->
 
 On Windows 10 and later, you can create a device configuration profile to control settings and features (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform). In this update, there's a new device firmware configuration interface profile type that allows Intune to manage UEFI (BIOS) settings.
 
@@ -519,7 +540,7 @@ Use Intune Endpoint Protection settings to configure [Client-driven recovery pas
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting refreshes the specific recovery password that was used, and other unused passwords on the volume remain unchanged. For more information see the BitLocker CSP documentation for [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 #### Tamper Protection for Windows Defender Antivirus<!-- 4705448        -->
-Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](../protect/endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
+Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
 
 For more information about Tamper Protection, see [Prevent security settings changes with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) in the Windows documentation.
 
