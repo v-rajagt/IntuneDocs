@@ -41,8 +41,6 @@ This article describes these settings. [Use Wi-Fi on your devices](wi-fi-setting
 
 Select this option if you are deploying to an Android Enterprise dedicated or fully managed device.  Android Enterprise dedicated and fully managed devices currently support SCEP certificate deployment, but not PKCS.
 
-For dedicated devices, 
-
 ### Basic
 
 - **Wi-Fi type**: Choose **Basic**.
