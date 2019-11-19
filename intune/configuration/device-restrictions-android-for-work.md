@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -154,13 +154,16 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
     When enabled, also configure:
 
-    - **Set custom screen saver image**: Enter the URL to a custom image. For example, enter:
+    - **Set custom screen saver image**: Enter the URL to a custom PNG, JPG, JPEG, GIF, BMP, WebP, or ICOimage. For example, enter:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       If you don't enter a URL, then the device's default image is used, if there is a default image.
+      
+      > [!TIP]
+      > Any file resource URL that can be turned into a bitmap is supported.
 
     - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to zero (`0`), the screen saver is active until a user interacts with the device.
     - **Number of seconds the device is inactive before showing screen saver**: Choose how long the device is idle before showing the screensaver. Enter a value between 1-9999999 seconds. Default is `30` seconds. You must enter a number greater than zero (`0`).
@@ -346,7 +349,7 @@ These password settings apply to personal profiles on devices that use a work pr
 - **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
 
    > [!Note]
-   > This setting only works for devices that are Android O and above.
+   > This setting only works for devices that are Android 8 (Oreo) and above.
 
 - **Prevent app installations from unknown sources in the personal profile**: By design, Android Enterprise work profile devices can't install apps from sources other than the Play Store. By nature, work profile devices are intended to be dual-profile:
 
