@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -51,7 +51,7 @@ Windows Information Protection (WIP) policies can be deployed without requiring 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In the Intune pane, select **Client apps** > **App selective wipe** > **Create wipe request**.<br>
    The **Create wipe request** pane is displayed.
-3. Click **Select the user**, choose the user whose app data you want to wipe, and click **Select** at the bottom of the **User** pane.
+3. Click **Select user**, choose the user whose app data you want to wipe, and click **Select** at the bottom of the **Select user** pane.
 4. Click **Select the device**, choose the device, and click **Select** at the bottom of the **Select Device** pane.
 5. Click **Create** to make a wipe request.
 
