@@ -222,9 +222,6 @@ The Company Portal for macOS enrollment experience will have a simpler enrollmen
 <!-- ***********************************************-->
 ## Monitoring and troubleshooting
 
-### Updated support experience<!--  5012398    -->
-As part of continuing improvements, we'll update the in-console support experience for Intune.  We'll improve the in-console search and feedback for common issues, and we'll streamline the workflow to contact support.
-
 ### Centralized audit logs<!--5603185, 5697164-->
 A new centralized audit log experience will collect audit logs for all categories into one page. You'l be able to filter the logs to get the data you're looking for. To see the audit logs, go to **Tenant administration** > **Audit logs**. For more information, see [Upcoming change to Audit logs in Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858).
 
