@@ -124,4 +124,4 @@ Next, create a compliance policy and assign it to the users for Intune to evalua
 
 ## Next steps
 
-[Troubleshooting Intune On-Premises Exchange Connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
+[Troubleshooting Intune on-premises Exchange connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
