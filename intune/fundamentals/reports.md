@@ -147,7 +147,7 @@ Workbooks combine text, Analytics queries, Azure Metrics, and parameters into 
 ## Next steps
 
 Learn more about the following technologies:
-- [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Intune-announces-powerful-new-reporting-framework/ba-p/964256)
+- [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
 - [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
 - [What is Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
 - [Log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
