@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -48,7 +48,7 @@ Before you run the App Wrapping Tool, you need to fulfill some general prerequis
 
   * The input app file must have the extension **.ipa** or **.app**.
 
-  * The input app must be compiled for iOS 10 or later.
+  * The input app must be compiled for iOS 11 or later.
 
   * The input app cannot be encrypted.
 
