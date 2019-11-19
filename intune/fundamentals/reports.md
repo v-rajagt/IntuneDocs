@@ -33,7 +33,7 @@ The Microsoft Intune reports workload provides details about device compliance, 
 
 The report types are organized into the following focus areas:
 - **Operational** - Provides timely, targeted data that helps you focus and take action. Admins, subject matter experts, and helpdesk will find these reports most helpful.
-- **Organizational** - Provides a broader summary of the an overall view, such as device management state. Managers and admins will find these reports most helpful.
+- **Organizational** - Provides a broader summary of an overall view, such as device management state. Managers and admins will find these reports most helpful.
 - **Historical** - Provides patterns and trends over a period of time. Managers and admins will find these reports most helpful.
 - **Specialist** - Allows you to use raw data to create your own custom reports. Admins will find these reports most helpful.
 
