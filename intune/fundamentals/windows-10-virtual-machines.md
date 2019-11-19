@@ -46,7 +46,7 @@ When managing Windows 10 VMs with Intune, keep the following points in mind:
 ## Configuration
 Intune does not support any configuration that utilizes a Trusted Platform Module or hardware management, including:
 - [Bitlocker settings](../configuration/device-profiles.md#endpoint-protection)
-- [Device Firmware Configuration Interface settings](../configuration/device-profile.md#device-firmware-configuration-interface)
+- [Device Firmware Configuration Interface settings](../configuration/device-profiles.md#device-firmware-configuration-interface)
 
 ## Reporting
 Intune automatically detects virtual machines and reports them as "Virtual Machine" in **Devices** > **All devices** > choose a device > **Overview** > **Model** field. 
