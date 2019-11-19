@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -199,7 +199,9 @@ For more information about Windows Update policies, see [Update CSP](https://doc
 2. Select from the available options to uninstall either **Feature** or **Quality** updates, and then select **OK**.
 3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.
 
-## Windows 10 feature updates (public preview)
+## Windows 10 feature updates
+
+*This feature is in public preview.*
 
 With *Windows 10 feature updates*, you select the Windows feature version that you want devices to remain at, like Windows 10 version 1803 or version 1809. You can set a feature level of 1803 or later.
 
