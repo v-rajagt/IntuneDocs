@@ -61,6 +61,22 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ## Week of November 18, 2019  
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### App management
+
+#### UI update when selectively wiping app data<!-- 4102028 -->
+The UI to selectively wipe app data in Intune has been updated. UI changes include:
+- A simplified experience by using a wizard-style format condensed within one pane.
+- An update to the create flow to include assignments.
+- A summarized page of all things set when viewing properties, prior to creating a new policy or when editing a property. Also, when editing properties, the summary will only show a list of items from the category of properties being edited.
+
+For more information, see [How to wipe only corporate data from Intune-managed apps](~/apps/apps-selective-wipe.md).
+
+#### iOS and iPadOS third party keyboard support<!-- 4922950 -->
+In March, 2019, we announced the removal of support for the iOS App protection policy setting "Third party keyboards". The feature is returning to Intune with both iOS and iPadOS support. To enable this setting, visit the **Data protection** tab of a new or existing iOS/iPadOS app protection policy and find the **Third party keyboards** setting under **Data Transfer**.
+
+The behavior of this policy setting differs slightly from the previous implementation. In multi-identity apps using SDK version 12.0.16 and later, targeted by app protection policies with this setting configured to **Block**, end-users will be unable to opt for third party keyboards in both their organization and personal accounts. Apps using SDK versions 12.0.12 and earlier will continue to exhibit the behavior documented in our blog post title, [Known issue: Third party keyboards are not blocked in iOS for personal accounts](https://aka.ms/3rdparty_iOS_Intune).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device configuration
 
 #### Target macOS user groups to require Jamf management<!-- 4061739  --> 
@@ -141,6 +157,8 @@ You can use an Intune device action to remotely [rotate BitLocker recovery keys]
 #### Updates to dedicated device enrollment to support SCEP device certificate deployment <-- 5198878  -->
 Intune now supports SCEP device certificate deployment to Android Enterprise dedicated devices for certificate-based access to Wi-Fi profiles. The Microsoft Intune app must be present on the device for deployment to work. As a result, we've updated the enrollment experience for Android Enterprise dedicated devices. New enrollments still start the same (with QR, NFC, Zero-touch, or device identifier) but now have a step that requires users to install the Intune app. Existing devices will start getting the app automatically installed on a rolling basis starting when the What’s New is posted.
 
+#### Intune support for Azure AD business-to-business collaboration<!--5670211  -->
+Intune supports Azure Active Directory (Azure AD) business-to-business (B2B) collaboration. Azure AD B2B collaboration lets you securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data. This functionality also provides auditing capabilities of B2B guest users. For more information, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 <!-- ########################## -->
 ## Week of November 11, 2019  
