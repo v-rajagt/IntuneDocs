@@ -56,11 +56,11 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **All devices** > **Configuration profiles** > **Create profile**.
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
-3. Set the following options:  
+3. Set the following options:
 
-   - Platform: macOS  
+   - Platform: macOS
    - Profile type: Endpoint protection
 
 4. Select **Settings** > **FileVault**.
@@ -82,9 +82,9 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
    >
    > This issue will be resolved in a future update.
 
-8. Complete configuration of additional settings, and then save the profile.
+8. Complete configuration of additional settings, and then save the profile.  
 
-### Manage FileVault  
+### Manage FileVault
 
 After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md).
 
@@ -104,7 +104,7 @@ Configure BitLocker when you create a [device configuration profile](../configur
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **All devices** > **Configuration profiles** > **Create profile**.
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
 3. Set the following options:
 
@@ -117,7 +117,7 @@ Configure BitLocker when you create a [device configuration profile](../configur
 
 6. Complete configuration of additional settings, and then save the profile.
 
-### Manage BitLocker  
+### Manage BitLocker
 
 After Intune encrypts a Windows 10 device with BitLocker, you can view and retrieve BitLocker recovery keys when you view the Intune [encryption report](encryption-monitor.md).
 
@@ -157,4 +157,4 @@ Use the encryption report, to manage:
 Review the encryption settings you can configure with Intune for:
 
 - [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
-- [FileVault](endpoint-protection-macos.md#filevault)  
+- [FileVault](endpoint-protection-macos.md#filevault)
