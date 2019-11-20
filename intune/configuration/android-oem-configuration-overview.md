@@ -154,7 +154,7 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 | Spectralink - Buttons | com.spectralink.buttons |  |
 | Spectralink - Device | com.spectralink.slnkdevicesettings  |  |
 | Spectralink - Logging | com.spectralink.slnklogger |  |
-| OSpectralink - VQO | com.spectralink.slnkvqo |  |
+| Spectralink - VQO | com.spectralink.slnkvqo |  |
 
 -----------------
 
