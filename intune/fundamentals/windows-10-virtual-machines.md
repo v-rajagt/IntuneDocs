@@ -37,7 +37,7 @@ Intune supports managing virtual machines running Windows 10 Enterprise with cer
 When managing Windows 10 VMs with Intune, keep the following points in mind:
 
 ## Enrollment
-- We don't recommend managing on-demand, session-host virtual machines with Intune. Each VM must be enrolled when it's created. Also, regularly deleting VMs will leave orphaned device records in Intune until they're cleaned up. 
+- We don't recommend managing on-demand, session-host virtual machines with Intune. Each VM must be enrolled when it's created. Also, regularly deleting VMs will leave orphaned device records in Intune until they're [cleaned up](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules). 
 - Windows Autopilot Self-deploying mode isn't supported because it requires a Trusted Platform Module (TPM). 
 - Out of Box Experience (OOBE) enrollment isn't supported on VMs that can only be accessed by using RDP (such as VMs that are hosted on Azure). This restriction means:
     - Windows Autopilot and Commercial OOBE aren't supported.
@@ -54,6 +54,6 @@ Intune automatically detects virtual machines and reports them as "Virtual Machi
 Deallocated virtual machines may contribute to noncompliant device reports because they're unable to [check in with the Intune service](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## Retirement
-If you only have RDP access, don’t use the [Wipe action](../remote-actions/devices-wipe.md#wipe). The Wipe action will delete the virtual machine RDP settings and prevent you from ever connecting again.
+If you only have RDP access, don’t use the [Wipe action](../remote-actions/devices-wipe.md#wipe). The Wipe action will delete the virtual machine's RDP settings and prevent you from ever connecting again.
 
 
