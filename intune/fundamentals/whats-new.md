@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -56,18 +56,65 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
-## Week of November 18, 2019
 
+<!-- ########################## -->
+## Week of November 18, 2019  
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device configuration
 
-#### Windows 10 feature updates (public preview)<!-- 2384877 -->
+#### Target macOS user groups to require Jamf management<!-- 4061739  --> 
+You can target specific groups of users that will get their [macOS devices managed by Jamf](../protect/conditional-access-integrate-jamf.md). This enables you apply the Jamf compliance integration to a subset of macOS devices while other devices are managed by Intune. If you are already using the Jamf integration, All Users will be targeted for the integration by default.
 
+#### New Exchange ActiveSync settings when creating an Email device configuration profile on iOS devices<!-- 4892824   --> 
+On iOS/iPadOS devices, you can configure email connectivity in a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **iOS/iPadOS** for platform > **Email** for profile type). 
+
+There are new Exchange ActiveSync settings available, including:
+- **Exchange data to sync**: Choose the Exchange services to sync (or block syncing) for Calendar, Contacts, Reminders, Notes, and Email.
+- **Allow users to change sync settings**: Allow (or block) users to change the sync settings for these services on their devices.  
+
+For more information on these setting, go to [Email profile settings for iOS devices in Intune](../configuration/email-settings-ios.md). 
+
+Applies to:
+- iOS 13.0 and newer
+- iPadOS 13.0 and newer
+
+#### Prevent users from adding personal Google accounts to Android Enterprise fully managed and dedicated devices<!-- 5353228   -->
+On Android Enterprise fully managed and dedicated devices, there's a new setting that prevent users from creating personal Google accounts (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner Only > Device Restrictions** for profile type > **Users and Accounts settings** > **Personal Google Accounts**).
+
+To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](../configuration/device-restrictions-android-for-work.md).
+
+Applies to:
+- Android Enterprise fully managed devices
+- Android Enterprise dedicated devices
+
+#### Server-side logging for Siri commands setting is removed in iOS/iPadOS device restrictions profile <!-- 5468501   -->
+On iOS and iPadOS devices, the **Server-side logging for Siri commands** setting is removed from the Microsoft Endpoint Manager admin console (**Device configuration** > **Profiles** > **Create profile** > **iOS/iPadOS** for platform > **Device restrictions** for profile type > **Built-in apps**). 
+
+This setting has no effect on devices. To remove the setting from existing profiles, open the profile, make a minor change, and then save the profile. The profile is updated, and the setting is deleted from devices.
+
+To see all the settings you can configure, see [iOS and iPadOS device settings to allow or restrict features using Intune](../configuration/device-restrictions-ios.md).
+
+Applies to:
+- iOS/iPadOS
+
+#### Windows 10 feature updates (public preview)<!-- 2384877 -->
 You can now deploy [Windows 10 feature updates](../protect/windows-update-for-business-configure.md#windows-10-feature-updates) to Windows 10 devices. Windows 10 feature updates are a new software update policy that sets the version of Windows 10 that you want devices to install and remain at. You can use this new policy type along with your existing Windows 10 update rings.
 
 Devices that receive Windows 10 feature updates policy will install the specified version of Windows, and then remain at that version until the policy is edited or removed. Devices that run a later version of Windows remain at their current version. Devices that are held at a specific version of Windows can still install quality and security updates for that version from Windows 10 update rings.
 
 This new type of policy begins rolling out to tenants this week. If this policy isn't available for your tenant yet, it will be soon.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Edit device name value for Autopilot devices<!-- 2640074 -->
+You can edit the Device Name value for Azure AD Joined Autopilot devices.  For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
+
+#### Edit Group Tag value for Autopilot devices<!-- 4816775   -->
+You can edit the Group Tag value for Autopilot devices. For more information, see [Edit Autopilot device attributes](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Monitor and troubleshoot
 
 #### Updated support experience<!-- 5012398 -->
@@ -76,8 +123,29 @@ Starting today, an updated and streamlined in-console experience for [getting he
 
 We've improved the in-console search and feedback for common issues, and the workflow you use to contact support. When opening a support issue, you'll see real-time estimates for when you can expect a callback or email reply, and Premier and Unified support customers can easily specify a severity for their issue, to help get support faster.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Role-based access control
+
+#### Duplicate custom or built-in roles <!-- 1081938   -->
+You can now copy built-in and custom roles. For more information, see [Copy a role](../fundamentals/create-custom-role.md#copy-a-role).
+
+#### New permissions for school administrator role <!-- 5621805  -->  
+Two new permissions, **Assign profile** and **Sync device**, have been added to the school administrator role > **Permissions** > **Enrollment programs**. The sync profile permission lets group admins sync Windows Autopilot devices. The assign profile permission lets them delete user-initiated Apple enrollment profiles. It also gives them permission to manage Autopilot device assignments and Autopilot deployment profile assignments. For a list of all school administrator/group admin permissions, see [Assign group admins](https://docs.microsoft.com/intune-education/group-admin-delegate). 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Security
+
+#### BitLocker key rotation<!-- 2564951  -->
+You can use an Intune device action to remotely [rotate BitLocker recovery keys](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)  for managed devices that run Windows version 1909 or later. To qualify to have recovery keys rotated, devices must be configured to support recovery key rotation.  
+
+#### Updates to dedicated device enrollment to support SCEP device certificate deployment <-- 5198878  -->
+Intune now supports SCEP device certificate deployment to Android Enterprise dedicated devices for certificate-based access to Wi-Fi profiles. The Microsoft Intune app must be present on the device for deployment to work. As a result, we've updated the enrollment experience for Android Enterprise dedicated devices. New enrollments still start the same (with QR, NFC, Zero-touch, or device identifier) but now have a step that requires users to install the Intune app. Existing devices will start getting the app automatically installed on a rolling basis starting when the What’s New is posted.
+
+
+<!-- ########################## -->
 ## Week of November 11, 2019  
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management  
 
 #### Improved macOS enrollment experience in Company Portal <!-- 5074349 WNready -->  
@@ -95,17 +163,20 @@ End-users can now launch web apps directly from the Windows Company Portal app. 
 #### New assignment type column in Company Portal for Windows 10 <!-- 5459950 WNready -->
 The Company Portal > **Installed Apps** > **Assignment type** column has been renamed to **Required by your organization**.  Under that column, users will see a **Yes** or **No** value to indicate that an app is either required or made optional by their organization. These changes were made because device users were confused about the concept of available apps. Your users can find more information about installing apps from Company Portal in [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows). For more  information about configuring the Company Portal app for your users, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).  
 
-
+<!-- ########################## -->
 ## Week of November 4, 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device security
 
 #### Security baselines are supported on Microsoft Azure Government<!-- 4062552 -->
 
 Instances of  Intune that are hosted on *Microsoft Azure Government* can now use [security baselines](../protect/security-baselines.md) to help you secure and protect your users and devices.
 
+<!-- ########################## -->
 ## Week of October 28, 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management
 
 #### Improved checklist design in Company Portal app for Android<!-- 5550857 -->  
@@ -146,12 +217,14 @@ These settings will continue to be accessible from other applicable nodes such a
 
 For more information about these improvements, see the [Intune Customer Success blog post](https://aka.ms/Endpoint_security_node) on the Microsoft Tech Community web site.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
 #### Intune supports iOS 11 and later<!-- 4665324  -->
 
 Intune enrollment and Company Portal now support iOS versions 11 and later. Older versions aren't supported.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device security
 
 #### Microsoft Edge baseline (Preview)<!--  3787164  -->
