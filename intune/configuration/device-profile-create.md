@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -29,8 +29,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Create a device profile in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Devices profiles allow you to add and configure settings, and then push these settings to devices in your organization. [Apply features and settings on your devices using device profiles](device-profiles.md) goes into more detail, including what you can do.
 
@@ -164,6 +162,28 @@ When you assign the profile to the groups, the applicability rules act as a filt
 Intune uses different refresh cycles to check for updates to configuration profiles. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
 At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
+
+## Recommendations
+
+When creating profiles, consider the following recommendations:
+
+- Name your policies so you know what they are, and what they apply to. All [compliance policies](../protect/create-compliance-policy.md) and [configuration profiles](../configuration/device-profile-create.md) have an optional **Description** property. In **Description**, be specific and include information so others know what the policy does.
+
+  Some configuration profile examples include:
+
+  **Profile name**: Admin template - OneDrive configuration profile that applies to all Windows 10 users  
+  **Profile description**: Base OneDrive admin template profile that includes the minimum or base settings for all Windows 10 users
+
+  **Profile name**: VPN profile that's assigned to all iOS users  
+  **Profile description**: VPN profile that includes the minimum settings for all iOS users to connect to Contoso VPN
+
+- Create your profile by its task, such as configure Edge settings, enable Microsoft Defender anti-virus settings, block jailbroken devices, and so on.
+
+- Create profiles that apply to specific groups, such as Marketing, Sales, IT Administrators, or by location or school system.
+
+- Separate user policies from device policies.
+
+  For example, [Administrative Templates in Intune](administrative-templates-windows.md) lists all the ADMX settings, and if they apply to a user or a group. When creating admin templates, put your user settings in a users group, and put your device settings in a devices group.
 
 ## Next steps
 

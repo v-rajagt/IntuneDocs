@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -29,8 +29,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Assign user and device profiles in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 You create a profile, and it includes all the settings you entered. The next step is to deploy or "assign" the profile to your Azure Active Directory (Azure AD) user or device groups. When it's assigned, the users and devices receive your profile, and the settings you entered are applied.
 
@@ -70,6 +68,32 @@ When you create or update a profile, you can also add scope tags and applicabili
 **Scope tags** are a great way to assign and filter policies to specific groups, such as Human Resources or All US-NC employees. [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md) has more information.
 
 On Windows 10 devices, you can add **applicability rules** so the profile only applies to a specific OS version or a specific Windows edition. [Applicability rules](device-profile-create.md#applicability-rules) has more information.
+
+## User groups vs. device groups
+
+Many users ask when to use user groups and when to use device groups. The answer depends on your goal. Here's some guidance to get you started.
+
+### Device groups
+
+If you want to apply settings on a device, regardless of who's signed in, then assign your policies to a devices group. These settings always go with the device.
+
+Device groups are also ideal for devices that don't have a user. For example, you have devices that print tickets, scan tickets, used for inventory, and so on. In this scenario, put these devices in a devices group, and assign your policies to this devices group.
+
+In Intune, you can create a [Device Firmware Configuration Interface (DFCI) profile](device-firmware-configuration-interface-windows.md) that updates settings in the BIOS. For example, use this profile to disable the device camera, or lock down the boot options to prevent users from booting up another OS. This profile is a good scenario to assign to a devices group.
+
+To summarize, use device groups when you don't care who's signed in on the device, or if anyone is signed in. You want your settings to always be on the device.
+
+### User groups
+
+Policy settings applied to user groups always go with the user, and go with the user when signed in to multiple devices. It’s normal for a user to have multiple devices, such as a Surface Pro for work, and a personal iOS device. And, it's normal for a person to access organizational resources from these multiple devices.
+
+For example:
+
+- You want to put a Help Desk icon for all users on all their devices. In this scenario, put these users in a users group, and assign your policy to this users group.
+- A user receives a new organization-owned device. The user signs in to the device with their domain account. The device is automatically registered in Azure AD, and automatically managed by Intune. In this scenario, assign your enrollment policies to a users group.
+- Whenever a user signs in to a device, you want to control features in apps, such as OneDrive and Teams. In this scenario, assign your OneDrive profile settings to a users group.
+
+To summarize, use user groups when you want your settings and rules to always go with the user.
 
 ## Exclude groups from a profile assignment
 
