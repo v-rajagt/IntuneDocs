@@ -65,15 +65,11 @@ The service creates and tracks a separate wipe request for each protected app on
 
    ![Screenshot of 'Client apps - App selective wipe' pane](./media/apps-selective-wipe/apps-selective-wipe-03.png)
 
-Additionally, you can choose to cancel an app wipe request by selecting the ellipses at the end of the listed wipe request and then selecting **Delete wipe request**.
-
-   ![Screenshot of App selective wipe list - Delete wipe request](./media/apps-selective-wipe/apps-selective-wipe-04.png)
-
 ## Monitor your wipe requests
 
 You can have a summarized report that shows the overall status of the wipe request, and includes the number of pending requests and failures. To get more details, follow these steps:
 
-1. On the **Client Apps - App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
+1. On the **Client Apps** > **App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
     ![Screenshot of the wipe request status in the App selective wipe pane](./media/apps-selective-wipe/wipe-request-status-1.png)
 
