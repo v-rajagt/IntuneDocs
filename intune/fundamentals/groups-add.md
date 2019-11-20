@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -105,9 +105,9 @@ When you create groups, consider how you'll apply [compliance policies](../prote
 
 To create the basic compliance requirements of your organization, you can create a default policy that applies to all groups and devices. Then, create more specific policies for the broadest categories of users and devices. For example, you might create email policies for each of the device operating systems.
 
-For more recommendations and guidance, see [Assign policies to user groups or device groups](../configuration/device-profile-assign.md) and [profile recommendations](../configuration/device-profile-create.md).
+For configuration profile recommendations and guidance, see [Assign policies to user groups or device groups](../configuration/device-profile-assign.md#user-groups-vs-device-groups) and [profile recommendations](../configuration/device-profile-create.md#recommendations).
 
 ## See also
 
 - [Role-based access control (RBAC) with Microsoft Intune](role-based-access-control.md)
-- [Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
+- [Manage access to resources with Azure AD groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

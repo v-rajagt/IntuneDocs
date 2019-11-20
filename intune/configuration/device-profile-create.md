@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -167,23 +167,25 @@ At any time, users can open the Company Portal app, and sync the device to immed
 
 When creating profiles, consider the following recommendations:
 
-- Name your policies so you know what they are, and what they apply to. All [compliance policies](../protect/create-compliance-policy.md) and [configuration profiles](../configuration/device-profile-create.md) have an optional **Description** property. In **Description**, be specific and include information so others know what the policy does.
+- Name your policies so you know what they are, and what they do. All [compliance policies](../protect/create-compliance-policy.md) and [configuration profiles](../configuration/device-profile-create.md) have an optional **Description** property. In **Description**, be specific and include information so others know what the policy does.
 
   Some configuration profile examples include:
 
-  **Profile name**: Admin template - OneDrive configuration profile that applies to all Windows 10 users  
-  **Profile description**: Base OneDrive admin template profile that includes the minimum or base settings for all Windows 10 users
+  **Profile name**: Admin template - OneDrive configuration profile for all Windows 10 users  
+  **Profile description**: OneDrive admin template profile that includes the minimum and base settings for all Windows 10 users. Created by user@contoso.com to prevent users from sharing organizational data to personal OneDrive accounts.
 
-  **Profile name**: VPN profile that's assigned to all iOS users  
-  **Profile description**: VPN profile that includes the minimum settings for all iOS users to connect to Contoso VPN
+  **Profile name**: VPN profile for all iOS users  
+  **Profile description**: VPN profile that includes the minimum and base settings for all iOS users to connect to Contoso VPN. Created by user@contoso.com so users automatically authenticate to VPN, instead of prompting users for their username and password.
 
-- Create your profile by its task, such as configure Edge settings, enable Microsoft Defender anti-virus settings, block jailbroken devices, and so on.
+- Create your profile by its task, such as configure Microsoft Edge settings, enable Microsoft Defender anti-virus settings, block iOS jailbroken devices, and so on.
 
 - Create profiles that apply to specific groups, such as Marketing, Sales, IT Administrators, or by location or school system.
 
 - Separate user policies from device policies.
 
-  For example, [Administrative Templates in Intune](administrative-templates-windows.md) lists all the ADMX settings, and if they apply to a user or a group. When creating admin templates, put your user settings in a users group, and put your device settings in a devices group.
+  For example, [Administrative Templates in Intune](administrative-templates-windows.md) has hundreds of ADMX settings, and shows if they apply to users or devices. When creating admin templates, assign your users settings to a users group, and assign your device settings to a devices group.
+
+  ![Intune admin template that applies to user and devices](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## Next steps
 
