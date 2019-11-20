@@ -183,7 +183,9 @@ When creating profiles, consider the following recommendations:
 
 - Separate user policies from device policies.
 
-  For example, [Administrative Templates in Intune](administrative-templates-windows.md) has hundreds of ADMX settings, and shows if they apply to users or devices. When creating admin templates, assign your users settings to a users group, and assign your device settings to a devices group.
+  For example, [Administrative Templates in Intune](administrative-templates-windows.md) have hundreds of ADMX settings. These template shows if a settings applies to users or devices. When creating admin templates, assign your users settings to a users group, and assign your device settings to a devices group.
+
+  The following image shows an example of a setting that can apply to users and/or apply to devices:
 
   ![Intune admin template that applies to user and devices](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
