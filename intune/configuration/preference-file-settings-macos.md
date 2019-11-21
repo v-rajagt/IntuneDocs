@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -29,15 +29,15 @@ ms.collection: M365-identity-device-management
 
 # Add a property list file to macOS devices using Microsoft Intune
 
-Using Microsoft Intune, you can add a property list file (.plist) for your apps on macOS devices.
+Using Microsoft Intune, you can add a property list file (.plist) for macOS devices, or apps on macOS devices.
 
 This feature applies to:
 
 - macOS devices running 10.7 and newer
 
-Property list files typically include information about macOS applications. For more information on property lists, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (opens Apple's website).
+Property list files typically include information about macOS applications. For more information, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (Apple's website) and [Custom payload settings](https://support.apple.com/guide/mdm/custom-mdm9abbdbe7/1/web/1).
 
-This article lists and describes the different property list file settings you can add to macOS devices. As part of your mobile device management (MDM) solution, use these settings to add the app bundle ID, and add its .plist file.
+This article lists and describes the different property list file settings you can add to macOS devices. As part of your mobile device management (MDM) solution, use these settings to add the app bundle ID (`com.company.application`), and add its .plist file.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
@@ -50,13 +50,13 @@ These settings are added to a device configuration profile in Intune, and then a
 - These settings aren't validated. Be sure to test your changes before assigning the profile to your devices.
 - If you’re not sure how to enter an app key, change the setting within the app. Then, review the app's preference file using [Xcode](https://developer.apple.com/xcode/) to see how the setting is configured. Apple recommends removing non-manageable settings using Xcode before importing the file.
 - Only some apps work with managed preferences, and might not allow you to manage all settings.
-- Be sure you upload property list files that target device settings, not user settings.
+- Be sure you upload property list files that target device channel settings, not user channel settings. Property list files target the entire device.
 
 ## Preference file
 
-- **Preference domain name**: Property list files are typically used for custom apps. When you create a custom app, a bundle ID is also created. Enter the bundle ID of your app. For example, enter `com.Contoso.applicationName`.
+- **Preference domain name**: Property list files are typically used for web browsers (Microsoft Edge), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac), and custom apps. When you create a preference domain, a bundle ID is also created. Enter the bundle ID, such as `com.company.application`. For example, enter `com.Contoso.applicationName`, `com.Microsoft.Edge` or `com.microsoft.wdav`.
 - **Property list file**: Select the property list file associated with your app. Be sure it's a `.plist` or `.xml` file. For example, upload a `YourApp-Manifest.plist` or `YourApp-Manifest.xml` file.
-- **File contents**: The key information in the property list file is shown. You can change these settings.
+- **File contents**: The key information in the property list file is shown. If you need to change the key information, open the list file in another editor, and then reupload the file in Intune.
 
 Select **OK** > **Create** to save your changes. The profile is created and shown in the profiles list.
 
