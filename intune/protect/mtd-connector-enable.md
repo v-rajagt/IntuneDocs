@@ -38,9 +38,9 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 ## Classic conditional access policies for MTD apps
 
-When you integrate a new application to Intune Mobile Threat Defense and enable the connection to Intune, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, including [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy. These policies can be ignored, but should not be edited, deleted, or disabled.
+When you integrate a new application to Intune Mobile Threat Defense and enable the connection to Intune, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, including [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy. These policies can be ignored, but shouldn't be edited, deleted, or disabled.
 
-If the classic policy is deleted, you will need to delete the connection to Intune that was responsible for its creation, and then set it up again. This process recreates the classic policy. Its not supported to migrate classic policies for MTD apps to the new policy type for conditional access.
+If the classic policy is deleted, you'll need to delete the connection to Intune that was responsible for its creation, and then set it up again. This process recreates the classic policy. It's not supported to migrate classic policies for MTD apps to the new policy type for conditional access.
 
 Classic conditional access policies for MTD apps:
 
@@ -62,7 +62,7 @@ To view classic conditional access policies, in [Azure](https://portal.azure.com
 
 3. On the **Mobile Threat Defense** pane, select **Add**.
 
-4. For **Mobile Threat Defense connector to setup**, select your MTD solution as the from the drop-down list.
+4. For **Mobile Threat Defense connector to setup**, select your MTD solution from the drop-down list.
 
 5. Enable the toggle options according to your organization's requirements. Toggle options visible will vary depending on the MTD partner.  For example, the following image shows the options that are available for Symantec Endpoint Protection:
 
