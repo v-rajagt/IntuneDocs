@@ -15,7 +15,6 @@ ms.localizationpriority: high
 ms.technology:
 ms.reviewer: shpate
 
-
 # optional metadata
 
 #ROBOTS:
@@ -27,6 +26,7 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
+
 
 # Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune
 
