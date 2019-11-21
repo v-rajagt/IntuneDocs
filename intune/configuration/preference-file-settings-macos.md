@@ -3,7 +3,7 @@
 
 title: Add preference file settings to macOS devices in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Add an xml or plist file that includes key information about your app bundle
+description: Add an xml or plist file that includes key information about your app. Use a preference file device configuration profile to change key information in the property list file, and assign it to your macOS devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -27,13 +27,17 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Use 
+# Add a property list file to macOS devices using Microsoft Intune
 
-Using Microsoft Intune, you can add a property list file (.plist) for your macOS devices.
+Using Microsoft Intune, you can add a property list file (.plist) for your apps on macOS devices.
 
-Property list files typically include user settings, or information about bundles and applications. For more information on property lists, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (opens Apple's website).
+This feature applies to:
 
-This article lists and describes the different settings you can control on macOS devices. As part of your mobile device management (MDM) solution, use these settings to add the app bundle ID, and add a .plist file.
+- macOS devices running 10.7 and newer
+
+Property list files typically include information about macOS applications. For more information on property lists, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (opens Apple's website).
+
+This article lists and describes the different property list file settings you can add to macOS devices. As part of your mobile device management (MDM) solution, use these settings to add the app bundle ID, and add its .plist file.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
@@ -46,13 +50,13 @@ These settings are added to a device configuration profile in Intune, and then a
 - These settings aren't validated. Be sure to test your changes before assigning the profile to your devices.
 - If you’re not sure how to enter an app key, change the setting within the app. Then, review the app's preference file using [Xcode](https://developer.apple.com/xcode/) to see how the setting is configured. Apple recommends removing non-manageable settings using Xcode before importing the file.
 - Only some apps work with managed preferences, and might not allow you to manage all settings.
+- Be sure you upload property list files that target device settings, not user settings.
 
 ## Preference file
 
-- **Preference domain name**: Property list files are typically used for custom apps. When you create a custom app, a bundle ID is automatically created. Enter the bundle ID of your app. For example, enter `com.Microsoft.Edge`.
-
-- **Property list file**: Select the property list file associated with your app. Be sure it's a `.plist` or `.xml` file. For example, upload a `YourApp-Manifest.plist` file.
-- **File contents**: 
+- **Preference domain name**: Property list files are typically used for custom apps. When you create a custom app, a bundle ID is also created. Enter the bundle ID of your app. For example, enter `com.Contoso.applicationName`.
+- **Property list file**: Select the property list file associated with your app. Be sure it's a `.plist` or `.xml` file. For example, upload a `YourApp-Manifest.plist` or `YourApp-Manifest.xml` file.
+- **File contents**: The key information in the property list file is shown. You can change these settings.
 
 Select **OK** > **Create** to save your changes. The profile is created and shown in the profiles list.
 
