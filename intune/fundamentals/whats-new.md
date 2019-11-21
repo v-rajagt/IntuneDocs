@@ -154,7 +154,7 @@ Two new permissions, **Assign profile** and **Sync device**, have been added to 
 #### BitLocker key rotation<!-- 2564951  -->
 You can use an Intune device action to remotely [rotate BitLocker recovery keys](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)  for managed devices that run Windows version 1909 or later. To qualify to have recovery keys rotated, devices must be configured to support recovery key rotation.  
 
-#### Updates to dedicated device enrollment to support SCEP device certificate deployment <-- 5198878  -->
+#### Updates to dedicated device enrollment to support SCEP device certificate deployment <!-- 5198878  -->
 Intune now supports SCEP device certificate deployment to Android Enterprise dedicated devices for certificate-based access to Wi-Fi profiles. The Microsoft Intune app must be present on the device for deployment to work. As a result, we've updated the enrollment experience for Android Enterprise dedicated devices. New enrollments still start the same (with QR, NFC, Zero-touch, or device identifier) but now have a step that requires users to install the Intune app. Existing devices will start getting the app automatically installed on a rolling basis starting when the What’s New is posted.
 
 #### Intune support for Azure AD business-to-business collaboration<!--5670211  -->
