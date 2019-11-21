@@ -121,6 +121,18 @@ Devices that receive Windows 10 feature updates policy will install the specifie
 
 This new type of policy begins rolling out to tenants this week. If this policy isn't available for your tenant yet, it will be soon.
 
+#### Add and change key information in plist files for macOS applications<!-- 4736278 -->
+On macOS devices, you can now create a device configuration profile that uploads a property list file (.plist) associated with an app or with the device (**Devices** > **Configuration profiles** > **Create profile** > **macOS** for platform > **Preference File** for profile type).
+
+Only some apps support managed preferences, and these apps might not allow you to manage all settings. Be sure to upload a property list file that configures device channel settings, not user channel settings.
+
+For more information on this feature, see [Add a property list file to macOS devices using Microsoft Intune](../configuration/preference-file-settings-macos.md).
+
+Applies to:
+- macOS devices running 10.7 and newer
+
+
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
