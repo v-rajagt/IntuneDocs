@@ -57,7 +57,8 @@ When you use a Microsoft Certification Authority (CA):
   - [Install the PFX Certificate Connector for Microsoft Intune](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
   - Export certificates from the certification authority and then import them to Microsoft Intune. See [the PFXImport PowerShell project](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
 
-- Use [trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) to deploy the Trusted Root CA certificate from your root CA to devices for use with the following profiles:
+- Deploy certificates by using the following mechanisms:
+  - [Trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) to deploy the Trusted Root CA certificate from your root CA to devices.
   - SCEP certificate profiles
   - PKCS certificate profiles
   - PKCS imported certificate profiles
@@ -72,7 +73,8 @@ When you use a third-party (non-Microsoft) Certification Authority (CA):
 
 - PKCS imported certificates require you to [install the PFX Certificate Connector for Microsoft Intune](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 
-- Use [trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) to deploy the Trusted Root CA certificate from your root CA to devices for use with the following profiles:
+- Deploy certificates by using the following mechanisms:
+  - [Trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) to deploy the Trusted Root CA certificate from your root CA to devices.
   - SCEP certificate profiles
   - PKCS certificate profiles *(only supported with the [Digicert PKI Platform](certificates-digicert-configure.md))*
   - PKCS imported certificate profiles
