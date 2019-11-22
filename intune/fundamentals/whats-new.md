@@ -62,6 +62,9 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management
 
+#### S/MIME support with Microsoft Outlook for iOS<!-- 2669398 idready -->
+Intune supports delivering S/MIME signing and encryption certificates that can be used with Outlook for iOS on iOS devices. For more information, see [Configure S/MIME for Outlook for iOS](~/apps/app-configuration-policies-outlook-smime.md).
+
 #### UI update when selectively wiping app data<!-- 4102028 -->
 The UI to selectively wipe app data in Intune has been updated. UI changes include:
 - A simplified experience by using a wizard-style format condensed within one pane.
