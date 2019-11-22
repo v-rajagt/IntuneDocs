@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Configure S/MIME for Outlook on iOS devices
 
-Secure/Multipurpose Internet Mail Extensions (S/MIME) provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. [Microsoft Outlook](http://aka.ms/omsmime) can utilize S/MIME to allow users to encrypt both outgoing messages and attachments, ensuring that only the intended recipient can read and access message content when using Office 365 accounts. Users can also digitally sign a message, which allows the recipients to both verify the identity of the sender and confirm that the message hasn't been tampered with. This capability is possible by utilizing certificates For more information, see [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
+Secure/Multipurpose Internet Mail Extensions (S/MIME) provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. [Microsoft Outlook](https://aka.ms/omsmime) can utilize S/MIME to allow users to encrypt both outgoing messages and attachments, ensuring that only the intended recipient can read and access message content when using Office 365 accounts. Users can also digitally sign a message, which allows the recipients to both verify the identity of the sender and confirm that the message hasn't been tampered with. This capability is possible by utilizing certificates For more information, see [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
 
 > [!NOTE]
 > This topic describes how to deploy trusted root certificates via [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Microsoft Endpoint Manager is a single, integrated endpoint management platform for managing all your endpoints. This admin center integrates ConfigMgr and Microsoft Intune.
@@ -46,7 +46,7 @@ A digitally signed message reassures the recipient that the message hasn't been 
 - Outlook only supports S/MIME on Office 365 accounts.
 - S/MIME must be configured for Office 365. For more information, see [How to configure S/MIME in Office 365](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/How-to-Configure-S-MIME-in-Office-365/ba-p/584516).
 - You must have a Certification Authority that can issue certificates that can be used for signing and encryption.
-- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](~/protect/certificates-configure#create-trusted-certificate-profiles.md).
+- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](~/protect/certificates-configure.md#create-trusted-certificate-profiles.md).
 - Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](~/protect/certificates-imported-pfx-configure.md).
 - Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](~/protect/certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 - Devices must be MDM enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
