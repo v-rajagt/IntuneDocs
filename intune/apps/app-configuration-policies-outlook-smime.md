@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure S/MIME for Outlook for iOS in Microsoft Intune
-description: Understand S/MIME for Outlook for iOS in Microsoft Intune.
+title: Configure S/MIME with Outlook for iOS in Microsoft Intune
+description: Understand S/MIME with Outlook for iOS in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Configure S/MIME for Outlook for iOS
+# Configure S/MIME with Outlook for iOS
 
 Secure/Multipurpose Internet Mail Extensions (S/MIME) provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. [Microsoft Outlook](https://aka.ms/omsmime) can utilize S/MIME to allow users to encrypt both outgoing messages and attachments, ensuring that only the intended recipient can read and access message content when using Office 365 accounts. Users can also digitally sign a message, which allows the recipients to both verify the identity of the sender and confirm that the message hasn't been tampered with. This capability is possible by utilizing certificates. For more information, see [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
 
