@@ -76,7 +76,7 @@ When you use a third-party (non-Microsoft) Certification Authority (CA):
   - SCEP certificate profiles
   - PKCS certificate profiles *(only supported with the [Digicert PKI Platform](certificates-digicert-configure.md))*
   - PKCS imported certificate profiles
- 
+
 ## Supported platforms and certificate profiles
 
 | Platform              | Trusted certificate profile | PKCS certificate profile | SCEP certificate profile | PKCS imported certificate profile  |
@@ -101,12 +101,11 @@ You’ll use this .cer file when you [create trusted certificate profiles](#crea
 
 ## Create trusted certificate profiles
 
-Create a trusted certificate profile before you can create a SCEP, PKCS, or PKCS imported certificate profile. Deploying a trusted certificate profile ensures each device recognizes the legitimacy of your CA. SCEP certificate profiles directly reference a trusted certificate profile. PKCS certificate profiles don’t directly reference the trusted certificate profile but do directly reference the server that hosts your CA. PKCS imported certificate profiles don't directly reference the trusted certificate profile but can use it on the device. Deploying a trusted certificate profile to devices ensures this trust is established. When a device doesn’t trust the root CA, the SCEP or PKCS certificate profile policy will fail.  
+Create a trusted certificate profile before you can create a SCEP, PKCS, or PKCS imported certificate profile. Deploying a trusted certificate profile ensures each device recognizes the legitimacy of your CA. SCEP certificate profiles directly reference a trusted certificate profile. PKCS certificate profiles don’t directly reference the trusted certificate profile but do directly reference the server that hosts your CA. PKCS imported certificate profiles don't directly reference the trusted certificate profile but can use it on the device. Deploying a trusted certificate profile to devices ensures this trust is established. When a device doesn’t trust the root CA, the SCEP or PKCS certificate profile policy will fail.
 
-Create a separate trusted certificate profile for each device platform you want to support, just as you'll do for SCEP, PKCS, and PKCS imported certificate profiles.  
+Create a separate trusted certificate profile for each device platform you want to support, just as you'll do for SCEP, PKCS, and PKCS imported certificate profiles.
 
-
-### To create a trusted certificate profile  
+### To create a trusted certificate profile
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -123,17 +122,18 @@ Create a separate trusted certificate profile for each device platform you want 
 
 4. Select **Settings**, and then browse to the trusted root CA certificate .cer file you exported for use with this certificate profile, and then select **OK**.
 
-5. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:  
+5. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
+
    - **Computer certificate store - Root**
    - **Computer certificate store - Intermediate**
    - **User certificate store - Intermediate**
 
 6. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
-The profile appears in the list of profiles on the *Devices - Configuration profiles* window, with a profile type of **Trusted certificate**.  Be sure to assign this profile to devices that will use SCEP or PKCS certificates. To assign the profile to groups, see [assign device profiles](../configuration/device-profile-assign.md).
+The profile appears in the list of profiles on the *Devices - Configuration profiles* window, with a profile type of **Trusted certificate**. Be sure to assign this profile to devices that will use SCEP or PKCS certificates. To assign the profile to groups, see [assign device profiles](../configuration/device-profile-assign.md).
 
-> [!NOTE]  
-> Android devices might display a message that a third party has installed a trusted certificate.  
+> [!NOTE]
+> Android devices might display a message that a third party has installed a trusted certificate.
 
 ## Additional resources
 
@@ -143,7 +143,8 @@ The profile appears in the list of profiles on the *Devices - Configuration prof
 
 ## Next steps
 
-Create SCEP, PKCS, or PKCS imported certificate profiles for each platform you want to use. To continue, see the following articles:  
+Create SCEP, PKCS, or PKCS imported certificate profiles for each platform you want to use. To continue, see the following articles:
+
 - [Configure infrastructure to support SCEP certificates with Intune](certificates-scep-configure.md)  
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)  
-- [Create a PKCS imported certificate profile](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [Create a PKCS imported certificate profile](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)
