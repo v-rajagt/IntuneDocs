@@ -99,8 +99,8 @@ Android device administrator (sometimes referred to "legacy" Android management 
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways:  
-- Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through the summer of 2020. This date is when the next major version of Android is expected to be released.   
-- Device administrator-managed devices that are running Android 10 or later after the summer of 2020 will no longer be able to be entirely managed.       
+- Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through the summer of 2020. This date is when the next major version of Android is expected to be released. This doesn't apply to Samsung devices. 
+- Device administrator-managed devices that are running Android 10 or later after the summer of 2020 will no longer be able to be entirely managed. This doesn't apply to Samsung devices.     
 - Device administrator-managed Android devices that remain on Android versions below Android 10 won't be impacted and can continue to be entirely managed with device administrator.    
 - For all devices running Android 10 and later, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This restriction impacts the following Intune features after a device updates to Android 10 or later:  
     - Network access control for VPN will no longer work.   
