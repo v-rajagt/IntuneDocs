@@ -46,7 +46,7 @@ A digitally signed message reassures the recipient that the message hasn't been 
 - Outlook only supports S/MIME on Office 365 accounts.
 - S/MIME must be configured for Office 365. For more information, see [How to configure S/MIME in Office 365](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/How-to-Configure-S-MIME-in-Office-365/ba-p/584516).
 - You must have a Certification Authority that can issue certificates that can be used for signing and encryption.
-- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](~/protect/certificates-configure.md#create-trusted-certificate-profiles.md).
+- Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](~/protect/certificates-configure.md#create-trusted-certificate-profiles).
 - Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](~/protect/certificates-imported-pfx-configure.md).
 - Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](~/protect/certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 - Devices must be MDM enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
