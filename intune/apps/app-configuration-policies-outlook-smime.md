@@ -51,6 +51,9 @@ A digitally signed message reassures the recipient that the message hasn't been 
 - Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](~/protect/certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 - Devices must be MDM enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
 
+> [!IMPORTANT]
+> You must download and install the updated PFX connector for Microsoft Intune to use S/MIME encryption certificates with Outlook on iOS.  
+
 ## S/MIME Support in Outlook
 Outlook supports S/MIME signing and encryption of messages using certificates. Many customers have separate signing and encryption certificates, as opposed to having a single certificate that supports both signing and encryption. Signing certificates are generally unique across an individual user’s enrolled devices, while encryption certificates are shared across an individual user’s enrolled devices. Often, users will have used S/MIME for years and will have used different encryption certificates over time as certificates are renewed. Encryption certificate histories, including their private keys, must be present on the user’s device so that email that may have been encrypted with any of those certificates in the past can be read. It is also possible to have a single certificate that supports signing and encryption.
 
