@@ -46,8 +46,10 @@ To review a policy report on the deployment status for the Windows 10 update rin
 
    1. In **Software updates** > **Windows 10 Update Rings**, choose the deployment ring to review.  
    2. In the **Monitor** section, choose from the following reports to view more detailed information about the update ring:  
-      - **Device status**  
-      - **User status**  
+      - **Device status**- This will show the device configuration status, for details see [Update deviceConfigurationDeviceStatus]( https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-update?view=graph-rest-1.0).
+      - **User status**- This will show the user name, status and last report date, for details see [List deviceConfigurationUserStatuses](https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-list?view=graph-rest-1.0)
+      - **End user update status**- This will show the Windows device update state, for details see [windowsUpdateState](https://docs.microsoft.com/graph/api/resources/intune-shared-windowsupdatestate?view=graph-rest-beta).
+
 
 ## Use Update Compliance
 You can monitor Windows 10 update rollouts by using [Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor), a Windows Analytics solution. Update Compliance is offered through the Azure portal and is available free for devices that meet its [prerequisites](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#update-compliance-prerequisites).  
