@@ -134,12 +134,6 @@ Applies to:
 - macOS devices running 10.7 and newer
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### Device enrollment
-
-#### Windows Autopilot deployment reports<!-- 3856172 -->
-A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). 
-
-<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
 #### Edit device name value for Autopilot devices<!-- 2640074 -->
