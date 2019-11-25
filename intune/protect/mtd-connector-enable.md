@@ -100,6 +100,6 @@ To learn more about using Mobile Threat Defense connectors for Intune App Protec
 > [!TIP]
 > You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense pane.
 
-## Next Steps
+## Next steps
 
 - [Create Mobile Threat Defense (MTD) app protection policy with Intune](~/protect/mtd-app-protection-policy.md).
