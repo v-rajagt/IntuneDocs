@@ -133,7 +133,6 @@ For more information on this feature, see [Add a property list file to macOS dev
 Applies to:
 - macOS devices running 10.7 and newer
 
-
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
