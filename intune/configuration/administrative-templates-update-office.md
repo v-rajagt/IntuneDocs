@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Use Update Channel and Target Version settings to update Office 365 with Microsoft Intune Administrative Templates
 
-In Intune, you can use [Windows 10 templates to configure group policy settings](administrative-templates-windows.md). This article shows you how to update Office 365 using an administrative template in Intune. It also gives guidance on confirming your policies apply successfully. This information also help when troubleshooting.
+In Intune, you can use [Windows 10 templates to configure group policy settings](administrative-templates-windows.md). This article shows you how to update Office 365 using an administrative template in Intune. It also gives guidance on confirming your policies apply successfully. This information also helps when troubleshooting.
 
 In this scenario, you create an administrative template in Intune that updates Office 365 on your devices.
 
