@@ -43,13 +43,13 @@ Applies to:
 
 Be sure to [enable Office365 ProPlus Automatic Updates](https://docs.microsoft.com/deployoffice/configure-update-settings-for-office-365-proplus) for your Office apps. You can do this using group policy, or the Intune Office 2016 ADMX template:
 
-![In Intune Administrative Template, set the Enable Automatic Updates setting for Office](./media/administrative-templates-update-office/admx-enable-automatic-update.png)
+![In Intune Administrative Template, set the Enable Automatic Updates setting for Office](./media/administrative-templates-update-office/admx-enable-automatic-updates.png)
 
 ## Set the Update Channel in the Intune administrative template
 
 1. In your [Intune administrative template](administrative-templates-windows.md#create-a-template), go to the **Update Channel** setting, and enter the channel you want. For example, choose `Semi-Annual Channel`:
 
-    ![In Intune Administrative Template, set the Update Channel setting for Office](./media/administrative-templates-update-office/administrative-template-update-channel-sample-setting.png)
+    ![In Intune Administrative Template, set the Update Channel setting for Office](./media/administrative-templates-update-office/admx-enable-update-channel-setting.png)
 
     > [!NOTE]
     > It's recommended to update more frequently. Semi-annually is only used as an example.
@@ -76,16 +76,16 @@ After you assign the policy and the device syncs, you can confirm the policy is 
 
     Looking at the following example, you see `L_UpdateBranch` has a value similar to `<enabled /><data id="L_UpdateBranchID" value="Deferred" />`. This value means it's set to Semi-Annual Channel:
 
-    ![Administrative template L_Updatebranch registry key example](./media/administrative-templates-update-office/administrative-template-l-update-branch-registry-key.png)
+    ![Administrative template L_Updatebranch registry key example](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
     > [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) lists the values, and what they mean. The registry values are based on the distribution channel selected:
     >
-    >- `Monthly Channel                - value="Current"`
-    >- `Monthly Channel (Targeted)     - value="Current"*`
-    >- `Semi-Annual Channel            - value="Current"`
-    >- `Semi-Annual Channel (Targeted) - value="FirstReleaseDeferred"`
-    >- `Insider Fast                   - value="InsiderFast"`
+    >- Monthly Channel                - value="Current"
+    >- Monthly Channel (Targeted)     - value="Current"
+    >- Semi-Annual Channel            - value="Current"
+    >- Semi-Annual Channel (Targeted) - value="FirstReleaseDeferred"
+    >- Insider Fast                   - value="InsiderFast"
 
 At this point, the Intune policy is successfully applied to the device.
 
@@ -103,7 +103,7 @@ At this point, the Intune policy is successfully applied to the device.
 
     Looking at the following example, you see `UpdateChannel` is set to `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`, which is **monthly**:
 
-    ![Administrative template Office UpdateChannel registry key example](./media/administrative-templates-update-office/administrative-template-update-channel-office-registry-key.png)
+    ![Administrative template Office UpdateChannel registry key example](./media/administrative-templates-update-office/admx-update-channel-office-registry-key.png)
 
     This example means the policy isn't applied yet, as it's still set to **monthly**, instead of **semi-annual**.
 
@@ -124,7 +124,7 @@ To test your policy, you can force the policy settings on the device. The follow
     2. Expand **Task Scheduler Library** > **Microsoft** > **Office**.
     3. Select **Office Automatic Updates 2.0** > **Run**:
 
-        ![Open Task Schedule, and run Office Automatic Updates](./media/administrative-templates-update-office/task-scheduler-office-automatic-updates.png)
+        ![Open Task Schedule, and run Office Automatic Updates](./media/administrative-templates-update-office/admx-task-scheduler-office-automatic-updates.png)
 
         Wait for the task to finish, which can take several minutes.
 
@@ -132,11 +132,7 @@ To test your policy, you can force the policy settings on the device. The follow
 
     It should be updated with the value set in the policy. In our example, the value should be set to `http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114`.
 
-At this point, the Office update channel is successfully changed on the device.
-
-You can also open an Office 365 app for a user that receives this update. For this user, the app shows Office updates are downloading:
-
-![Sample user account that's downloading Office updates after updating the update channel](./media/administrative-templates-update-office/office-app-shows-downloading-updates.png)
+At this point, the Office update channel is successfully changed on the device. You can open an Office 365 app for a user that receives this update to check status.
 
 ## Force the Office synchronization to update account information  
 
@@ -150,7 +146,7 @@ If you want to do more, you can force Office to get the latest version update. T
 
     Your **Target version** setting looks similar to the following setting:
 
-    ![In Intune Administrative Template, set the Target Version setting for Office](./media/administrative-templates-update-office/administrative-template-target-version-sample-setting.png)
+    ![In Intune Administrative Template, set the Target Version setting for Office](./media/administrative-templates-update-office/admx-enable-target-version-setting.png)
 
 > [!IMPORTANT]
 >
@@ -177,9 +173,7 @@ Consider using these steps to test your policy before deploying the policy to al
 
           ![Check the version section in the version descriptor Office XML file](./media/administrative-templates-update-office/office-version-descriptor-xml-example.png)
 
-4. After the update is installed, the Office app should show the new version (possibly in the **Account** menu):
-
-    ![In the Office app, go to the Account menu > About, to see the version installed](./media/administrative-templates-update-office/excel-account-menu-about-version.png)
+4. After the update is installed, the Office app should show the new version (for example, on the **Account** menu)
 
 ## Next steps
 
