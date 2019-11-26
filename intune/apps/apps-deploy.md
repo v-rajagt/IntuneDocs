@@ -59,8 +59,8 @@ The following table lists the various options for assigning apps to users and de
 
 ## Assign an app
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** pane, select **Client apps**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Select **Apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the **Apps** pane, select the app you want to assign.
 6. In the **Manage** section of the menu, select **Assignments**.

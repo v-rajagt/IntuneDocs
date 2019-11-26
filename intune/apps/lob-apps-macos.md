@@ -75,10 +75,8 @@ You must download an external tool, mark the downloaded tool as an executable, a
 
 ## Step 1 - Specify the software setup file
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps**.
-4. In the **Client apps** workload, choose **Manage** > **Apps**.
-5. Above the list of apps, choose **Add**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Select **Apps** > **All apps** > **Add**.
 6. In the **Add App** pane, choose **Line-of-business app**.
 
 ## Step 2 - Configure the app package file

@@ -42,9 +42,9 @@ A line-of-business (LOB) app is an app that you add to Intune from an app instal
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In the **Intune** pane, select **Client apps**.
-3. In the **Client apps** workload, select **Manage** > **Apps**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps**.
+3. In the **Apps** workload, select **Manage** > **Apps**.
 4. Above the list of apps, select **Add**.
 5. In the **Add app** pane, select **Line-of-business app**.
 
