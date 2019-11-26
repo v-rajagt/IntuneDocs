@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -93,4 +93,4 @@ The profile is created, and shown in the profiles list (**Device configuration**
 
 The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status.](device-profile-monitor.md).
 
-[Troubles Wi-Fi profiles in Intune](troubleshoot-wi-fi-profiles-in-microsoft-intune.md).
+[Troubles Wi-Fi profiles in Intune](troubleshoot-wi-fi-profiles.md).

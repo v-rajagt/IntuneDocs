@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -49,11 +49,13 @@ This scenario uses a Nokia 6.1 device. Before the Wi-Fi profile is installed on 
 
 1. End users receive a notification to install the Trusted Root certificate profile:
 
-    ![Sample Company Portal app notification on Android to install Trusted Root certificate profile](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-end-user-company-portal-trusted-root.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sample Company Portal app notification on Android to install Trusted Root certificate profile](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-trusted-root.png)
 
 2. The next notification prompts to install the SCEP certificate profile:
 
-    ![Sample Company Portal app notification on Android to install SCEP certificate profile](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-end-user-company-portal-scep-certificate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sample Company Portal app notification on Android to install SCEP certificate profile](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-scep-certificate.png)
 
     > [!TIP]
     > When using a device administrator-managed Android device, there may be multiple certificates listed. When a certificate profile is revoked or removed, the certificate stays on the device. In this scenario, select the newest certificate. It's usually the last certificate shown in the list.
@@ -62,11 +64,13 @@ This scenario uses a Nokia 6.1 device. Before the Wi-Fi profile is installed on 
 
 3. Next, users receive a notification to install the Wi-Fi profile:
 
-    ![Sample Company Portal app notification on Android to install SCEP certificate profile](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-end-user-install-wifi-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sample Company Portal app notification on Android to install SCEP certificate profile](./media/troubleshoot-wi-fi-profiles/android-end-user-install-wifi-profile.png)
 
 4. When complete, the Wi-Fi connection is shown as a saved network:
 
-    ![Wi-Fi connection shows as a saved network](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-end-user-saved-networks.png)
+    > [!div class="mx-imgBorder"]
+    > ![Wi-Fi connection shows as a saved network](./media/troubleshoot-wi-fi-profiles/android-end-user-saved-networks.png)
 
 ### Review Company Portal app logs
 
@@ -74,7 +78,8 @@ On Android, the **Omadmlog.log** file details the activities of the Wi-Fi profil
 
 In the following example, use [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) to read the logs, and search for “wifimgr”:
 
-![Wi-Fi connection shows as a saved network](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-cmtrace-filter-wifimgr.png)
+> [!div class="mx-imgBorder"]
+> ![Wi-Fi connection shows as a saved network](./media/troubleshoot-wi-fi-profiles/android-cmtrace-filter-wifimgr.png)
 
 The following log shows your search results, and shows the Wi-Fi profile successfully applied:
 
@@ -103,9 +108,11 @@ The following log shows your search results, and shows the Wi-Fi profile success
 
 After the Wi-Fi profile is installed on the device, it's shown in the **Management Profile**:
 
-![Management Profile on iOS device](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/ios-management-profile.png)
+> [!div class="mx-imgBorder"]
+> ![Management Profile on iOS device](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
-![Wi-Fi connection shows as a Wi-Fi network on iOS device](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/ios-wifi-connection-in-management-profile.png)
+> [!div class="mx-imgBorder"]
+> ![Wi-Fi connection shows as a Wi-Fi network on iOS device](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
 ### Review the iOS console and device logs
 
@@ -114,7 +121,8 @@ On iOS devices, the Company Portal app log doesn't include information about Wi-
 1. Connect the iOS device to Mac. Go to **Applications** > **Utilities**, and open the Console app.
 2. Under **Action**, select **Include Info Messages** and **Include Debug Messages**:
 
-    ![Include Info Messages and Include Debug Messages in iOS console app](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/ios-console-app-include-info-messages-debug-messages.png)
+    > [!div class="mx-imgBorder"]
+    > ![Include Info Messages and Include Debug Messages in iOS console app](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. Reproduce the scenario, and save the logs to a text file:
 
@@ -134,15 +142,18 @@ On iOS devices, the Company Portal app log doesn't include information about Wi-
 
 After the Wi-Fi profile is installed on the device, go to **Settings** > **Accounts** > **Access work or school**. Select your account > **Info**:
 
-![Access work or school, and select Info on Windows device](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-access-work-school-info.png)
+> [!div class="mx-imgBorder"]
+> ![Access work or school, and select Info on Windows device](./media/troubleshoot-wi-fi-profiles/windows-access-work-school-info.png)
 
 In **Areas managed by Microsoft**, **WiFi** is shown:
 
-![In areas managed by Microsoft, see that WiFi is listed on Windows](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-wifi-areas-managed-by-microsoft.png)
+> [!div class="mx-imgBorder"]
+> ![In areas managed by Microsoft, see that WiFi is listed on Windows](./media/troubleshoot-wi-fi-profiles/windows-wifi-areas-managed-by-microsoft.png)
 
 To see the Wi-Fi connection, go to **Settings** > **Network & Internet**  > **Wi-Fi**:
 
-![On Windows, see the Wi-Fi connection as a known network in settings](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-wifi-connection-known-networks.png)
+> [!div class="mx-imgBorder"]
+> ![On Windows, see the Wi-Fi connection as a known network in settings](./media/troubleshoot-wi-fi-profiles/windows-wifi-connection-known-networks.png)
 
 ### Review event viewer logs
 
@@ -190,7 +201,8 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   4. A window opens that shows the path to the log files. Select **Export**.
   5. Go to the `\Users\Public\Documents\MDMDiagnostics` path, and view the report:
 
-      ![Sample MDM Diagnostic Information that shows WiFi profile configuration on Windows 10 devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-mdm-diagnostic-info.png)
+      > [!div class="mx-imgBorder"]
+      > ![Sample MDM Diagnostic Information that shows WiFi profile configuration on Windows 10 devices](./media/troubleshoot-wi-fi-profiles/windows-mdm-diagnostic-info.png)
 
   > [!TIP]
   > For more information, see [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
@@ -219,20 +231,24 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
     The following sample shows the SCEP profile entered the **Any Purpose** EKU. But, it's not entered in the Certificate Template on the certificate authority (CA). To fix the issue, add the **Any Purpose** option to the certificate template. Or, remove the **Any Purpose** option from the SCEP profile.
 
-    ![On Android, add Any Purpose to certificate template on the certificate authority](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-add-any-purpose-eku.png)
+    > [!div class="mx-imgBorder"]
+    > ![On Android, add Any Purpose to certificate template on the certificate authority](./media/troubleshoot-wi-fi-profiles/android-add-any-purpose-eku.png)
 
-    ![On Android, add Any Purpose to SCEP certificate configuration profile in Intune](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-any-purpose-scep-device-config-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![On Android, add Any Purpose to SCEP certificate configuration profile in Intune](./media/troubleshoot-wi-fi-profiles/android-any-purpose-scep-device-config-profile.png)
 
   - Confirm that all required certificates in the complete certificate chain are on the Android device. Otherwise, the Wi-Fi profile can't be installed on the device. For more information, see [Missing intermediate certificate authority](https://developer.android.com/training/articles/security-ssl#MissingCa) (opens Android's web site).
   - Filter Omadmlog with keywords to look for information, such as which certificate is used in the Wi-Fi profile, and if the profile successfully applied.
 
     For example, use [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) to read the logs. Use the search string to filter “wifimgr”:
 
-    ![Filter CMTrace to look for WiFiMgr configuration profiles on Android devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/cmtrace-filter-wifimgr.png)
+    > [!div class="mx-imgBorder"]
+    > ![Filter CMTrace to look for WiFiMgr configuration profiles on Android devices](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)
 
     The output looks similar to the following log:
 
-    ![Sample CMTrace log output that shows WiFi Intune configuration profile successfully applied on devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/cmtrace-sample-log-output.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sample CMTrace log output that shows WiFi Intune configuration profile successfully applied on devices](./media/troubleshoot-wi-fi-profiles/cmtrace-sample-log-output.png)
 
     If you see an error in the log, copy the time stamp of the error and unfilter the log. Then, use the “find” option with the time stamp to see what happened right before the error.
 
