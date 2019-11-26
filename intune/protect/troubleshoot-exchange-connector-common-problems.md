@@ -74,7 +74,7 @@ Review the following sections to troubleshoot email notification issues.
       ![Nslookup results](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   You can also test the Autodiscover service from the internet at https://testconnectivity.microsoft.com. Or test it from a local domain by using the Microsoft Connectivity Analyzer tool. For more information, see [Microsoft Connectivity Analyzer tool](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)).
+   You can also test the Autodiscover service from the internet at https://testconnectivity.microsoft.com. Or test it from a local domain by using the Microsoft Connectivity Analyzer tool. For more information, see [Microsoft Connectivity Analyzer tool](https://docs.microsoft.com/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)).
 
 
 ### Check Autodiscovery
@@ -101,4 +101,4 @@ For help with specific errors, try [Resolve common errors for the Intune Exchang
 To get support, or to get help from the Intune community:
 
 - See [Get support](../fundamentals/get-support.md) to use the Intune console to troubleshoot the issue or to open a support case with Microsoft.
-- Post your issue in the [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
+- Post your issue in the [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod).
