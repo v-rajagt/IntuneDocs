@@ -58,7 +58,7 @@ This scenario uses a Nokia 6.1 device. Before the Wi-Fi profile is installed on 
     > [!TIP]
     > When using a device administrator-managed Android device, there may be multiple certificates listed. When a certificate profile is revoked or removed, the certificate stays on the device. In this scenario, select the newest certificate. It's usually the last certificate shown in the list.
     >
-    > This situation doesn’t occur on Android Enterprise and Samsung Knox devices. For more information, see [Manage Android work profile devices](../enrollment/android-enterprise-overview.md) and [Remove SCEP and PKCS certificates](../protect/remove-certificates#android-knox-devices.md).
+    > This situation doesn’t occur on Android Enterprise and Samsung Knox devices. For more information, see [Manage Android work profile devices](../enrollment/android-enterprise-overview.md) and [Remove SCEP and PKCS certificates](../protect/remove-certificates.md#android-knox-devices).
 
 3. Next, users receive a notification to install the Wi-Fi profile:
 
@@ -182,13 +182,26 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - If the Wi-Fi profile is linked to the Trusted Root and SCEP profiles, confirm both profiles are deployed to the device. The Wi-Fi profile has a dependency on these profiles.
 
+- On Windows 10 and newer devices, review the MDM Diagnostic Information log:
+
+  1. Go to **Settings** > **Accounts** > **Access work or school**.
+  2. Select your work or school account > **Info**.
+  3. At the bottom of the **Settings** page, select **Create report**.
+  4. A window opens that shows the path to the log files. Select **Export**.
+  5. Go to the `\Users\Public\Documents\MDMDiagnostics` path, and view the report:
+
+      ![Sample MDM Diagnostic Information that shows WiFi profile configuration on Windows 10 devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-mdm-diagnostic-info.png)
+
+  > [!TIP]
+  > For more information, see [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
+
 - On Android devices, if the Trusted Root and SCEP profiles aren't installed on the device, you see the following entry in the Company Portal app Omadmlog file:
 
   ``` log
   2019-08-01T19:18:13.5120000    INFO    com.microsoft.omadm.platforms.android.wifimgr.WifiProfileManager    15118    04105    Skipping Wifi profile <profile ID> because it is pending certificates.
   ```
 
-  - When the Trusted Root and SCEP profiles are on the device and compliant, the Wi-Fi profile might not be on the device. This issue happens when the **CertificateSelector** provider from the Company Portal app doesn't find a certificate that matches the specified criteria. The specific criteria can be in the Certificate Template or in the SCEP profile.
+  - When the Trusted Root and SCEP profiles are on the Android device and compliant, the Wi-Fi profile might not be on the device. This issue happens when the **CertificateSelector** provider from the Company Portal app doesn't find a certificate that matches the specified criteria. The specific criteria can be in the Certificate Template or in the SCEP profile.
 
     If the matching certificate isn't found, the certificates on the device aren't installed. The Wi-Fi profile isn't applied because it doesn’t have the correct certificate. In this scenario, you see the following entry in the Company Portal app Omadmlog file:
 
@@ -210,7 +223,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
     ![On Android, add Any Purpose to SCEP certificate configuration profile in Intune](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/android-any-purpose-scep-device-config-profile.png)
 
-  - Confirm that all required certificates in the complete certificate chain are on the device. Otherwise, the Wi-Fi profile can't be installed on the device. For more information, see [Missing intermediate certificate authority](https://developer.android.com/training/articles/security-ssl#MissingCa) (opens Android's web site).
+  - Confirm that all required certificates in the complete certificate chain are on the Android device. Otherwise, the Wi-Fi profile can't be installed on the device. For more information, see [Missing intermediate certificate authority](https://developer.android.com/training/articles/security-ssl#MissingCa) (opens Android's web site).
   - Filter Omadmlog with keywords to look for information, such as which certificate is used in the Wi-Fi profile, and if the profile successfully applied.
 
     For example, use [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) to read the logs. Use the search string to filter “wifimgr”:
@@ -222,19 +235,6 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
     ![Sample CMTrace log output that shows WiFi Intune configuration profile successfully applied on devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/cmtrace-sample-log-output.png)
 
     If you see an error in the log, copy the time stamp of the error and unfilter the log. Then, use the “find” option with the time stamp to see what happened right before the error.
-
-- On Windows 10 and newer devices, review the MDM Diagnostic Information log:
-
-  1. Go to **Settings** > **Accounts** > **Access work or school**.
-  2. Select your work or school account > **Info**.
-  3. At the bottom of the **Settings** page, select **Create report**.
-  4. A window opens that shows the path to the log files. Select **Export**.
-  5. Go to the `\Users\Public\Documents\MDMDiagnostics` path, and view the report:
-
-      ![Sample MDM Diagnostic Information that shows WiFi profile configuration on Windows 10 devices](./media/troubleshoot-wi-fi-profiles-in-microsoft-intune/windows-mdm-diagnostic-info.png)
-
-  > [!TIP]
-  > For more information, see [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
 
 ### Issue 2: The Wi-Fi profile is deployed to the device, but the device can't connect to the network
 
