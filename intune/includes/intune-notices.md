@@ -11,6 +11,21 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
+### Updated support statement for 'Adobe Acrobat Reader for Intune' mobile app<!--5746776-->
+We shared in MC188653 at the end of August, that the Adobe Acrobat Reader for Intune mobile app was reaching end-of-life on Dec 1, 2019 and that Adobe was planning on supporting Intune’s app protection policies within their main Acrobat Reader app. Since then, we received customer feedback that we needed to provide more time to continue allowing IT admins to target, and end users to begin using Adobe Acrobat Reader for Intune. Given the high usage of Adobe Acrobat Reader for Intune on end user devices and its importance in enterprise scenarios, we want to make sure any experience meets your organization's app protection needs. 
+
+While we still recommend targeting the general Acrobat Reader mobile app in your policies since the Acrobat Reader mobile app supports App Protection Policies and has integrated the Intune SDK, the Adobe Acrobat Reader for Intune app will continue to be supported until March 31, 2020. 
+
+#### How does this affect me?
+You are receiving this message because our reporting indicates one or more policies in your organization are targeting the Adobe Acrobat Reader for Intune application and/or you may have received our previous EOL communication. 
+
+#### What do I need to do to prepare for this change?
+Let your end users and helpdesk know of this change. You can use the [Company Portal's support information functionality](../apps/company-portal-app.md#support-information) to establish a channel for Intune-related questions.
+
+#### Additional Information
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
+
 ### End Support for Windows Phone 8.1<!--3544909-->
 Microsoft mainstream support for Windows Phone 8.1 ended in July 2017, and extended support ended in June 2019. The Company Portal app for Windows Phone 8.1 has been in sustain mode since October 2017. Microsoft Intune will now end support on February 20, 2020 for Windows Phone 8.1.
 
