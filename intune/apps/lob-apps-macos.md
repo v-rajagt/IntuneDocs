@@ -76,8 +76,8 @@ You must download an external tool, mark the downloaded tool as an executable, a
 ## Step 1 - Specify the software setup file
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps** > **All apps** > **Add**.
-6. In the **Add App** pane, choose **Line-of-business app**.
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add app** pane, select **Line-of-business app** as the **App type**.
 
 ## Step 2 - Configure the app package file
 

@@ -43,10 +43,8 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 ## Step 1: Specify the software setup file
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps**.
-4. In the **Apps** workload, select **Manage** > **Apps**.
-5. Above the list of apps, select **Add**.
-6. In the **Add App** pane, select **Line-of-business app**.
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add App** pane, select **Line-of-business app** as the **App type**.
 
 ## Step 2: Configure the app package file
 

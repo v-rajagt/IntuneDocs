@@ -54,7 +54,7 @@ Once you have selected the included groups for your application configuration po
 
 ## Create an app configuration policy
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Choose the **Apps** > **App configuration policies** > **Add**.
 5. Set the following details:
     - **Name** - The name of the profile that appears in the Azure portal.

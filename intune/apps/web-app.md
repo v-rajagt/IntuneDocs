@@ -46,12 +46,10 @@ Intune creates a shortcut to the web app on the user's device. For iOS devices, 
 To add an app to Intune as a shortcut to an app on the web, do the following:
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps**.
-4. In the **Apps** workload pane, under **Manage**, select **Apps**.
-5. In the **Apps** pane, select **Add**.
-6. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
-7. Select **Configure**.
-8. In the **App information** pane, add the following information:
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
+4. Select **Configure**.
+5. In the **App information** pane, add the following information:
     - **Name**:  Enter the name of the app as it is to be displayed in the company portal. 
 
         > [!NOTE]
@@ -64,8 +62,8 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
     - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
     - **Require a managed browser to open this link**: Select this option to assign to your users a link to a website or web app that they can open in the Intune managed browser. This browser must be installed on their device.
     - **Logo**: Upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
-9. Select **OK**.
-10. In the **Add app** pane, select **Add**.
+6. Select **OK**.
+7. In the **Add app** pane, select **Add**.
 
 > [!Note]
 > Users must add the Intune widget to their home screen to display web apps that have been assigned to Android devices.

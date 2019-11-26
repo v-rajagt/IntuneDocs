@@ -98,7 +98,7 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Conditional Access** > **New policy**.
 3. Add the policy **Name**. 
-4. In the **Assignments** section, select **Conditions** > **Apps**. The **Apps** pane is displayed.
+4. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** pane is displayed.
 5. Click **Yes** under **Configure** to apply the policy to specific client apps.
 6. Verify that **Browser** is selected as a client app.
 

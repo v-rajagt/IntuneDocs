@@ -60,12 +60,11 @@ The following table lists the various options for assigning apps to users and de
 ## Assign an app
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps**.
-4. In the **Manage** section of the menu, select **Apps**.
-5. In the **Apps** pane, select the app you want to assign.
-6. In the **Manage** section of the menu, select **Assignments**.
-7. Select **Add Group** to open the **Add group** pane that is related to the app.
-8. For the specific app, select an **assignment type**:
+2. Select **Apps** > **All apps**.
+3. In the **Apps** pane, select the app you want to assign.
+4. In the **Manage** section of the menu, select **Assignments**.
+5. Select **Add Group** to open the **Add group** pane that is related to the app.
+6. For the specific app, select an **assignment type**:
    - **Available for enrolled devices**: Assign the app to groups of users who can install the app from the Company Portal app or website.
    - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Users must be assigned an Intune license, see [Intune Licenses](../fundamentals/licenses.md).
    - **Required**: The app is installed on devices in the selected groups. Some platforms may have additional prompts for the end user to acknowledge before app installation begins.
@@ -80,13 +79,13 @@ The following table lists the various options for assigning apps to users and de
      >
      > For **Available for enrolled devices**: The app is only displayed as available if the user logged into the Company Portal is the primary user who enrolled the device and the app is applicable to the device.
 
-9. To select the groups of users that are affected by this app assignment, select **Included Groups**.
-10. After you have selected one or more groups to include, select **Select**.
-11. In the **Assign** pane, select **OK** to complete the included groups selection.
-12. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
-13. If you have chosen to exclude any groups, in **Select groups**, select **Select**.
-14. In the **Add group** pane, select **OK**.
-15. In the app **Assignments** pane, select **Save**.
+7. To select the groups of users that are affected by this app assignment, select **Included Groups**.
+8. After you have selected one or more groups to include, select **Select**.
+9. In the **Assign** pane, select **OK** to complete the included groups selection.
+10. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
+11. If you have chosen to exclude any groups, in **Select groups**, select **Select**.
+12. In the **Add group** pane, select **OK**.
+13. In the app **Assignments** pane, select **Save**.
 
 The app is now assigned to the groups that you selected. For more information about including and excluding app assignments, see [Include and exclude app assignments](apps-inc-exl-assignments.md).
 

@@ -54,10 +54,8 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 ## Get started
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps**.
-4. In the **Apps** workload pane, under **Manage**, select **Apps**.
-5. Select **Add**.
-6. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
 
 ## Select settings format
 

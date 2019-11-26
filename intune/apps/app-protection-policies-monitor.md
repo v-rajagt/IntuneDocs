@@ -47,8 +47,7 @@ The retention period for app protection data is 90 days. Any app instances that 
 ## Summary view
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Select **Apps**.
-4. To see the summary view, in the **Apps** workload, under **Monitor**, choose **App protection status**.
+3. Select **Apps** > **Monitor** > **App protection status**.
 
    ![Screenshot of the summary tile on the Intune mobile application management pane](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
