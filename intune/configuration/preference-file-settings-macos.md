@@ -63,3 +63,5 @@ Select **OK** > **Create** to save your changes. The profile is created and show
 ## Next steps
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+For help with configuring a prefrence file for Edge in MEM, you can go here - https://docs.microsoft.com/en-us/deployedge/configure-microsoft-edge-on-mac
