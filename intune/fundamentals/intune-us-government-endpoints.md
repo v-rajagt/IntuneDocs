@@ -63,7 +63,9 @@ The following tables list the ports and services that the Intune client accesses
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
 ## Windows Push Notification Services
-On Intune-managed devices managed by using Mobile Device Management (MDM), Windows PUsh Notification Services (WNS) is required for device actions and other immediate activities.
+On Intune-managed devices managed by using Mobile Device Management (MDM), Windows PUsh Notification Services (WNS) is required for device actions and other immediate activities. For more information, see [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
+## Apple device network information
 
 |**Used for**|**Hostname (IP address/subnet)**|**Protocol**|**Port**|
 |------------|-----------|------------|-----------|
@@ -72,7 +74,7 @@ On Intune-managed devices managed by using Mobile Device Management (MDM), Windo
 |Various functions including accessing the internet, iTunes store, macOS app store, iCloud, messaging, etc.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 or 443|
 
 For more information, see:
-- [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
 - [TCP and UDP ports used by Apple software products](https://support.apple.com/HT202944)
 - [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/HT201999)
 - [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/HT203609)
