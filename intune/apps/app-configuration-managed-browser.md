@@ -313,7 +313,7 @@ Using the procedure to create a Microsoft Edge or Managed Browser app configurat
 
 | Key                                                                | Value                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
-| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** blocks these soft transitions from occuring |
+| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** blocks these soft transitions from occurring |
 
 ## How to access to managed app logs using the Managed Browser on iOS
 

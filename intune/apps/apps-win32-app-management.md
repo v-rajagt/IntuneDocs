@@ -162,7 +162,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
     - **Determine behavior based on return codes**: Choose this option to restart the device based on the [return codes](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes) configuration settings.
     - **No specific action**: Choose this option to suppress device restarts during the app installation of MSI-based apps.
     - **App install may force a device restart**: Choose this option to allow the app installation to complete without suppressing restarts.
-    - **Intune will force a mandatory device restart**: Choose this option to always restart the device after a successfull app installation.
+    - **Intune will force a mandatory device restart**: Choose this option to always restart the device after a successful app installation.
 
 6. When you're finished, select **OK**.
 
@@ -359,7 +359,7 @@ Set the app availability based on a date and time for a required app using the f
 10. set the **App availability** to **A specific date and time** and select your date and time. This date and time specifies when the app is downloaded to the end users device. 
 11. Set the **App installation deadline** to **A specific date and time** and select your date and time. This date and time specifies when the app is installed on the end users device. When more than one assignment is made for the same user or device, the app installation deadline time is picked based on the earliest time possible.
 12. Click **Enabled** next to the **Restart grace period**. The restart grace period starts as soon as the app install has been completed on the device.​ When disabled, the device can restart without warning. <br>You can customize the following options:
-    - **Device restart grace period (minutes)**: The deault value is 1440 minutes (24 hours). This value can be a maximum of 2 weeks.
+    - **Device restart grace period (minutes)**: The default value is 1440 minutes (24 hours). This value can be a maximum of 2 weeks.
     - **Select when to display the restart countdown dialog box before the restart occurs (minutes)**: The default value is 15 minutes.
     - **Allow user to snooze the restart notification**: You can choose **Yes** or **No**.
         - **Select the snooze duration (minutes)**: The default value is 240 minutes (4 hours). The snooze value cannot be more than reboot grace period.

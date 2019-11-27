@@ -184,10 +184,9 @@ Additionally, Intune supports the following token types in the property list:
 
 DEP (Apple's Device Enrollment Program) enrollments are not compatible with the app store version of the Company Portal app. However, you can configure the Company Portal app to support iOS DEP devices using the following steps.
 
-1. In Intune on Azure portal:
-    - Add the Intune Company Portal if necessary, by going to **Intune** > **Apps** > **All apps** > **Add**.
-    - Go to **Apps** > **App configuration policies**, to create an app configuration policy for the Company Portal app.
-2. Create an app configuration policy with the XML below. More information on how to create an app configuration policy and enter XML data can be found at [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md) or for hybrid MDM, [Apply settings to iOS apps with app configuration policies in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. In Intune, add the Intune Company Portal app if necessary, by going to **Intune** > **Apps** > **All apps** > **Add**.
+2. Go to **Apps** > **App configuration policies**, to create an app configuration policy for the Company Portal app.
+3. Create an app configuration policy with the XML below. More information on how to create an app configuration policy and enter XML data can be found at [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md) or for hybrid MDM, [Apply settings to iOS apps with app configuration policies in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

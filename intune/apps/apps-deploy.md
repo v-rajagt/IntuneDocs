@@ -91,7 +91,7 @@ The app is now assigned to the groups that you selected. For more information ab
 
 ## How conflicts between app intents are resolved
 
-A single group is prevented from being targetted for multiple app assignment intents, however if a user or a device is a member of multiple groups that are each assigned with different intents it will result in a conflict. Creating assignment conflicts for applications is not recommended.
+A single group is prevented from being targeted for multiple app assignment intents, however if a user or a device is a member of multiple groups that are each assigned with different intents it will result in a conflict. Creating assignment conflicts for applications is not recommended.
 The information in the following table can help you understand the resulting intent when a conflict occurs:
 
 | Group 1 intent | Group 2 intent | Resulting intent |
@@ -145,7 +145,7 @@ Default values for the setting are prepopulated for new assignments as follows:
 | Line-of-business app | Yes |
 | Store app | No |
 | VPP app | No |
-| Buit-in app | No |
+| Built-in app | No |
 
 >[!NOTE]
 >**"Available" assignment types:** If you're updating this setting for "available for enrolled devices" or "available with or without enrollment" groups, users who already have the managed app won't get the updated setting until they sync the device with Intune and re-install the app. 
