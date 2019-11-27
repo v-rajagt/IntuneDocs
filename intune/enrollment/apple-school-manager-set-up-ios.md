@@ -52,7 +52,7 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 
 ### Step 1. Download the Intune public key certificate required to create an Apple token
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > **Add**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **iOS** > **ioS enrollment** > **Enrollment Program Tokens** > **Add**.
 
    ![Get an enrollment program token.](./media/apple-school-manager-set-up-ios/image01.png)
 
