@@ -36,6 +36,8 @@ This article lists and describes the different settings you can control on Andro
 
 ## Device owner only
 
+These settings will apply to Android Enterprise enrollment types where Intune controls the entire device such as Android Enterprise Fully Managed or Dedicated.
+
 ### General settings
 
 - **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. It also prevents the content from being shown on display devices that don't have a secure video output. **Not configured** lets the user capture the screen contents as an image.
@@ -268,6 +270,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
 
 ## Work profile only
+
+These settings will apply to Android Enterprise enrollment types where Intune controls only the Work Profile, such as Android Enterprise Work profile enrollment in a BYOD scenario. 
 
 ### Work profile settings
 
