@@ -67,7 +67,7 @@ On Intune-managed devices managed by using Mobile Device Management (MDM), Windo
 
 |**Used for**|**Hostname (IP address/subnet)**|**Protocol**|**Port**|
 |------------|-----------|------------|-----------|
-|Retrieving and displaying content from Apple servers|itunes.apple.com|\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|Retrieving and displaying content from Apple servers|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
 |Communication with APNS servers|#-courier.push.apple.com<br>'#' is a random number from 0 to 50.|TCP|5223 and 443|
 |Various functions including accessing the internet, iTunes store, macOS app store, iCloud, messaging, etc.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 or 443|
 
