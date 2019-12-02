@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -64,4 +64,4 @@ Select **OK** > **Create** to save your changes. The profile is created and show
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-For help with configuring a prefrence file for Edge in MEM, you can go here - https://docs.microsoft.com/en-us/deployedge/configure-microsoft-edge-on-mac
+For more information on preference files for Microsoft Edge, see [Configure Microsoft Edge policy settings on macOS](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac).
