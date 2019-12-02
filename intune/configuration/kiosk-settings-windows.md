@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -89,12 +89,14 @@ Runs only one app on the device.
 
     - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `http://contoso.com` to open. By default, all websites are allowed.
 
-      To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. Intune supports wild card as a default meaning that you can just enter the domain and it will allow subdomains (e.g. sharpoint.com instead of *.sharepoint.com
+      To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. By default, Intune supports wild card. So, when you enter the domain, such as `sharepoint.com`, allow subdomains are automatically allowed, such as `contoso.sharepoint.com`, `my.sharepoint.com`, and so on.
 
       Your sample file should look similar to the following list:
 
       `http://bing.com`  
       `https://bing.com`  
+      `http://contoso.com`  
+      `https://contoso.com`  
       `office.com`
 
     > [!NOTE]
