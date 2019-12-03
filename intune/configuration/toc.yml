@@ -16,7 +16,11 @@
   - name: Create a profile
     href: device-profile-create.md
   - name: Administrative templates on Windows
-    href: administrative-templates-windows.md
+    items:
+    - name: Administrative templates on Windows
+      href: administrative-templates-windows.md
+    - name: Update Office using administrative templates
+      href: administrative-templates-update-office.md      
   - name: Device features on iOS and macOS
     href: device-features-configure.md
   - name: Restrict device settings and features
@@ -49,6 +53,8 @@
     items:
     - name: Wi-Fi with a pre-shared key
       href: wi-fi-profile-shared-key.md
+    - name: Troubleshoot Wi-Fi
+      href: troubleshoot-wi-fi-profiles.md
   - name: Extensions on macOS
     href: kernel-extensions-overview-macos.md
   - name: Education Take a Test app
