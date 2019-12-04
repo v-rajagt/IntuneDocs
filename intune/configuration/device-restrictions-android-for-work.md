@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -36,7 +36,7 @@ This article lists and describes the different settings you can control on Andro
 
 ## Device owner only
 
-These settings will apply to Android Enterprise enrollment types where Intune controls the entire device such as Android Enterprise Fully Managed or Dedicated.
+These settings apply to Android Enterprise enrollment types where Intune controls the entire device, such as Android Enterprise Fully Managed or Dedicated devices
 
 ### General settings
 
@@ -271,7 +271,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
 ## Work profile only
 
-These settings will apply to Android Enterprise enrollment types where Intune controls only the Work Profile, such as Android Enterprise Work profile enrollment in a BYOD scenario. 
+These settings apply to Android Enterprise enrollment types where Intune controls only the Work Profile, such as Android Enterprise Work profile enrollment on a personal or bring-your-own device (BYOD).
 
 ### Work profile settings
 
