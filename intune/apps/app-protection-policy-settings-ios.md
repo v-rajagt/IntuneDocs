@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 # iOS app protection policy settings
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-This article describes the app protection policy settings for iOS devices. The policy settings that are described can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal when you make a new policy.
+This article describes the app protection policy settings for iOS devices. The policy settings that are described can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** pane in the Azure portal when you make a new policy.
 
 There are three categories of policy settings: *Data relocation*, *Access requirements*, and *Conditional launch*. In this article, the term ***policy-managed apps*** refers to apps that are configured with app protection policies.
 
@@ -92,7 +92,7 @@ There are some exempt apps and platform services that Intune app protection poli
 | <ul><ui> **Select minimum PIN length** | Specify the minimum number of digits in a PIN sequence.  | **4**  |
 | <ul><ui> **Touch ID instead of PIN for access (iOS 8+)** | Select **Allow** to allow the user to use [Touch ID](https://support.apple.com/HT201371) instead of a PIN for app access.    | **Allow**  |
 |<ul><ui><ul><ui>**Override Touch ID with PIN after timeout**|  To use this setting, select **Require** and then configure an inactivity timeout.  |**Require**  |
-| <ul><ui><ul><ui><ul><ui> **Timeout (minutes of inactivity)** |  Specify a time in minutes after which either a passcode or numeric (as configured) PIN will override the use of a fingerprint. This timeout value should be greater than the value specified under 'Recheck the access requirements after (minutes of inactivity)'.  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **Timeout (minutes of inactivity)** |  Specify a time in minutes after which either a passcode or numeric (as configured) PIN will override the use of a fingerprint or face as method of access. This timeout value should be greater than the value specified under 'Recheck the access requirements after (minutes of inactivity)'.  |**30**  |
 | <ul><ui><ul><ui>**Face ID instead of PIN for access (iOS 11+)** | Select **Allow** to allow the user to use facial recognition technology to authenticate users on iOS devices. If allowed, Face ID must be used to access the app on a Face ID capable device.    | **Allow**  |
 | <ul><ui>**PIN reset after number of days** | Select **Yes** to require users to change their app PIN after a set period of time, in days.  <br><br>When set to *Yes*, you then configure the number of days before the PIN reset is required. |**No**  |  
 | <ul><ui><ul><ui> **Number of days** | Configure the number of days before the PIN reset is required.  |**90**  |

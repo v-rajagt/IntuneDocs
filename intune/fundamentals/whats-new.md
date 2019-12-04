@@ -57,10 +57,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
-## Week of November 18, 2019  
+## Week of November 18, 2019 (1911 Service release)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management
+
+#### S/MIME support with Microsoft Outlook for iOS<!-- 2669398 idready -->
+Intune supports delivering S/MIME signing and encryption certificates that can be used with Outlook for iOS on iOS devices. For more information, see [Configure S/MIME for Outlook for iOS](~/apps/app-configuration-policies-outlook-smime.md).
 
 #### UI update when selectively wiping app data<!-- 4102028 -->
 The UI to selectively wipe app data in Intune has been updated. UI changes include:
@@ -131,12 +134,6 @@ Applies to:
 - macOS devices running 10.7 and newer
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### Device enrollment
-
-#### Windows Autopilot deployment reports<!-- 3856172 -->
-A new report details each device deployed through Windows Autopilot. For more information, see [Autopilot deployment report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). 
-
-<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
 #### Edit device name value for Autopilot devices<!-- 2640074 -->
@@ -181,8 +178,9 @@ You can use an Intune device action to remotely [rotate BitLocker recovery keys]
 #### Updates to dedicated device enrollment to support SCEP device certificate deployment <!-- 5198878  -->
 Intune now supports SCEP device certificate deployment to Android Enterprise dedicated devices for certificate-based access to Wi-Fi profiles. The Microsoft Intune app must be present on the device for deployment to work. As a result, we've updated the enrollment experience for Android Enterprise dedicated devices. New enrollments still start the same (with QR, NFC, Zero-touch, or device identifier) but now have a step that requires users to install the Intune app. Existing devices will start getting the app automatically installed on a rolling basis.
 
-#### Intune support for Azure AD business-to-business collaboration<!--5670211  -->
-Intune supports Azure Active Directory (Azure AD) business-to-business (B2B) collaboration. Azure AD B2B collaboration lets you securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data. This functionality also provides auditing capabilities of B2B guest users. For more information, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+#### Intune audit logs for business-to-business collaboration<!--5670211 -->
+Business-to-business (B2B) collaboration allows you to securely share you company's applications and services with guest users from any other organization, while maintaining control over your own corporate data. Intune now supports audit logs for B2B guest users. For example, when guest users make changes, Intune will be able to capture this data through audit logs. For more information, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+
 
 <!-- ########################## -->
 ## Week of November 11, 2019  
@@ -274,7 +272,7 @@ Intune enrollment and Company Portal now support iOS versions 11 and later. Olde
 We've added a security baseline Preview for [Microsoft Edge settings](../protect/security-baseline-settings-edge.md). 
 
 <!-- ########################## -->
-## Week of October 21, 2019
+## Week of October 21, 2019 (1910 Service release)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Microsoft 365 Device Management
@@ -482,7 +480,7 @@ Intune now supports managing both iPadOS and iOS 13.1 devices. For more informat
 
 <!-- ########################## -->
 
-## Week of September 16, 2019
+## Week of September 16, 2019 (1909 Service release)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management 
@@ -718,7 +716,7 @@ Applies to:
 
 - Windows 10 and newer (Windows RS4+)
 
-## Week of August 12, 2019
+## Week of August 12, 2019 (1908 Service release)
 
 ### App management
 
@@ -890,7 +888,7 @@ Applies to:
 
 <!-- ########################## -->
 
-## Week of July 22, 2019 
+## Week of July 22, 2019 (1907 Service release)
 
 ### App management
 
@@ -1032,7 +1030,7 @@ When onboarding fully managed Android Enterprise devices, users will now registe
 
 In addition to the AAD updates, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](../apps/apps-add-android-for-work.md).
 
-## Week of June 24, 2019
+## Week of June 24, 2019 (1906 Service release)
 
 ### App management
 
@@ -1193,7 +1191,7 @@ The Windows Company Portal app will now have a new page labeled **Devices**. The
 
 To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID.  
 
-## Week of May 13, 2019
+## Week of May 13, 2019 (1905 Service release)
 
 ### App management
 
