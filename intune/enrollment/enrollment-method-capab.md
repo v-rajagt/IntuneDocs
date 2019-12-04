@@ -61,7 +61,7 @@ There are several methods to enroll your workforce’s devices in Intune. Each m
 
 \* Client apps workloads in Configuration Manager must be moved to Intune Pilot or Intune.
 
-\** [Devices are blocked for Conditional Access with the exception of Windows 10 1803+.](device-enrollment-manager-enroll)
+\** [Devices are blocked for Conditional Access with the exception of Windows 10 1803+.](device-enrollment-manager-enroll.md)
 
 ## Next steps
 
