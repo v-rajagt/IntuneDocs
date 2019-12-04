@@ -36,7 +36,7 @@ This article lists and describes the different settings you can control on Andro
 
 ## Device owner only
 
-These settings apply to Android Enterprise enrollment types where Intune controls the entire device, such as Android Enterprise Fully Managed or Dedicated devices
+These settings apply to Android Enterprise enrollment types where Intune controls the entire device, such as Android Enterprise Fully Managed or Dedicated devices.
 
 ### General settings
 
