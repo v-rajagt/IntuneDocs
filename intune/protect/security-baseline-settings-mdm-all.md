@@ -1217,238 +1217,270 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
 
 - **Internet Explorer restricted zone initialize and script Active X controls not marked as safe**  
   This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067097)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067097)
+
+  **Default**: Disable
+
 - **Internet Explorer users changing policies**  
   Prevents users from changing security zone settings. A security zone is a group of Web sites with the same security level. If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled. If you disable this policy or don't configure it, users can change the settings for security zones. This policy prevents users from changing security zone settings established by the administrator. Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it's enabled, this policy is ignored. Also, see the "Security zones: Use only machine settings" policy.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067155)  
-    
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067155)
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone protected mode**  
   This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system. If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode. If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode. If you don't configure this policy setting, the user can turn on or turn off Protected Mode.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067080)  
-  
-  **Default**: Enable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067080)
+
+  **Default**: Enable
+
 - **Internet Explorer internet zone user data persistence**  
   This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured. If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067156)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067156)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone scripting of web browser controls**  
- 
   This policy setting determines whether a page can control embedded WebBrowser controls via script. If you enable this policy setting, script access to the WebBrowser control is allowed. If you disable this policy setting, script access to the WebBrowser control isn't allowed. If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067157)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067157)
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone user data persistence**  
   This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured. If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067081)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067081)
+
+  **Default**: Disabled
+
 - **Internet Explorer locked down intranet zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067082)  
-  
-  **Default**: Disable java  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067082)
+
+  **Default**: Disable java
+
 - **Internet Explorer enhanced protected mode**  
   Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. If you enable this policy setting, Enhanced Protected Mode is turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users won't be able to disable Enhanced Protected Mode. If you disable this policy setting, Enhanced Protected Mode is turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista. If you don't configure this policy, users can turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067158)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067158)
+
+  **Default**: Enabled
+
 - **Internet Explorer bypass smart screen warnings**  
   This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet. If you enable this policy setting, SmartScreen Filter warnings block the user. If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067159)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067159)
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone meta refresh**  
   This policy setting allows you to manage whether a user's browser can be redirected to another Web page if the author of the Web page uses the Meta Refresh setting (tag) to redirect browsers to another Web page. If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page. If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page. If you don't configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067154)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067154)
+
+  **Default**: Disabled
+
 ## Local Policies Security Options
-For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) in the Windows documentation. 
+
+For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) in the Windows documentation.
 
 - **Restrict anonymous access to named pipes and shares**  
   When enabled, this security setting restricts anonymous access to shares and pipes to the settings for: (1) Named pipes that can be accessed anonymously (2) Shares that can be accessed anonymously.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067212)  
-  
-  **Default**: Yes  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067212)
+
+  **Default**: Yes
+
 - **Minimum session security for NTLM SSP based servers**  
   This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if message integrity isn't negotiated. Require 128-bit encryption. The connection will fail if strong encryption (128-bit) isn't negotiated.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067246) 
-  
-  **Default**: Require NTLM V2 and 128 bit encryption  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067246)
+
+  **Default**: Require NTLM V2 and 128 bit encryption
+
 - **Minutes of lock screen inactivity until screen saver activates**  
   Windows notices inactivity of a logon session, and if the amount of inactive time exceeds the inactivity limit, then the screen saver will run, locking the session.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067210)  
-  
-  **Default**: 15
-  
-- **Require client to always digitally sign communications** 
-  This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup and more. This setting determines if all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic started by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel won't be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies: Domain member: Digitally encrypt secure channel data (when possible) Domain member: Digitally sign secure channel data (when possible).  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067187) 
-  
-  **Default**: Yes
-  
-- **Authentication level**  
-  This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:  
-  - *Send LM and NTLM responses* - Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send LM and NTLM - NTLMv2 if negotiated* - Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLM response only* - Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only. Refuse LM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). 
-  - *Send NTLMv2 response only. Refuse LM and NTLM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067210)
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067189)   
-    
+  **Default**: 15
+
+- **Require client to always digitally sign communications**  
+  This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup and more. This setting determines if all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic started by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel won't be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies: Domain member: Digitally encrypt secure channel data (when possible) Domain member: Digitally sign secure channel data (when possible).  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067187)
+
+  **Default**: Yes
+
+- **Authentication level**  
+  This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:
+
+  - *Send LM and NTLM responses* - Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+  - *Send LM and NTLM - NTLMv2 if negotiated* - Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+  - *Send NTLM response only* - Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+  - *Send NTLMv2 response only* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+
+  - *Send NTLMv2 response only. Refuse LM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication).
+
+  - *Send NTLMv2 response only. Refuse LM and NTLM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067189)
+
   **Default**: Send NTLMv2 response only. Refuse LM and NTLM
-  
+
 - **Prevent clients from sending unencrypted passwords to third party SMB servers**  
   If this security setting is enabled, the Server Message Block (SMB) redirector can send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication. Sending unencrypted passwords is a security risk.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067235)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067235)
+
   **Default**: Yes
-  
+
 - **Require server digitally signing communications always**  
   This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server. If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing is negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067319)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067319)
+
   **Default**: Yes
-  
+
 - **Administrator elevation prompt behavior**  
-  This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-  - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-  - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-  - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067215)   
-  
+  This policy setting controls the behavior of the elevation prompt for administrators. The options are:
+
+  - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
+
+  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
+
+  - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+
+  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+  - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+
+  - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067215)
+
   **Default**: Prompt for consent on the secure desktop
-  
+
 - **Minimum session security for NTLM SSP based clients**  
   This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-  - *Require NTLMv2 session security* - The connection will fail if NTLMv2 protocol isn't negotiated. 
-  - *Require 128-bit encryption* - The connection will fail if strong encryption (128-bit) isn't negotiated.
-  - *Require NTLMv2 and 128-bit encryption*.  
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067324)  
+  - *Require NTLMv2 session security* - The connection will fail if NTLMv2 protocol isn't negotiated.
+
+  - *Require 128-bit encryption* - The connection will fail if strong encryption (128-bit) isn't negotiated.
+
+  - *Require NTLMv2 and 128-bit encryption*.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067324)
 
   **Default**: Require NTLM V2 128 encryption
-  
+
 - **Smart card removal behavior**  
   This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
-  - *No action*. 
+
+  - *No action*.
+
   - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
+
   - *Force Logoff* - the user is automatically logged off when the smart card is removed.
+
   - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
-  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067331) 
-    
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067331)
+
   **Default**: Lock workstation
-  
+
 - **Block anonymous enumeration of SAM accounts and shares**  
   This security setting determines whether to allow anonymous enumeration of SAM accounts and shares. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. If you don't want to allow anonymous enumeration of SAM accounts and shares, then set this policy to *Yes*.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067191)  
-  
-  **Default**: Yes
-  
-- **Block remote logon with blank password**  
-  This security setting determines whether local accounts that aren't password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that aren't password protected must use the computer's keyboard to log on. 
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067191)
 
-  *Warning*: Computers that aren't in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that doesn't have a password. This is especially important for portable computers. 
+  **Default**: Yes
+
+- **Block remote logon with blank password**  
+  This security setting determines whether local accounts that aren't password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that aren't password protected must use the computer's keyboard to log on.
+
+  *Warning*: Computers that aren't in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that doesn't have a password. This is especially important for portable computers.
 
   If you apply this security policy to the Everyone group, no one can log on through Remote Desktop Services. This setting doesn't affect logons that use domain accounts. It's possible for applications that use remote interactive logons to bypass this setting.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067219)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067219)
+
   **Default**: Yes
-  
+
 - **Standard user elevation prompt behavior**  
-  This policy setting controls the behavior of the elevation prompt for standard users. 
-  - *Automatically deny elevation requests* - When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. 
-  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  
+  This policy setting controls the behavior of the elevation prompt for standard users.
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067183)  
-  
+  - *Automatically deny elevation requests* - When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
+
+  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067183)
+
   **Default**: Automatically deny elevation requests
-  
+
 - **Require admin approval mode for administrators**  
-  This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are:   
-  - *Not configured* - Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced. 
-  - *Yes* - Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.  
+  This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are:
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067184)  
-  
+  - *Not configured* - Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+
+  - *Yes* - Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067184)
+
   **Default**: Yes
-  
+
 - **Prevent anonymous enumeration of SAM accounts**  
-  This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: 
+  This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows:
+
   - *Yes* - Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
-  - *Not configured* - No additional restrictions. Rely on default permissions.  
-  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067318)  
+
+  - *Not configured* - No additional restrictions. Rely on default permissions.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067318)
 
   **Default**: Yes
-  
+
 - **Allow remote calls to security accounts manager**  
   This policy setting allows you to restrict remote rpc connections to SAM. If not selected, the default security descriptor is used.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067209)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067209)
+
   **Default**: *O:BAG:BAD:(A;;RC;;;BA)*
 
 - **Use admin approval mode**  
-  This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: 
-  - *Yes* - The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
-  - *Not Configured* - The built-in Administrator account runs all applications with full administrative privilege. 
+  This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are:
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067186)  
+  - *Yes* - The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
+
+  - *Not Configured* - The built-in Administrator account runs all applications with full administrative privilege.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067186)
 
   **Default**: Yes
   
 - **Allow UI access applications for secure locations**  
-  This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. 
-  - *Yes* - UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
-  - *Not Configured*: - The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.  
+  This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067185)  
+  - *Yes* - UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+
+  - *Not Configured*: - The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067185)
 
   **Default**: Yes
 
 - **Detect application installations and prompt for elevation**  
-  This policy setting controls the behavior of application installation detection for the computer. The options are: 
-  - *Enabled* - When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Disabled* - Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.  
-  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067208)  
+  This policy setting controls the behavior of application installation detection for the computer. The options are:
+
+  - *Enabled* - When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+  - *Disabled* - Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067208)
 
   **Default**: Yes
-  
+
 - **Prevent storing LAN manager hash value on next password change**  
   This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067213)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067213)
+
   **Default**: Yes
 
 - **Virtualize file and registry write failures to per user locations**  
   This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to *%ProgramFiles%*, *%Windir%*, *%Windir%\system32*, or *HKLM\Software*.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067321)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067321)
+
   **Default**: Yes
 
 ## MS Security Guide  
