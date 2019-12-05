@@ -284,7 +284,8 @@ For more information, see [Policy CSP - DataProtection](https://docs.microsoft.c
   **Default**: Yes
 
 ## Device Guard
-For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) in the Windows documentation.  
+
+For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) in the Windows documentation.
 
 - **Credential Guard**  
   This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot.  
@@ -301,7 +302,8 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Enable virtualization based security**  
+- **Enable virtualization based security**
+
   Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)
   
@@ -317,7 +319,7 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
 - **Hardware device installation by device identifiers**  
   This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, devices can install and update as allowed or prevented by other policy settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2066794)
-  
+
   **Default**: Block hardware device installation
 
   When *Block hardware device installation* is selected, the following settings are available.
@@ -327,10 +329,10 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
 
     **Default**: Yes
 
-  - **Hardware device identifiers that are blocked**    
+  - **Hardware device identifiers that are blocked**
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
 
-    **Default**: Yes  
+    **Default**: Yes
 
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.  
@@ -343,7 +345,7 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   - **Remove matching hardware devices**  
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
 
-    **Default**: *No default configuration*  
+    **Default**: *No default configuration*
 
   - **Hardware device identifiers that are blocked**  
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
@@ -352,132 +354,139 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
 
 ## Device Lock
 
-For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
+For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.
 
 - **Prevent use of camera**  
   Disables the lock screen camera toggle switch in PC Settings and prevents a camera from being invoked on the lock screen. By default, users can enable invocation of an available camera on the lock screen. If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera can't be invoked on the lock screen.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067052)
-  
-  **Default**: Enabled  
+
+  **Default**: Enabled
 
 - **Require password**  
   Specifies whether device lock is enabled.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067049)  
-  
-  **Default**: Yes  
+
+  **Default**: Yes
   
   When *Require password* is set to *Yes*, the following settings are available.
 
   - **Password minimum character set count**  
     The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
-    
-    **Default**: 3  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)
+
+    **Default**: 3
 
   - **Number of sign-in failures before wiping device**  
     The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
-      
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)
+
     **Default**: 10  
 
   - **Password expiration (days)**  
     The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
-    
-    **Default**: 60  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)
+
+    **Default**: 60
 
   - **Required password type**  
     Determines the type of PIN or password required.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
-    
-    **Default**: Alphanumeric  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)
+
+    **Default**: Alphanumeric
 
   - **Minimum password length**  
     The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
-    
-    **Default**: 8  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)
+
+    **Default**: 8
 
   - **Block simple passwords**  
     Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
-    
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127)
+
     **Default**: Yes  
-      *A setting of Yes prevents use of simple passwords.* 
+    *A setting of Yes prevents use of simple passwords.*
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2066795)  
-    
-    **Default**: 24  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2066795)
+
+    **Default**: 24
 
 - **Prevent slide show**  
   Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen. By default, users can enable a slide show that will run after they lock the machine. If you enable this setting, users can't modify slide show settings in PC Settings, and no slide show can start.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067105) 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067105)
+
   **Default**: Enabled  
-  *A setting of Enabled prevents slide shows from running.* 
+  *A setting of Enabled prevents slide shows from running.*
 
 - **Password minimum age in days**  
   The Minimum password age policy setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow password changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067022) 
-  
-  **Default**: 1  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067022)
+
+  **Default**: 1
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## DMA Guard  
+## DMA Guard
+
 For more information, see [Policy CSP - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) in the Windows documentation.
+
 - **Enumeration of external devices incompatible with Kernel DMA Protection**  
   This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.  
   [Learn more](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
-  **Default**: Block all   
+  **Default**: Block all
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## Event Log Service  
-For more information, see [Policy CSP - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) in the Windows documentation.  
+## Event Log Service
+
+For more information, see [Policy CSP - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) in the Windows documentation.
 
 - **Security log maximum file size in KB**  
   This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067042)  
-  
-   **Default**: 196608  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067042)
+
+   **Default**: 196608
 
 - **System log maximum file size in KB**  
   This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066798)  
-  
-  **Default**: 32768  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066798)
+
+  **Default**: 32768
 
 - **Application log maximum file size in KB**  
   This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067125)  
-  
-  **Default**: 32768  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067125)
 
-## Experience  
-For more information, see [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentation.  
+  **Default**: 32768
+
+## Experience
+
+For more information, see [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentation.
 
 - **Block Windows Spotlight**  
   Allows IT admins to turn off all Windows Spotlight Features - Window spotlight on lock screen, Windows Tips, Microsoft consumer features, and other related features.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067037)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067037)
+
   **Default**: Yes  
 
   When *Block Windows Spotlight* is set to *Yes*, the following settings are available.
-  
+
   - **Block third-party suggestions in Windows Spotlight**  
     Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067045)  
-      
-    **Default**: Yes  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067045)
+
+    **Default**: Yes
+
   - **Block consumer specific features**  
     Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.  
-    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067054)  
-     
-    **Default**: Yes  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067054)
+
+    **Default**: Yes
 
 ## Exploit Guard  
 For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
