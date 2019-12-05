@@ -58,7 +58,7 @@ To learn about what's changed in this version of the baseline from the previous 
 > This is the preview version of the MDM security baseline, released in October of 2018. This preview baseline was replaced in June of 2019 by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version. Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.
 
 ::: zone-end
-::: zone pivot="mdm-may-2019,mdm-preview
+::: zone pivot="mdm-may-2019,mdm-preview"
 
 ## Above Lock
 
@@ -134,7 +134,8 @@ For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/win
 
 - **Auto play mode**
 
-  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration. [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793)
+  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration. [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793).
+
 
   **Default**: Disabled
 
