@@ -1483,438 +1483,470 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
 
   **Default**: Yes
 
-## MS Security Guide  
-For more information, see [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) in the Windows documentation.  
+## MS Security Guide
+
+For more information, see [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) in the Windows documentation.
 
 - **Apply UAC restrictions to local accounts on network logon**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067188)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067188)
 
   **Default**: Enabled
-  
+
 - **SMB v1 client driver start configuration**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067214) 
- 
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067214)
+
   **Default**: Disabled driver
-  
+
 - **SMB v1 server**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067190)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067190)
 
   **Default**: Disabled
-  
+
 - **Digest authentication**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067193) 
- 
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067193)
+
   **Default**: Disabled
-  
+
 - **Structured exception handling overwrite protection**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067217)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067217)
 
   **Default**: Enabled
-  
-## MSS Legacy  
-For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in the Windows documentation.  
+
+## MSS Legacy
+
+For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in the Windows documentation.
 
 - **Network IP source routing protection level**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067220)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067220)
+
   **Default**: Highest protection  
-  
+
 - **Network ignore NetBIOS name release requests except from WINS servers**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067218)  
- 
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067218)
+
   **Default**: Enabled
-  
+
 - **Network IPv6 source routing protection level**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067216)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067216)
 
   **Default**: Highest protection
 
 - **Network ICMP redirects override OSPF generated**  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067326)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067326)
 
   **Default**: Disabled
-  
-## Power  
-For more information, see [Policy CSP - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in the Windows documentation.  
+
+## Power
+
+For more information, see [Policy CSP - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in the Windows documentation.
 
 - **Require password on wake while plugged in**  
   This policy setting specifies if the user is prompted for a password when the system resumes from sleep. If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep. If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067221)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067221)
+
   **Default**: Enabled
-  
+
 - **Standby states when sleeping while on battery**  
   This policy setting manages if Windows can use standby states when putting the computer in a sleep state. If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state. If you disable this policy setting, standby states (S1-S3) aren't allowed.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067195)  
-  
-  **Default**: Disabled
-  
-- **Standby states when sleeping while plugged in**
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067195)
 
+  **Default**: Disabled
+
+- **Standby states when sleeping while plugged in**  
   This policy setting manages if Windows can use standby states when putting the computer in a sleep state. If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state. If you disable this policy setting, standby states (S1-S3) aren't allowed.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067196)  
-  
-  **Default**: Disabled
-  
-- **Require password on wake while on battery**
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067196)
 
+  **Default**: Disabled
+
+- **Require password on wake while on battery**  
   This policy setting specifies if the user is prompted for a password when the system resumes from sleep. If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep. If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067322)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067322)
+
   **Default**: Enabled
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## Remote Assistance   
-For more information, see [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) in the Windows documentation.  
+## Remote Assistance
 
-- **Remote Assistance solicited**
+For more information, see [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) in the Windows documentation.
 
-  This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer. 
-  - *If you enable this policy setting*, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings. 
-  - *If you disable this policy setting*, users on this computer cannot use email or file transfer to ask someone for help. Also, users cannot use instant messaging programs to allow connections to this computer. 
-  - *If you do not configure this policy setting*, users can turn on or turn off Solicited (Ask for) Remote Assistance themselves in System Properties in Control Panel. Users can also configure Remote Assistance settings. 
+- **Remote Assistance solicited**  
+  This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer.
+  
+  - *If you enable this policy setting*, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings.
+
+  - *If you disable this policy setting*, users on this computer cannot use email or file transfer to ask someone for help. Also, users cannot use instant messaging programs to allow connections to this computer.
+
+  - *If you do not configure this policy setting*, users can turn on or turn off Solicited (Ask for) Remote Assistance themselves in System Properties in Control Panel. Users can also configure Remote Assistance settings.
 
   If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer." The "Maximum ticket time" policy setting sets a limit on the amount of time that a Remote Assistance invitation created by using email or file transfer can remain open. The "Select the method for sending email invitations" setting specifies which email standard to use to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting is not available in Windows Vista since SMAPI is the only method supported. If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067198)
 
   **Default**: Disable Remote Assistance
 
-  When set to *Enable Remote Assistance*, configure the following additional settings:  
+  When set to *Enable Remote Assistance*, configure the following additional settings:
+
   - **Remote Assistance solicited permission**  
-    **Default**: View  
+    **Default**: View
 
   - **Maximum ticket time value**  
-    **Default**: *Not configured*  
+    **Default**: *Not configured*
 
   - **Maximum ticket time period**  
-    **Default**: Minutes    
+    **Default**: Minutes
 
   - **E-Mail invitation method**  
     **Default**: Simple MAPI
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
-  
-## Remote Desktop Services  
-For more information, see [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in the Windows documentation.  
+
+## Remote Desktop Services
+
+For more information, see [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in the Windows documentation.
 
 - **Block password saving**  
   Controls whether passwords can be saved on this computer from Remote Desktop Connection. If you enable this setting the password saving checkbox in Remote Desktop Connection is disabled and users won't be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves their settings, any password that previously existed in the RDP file are deleted. If you disable this setting or leave it not configured, the user can save passwords using Remote Desktop Connection.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067301)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067301)
+
    **Default**: Enabled
-  
+
 - **Secure RPC communication**  
   Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication. You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests. If the status is set to Enabled, Remote Desktop Services accepts requests from RPC clients that support secure requests, and doesn't allow unsecured communication with untrusted clients. If the status is set to Disabled, Remote Desktop Services always requests security for all RPC traffic. However, unsecured communication is allowed for RPC clients that don't respond to the request. If the status is set to Not Configured, unsecured communication is allowed. Note: The RPC interface is used for administering and configuring Remote Desktop Services.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067248)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067248)
+
   **Default**: Enabled
-  
+
 - **Block drive redirection**  
   This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection). By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format *\<driveletter>* on *\<computername>*. You can use this policy setting to override this behavior. If you enable this policy setting, client drive redirection isn't allowed in Remote Desktop Services sessions, and Clipboard file copy redirection isn't allowed on computers running Windows Server 2003, Windows 8, and Windows XP. If you disable this policy setting, client drive redirection is always allowed. Also, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed. If you don't configure this policy setting, client drive redirection and Clipboard file copy redirection aren't specified at the Group Policy level.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067197)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067197)
+
   **Default**: Enabled
-  
+
 - **Prompt for password upon connection**  
   This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection. You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client. By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client. If you enable this policy setting, users can't automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. they're prompted for a password to log on. If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client. If you don't configure this policy setting, automatic logon isn't specified at the Group Policy level.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067328)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067328)
+
   **Default**: Enabled
-  
+
 - **Remote desktop services client connection encryption level**  
-  Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you're using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) isn't recommended. This policy doesn't apply to SSL encryption. If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:  
-  - *High* - The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that don't support this encryption level can't connect to RD Session Host servers.  
-  - *Client Compatible* - The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that don't support 128-bit encryption.  
+  Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you're using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) isn't recommended. This policy doesn't apply to SSL encryption. If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:
+
+  - *High* - The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that don't support this encryption level can't connect to RD Session Host servers.
+
+  - *Client Compatible* - The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that don't support 128-bit encryption.
+
   - *Low* - The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.  
   
   If you disable or don't configure this setting, the encryption level to be used for remote connections to RD Session Host servers isn't enforced through Group Policy. Important FIPS compliance can be configured through the System cryptography. Use FIPS-compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS-compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067222)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067222)
+
   **Default**: High
-  
-## Remote Management  
-For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in the Windows documentation.  
+
+## Remote Management
+
+For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in the Windows documentation.
 
 - **Block storing run as credentials**  
   Client basic authentication.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067300)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067300)
+
   **Default**: Enabled
-  
+
 - **Basic authentication**  
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Basic authentication from a remote client. If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client. If you disable or don't configure this policy setting, the WinRM service doesn't accept Basic authentication from a remote client.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067223)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067223)
+
   **Default**: Disabled
-  
+
 - **Block client digest authentication**  
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication. If you enable this policy setting, the WinRM client doesn't use Digest authentication. If you disable or don't configure this policy setting, the WinRM client uses Digest authentication.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067302)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067302)
+
   **Default**: Enabled
-  
+
 - **Unencrypted traffic**  
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067226)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067226)
+
   **Default**: Disabled
-  
+
 - **Client unencrypted traffic**  
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) client sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067304)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067304)
+
   **Default**: Disabled
-  
+
 - **Client basic authentication**  
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication. If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text. If you disable or don't configure this policy setting, the WinRM client doesn't use Basic authentication.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067252)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067252)
+
   **Default**: Disabled
-  
-## Remote Procedure Call  
-For more information, see [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) in the Windows documentation.  
+
+## Remote Procedure Call
+
+For more information, see [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) in the Windows documentation.
 
 - **RPC unauthenticated client options**  
-  This policy setting controls how the RPC server runtime handles unauthenticated RPC clients connecting to RPC servers. This policy setting impacts all RPC applications. In a domain environment, use this policy setting with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller. If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. If you don't configure this policy setting, it remains disabled. The RPC server runtime behaves as though it was enabled with the value of "Authenticated" used for Windows Client and the value of "None" used for Server SKUs that support this policy setting. If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client is considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting.  
-  - *None* allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied. 
-  - *Authenticated* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them. 
-  - *Authenticated without exceptions* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. No exceptions are allowed. Note: This policy setting won't be applied until the system is rebooted.  
+  This policy setting controls how the RPC server runtime handles unauthenticated RPC clients connecting to RPC servers. This policy setting impacts all RPC applications. In a domain environment, use this policy setting with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller. If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. If you don't configure this policy setting, it remains disabled. The RPC server runtime behaves as though it was enabled with the value of "Authenticated" used for Windows Client and the value of "None" used for Server SKUs that support this policy setting. If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client is considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting.
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067225)  
+  - *None* allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied.
+
+  - *Authenticated* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them.
+
+  - *Authenticated without exceptions* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. No exceptions are allowed. Note: This policy setting won't be applied until the system is rebooted.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067225)
 
   **Default**: Authenticated
 
-## Search 
-For more information, see [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in the Windows documentation.  
+## Search
+
+For more information, see [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in the Windows documentation.
 
 - **Disable indexing encrypted items**  
   Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files. When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified. When the policy is disabled, the WIP protected items aren't indexed and don't show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are many WIP protected media files on the device.  
-  [Learn more]( https://go.microsoft.com/fwlink/?linkid=2067303)  
-  
+  [Learn more]( https://go.microsoft.com/fwlink/?linkid=2067303)
+
   **Default**: Yes
-  
-## Smart Screen  
-For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.  
+
+## Smart Screen
+
+For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.
 
 - **Block execution of unverified files**  
-  Block user from running unverified files. 
-  - *Not Configured* - Employees can ignore SmartScreen warnings and run malicious files. 
+  Block user from running unverified files.
+
+  - *Not Configured* - Employees can ignore SmartScreen warnings and run malicious files.
+
   - *Yes* – Employees can't ignore SmartScreen warnings and run malicious files.
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067228)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067228)
+
   **Default**: Yes
 
 - **Require SmartScreen for apps and files**  
   Allows IT Admins to configure SmartScreen for Windows.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067168)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067168)
 
   **Default**: Yes
-  
-## System  
-For more information, see [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in the Windows documentation.  
+
+## System
+
+For more information, see [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in the Windows documentation.
 
 - **System boot start driver initialization**  
-  This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver: 
-  - *Good* - The driver has been signed and hasn't been tampered with.  
-  - *Bad* - The driver has been identified as malware. We recommend that you don't allow known bad drivers to be initialized. 
-  - *Bad, but required for boot* - The driver has been identified as malware, but the computer can't successfully boot without loading this driver. 
-  - *Unknown* - This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.  
+  This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
+
+  - *Good* - The driver has been signed and hasn't been tampered with.
+
+  - *Bad* - The driver has been identified as malware. We recommend that you don't allow known bad drivers to be initialized.
+
+  - *Bad, but required for boot* - The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
+
+  - *Unknown* - This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
 
   If you enable this policy setting, you can choose which boot-start drivers to initialize the next time the computer is started. If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067307)   
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067307)
+
   **Default**: Good unknown and bad critical
 
+## Wi-Fi
 
-## Wi-Fi  
-For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.  
+For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.
 
 - **Block Internet sharing**  
-  Specifies whether internet sharing is possible on the device.   
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067327)   
+  Specifies whether internet sharing is possible on the device.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067327)
 
-  **Default**: Yes  
+  **Default**: Yes
 
 - **Block Automatically connecting to Wi-Fi hotspots**  
   Allow or disallow the device to automatically connect to Wi-Fi hotspots.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067320)   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067320)
 
-  **Default**: Yes  
-  
-## Windows Connection Manager  
-For more information, see [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in the Windows documentation.  
+  **Default**: Yes
+
+## Windows Connection Manager
+
+For more information, see [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in the Windows documentation.
 
 - **Block connection to non-domain networks**  
-  This policy setting prevents computers from connecting to both a domain-based network and a non-domain based network at the same time. If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances: 
-  - Automatic connection attempts When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked. When the computer is already connected to a non-domain based network, automatic connection attempts to domain-based networks are blocked. 
-  - Manual connection attempts When the computer is already connected to either a non-domain based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection disconnects and the manual connection is allowed. When the computer is already connected to either a non-domain based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.  
+  This policy setting prevents computers from connecting to both a domain-based network and a non-domain based network at the same time. If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances:
+
+  - Automatic connection attempts When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked. When the computer is already connected to a non-domain based network, automatic connection attempts to domain-based networks are blocked.
+
+  - Manual connection attempts When the computer is already connected to either a non-domain based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection disconnects and the manual connection is allowed. When the computer is already connected to either a non-domain based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
 
   If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067323)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067323)
 
   **Default**: Enabled
-  
-## Microsoft Defender  
-For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
+
+## Microsoft Defender
+
+For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.
 
 - **Scan incoming mail messages**  
   Allows or disallows scanning of email.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067116)  
-  
-  **Default**: Yes  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067116)
+
+  **Default**: Yes
 
 - **Office apps launch child process type**  
   Office apps won't be allowed to create child processes. This includes Word, Excel, PowerPoint, OneNote, and Access. This is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067121)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067121)
+
   **Default**: Block
-  
+
 - **Defender sample submission consent type**  
   Checks for the user consent level in Microsoft Defender to send data. If the required consent has already been granted, Microsoft Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067131)  
-  
-  **Default**: Send safe samples automatically 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067131)
+
+  **Default**: Send safe samples automatically
+
 - **Signature update interval (in hours)**  
-  Defender signature update interval in hours
-  
+  Defender signature update interval in hours.
+
   **Default**: 4
-  
+
 - **Script downloaded payload execution type**  
-  Defender script downloaded payload execution type
-  
+  Defender script downloaded payload execution type.
+
   **Default**: Block
   
 - **Prevent credential stealing type**  
   Microsoft Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Microsoft Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067065)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067065)
   
   **Default**: Enable
 
 - **Email content execution type**  
   This rule blocks the following file types from being run or launched from an email seen in either Microsoft Outlook or webmail (such as Gmail.com or Outlook.com): Executable files (such as .exe, .dll, or .scr) Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file) Script archive files.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067063)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067063)
+
   **Default**: Block
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
 - **Adobe Reader Launch in a child process**  
-
   **Default**: Enable
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Network protection**  
   This policy allows you to turn on network protection (block/audit) or off in Microsoft Defender Exploit Guard. Network protection is a feature of Microsoft Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the "Block" option, users and apps are blocked from connecting to dangerous domains. You can see this activity in Microsoft Defender Security Center. If you enable this policy with the "Audit" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Microsoft Defender Security Center. If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Microsoft Defender Security Center. If you don't configure this policy, network blocking is disabled by default.  
-  [Learn more](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
-  
+  [Learn more](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
+
   **Default**: Enable
-  
+
 - **Defender schedule scan day**  
   Defender schedule scan day.
-  
+
   **Default**: Everyday
-  
+
 - **Cloud-delivered protection**  
   To best protect your PC, Microsoft Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067039)
-  
+
   **Default**:  Yes  
 
 - **Defender potentially unwanted app action**  
   The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network. These applications aren't considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have a poor reputation. Typical PUA behavior includes: Various types of software bundling Ad injection into web browsers Driver and registry optimizers that detect issues, request payment to fix the errors, but remain on the endpoint and make no changes or optimizations (also known as "rogue antivirus" programs). These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.  
-  [Learn more](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
-  
+  [Learn more](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
   **Default**: Block  
 
 - **Script obfuscated macro code type**  
   Malware and other threats can attempt to obfuscate or hide their malicious code in some script files. This rule prevents scripts that appear to be obfuscated from running.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067026)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067026)
+
   **Default**: Block
-  
+
 - **Scan removable drives during a full scan**  
   Allows Microsoft Defender to scan for malicious and unwanted software in removable drives (for example, flash drives) during a full scan. Microsoft Defender Antivirus scans all files on USB devices before execution.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067036)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067036)
+
   **Default**: Yes  
-  
+
 - **Scan archive files**  
   Defender scan archive files.
-  
+
   **Default**: Yes
-  
+
 - **Behavior monitoring**  
   Allows or disallows Microsoft Defender Behavior Monitoring functionality. Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067111)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067111)
+
   **Default**: Yes
 
 - **Scan files opened from network folders**  
   If files are read-only, user won't be able to remove any detected malware.
-  
+
   **Default**: Yes
 
 - **Untrusted USB process type**  
   With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067100)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067100)
+
   **Default**: Block
-  
+
 - **Office apps other process injection type**  
   Office apps, including Word, Excel, PowerPoint, and OneNote, won't be able to inject code into other processes. This is typically used by malware to run malicious code in an attempt to hide the activity from antivirus scanning engines.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067019)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067019)
+
   **Default**:  Block
-  
+
 - **Office macro code allow Win32 imports type**  
   Malware can use macro code in Office files to import and load Win32 DLLs, which can then be used to make API calls to allow further infection throughout the system. This rule attempts to block Office files that contain macro code that is capable of importing Win32 DLLs. This includes Word, Excel, PowerPoint, and OneNote.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067130)  
-  
-  **Default**: Block  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067130)
+
+  **Default**: Block
+
 - **Defender cloud block level**  
   Defender cloud block level.
-  
+
   **Default**: Not Configured
 
 - **Real-time monitoring**  
   Defender requires real-time monitoring.
-  
+
   **Default**: Yes
- 
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-- **Office communication apps launch in a child process**  
 
+- **Office communication apps launch in a child process**  
   **Default**:  Enable
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Office apps executable content creation or launch type**  
   This rule targets typical behaviors used by suspicious and malicious add-ons and scripts (extensions) that create or launch executable files. This is a typical malware technique. Extensions are blocked from being used by Office apps. Typically these extensions use the Windows Scripting Host (.wsh files) to run scripts that automate certain tasks or provide user-created add-on features.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067108)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067108)
+
   **Default**: Block
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
+
 ## Microsoft Defender Firewall
 
-For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
+For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.
 
 - **Firewall profile domain**  
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for networks that are connected to domains.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066796)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066796)
 
   - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  
-    **Default**: Yes 
+    **Default**: Yes
 
   - **Inbound notifications blocked**  
     **Default**: Yes
@@ -1924,13 +1956,13 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
 
 - **Firewall profile public**  
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067143)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067143)
 
   - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  
-    **Default**: Yes 
+    **Default**: Yes
 
   - **Inbound notifications blocked**  
     **Default**: Yes
@@ -1946,13 +1978,13 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
 
 - **Firewall profile private**  
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for private networks.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067041)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067041)
 
   - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  
-    **Default**: Yes 
+    **Default**: Yes
 
   - **Inbound notifications blocked**  
     **Default**: Yes
@@ -1971,7 +2003,7 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
 
 - **Configure Windows Hello for Business**
 
-  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
+  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.
 
   > [!IMPORTANT]
   > The options for this setting are reversed from their implied meaning. While reversed, a value of *Yes* does not enable Windows Hello and instead is treated as *Not configured*. When this setting is set to *Not configured*, Windows Hello is enabled on devices that receive this baseline.
@@ -2008,116 +2040,131 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
   If required, user PIN must include at least one uppercase letter.
 
   **Default**: Allowed
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 ## Windows Ink Workspace
 
-For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in the Windows documentation.  
+For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in the Windows documentation.
 
 - **Ink Workspace**  
-  Specifies whether to allow the user to access the ink workspace. 
-  - *Disabled* - access to ink workspace is disabled. The feature is turned off.
-  - *Enabled* - The Ink Workspace feature is turned on, but the user can't access it above the lock screen.
-  - *Not Configured* - The Ink Workspace feature is turned on, and the user can use it above the lock screen.  
+  Specifies whether to allow the user to access the ink workspace.
 
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067241)  
+  - *Disabled* - access to ink workspace is disabled. The feature is turned off.
+
+  - *Enabled* - The Ink Workspace feature is turned on, but the user can't access it above the lock screen.
+
+  - *Not Configured* - The Ink Workspace feature is turned on, and the user can use it above the lock screen.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067241)
 
   **Default**: Enabled
- 
-## Windows PowerShell  
-For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in the Windows documentation.  
+
+## Windows PowerShell
+
+For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in the Windows documentation.
 
 - **Power shell shell script block logging**  
   This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log. If you enable this policy setting, Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation. If you disable this policy setting, logging of PowerShell script input is disabled. If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script starts or stops. Enabling Invocation Logging generates a high volume of event logs. Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067330)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067330)
 
   **Default**: Enabled
 
 ::: zone-end
-::: zone pivot="mdm-may-2019"  
+::: zone pivot="mdm-may-2019"
+
 ## What's changed in the new template
+
 The *MDM Security Baseline for May 2019* template has the following changes from the *preview* template.
 
 ### Changes to the baseline settings
+
 The following settings are either:
+
 - *New* in this latest version of the baseline.
 - *Removed* from this latest baseline version, but were present in the previous version.
-- *Revised* in some way from how the settings appeared in the previous version. 
+- *Revised* in some way from how the settings appeared in the previous version.
 
 *[New]* [**Above Lock**](#above-lock):
-- **Voice activate apps from locked screen**    
 
-*[New]* [**Application Management**](#application-management): 
-- **Block user control over installations**  
-- **Block MSI app installations with elevated privileges**  
+- **Voice activate apps from locked screen**
 
-*[Removed]* [**Bitlocker**](#bitlocker):  
+*[New]* [**Application Management**](#application-management):
+
+- **Block user control over installations**
+- **Block MSI app installations with elevated privileges**
+
+*[Removed]* [**Bitlocker**](#bitlocker):
+
 - Bit Locker removable drive policy > **Encryption method**
 - **Bit locker fixed drive policy** *(all settings)*
 - **Bit locker system drive policy** *(all settings)*
 
 *[New]* [**Connectivity**](#connectivity):
+
 - **Configure secure access to UNC paths**
 
 *[New]* [**Device Guard**](#device-guard):
+
 - **Virtualization based security**
 
-
 *[New]* [**DMA Guard**](#dma-guard):
-- **Enumeration of external devices incompatible with Kernel DMA Protection**  
+
+- **Enumeration of external devices incompatible with Kernel DMA Protection**
 
 *[New]* [**Internet Explorer**](#internet-explorer):
+
 - **Internet Explorer internet zone updates to status bar via script**
-- **Internet Explorer internet zone drag and drop or copy and paste files**  
-- **Internet Explorer restricted zone .NET Framework reliant components**  
+- **Internet Explorer internet zone drag and drop or copy and paste files**
+- **Internet Explorer restricted zone .NET Framework reliant components**
 - **Internet Explorer local machine zone do not run antimalware against Active X controls**
-- **Internet Explorer encryption support**  
+- **Internet Explorer encryption support**
 
 *[Revised]* [**Internet Explorer**](#internet-explorer):
+
 - **Internet Explorer internet zone automatic prompt for file downloads** > The default value is now **Disabled**. In preview this was set to Enabled.
 
-*[New]* [**Remote Assistance**](#remote-assistance):  
-- **Remote Assistance solicited** 
+*[New]* [**Remote Assistance**](#remote-assistance):
+
+- **Remote Assistance solicited**
   - **Remote Assistance solicited permission**
-  - **Maximum ticket time value**  
-  - **Maximum ticket time period**  
+  - **Maximum ticket time value**
+  - **Maximum ticket time period**
   - **E-Mail invitation method**
 
-
 *[New]* [**Microsoft Defender**](#microsoft-defender):
-- **Adobe Reader Launch in a child process**  
-- **Office communication apps launch in a child process** 
+
+- **Adobe Reader Launch in a child process**
+- **Office communication apps launch in a child process**
 
 *[New]* [**Microsoft Defender Firewall**](#microsoft-defender-firewall)
-- **Firewall profile domain**  
-  - **Inbound connections blocked**  
-  - **Outbound connections required**  
-  - **Inbound notifications blocked**  
-  - **Firewall enabled**  
-- **Firewall profile public**  
-  - **Inbound connections blocked**  
-  - **Outbound connections required**  
-  - **Inbound notifications blocked**  
-  - **Firewall enabled** 
-  - **Connection security rules from group policy not merged**   
-  - **Policy rules from group policy not merged**  
-- **Firewall profile private**  
-  - **Inbound connections blocked**  
-  - **Outbound connections required**  
-  - **Inbound notifications blocked**  
-  - **Firewall enabled**  
 
-*[New]* [**Windows Hello for Business**](#windows-hello-for-business):  
-- **Require enhanced anti-spoofing, when available**  
-- **Configure Windows Hello for Business**  
-- **Require lowercase letters in PIN** 
-- **Require special characters in PIN** 
-- **Minimum PIN length**  
-- **Require uppercase letters in PIN** 
+- **Firewall profile domain**
+  - **Inbound connections blocked**
+  - **Outbound connections required**
+  - **Inbound notifications blocked**
+  - **Firewall enabled**
+- **Firewall profile public**
+  - **Inbound connections blocked**
+  - **Outbound connections required**
+  - **Inbound notifications blocked**
+  - **Firewall enabled**
+  - **Connection security rules from group policy not merged**
+  - **Policy rules from group policy not merged**
+- **Firewall profile private**
+  - **Inbound connections blocked**
+  - **Outbound connections required**
+  - **Inbound notifications blocked**
+  - **Firewall enabled**
+
+*[New]* [**Windows Hello for Business**](#windows-hello-for-business):
+
+- **Require enhanced anti-spoofing, when available**
+- **Configure Windows Hello for Business**
+- **Require lowercase letters in PIN**
+- **Require special characters in PIN**
+- **Minimum PIN length**
+- **Require uppercase letters in PIN**
+
 ::: zone-end
-
-
-
-
- 
