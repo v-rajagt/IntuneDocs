@@ -472,7 +472,7 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
   Allows IT admins to turn off all Windows Spotlight Features - Window spotlight on lock screen, Windows Tips, Microsoft consumer features, and other related features.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067037)
 
-  **Default**: Yes  
+  **Default**: Yes
 
   When *Block Windows Spotlight* is set to *Yes*, the following settings are available.
 
@@ -488,173 +488,181 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
 
     **Default**: Yes
 
-## Exploit Guard  
-For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
+## Exploit Guard
+
+For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.
 
 - **Exploit protection XML**  
   Enables the IT admin to push out a configuration that represents the desired system and application mitigation options to all the devices in the organization. The configuration is represented by an XML. Exploit protection helps protect devices from malware that use exploits to spread and infect. You use the Windows Security app or PowerShell to create a set of mitigations (known as a configuration). You can then export this configuration as an XML file and share it with multiple machines on your network so they all have the same set of mitigation settings. You can also convert and import an existing EMET configuration XML file into an exploit protection configuration XML.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067035)  
-  
-  **Default**: *Sample xml is provided* 
- 
-## File Explorer  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067035)
+
+  **Default**: *Sample xml is provided*
+
+## File Explorer
+
 For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) in the Windows documentation.  
 
 - **Block data execution prevention**  
   Disabling data execution prevention can allow certain legacy plug-in applications to function without terminating Explorer.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067043)  
-  
-  **Default**: Disabled  
-   
-- **Block heap termination on corruption**  
-  Disabling heap termination on corruption can allow certain legacy plug-in applications to function without terminating Explorer immediately, although Explorer may still terminate unexpectedly later.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067107)  
-  
-  **Default**: Disabled  
-    
-
-## Internet Explorer  
-For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
-
-- **Internet Explorer restricted zone updates to status bar via script**  
-  This policy setting allows you to manage whether script is allowed to update the status bar within the zone. 
-  - *If you enable this policy setting*, script is allowed to update the status bar.
-  - *If you disable or do not configure this policy setting*, script is not allowed to update the status bar.  
-
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067074)  
 
   **Default**: Disabled
+
+- **Block heap termination on corruption**  
+  Disabling heap termination on corruption can allow certain legacy plug-in applications to function without terminating Explorer immediately, although Explorer may still terminate unexpectedly later.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067107)
+
+  **Default**: Disabled
+
+## Internet Explorer
+
+For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.
+
+- **Internet Explorer restricted zone updates to status bar via script**  
+  This policy setting allows you to manage whether script is allowed to update the status bar within the zone.
+
+  - *If you enable this policy setting*, script is allowed to update the status bar.
+  - *If you disable or do not configure this policy setting*, script is not allowed to update the status bar.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067074)
+
+  **Default**: Disabled
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
 - **Internet Explorer internet zone drag and drop or copy and paste files**  
   This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone. If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone. If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone. If you do not configure this policy setting, users can drag files or copy and paste files from this zone automatically.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067076)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067076)
 
   **Default**: Disable
 
-- **Internet Explorer restricted zone .NET Framework reliant components**    
+- **Internet Explorer restricted zone .NET Framework reliant components**  
   This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components. If you disable this policy setting, Internet Explorer will not execute unsigned managed components. If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067077)
 
   **Default**: Disable
-
 
 - **Internet Explorer local machine zone do not run antimalware against Active X controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067152)
 
   **Default**: Disabled
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Internet Explorer internet zone access to data sources**  
   This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067078)  
-  
-  **Default**: Disable  
-  
+
+  **Default**: Disable
+
 - **Internet Explorer restricted zone drag content from different domains within windows**  
   This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067079)  
-  
+
   **Default**: Disabled
-  
+
 - **Internet Explorer certificate address mismatch warning**  
   This policy setting allows you to turn on the certificate address mismatch security warning. When this policy setting is turned on, the user is warned when visiting Secure HTTP (HTTPS) websites that present certificates issued for a different website address. This warning helps prevent spoofing attacks. If you enable this policy setting, the certificate address mismatch warning always appears. If you disable or don't configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067153)  
-  
-  **Default**: Enabled 
-  
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone less privileged sites**  
   This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone. If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur. If you disable this policy setting, possibly harmful navigation is prevented. The Internet Explorer security feature is on in this zone as set by Protection from Zone Elevation feature control. If you don't configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature is on in this zone as set by Protection from Zone Elevation feature control.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067148)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067148)
+
+  **Default**: Disable
+
 - **Internet Explorer restricted zone automatic prompt for file downloads**  
   This policy setting determines whether users are prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads. If you enable this setting, users will receive a file download dialog for automatic download attempts. If you disable or don't configure this setting, file downloads that aren't user-initiated are blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067150)  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067150)
+
   **Default**: Disabled
-  
+
 - **Internet Explorer internet zone .NET Framework reliant components**  
   This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components. If you disable this policy setting, Internet Explorer won't execute unsigned managed components. If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067073)  
-  
-  **Default**: Disable 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067073)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone allow only approved domains to use tdc ActiveX controls**  
   This policy setting controls if the user can run the TDC ActiveX control on websites. If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone. If you disable this policy setting, the TDC Active X control will run from all sites in this zone.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067151)
-  
-  **Default**: Enabled 
-  
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone script initiated windows**  
   This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars. If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature. If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process. If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067075)  
-  
-  **Default**: Disabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067075)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone include local path when uploading files to server**  
   This policy setting controls if local path information gets sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information gets sent when they upload a file via an HTML form. By default, path information is sent.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067072)  
-  
-  **Default**: Disabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067072)
+
+  **Default**: Disabled
+
 - **Internet Explorer disable processes in enhanced protected mode**  
   This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows. Important: Some ActiveX controls and toolbars may not be available when 64-bit processes are used. If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows. If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows. If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067149)  
-  
-  **Default**: Enabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067149)
+
+  **Default**: Enabled
+
 - **Internet Explorer ignore certificate errors**  
   This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer. If you enable this policy setting, the user can't continue browsing. If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067071)  
-  
-  **Default**: Disabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067071)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone loading of XAML files**  
   This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation. If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files. If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior. If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067147)  
-  
-  **Default**: Disable  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067147)
+
+  **Default**: Disable
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
+
 - **Internet Explorer internet zone automatic prompt for file downloads**  
   This policy setting determines whether users are prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads. If you enable this setting, users will receive a file download dialog for automatic download attempts. If you disable or don't configure this setting, file downloads that aren't user-initiated are blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067117)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067117)
+
+  **Default**: Disabled
+
 ::: zone-end
 ::: zone pivot="mdm-preview"
+
 - **Internet Explorer internet zone automatic prompt for file downloads**  
   This policy setting determines whether users are prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads. If you enable this setting, users will receive a file download dialog for automatic download attempts. If you disable or don't configure this setting, file downloads that aren't user-initiated are blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067117)  
-  
-  **Default**: Enabled  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067117)
+
+  **Default**: Enabled
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Internet Explorer restricted zone security warning for potentially unsafe files**  
   This policy setting controls if the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example). If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open. If you disable this policy setting, these files don't open. If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066797)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066797)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone cross site scripting filter**  
   This policy controls if the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone. If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections. If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067053) 
-  
-  **Default**: Enabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067053)
+
+  **Default**: Enabled
+
 - **Internet Explorer fallback to SSL3**  
   This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails. We recommend that you don't allow insecure fallback in order to prevent a man-in-the-middle attack. This policy doesn't affect which security protocols are enabled. If you disable this policy, system defaults are used.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067118)  
-  
-  **Default**: No sites  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067118)
+
+  **Default**: No sites
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
@@ -664,33 +672,34 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
 
   **Default**: 2 items:  TLS v1.1 and TLS v1.2  
   *Select the down arrow to display options that you can select for this setting.*
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Internet Explorer locked down internet zone smart screen**  
   This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067059)  
-  
-  **Default**: Enabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067059)
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone launch applications and files in an iFrame**  
   This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone. If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone. If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone. If you don't configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067061)  
-  
-  **Default**: Disable 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067061)
+
+  **Default**: Disable
+
 - **Internet Explorer bypass smart screen warnings about uncommon files**  
   This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet. If you enable this policy setting, SmartScreen Filter warnings block the user. If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067068)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067068)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone popup blocker**  
   This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked. If you enable this policy setting, most unwanted pop-up windows are prevented from appearing. If you disable this policy setting, pop-up windows aren't prevented from appearing. If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067069)  
-  
-  **Default**: Enable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067069)
+
+  **Default**: Enable
+
 - **Internet Explorer processes consistent MIME handling**  
   Internet Explorer contains dynamic binary behaviors: components that encapsulate specific functionality for the HTML elements to which they're attached. This policy setting controls whether the Binary Behavior Security Restriction setting is prevented or allowed. If you enable this policy setting, binary behaviors are prevented for the File Explorer and Internet Explorer processes. If you disable this policy setting, binary behaviors are allowed for the File Explorer and Internet Explorer processes. If you don't configure this policy setting, binary behaviors are prevented for the File Explorer and Internet Explorer processes.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067144)  
