@@ -3,11 +3,11 @@
 
 title: Intune security baselines settings for Windows 10 MDM
 titleSuffix: Microsoft Intune
-description: Review the defaults and available settings for the different versions of the Windows MDM scurity baseline that you can manage with Microsoft Intune.
+description: Review the defaults and available settings for the different versions of the Windows MDM security baseline that you can manage with Microsoft Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/06/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -227,7 +227,7 @@ For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com
   
   When *Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements* is selected, you can configure the *Hardended UNC path list.
   - **Hardened UNC path list**  
-    Select **Add** to specify additonal security flags and server paths.  
+    Select **Add** to specify additional security flags and server paths.  
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -252,7 +252,8 @@ For more information, see [Policy CSP - CredentialsDelegation](https://docs.micr
 ## Credentials UI  
 For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.  
 
-- **Enumerate administrators** 
+- **Enumerate administrators**
+
   This policy setting controls whether administrator accounts display when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC display so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067021)
 
@@ -263,7 +264,8 @@ For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.co
 For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in the Windows documentation.  
 
-- **Block direct memory access**  
+- **Block direct memory access**
+
   This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA is blocked on hot plug PCI ports with no children devices until the user logs in again. Devices that were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067031)     
   
@@ -298,7 +300,8 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
 ## Device Installation  
 For more information, see [Policy CSP - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in the Windows documentation.  
 
-- **Hardware device installation by device identifiers**  
+- **Hardware device installation by device identifiers**
+
   This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, devices can install and update as allowed or prevented by other policy settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2066794)  
   
@@ -306,12 +309,14 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
 
   When *Block hardware device installation* is selected, the following settings are available.
 
-  - **Remove matching hardware devices**   
+  - **Remove matching hardware devices**
+
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
     
     **Default**: Yes
 
-  - **Hardware device identifiers that are blocked**  
+  - **Hardware device identifiers that are blocked**
+  
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
     
     **Default**: Yes  
@@ -323,12 +328,14 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   **Default**: Block hardware device installation  
 
   When *Block hardware device installation* is selected, the following settings are available.
-  - **Remove matching hardware devices**    
+  - **Remove matching hardware devices**
+
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
 
     **Default**: *No default configuration*  
 
-  - **Hardware device identifiers that are blocked**  
+  - **Hardware device identifiers that are blocked**
+
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
     
     **Default**: *No default configuration*  
@@ -1476,13 +1483,15 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
   
   **Default**: Disabled
   
-- **Standby states when sleeping while plugged in**  
+- **Standby states when sleeping while plugged in**
+
   This policy setting manages if Windows can use standby states when putting the computer in a sleep state. If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state. If you disable this policy setting, standby states (S1-S3) aren't allowed.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067196)  
   
   **Default**: Disabled
   
-- **Require password on wake while on battery**  
+- **Require password on wake while on battery**
+
   This policy setting specifies if the user is prompted for a password when the system resumes from sleep. If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep. If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067322)  
   
@@ -1493,7 +1502,8 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
 ## Remote Assistance   
 For more information, see [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) in the Windows documentation.  
 
-- **Remote Assistance solicited**  
+- **Remote Assistance solicited**
+
   This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer. 
   - *If you enable this policy setting*, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings. 
   - *If you disable this policy setting*, users on this computer cannot use email or file transfer to ask someone for help. Also, users cannot use instant messaging programs to allow connections to this computer. 
@@ -1898,9 +1908,9 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
   Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
 
   > [!IMPORTANT]
-  > The options for this setting are inversed from thier implied meaning. While inversed, a value of *Yes* does not enable Windows Hello and instead is treated as *Not configured*. When this setting is set to *Not configured*, Windows Hello is enabled on devices that recieve this baseline. 
+  > The options for this setting are reversed from their implied meaning. While reversed, a value of *Yes* does not enable Windows Hello and instead is treated as *Not configured*. When this setting is set to *Not configured*, Windows Hello is enabled on devices that receive this baseline.
   >
-  > The following descriptions have been revised to reflect this behavior. The reversal of settings will be fixed in a future update to this security baseline.  
+  > The following descriptions have been revised to reflect this behavior. The reversal of settings will be fixed in a future update to this security baseline.
 
   - When set to *Not configured*, Windows Hello is enabled, and the device provisions Windows Hello for Business.
   - When set to *Yes*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled.
