@@ -1826,7 +1826,8 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## Microsoft Defender Firewall  
+## Microsoft Defender Firewall
+
 For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
 
 - **Firewall profile domain**  
@@ -1883,18 +1884,30 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
   - **Firewall enabled**  
     **Default**: Allowed
 
-## Windows Hello for Business  
-- **Require enhanced anti-spoofing, when available**  
+## Windows Hello for Business
+
+- **Require enhanced anti-spoofing, when available**
+
   If Yes, devices will use enhanced anti-spoofing, when available. If No, anti-spoofing will be blocked. Not configured will honor configurations done on the client.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Default**: Yes
 
-- **Configure Windows Hello for Business**   
-    Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
+- **Configure Windows Hello for Business**
 
+  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
+
+  > [!IMPORTANT]
+  > The options for this setting are inversed from thier implied meaning. While inversed, a value of *Yes* does not enable Windows Hello and instead is treated as *Not configured*. When this setting is set to *Not configured*, Windows Hello is enabled on devices that recieve this baseline. 
+  >
+  > The following descriptions have been revised to reflect this behavior. The reversal of settings will be fixed in a future update to this security baseline.  
+
+  - When set to *Not configured*, Windows Hello is enabled, and the device provisions Windows Hello for Business.
+  - When set to *Yes*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled.
+  <!-- expected behavior 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   You cannot disable Windows Hello for Business through this baseline. You can disable Windows Hello for Business when you configure [Windows enrollment](windows-hello.md), or as part of a device configuration profile for [identity protection](identity-protection-configure.md).  
 
@@ -1922,7 +1935,8 @@ For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/op
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## Windows Ink Workspace  
+## Windows Ink Workspace
+
 For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in the Windows documentation.  
 
 - **Ink Workspace**  
