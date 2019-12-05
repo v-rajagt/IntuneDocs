@@ -42,8 +42,7 @@ Be sure to select the version of the baseline that you want to view.
 <!-- Cookies might be required to enable some browsers to display the zone options -->
 
 ::: zone pivot="mdm-may-2019"
-**MDM Security Baseline for May 2019**
-
+**MDM Security Baseline for May 2019**  
 > [!NOTE]
 > In June of 2019, the *MDM Security Baseline for May 2019* template was released as generally available (not in preview). This version of the security baseline replaces the previous baseline, the *MDM Security Baseline for October 2018*.  Profiles that were created prior to the availability of the May 2019 baseline won't update to reflect the settings and values that are in the May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.
 
@@ -51,9 +50,7 @@ To learn about what's changed in this version of the baseline from the previous 
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
-
-**Preview - MDM Security Baseline for October 2018**
-
+**Preview - MDM Security Baseline for October 2018**  
 > [!NOTE]
 > This is the preview version of the MDM security baseline, released in October of 2018. This preview baseline was replaced in June of 2019 by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version. Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.
 
@@ -64,9 +61,9 @@ To learn about what's changed in this version of the baseline from the previous 
 
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
 
-- **Block display of toast notifications**
-
-  This policy setting allows you to prevent app notifications from appearing on the lock screen. If you enable this policy setting, no app notifications are displayed on the lock screen. If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067101).
+- **Block display of toast notifications**  
+  This policy setting allows you to prevent app notifications from appearing on the lock screen. If you enable this policy setting, no app notifications are displayed on the lock screen. If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067101)
 
   **Default**: Yes
 
@@ -83,8 +80,9 @@ For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/wi
 
 For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime) in the Windows documentation.
 
-- **Microsoft accounts optional for Windows Store apps**
-  This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104).
+- **Microsoft accounts optional for Windows Store apps**  
+  This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)
   
   **Default**: Enabled
 
@@ -95,20 +93,18 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Block user control over installations**
-
-  This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060).
+- **Block user control over installations**  
+  This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060)
 
   **Default**: Yes
 
-- **Block MSI app installations with elevated privileges**
-
+- **Block MSI app installations with elevated privileges**  
   This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
 
   - *If you enable this policy setting*, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically)f, or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
 
-  - *If you disable or do not configure this policy setting*, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer. Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders. Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.
-
+  - *If you disable or do not configure this policy setting*, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer. Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders. Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067134)
 
   **Default**: Yes
@@ -116,9 +112,9 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Block game DVR (desktop only)**
-
-  Configures whether recording and broadcasting of games is allowed. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067056).
+- **Block game DVR (desktop only)**  
+  Configures whether recording and broadcasting of games is allowed.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067056)
 
   **Default**: Yes
 
@@ -126,22 +122,21 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
 
 For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in the Windows documentation.
 
-- **Auto play default auto run behavior**
-
-  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067133).
+- **Auto play default auto run behavior**  
+  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067133)
 
   **Default**: Do not execute
 
-- **Auto play mode**
-
-  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration. [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793).
-
+- **Auto play mode**  
+  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793)
 
   **Default**: Disabled
 
-- **Block auto play for non-volume devices**
-
-  This policy setting disallows AutoPlay for MTP devices like cameras or phones. If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones. If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067106).
+- **Block auto play for non-volume devices**  
+  This policy setting disallows AutoPlay for MTP devices like cameras or phones. If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones. If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067106)
 
   **Default**: Enabled
 
@@ -149,10 +144,8 @@ For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/win
 
 For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker) in the Windows documentation.
 
-- **Bit locker removable drive policy**
-
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
-
+- **Bit locker removable drive policy**  
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140)
 
   For Bit locker removable drive policy, configure the following setting:
@@ -163,9 +156,8 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 ::: zone-end
 ::: zone pivot="mdm-preview"
 
-- **Bit locker removable drive policy**
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
-
+- **Bit locker removable drive policy**  
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140)
 
   For Bit locker removable drive policy, configure the following setting:
@@ -177,187 +169,189 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
     **Default**: AES 256bit CBC  
 
 - **Bit locker fixed drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
- 
-  For Bit locker fixed drive policy, configure the following settings: 
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
+
+  For Bit locker fixed drive policy, configure the following settings:
+
   - **Encryption method**
     **Default**: AES 256bit XTS  
 
 - **Bit locker system drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
 
-   For Bit locker system drive policy, configure the following settings:
+  For Bit locker system drive policy, configure the following settings:
+
   - **Encryption method**  
     **Default**: AES 256bit XTS  
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## Browser  
-For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
+## Browser
+
+For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.
 
 - **Require SmartScreen for Microsoft Edge**  
   Microsoft Edge uses Microsoft Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users can't disable (turn off) Microsoft Defender SmartScreen. Enabling this policy turns off Microsoft Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Microsoft defender SmartScreen on or off.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067029)   
-  
-  **Default**: Yes  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067029)
+
+  **Default**: Yes
+
 - **Block malicious site access**  
   By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067040)   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067040)
   
-  **Default**: Yes  
+  **Default**: Yes
   
 - **Block unverified file download**  
   By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067023)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067023)
   
-  **Default**: Yes  
+  **Default**: Yes
   
 - **Block Password Manager**  
   By default, Microsoft Edge uses Password Manager automatically, allowing users to manager passwords locally. Disabling this policy restricts Microsoft Edge from using Password Manager. Don’t configure this policy if you want to let users choose to save and manage passwords locally using Password Manager.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067128)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067128)
   
-  **Default**: Yes  
+  **Default**: Yes
   
 - **Prevent certificate error overrides**  
   This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer. If you enable this policy setting, the user can't continue browsing. If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067126)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067126)
   
-  **Default**: Yes  
+  **Default**: Yes
 
-## Connectivity  
-For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in the Windows documentation.  
+## Connectivity
+
+For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in the Windows documentation.
 
 - **Block Internet download for web publishing and online ordering wizards**  
   This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards. These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry. If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry display. If you disable or don't configure this policy setting, a list of providers downloads when the user uses the web publishing or online ordering wizards. For more information that includes details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067136)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067136)
   
-  **Default**: Enabled  
+  **Default**: Enabled
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-- **Configure secure access to UNC paths**  
-  This policy setting configures secure access to UNC paths. If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067243) 
 
-  **Default**: Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements
-  
+- **Configure secure access to UNC paths**  
+  This policy setting configures secure access to UNC paths. If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067243)
+
+  **Default**: Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements.
+
   When *Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements* is selected, you can configure the *Hardended UNC path list.
+
   - **Hardened UNC path list**  
-    Select **Add** to specify additional security flags and server paths.  
+    Select **Add** to specify additional security flags and server paths.
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Block downloading of print drivers over HTTP**  
   This policy setting specifies whether to allow this client to download print driver packages over HTTP. To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP. Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that aren't already installed locally. If you enable this policy setting, print drivers can't be downloaded over HTTP. If you disable or don't configure this policy setting, users can download print drivers over HTTP.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067141)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067141)
   
-  **Default**: Enabled  
+  **Default**: Enabled
 
-<!-- here -->
-## Credentials Delegation  
-For more information, see [Policy CSP - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
-) in the Windows documentation.  
+## Credentials Delegation
+
+For more information, see [Policy CSP - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation) in the Windows documentation.
 
 - **Remote host delegation of non-exportable credentials**  
   Remote host allows delegation of non-exportable credentials. When using credential delegation, devices provide an exportable version of credentials to the remote host, which exposes users to the risk of credential theft from attackers on the remote host. If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode. If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067103)   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067103)
   
-  **Default**: Enabled  
+  **Default**: Enabled
 
-## Credentials UI  
-For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.  
+## Credentials UI
 
-- **Enumerate administrators**
+For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.
 
+- **Enumerate administrators**  
   This policy setting controls whether administrator accounts display when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC display so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067021)
 
-  
-  **Default**: Disabled  
+  **Default**: Disabled
 
-## Data Protection  
-For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
-) in the Windows documentation.  
+## Data Protection
 
-- **Block direct memory access**
+For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection) in the Windows documentation.
 
+- **Block direct memory access**  
   This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA is blocked on hot plug PCI ports with no children devices until the user logs in again. Devices that were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067031)     
-  
-  **Default**: Yes  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067031)
 
-## Device Guard  
-For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
-) in the Windows documentation.  
+  **Default**: Yes
+
+## Device Guard
+For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) in the Windows documentation.  
 
 - **Credential Guard**  
   This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067044)
-   
-  **Default**: Enable with UEFI lock 
+
+  **Default**: Enable with UEFI lock
+
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **virtualization based security** 
+- **Virtualization based security**  
   **Default**: Enable VBS with secure boot
+
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Enable virtualization based security**  
   Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)
   
-  **Default**: Yes  
+  **Default**: Yes
 
-- **Launch system guard**    
-  **Default**: Enabled  
+- **Launch system guard**  
+  **Default**: Enabled
 
-## Device Installation  
-For more information, see [Policy CSP - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in the Windows documentation.  
+## Device Installation
 
-- **Hardware device installation by device identifiers**
+For more information, see [Policy CSP - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in the Windows documentation.
 
+- **Hardware device installation by device identifiers**  
   This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, devices can install and update as allowed or prevented by other policy settings.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066794)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066794)
   
-  **Default**: Block hardware device installation  
+  **Default**: Block hardware device installation
 
   When *Block hardware device installation* is selected, the following settings are available.
 
-  - **Remove matching hardware devices**
-
+  - **Remove matching hardware devices**  
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-    
+
     **Default**: Yes
 
-  - **Hardware device identifiers that are blocked**
-  
+  - **Hardware device identifiers that are blocked**    
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-    
+
     **Default**: Yes  
-  
+
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067048)  
-  
-  **Default**: Block hardware device installation  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067048)
+
+  **Default**: Block hardware device installation
 
   When *Block hardware device installation* is selected, the following settings are available.
-  - **Remove matching hardware devices**
 
-    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
-
-    **Default**: *No default configuration*  
-
-  - **Hardware device identifiers that are blocked**
-
+  - **Remove matching hardware devices**  
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
-    
+
     **Default**: *No default configuration*  
 
-## Device Lock  
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
+
+    **Default**: *No default configuration*
+
+## Device Lock
+
 For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
 
 - **Prevent use of camera**  
