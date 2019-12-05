@@ -32,124 +32,140 @@ ms.collection: M365-identity-device-management
 
 
 # Windows MDM security baseline settings for Intune
+
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines, or from other versions of this baseline.
 
-- To learn about using security baselines with Intune and how to upgrade the baseline version in your security baseline profiles, see [Use security baselines](../security-baselines.md).  
-- The most recent baseline version is **MDM Security Baseline for May 2019**  
-   
-Be sure to select the version of the baseline that you want to view.   
+- To learn about using security baselines with Intune and how to upgrade the baseline version in your security baseline profiles, see [Use security baselines](../security-baselines.md).
+- The most recent baseline version is **MDM Security Baseline for May 2019**
 
-<!-- Cookies might be required to enable some browsers to display the zone options --> 
- 
-
-::: zone pivot="mdm-may-2019"  
-**MDM Security Baseline for May 2019** 
-> [!NOTE]  
-> In June of 2019, the *MDM Security Baseline for May 2019* template was released as generally available (not in preview). This version of the security baseline replaces the prvious baseline, the *MDM Security Baseline for October 2018*.  Profiles that were created prior to the availability of the May 2019 baseline won't update to reflect the settings and values that are in the May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template. 
-
-To learn about what's changed in this version of the baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
-::: zone-end
-
-::: zone pivot="mdm-preview"
-**Preview - MDM Security Baseline for October 2018**  
-> [!NOTE]  
-> This is the preview version of the MDM security baseline, released in October of 2018. This preview baseline was replaced in June of 2019 by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version. Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template. 
-::: zone-end
-
-::: zone pivot="mdm-may-2019,mdm-preview"
-## Above Lock  
-For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
-
-- **Block display of toast notifications**  
-  This policy setting allows you to prevent app notifications from appearing on the lock screen. If you enable this policy setting, no app notifications are displayed on the lock screen. If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067101)  
-
-  **Default**: Yes  
-::: zone-end
-::: zone pivot="mdm-may-2019" 
-- **Voice activate apps from locked screen**  
-
-  **Default**: Disabled
-::: zone-end
-
-::: zone pivot="mdm-may-2019,mdm-preview"  
-## App Runtime    
-For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
-) in the Windows documentation.  
-
-- **Microsoft accounts optional for Windows Store apps**  
-  This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)  
-  
-  **Default**: Enabled  
-
-## Application Management   
-For more information, see [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in the Windows documentation.  
-::: zone-end
+Be sure to select the version of the baseline that you want to view.
+<!-- Cookies might be required to enable some browsers to display the zone options -->
 
 ::: zone pivot="mdm-may-2019"
-- **Block user control over installations**  
-  This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060)  
+**MDM Security Baseline for May 2019**
 
-  **Default**: Yes
+> [!NOTE]
+> In June of 2019, the *MDM Security Baseline for May 2019* template was released as generally available (not in preview). This version of the security baseline replaces the previous baseline, the *MDM Security Baseline for October 2018*.  Profiles that were created prior to the availability of the May 2019 baseline won't update to reflect the settings and values that are in the May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.
 
-- **Block MSI app installations with elevated privileges**  
-  This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.  
-  - *If you enable this policy setting*, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically)f, or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
-  - *If you disable or do not configure this policy setting*, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer. Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders. Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.  
-  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067134)    
+To learn about what's changed in this version of the baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).
 
-  **Default**: Yes
 ::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-- **Block game DVR (desktop only)**  
-  Configures whether recording and broadcasting of games is allowed.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067056)  
-  
-  **Default**: Yes  
+::: zone pivot="mdm-preview"
 
-## Auto Play   
-For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in the Windows documentation.  
+**Preview - MDM Security Baseline for October 2018**
 
-- **Auto play default auto run behavior**  
-  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067133)       
-  
-  **Default**: Do not execute  
-  
-- **Auto play mode**  
-  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793)  
-  
+> [!NOTE]
+> This is the preview version of the MDM security baseline, released in October of 2018. This preview baseline was replaced in June of 2019 by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version. Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.
+
+::: zone-end
+::: zone pivot="mdm-may-2019,mdm-preview
+
+## Above Lock
+
+For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
+
+- **Block display of toast notifications**
+
+  This policy setting allows you to prevent app notifications from appearing on the lock screen. If you enable this policy setting, no app notifications are displayed on the lock screen. If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067101).
+
+  **Default**: Yes
+
+::: zone-end
+::: zone pivot="mdm-may-2019"
+
+- **Voice activate apps from locked screen**  
   **Default**: Disabled
 
-- **Block auto play for non-volume devices**  
-  This policy setting disallows AutoPlay for MTP devices like cameras or phones. If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones. If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067106)    
+::: zone-end
+::: zone pivot="mdm-may-2019,mdm-preview"
+
+## App Runtime
+
+For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime) in the Windows documentation.
+
+- **Microsoft accounts optional for Windows Store apps**
+  This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104).
   
-  **Default**: Enabled  
+  **Default**: Enabled
 
-## Bitlocker    
-For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
-) in the Windows documentation.  
+## Application Management
 
-- **Bit locker removable drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140) 
+For more information, see [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in the Windows documentation.
+
+::: zone-end
+::: zone pivot="mdm-may-2019"
+
+- **Block user control over installations**
+
+  This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060).
+
+  **Default**: Yes
+
+- **Block MSI app installations with elevated privileges**
+
+  This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
+
+  - *If you enable this policy setting*, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically)f, or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
+
+  - *If you disable or do not configure this policy setting*, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer. Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders. Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067134)
+
+  **Default**: Yes
+
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
+
+- **Block game DVR (desktop only)**
+
+  Configures whether recording and broadcasting of games is allowed. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067056).
+
+  **Default**: Yes
+
+## Auto Play
+
+For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in the Windows documentation.
+
+- **Auto play default auto run behavior**
+
+  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067133).
+
+  **Default**: Do not execute
+
+- **Auto play mode**
+
+  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration. [Learn more](https://go.microsoft.com/fwlink/?linkid=2066793)
+
+  **Default**: Disabled
+
+- **Block auto play for non-volume devices**
+
+  This policy setting disallows AutoPlay for MTP devices like cameras or phones. If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones. If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices. [Learn more](https://go.microsoft.com/fwlink/?linkid=2067106).
+
+  **Default**: Enabled
+
+## Bitlocker
+
+For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker) in the Windows documentation.
+
+- **Bit locker removable drive policy**
+
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140)
 
   For Bit locker removable drive policy, configure the following setting:
 
   - **Require encryption for write access**  
-    **Default**: Yes  
+    **Default**: Yes
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
 
-- **Bit locker removable drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140) 
+- **Bit locker removable drive policy**
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
+
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140)
 
   For Bit locker removable drive policy, configure the following setting:
 
