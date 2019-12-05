@@ -67,7 +67,7 @@ These settings use the [SharedPC CSP](https://docs.microsoft.com/windows/client-
 
   For more information on what the education policies do, see [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education).
 
-- **Fast first sign-in**: Choose **Enabled** so users have a quick first sign-in experience. When **enables**, the device automatically connects new non-admin Azure AD accounts to the pre-configured candidate local accounts. Choose **Disabled** to prevent the quick first sign-in experience. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
+- **Fast first sign-in**: Choose **Enabled** so users have a quick first sign-in experience. When **enabled**, the device automatically connects new non-admin Azure AD accounts to the pre-configured candidate local accounts. Choose **Disabled** to prevent the quick first sign-in experience. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 
   [Authentication/EnableFastFirstSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin)
 
