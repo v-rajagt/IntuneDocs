@@ -923,298 +923,298 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
 
 - **Internet Explorer restricted zone cross site scripting filter**  
   This policy controls if the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone. If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections. If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067178)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067178)
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone binary and script behaviors**  
   This policy setting allows you to manage dynamic binary and script behaviors: components that encapsulate specific functionality for HTML elements to which they were attached. If you enable this policy setting, binary and script behaviors are available. If you select Administrator approved in the drop-down box, only behaviors listed in the Admin-approved Behaviors under Binary Behaviors Security Restriction policy are available. If you disable this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager. If you don't configure this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067224)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067224)
+
+  **Default**: Disable
+
 - **Internet Explorer security settings check**  
   This policy setting turns off the Security Settings Check feature, which checks Internet Explorer security settings to determine when the settings put Internet Explorer at risk. If you enable this policy setting, the feature is turned off. If you disable or don't configure this policy setting, the feature is turned on.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067182)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067182)
+
+  **Default**: Enabled
+
 - **Internet Explorer internet zone security warning for potentially unsafe files**  
   This policy setting controls if the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example). If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open. If you disable this policy setting, these files don't open. If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067204)  
-  
-  **Default**: Prompt  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067204)
+
+  **Default**: Prompt
+
 - **Internet Explorer intranet zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Medium Safety.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067206)  
-  
-  **Default**: High safety 
-  
-- **Internet Explorer block outdated Active X controls**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067206)
+
+  **Default**: High safety
+
+- **Internet Explorer block outdated Active X controls**  
   This policy setting determines whether Internet Explorer blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone. If you enable this policy setting, Internet Explorer stops blocking outdated ActiveX controls. If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls. For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067203)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067203)
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone popup blocker**  
   This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked. If you enable this policy setting, most unwanted pop-up windows are prevented from appearing. If you disable this policy setting, pop-up windows aren't prevented from appearing. If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067180)  
-  
-  **Default**: Enable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067180)
+
+  **Default**: Enable
+
 - **Internet Explorer processes MK protocol security restriction**  
   The MK Protocol Security Restriction policy setting reduces attack surface area by preventing the MK protocol. Resources hosted on the MK protocol will fail. If you enable this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail. If you disable this policy setting, applications can use the MK protocol API. Resources hosted on the MK protocol will work for the File Explorer and Internet Explorer processes. If you don't configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067179)  
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer trusted zone java permissions**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067179)
+
+  **Default**: Enabled
+
+- **Internet Explorer trusted zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
-  
-  **Default**: High safety  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)
+
+  **Default**: High safety
+
 - **Internet Explorer restricted zone scripting of java applets**  
   This policy setting allows you to manage whether applets are exposed to scripts within the zone. If you enable this policy setting, scripts can access applets automatically without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow scripts to access applets. If you disable this policy setting, scripts are prevented from accessing applets. If you don't configure this policy setting, scripts are prevented from accessing applets.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067202)  
-  
-  **Default**: Disable  
-  
-- **Internet Explorer locked down restricted zone java permissions**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067202)
+
+  **Default**: Disable
+
+- **Internet Explorer locked down restricted zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067181)  
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067181)
+
+  **Default**: Disable java
+
+- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**  
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067091)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067091)
+
+  **Default**: Enabled
+
 - **Internet Explorer include all network paths**  
   Internet Explorer include all network paths.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067090)  
-  
-  **Default**: Disabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067090)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone protected mode**  
   This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system. If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode. If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode. If you don't configure this policy setting, the user can turn on or turn off Protected Mode.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067171)  
-  
-  **Default**: Enable 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067171)
+
+  **Default**: Enable
+
 - **Internet Explorer internet zone initialize and script Active X controls not marked as safe**  
   This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067170)  
-  
-  **Default**: Disable 
-  
-- **Internet Explorer locked down restricted zone smart screen**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067170)
+
+  **Default**: Disable
+
+- **Internet Explorer locked down restricted zone smart screen**  
   This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067092)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067092)
+
+  **Default**: Enabled
+
 - **Internet Explorer crash detection**  
   This policy setting allows you to manage the crash detection feature of add-on Management. If you enable this policy setting, a crash in Internet Explorer will exhibit behavior found in Windows XP Professional Service Pack 1 and earlier, namely to invoke Windows Error Reporting. All policy settings for Windows Error Reporting continue to apply. If you disable or don't configure this policy setting, the crash detection feature for add-on management is functional.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067094)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067094)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to High Safety.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067174)  
-  
-  **Default**: Disable java  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067174)
+
+  **Default**: Disable java
+
 - **Internet Explorer restricted zone active scripting**  
   This policy setting allows you to manage whether script code on pages in the zone is run. If you enable this policy setting, script code on pages in the zone can run automatically. If you select Prompt in the drop-down box, users are queried to choose whether to allow script code on pages in the zone to run. If you disable this policy setting, script code on pages in the zone is prevented from running. If you don't configure this policy setting, script code on pages in the zone is prevented from running.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067172)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067172)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone logon options**  
   This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067194)  
-  
-  **Default**: Prompt  
-  
-- **Internet Explorer restricted zone allow vbscript to run**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067194)
+
+  **Default**: Prompt
+
+- **Internet Explorer restricted zone allow vbscript to run**  
   This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer. If you selected Enable in the drop-down box, VBScript can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run. If you selected Disable in the drop-down box, VBScript is prevented from running. If you don't configure or disable this policy setting, VBScript is prevented from running.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067173)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067173)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone drag content from different domains across windows**  
   This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067093)  
-  
-  **Default**: Disabled 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067093)
+
+  **Default**: Disabled
+
 - **Internet Explorer intranet zone initialize and script Active X controls not marked as safe**  
   This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067175)  
-  
-  **Default**: Disable 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067175)
+
+  **Default**: Disable
+
 - **Internet Explorer download enclosures**  
   This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer. If you enable this policy setting, the user can't set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can't change the download setting through the Feed APIs. If you disable or don't configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067245)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067245)
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone download unsigned Active X controls**  
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067177)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067177)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone drag content from different domains within windows**  
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067095)  
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer processes restrict Active X install**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067095)
+
+  **Default**: Disabled
+
+- **Internet Explorer processes restrict Active X install**  
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation. If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes. If you disable or don't configure this policy setting, the Web Browser Control won't block automatic prompting of ActiveX control installation for all processes.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067250)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067250)
+
+  **Default**: Enabled
+
 - **Internet Explorer internet zone scriptlets**  
   This policy setting allows you to manage whether the user can run scriptlets. If you enable this policy setting, the user can run scriptlets. If you disable this policy setting, the user can't run scriptlets. If you don't configure this policy setting, the user can enable or disable scriptlets.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067176)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067176)
+
+  **Default**: Disable
+
 - **Internet Explorer restricted zone drag and drop or copy and paste files**  
   This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone. If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone. If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone. If you don't configure this policy setting, users are queried to choose whether to drag or copy files from this zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067096)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067096)
+
+  **Default**: Disable
+
 - **Internet Explorer software when signature is invalid**  
   This policy setting allows you to manage whether software, such as ActiveX controls and file downloads, can be installed or run by the user even though the signature is invalid. An invalid signature might indicate that someone has tampered with the file. If you enable this policy setting, users are prompted to install or run files with an invalid signature. If you disable this policy setting, users can't run or install files with an invalid signature. If you don't configure this policy, users can choose to run or install files with an invalid signature.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067201)
-  
-  **Default**: Disabled  
-  
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone copy and paste via script**  
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can't perform a clipboard operation.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067165)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067165)
+
+  **Default**: Disable
+
 - **Internet Explorer restricted zone drag content from different domains across windows**  
   This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067166)   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067166)
 
-  **Default**: Disabled  
-  
+  **Default**: Disabled
+
 - **Internet Explorer users adding sites**  
   Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level. If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.) If you disable this policy or don't configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone. This policy prevents users from changing site management settings for security zones established by the administrator. Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it's enabled, this policy is ignored. Also, see the "Security zones: Use only machine settings" policy.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067167)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067167)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone script initiated windows**  
   This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars. If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature. If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process. If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067088)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067088)
+
+  **Default**: Disabled
+
 - **Internet Explorer security zones use only machine settings**  
   Applies security zone information to all users of the same computer. A security zone is a group of Web sites with the same security level. If you enable this policy, changes that the user makes to a security zone will apply to all users of that computer. If you disable this policy or don't configure it, users of the same computer can establish their own security zone settings. Use this policy to ensure that security zone settings apply uniformly to the same computer and don't vary from user to user. Also, see the "Security zones: don't allow users to change policies" policy.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067086)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067086)
+
+  **Default**: Enabled
+
 - **Internet Explorer locked down local machine zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067253) 
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer restricted zone do not run antimalware against Active X controls**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067253)
+
+  **Default**: Disable java
+
+- **Internet Explorer restricted zone do not run antimalware against Active X controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067089)
-  
-  **Default**: Disabled  
-  
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone run .NET Framework reliant components signed with authenticode**  
   This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components. If you disable this policy setting, Internet Explorer won't execute signed managed components. If you don't configure this policy setting, Internet Explorer won't execute signed managed components.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067169)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067169)
+
+  **Default**: Disable
+
 - **Internet Explorer restricted zone access to data sources**  
   This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067161)  
-  
-  **Default**: Disable 
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067161)
+
+  **Default**: Disable
+
 - **Internet Explorer internet zone don't run antimalware against ActiveX controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067162)  
-  
-  **Default**: Disabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067162)
+
+  **Default**: Disabled
+
 - **Internet Explorer internet zone copy and paste via script**  
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can perform a clipboard operation.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067084)  
-  
-  **Default**: Disable  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067084)
+
+  **Default**: Disable
+
 - **Internet Explorer use Active X installer service**  
   This policy setting allows you to specify how ActiveX controls are installed. If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls. If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067163)
-  
-  **Default**: Enabled  
-  
+
+  **Default**: Enabled
+
 - **Internet Explorer processes protection from zone elevation**  
   Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, and so on). For example, Web pages on the local computer have the fewest security restrictions and are in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. If you enable this policy setting, any zone can be protected from zone elevation for all processes. If you disable or don't configure this policy setting, processes other than Internet Explorer or those listed in the Process List receive no such protection.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067160)  
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer internet zone download unsigned ActiveX controls**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067160)
+
+  **Default**: Enabled
+
+- **Internet Explorer internet zone download unsigned ActiveX controls**  
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067325)
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone navigate windows and frames across different domains**   
+
+  **Default**: Disable
+
+- **Internet Explorer internet zone navigate windows and frames across different domains**  
   This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users can't open windows and frames to access applications from different domains. If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067083)  
-  
-  **Default**: Disable  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067083)
+
+  **Default**: Disable
 
 - **Internet Explorer internet zone updates to status bar via script**  
   This policy setting allows you to manage whether a script can update the status bar within the zone. If you enable this policy setting, scripts can update the status bar. If you disable or don't configure this policy setting, script isn't allowed to update the status bar.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067087)  
-  
-  **Default**: Disabled  
- 
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067087)
+
+  **Default**: Disabled
+
 - **Internet Explorer restricted zone include local path when uploading files to server**  
   This policy setting controls if local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067085)  
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer processes restrict file download**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067085)
+
+  **Default**: Disabled
+
+- **Internet Explorer processes restrict file download**  
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of file downloads that aren't user initiated. If you enable this policy setting, the Web Browser Control will block automatic prompting of file downloads that aren't user initiated for all processes. If you disable this policy setting, the Web Browser Control won't block automatic prompting of file downloads that aren't user initiated for all processes.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067164)  
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone allow only approved domains to use Active X controls**   
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067164)
+
+  **Default**: Enabled
+
+- **Internet Explorer restricted zone allow only approved domains to use Active X controls**  
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.  
-  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067233)  
-  
-  **Default**: Enabled  
-  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067233)
+
+  **Default**: Enabled
+
 - **Internet Explorer restricted zone initialize and script Active X controls not marked as safe**  
   This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067097)  
