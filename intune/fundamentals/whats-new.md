@@ -57,6 +57,17 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+## Week of December 2, 2019
+
+#### New Microsoft Endpoint Configuration Manager co-management licensing<!--5027281-->
+A new license is now available that lets Configuration Manager customers with Software Assurance get Intune co-management for Windows 10 PCs without having to purchase an additional Intune license for co-management. Customers no longer need to assign individual Intune/EMS licenses to their end users for co-managing Windows 10.
+- Devices managed by Configuration Manager and enrolled into co-management have almost the same rights as Intune Standalone MDM managed PCs. However, after resetting they can't be re-provisioned by using Autopilot.
+- Windows 10 devices enrolled into Intune by using other means require full Intune licenses.
+- Devices on other platforms still require full Intune licenses.
+
+
+
+<!-- ########################## -->
 ## Week of November 18, 2019 (1911 Service release)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
