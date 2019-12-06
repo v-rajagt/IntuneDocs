@@ -115,7 +115,7 @@ Applies to:
 
 ## Login items
 
-Use this feature to choose the apps, custom apps, files, and folders that open when users sign in to the devices. 
+Use this feature to choose the apps, custom apps, files, and folders that open when users sign in to the devices.
 
 For a list of the settings you can configure in Intune, see [Login items on macOS](macos-device-features-settings.md#login-items).
 
@@ -166,13 +166,6 @@ For a list of the settings you can configure in Intune, see [iOS SSO app extensi
 
 For more information on developing an SSO app extension, watch [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) on Apple’s web site.
 
-The Single sign-on app extension feature applies to:
-
-- iOS 13.0 and newer
-- iPadOS 13.0 and newer
-- macOS 10.15 and newer
-
-
 > [!NOTE]
 > The **Single sign-on app extension** feature is different than the **Single sign-on** feature:
 >
@@ -188,6 +181,11 @@ The Single sign-on app extension feature applies to:
 >
 > - The built-in Kerberos **Single sign-on app extension** handles Kerberos challenges for web pages and apps just like **Single sign-on**. However, the built-in Kerberos extension supports password changes and behaves better in enterprise networks. When deciding between the Kerberos **Single sign-on app extension** and **Single sign-on**, we recommend using the extension due to improved performance and capabilities.
 
+Applies to:
+
+- iOS 13.0 and newer
+- iPadOS 13.0 and newer
+- macOS 10.15 and newer
 
 ## Wallpaper
 
