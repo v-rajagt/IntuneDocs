@@ -78,6 +78,9 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
 
 3. From the navigation pane, select **Devices** to display details about the enrolled devices in your Intune tenant. 
 
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Devices**.
+
     The **Devices - Overview** pane has several tabs that allow you to view a summary of the following statuses and alerts:
     - **Enrollment status** - Review details about Intune enrolled devices by platform and enrollment failures.
     - **Enrollment alerts** - Find more details about unassigned devices by platform. 
@@ -87,51 +90,54 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Devices](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-03.png)
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Devices**.
-
 4. From the **Devices - Overview** pane, select **Compliance policies** to display details about compliance for devices managed by Intune. You will see details similar to the following image.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Compliance policies](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-04.png)
     
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Device Compliance**.
+
     Compliance requirements are essentially rules, such as requiring a device PIN, or requiring device encryption. Device compliance policies define the rules and settings that a device must follow to be considered compliant. To use device compliance, you must have:
     - An Intune and an Azure Active Directory (Azure AD) Premium subscription
     - Devices running a supported platform
     - Devices must be enrolled in Intune
     - Devices that are enrolled to either one user or no primary user.
     
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Device Compliance**.
-
     For more information, see [Get started with device compliance policies in Intune](../protect/device-compliance-get-started.md).
 
 5. From the **Devices - Overview** pane, select **Conditional Access** to display details about access policies.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Conditional access](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-05.png)
 
-    Conditional Access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based Conditional Access, and find common scenarios for using Conditional Access with Intune, see [What's Conditional Access?](../protect/conditional-access.md)
-
     > [!TIP]
     > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Conditional Access**.
+
+    Conditional Access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based Conditional Access, and find common scenarios for using Conditional Access with Intune, see [What's Conditional Access?](../protect/conditional-access.md)
 
 6. From the navigation pane, select **Devices** > **Configuration profiles** to display details about device profiles in Intune.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Configuration profiles](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-06.png)
     
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Device configuration**.
+
     Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS, Android, macOS, and Windows. Then, you can use Intune to apply the profile to devices in your organization.   
 
     For more information about device configuration, see [Apply features settings on your devices using device profiles in Microsoft Intune](../configuration/device-profiles.md).
-
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Device configuration**.
 
 7. From the navigation pane, select **Devices** > **All devices** to display details about your Intune tenant's enrolled devices. If you are starting with a new Intune enlistment, you will not have any enrolled devices yet.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - All devices](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-07.png)
 
     This list of devices show key details about compliance, OS version, and last check-in date.
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Devices** > **All devices**.
  
 8. From the navigation pane, select **Apps** to display an overview of app status. This pane provides app installation status based on the following tabs:
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Client apps**.
 
     The **Apps - Overview** pane has two tabs that allow you to view a summary of the following statuses:
     - **Installation status** - View the top installation failures by device, as well as the apps with installation failures.  
@@ -144,12 +150,12 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
     > [!NOTE]
     > The **Apps - Overview** pane also provides tenant status and account details.
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Device configuration**.
-
     For more information about adding and assigning apps, see [Add apps to Microsoft Intune](../apps/apps-add.md) and [Assign apps to groups with Microsoft Intune](../apps/apps-deploy.md).
 
 9. From the **Apps - Overview** pane, select **All apps** to see a list of apps that have been added to Intune.
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Client apps** > **Apps**.
 
     You can add a variety of different app type based on platform to Intune. Once an app has been added, you can assign it to groups of users. 
 
@@ -157,12 +163,12 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
 
     For more information, see [Add apps to Microsoft Intune](~/apps/apps-add.md). 
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Client apps**.
-
 10. From the navigation pane, select **Users** to display details about the users that you have included in Intune. These users are your company's workforce.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Users](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-10.png)
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Users**.
 
     You can add users directly to Intune or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions to access Intune. For more information, see [Add users and grant administrative permission to Intune](users-add.md).
 
@@ -170,47 +176,49 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Groups](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-11.png)
 
-    You can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or deploy apps to a set of devices. 
-
     > [!TIP]
     > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Groups**.
 
-    For more information about groups, see [Add groups to organize users and devices](../groups-add.md).
+    You can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or deploy apps to a set of devices. For more information about groups, see [Add groups to organize users and devices](../groups-add.md).
 
 12. From the navigation pane, select **Tenant administration** to display details about your Intune tenant.
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Tenant status**.
 
     The **Tenant admin - Tenant status** pane provides tabs for **Tenant details**, **Connector status**, and **Service health dashboard**. If there are any issues with your tenant or Intune itself, you will find details available from this pane. 
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Tenant status](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-12.png)
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Tenant status**.
-
     For more information, see [Intune Tenant Status](../tenant-status.md).
 
 13. From the navigation pane, select **Troubleshooting + support** > **Troubleshoot** to check status details on a specific user. 
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Troubleshoot**.
 
     From the **Assignments** dropdown list, you can choose to view the targeted assignments of client apps, policies, update rings, and enrollment restrictions. Additionally, this pane provides device details, app protection status, and enrollment failures for a specific user.
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Troubleshoot](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-13.png)
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Troubleshoot**.
-
     For more information about troubleshooting within Intune, see [Use the troubleshooting portal to help users at your company](../help-desk-operators.md).
 
-14. From the navigation pane, select **Troubleshooting + support** > **Help and support** to request help. As an IT admin, you can use the **Help and Support** option to search and view solutions, as well as file an on-line support ticket for Intune. 
+14. From the navigation pane, select **Troubleshooting + support** > **Help and support** to request help. 
+
+    > [!TIP]
+    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Help and support**.
+
+    As an IT admin, you can use the **Help and Support** option to search and view solutions, as well as file an on-line support ticket for Intune. 
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - Help and support](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-14.png)
 
     To create a support ticket, your account must be assigned as an administrator role in Azure Active Directory. Administrator roles include, **Intune administrator**, **Global administrator**, and **Service administrator**. 
 
-    > [!TIP]
-    > If you have previously used Intune in the Azure portal, you found the above details in the Azure portal by signing in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and selecting **Help and support**.
-
     For more information, see [How to get support for Microsoft Intune](../get-support.md).
 
-15. From the navigation pane, select **Troubleshooting + support** > **Guided scenarios** to display available Intune guided scenarios. A guided scenario is a customized series of steps centered around one end-to-end use-case. Common scenarios are based on the role an admin, user, or device plays in your organization. These roles typically require a collection of carefully orchestrated profiles, settings, applications, and security controls to provide the best user experience and security.
+15. From the navigation pane, select **Troubleshooting + support** > **Guided scenarios** to display available Intune guided scenarios. 
+
+    A guided scenario is a customized series of steps centered around one end-to-end use-case. Common scenarios are based on the role an admin, user, or device plays in your organization. These roles typically require a collection of carefully orchestrated profiles, settings, applications, and security controls to provide the best user experience and security.
 
     If you are not familiar with all the steps and resources needed to implement a particular Intune scenario, guided scenarios may be used as your starting point. 
 
