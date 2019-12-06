@@ -158,18 +158,16 @@ These settings configure an app extension that enables single sign-on (SSO) for 
 In Intune, use these settings to configure an SSO ap extension created by your organization, identity provider, or Apple. The SSO app extension handles authentication for your users. These settings configure redirect-type and credential-type SSO app extensions.
 
 - The redirect-type is designed for modern authentication protocols like OAuth and SAML2.
-- The credential-type is designed for challenge-and-response authentication flows.
-
-You can choose between a Kerberos-specific credential extension provided by Apple and a generic credential extension.
+- The credential-type is designed for challenge-and-response authentication flows. You can choose between a Kerberos-specific credential extension provided by Apple and a generic credential extension.
 
 For a list of the settings you can configure in Intune, see [iOS SSO app extension](ios-device-features-settings.md#single-sign-on-app-extension) and [macOS SSO app extension](macos-device-features-settings.md#single-sign-on-app-extension).
 
-For more information on developing an SSO app extension, watch [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) on Apple’s web site.
+For more information on developing an SSO app extension, watch [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) on Apple’s web site. To read Apple’s description of the feature, visit [Single Sign-On Extensions payload settings](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > The **Single sign-on app extension** feature is different than the **Single sign-on** feature:
 >
-> - The **Single sign-on app extension** settings apply to iPadOS 13.0 (and newer) and iOS 13.0 (and newer). **Single sign-on** settings apply to iPadOS 13.0 (and newer) and iOS 7.0 and newer.
+> - The **Single sign-on app extension** settings apply to iPadOS 13.0 (and newer), iOS 13.0 (and newer), and macOS 10.15 (and newer). **Single sign-on** settings apply to iPadOS 13.0 (and newer) and iOS 7.0 and newer.
 >
 > - The **Single sign-on app extension** settings define extensions for use by identity providers or organizations to deliver a seamless enterprise sign-on experience. The **Single sign-on** settings define Kerberos account information for when users access servers or apps.
 >

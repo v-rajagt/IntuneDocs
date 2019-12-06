@@ -298,9 +298,9 @@ This feature applies to:
 
   [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
 
-- **Realm** (Redirect and Credential): Enter the name of your authentication realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+- **Realm** (Credential and Kerberos): Enter the name of your authentication realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
 
-- **Domains** (Redirect and Credential): Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+- **Domains** (Credential and Kerberos): Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
 
   - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
   - These domains aren't case-sensitive.
@@ -311,14 +311,14 @@ This feature applies to:
   - The URLs must begin with http:// or https://.
 
 - **Additional configuration** (Redirect and Credential): Enter additional extension-specific data to pass to the SSO app extension:
-  - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
-  - **Value type**: Enter the type of data. Your options:
+  - **Key**: Enter the name of the item you want to add, such as `user name`.
+  - **Type**: Enter the type of data. Your options:
 
     - String
     - Boolean: In **Configuration value**, enter `True` or `False`.
     - Integer: In **Configuration value**, enter a number.
     
-  - **Configuration value**: Enter the data.
+  - **Value**: Enter the data.
 
   - **Add**: Select to add your configuration keys.
 
