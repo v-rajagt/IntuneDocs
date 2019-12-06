@@ -117,7 +117,7 @@ Follow the steps below to better understand Intune in the Microsoft Endpoint Man
 
     ![Screenshot of the Microsoft Endpoint Manager admin center - All devices](./media/tutorial-walkthrough-endpoint-manager/tutorial-walkthrough-mem-07.png)
 
-Note that this list of devices, show key details about compliance, OS version, and Last check-in date.
+    This list of devices show key details about compliance, OS version, and last check-in date.
  
 8. From the navigation pane, select **Apps** to display an overview of app status. This pane provides app installation status based on the following tabs:
 
