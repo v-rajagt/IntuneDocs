@@ -87,7 +87,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login window
 
-### Settings apply to: Device enrollment and Automated device enrollment 
+### Settings apply to: Device enrollment and Automated device enrollment
 
 #### Window Layout
 
