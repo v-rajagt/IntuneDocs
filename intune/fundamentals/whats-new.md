@@ -65,6 +65,7 @@ A new license is now available that lets Configuration Manager customers with So
 - Windows 10 devices enrolled into Intune by using other means require full Intune licenses.
 - Devices on other platforms still require full Intune licenses.
 
+For more information, see [Licensing terms](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
 
 
 <!-- ########################## -->
