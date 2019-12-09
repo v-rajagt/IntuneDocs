@@ -64,7 +64,7 @@ A new license is now available that lets Configuration Manager customers with So
 - Devices managed by Configuration Manager and enrolled into co-management have almost the same rights as Intune Standalone MDM managed PCs. However, after resetting they can't be re-provisioned by using Autopilot.
 - Windows 10 devices enrolled into Intune by using other means require full Intune licenses.
 - Devices on other platforms still require full Intune licenses.
-
+For more information, see [Licensing terms](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
 
 
 <!-- ########################## -->
