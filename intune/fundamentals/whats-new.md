@@ -91,7 +91,7 @@ For more information, see [Licensing terms](https://www.microsoft.com/en-us/Lice
 #### S/MIME support with Microsoft Outlook for iOS<!-- 2669398 idready -->
 
    > [!NOTE]
-   > This feature has been delayed.
+   > This feature has been delayed, but will be released soon.
 
 Intune supports delivering S/MIME signing and encryption certificates that can be used with Outlook for iOS on iOS devices. For more information, see [Configure S/MIME for Outlook for iOS](~/apps/app-configuration-policies-outlook-smime.md).
 
