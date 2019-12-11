@@ -47,7 +47,7 @@ You can create a profile with specific wired network settings, and then deploy t
 
   Your options:
   
-  - **First active Ethernet** (default in Intune, and default in macOS)
+  - **First active Ethernet**
   - **Second active Ethernet**
   - **Third active Ethernet**
   - **First Ethernet**
