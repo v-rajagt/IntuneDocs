@@ -28,9 +28,9 @@ highlightedContent:
     - title: Set up automatic enrollment for Windows 10 devices
       itemType: get-started
       url: ./enrollment/quickstart-setup-auto-enrollment.md
-    - title: Secure Windows devices with Microsoft recommended settings
-      itemType: get-started
-      url: ./protect/security-baselines.md
+    - title: Intune reports
+      itemType: overview
+      url: ./fundamentals/reports.md
 
 conceptualContent:
   items:
@@ -219,26 +219,6 @@ conceptualContent:
       footerLink:
         text: See more
         url: ./developer/index.yml          
-    - title: Intune reporting
-      links:
-        - url: ./fundamentals/reports.md
-          itemType: overview
-          text: Reports overview
-        - url: ./fundamentals/reports.md#non-compliant-devices-report-operational
-          itemType: how-to-guide
-          text: Non-compliant devices report
-        - url: ./fundamentals/reports.md#device-compliance-report-organizational
-          itemType: how-to-guide
-          text: Device compliance report
-        - url: ./fundamentals/reports.md#reports-summary
-          itemType: how-to-guide
-          text: Reports summary
-        - url: ./fundamentals/reports.md#device-compliance-trend-report-historical
-          itemType: how-to-guide
-          text: Device compliance trend report
-        - url: ./fundamentals/reports.md#azure-monitor-integration-reports-specialist
-          itemType: how-to-guide
-          text: Azure Monitor integration reports    
 additionalContent:
   sections:
     - title: Additional resources to manage devices
