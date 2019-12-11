@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -20,7 +20,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -34,7 +34,7 @@ ms.collection: M365-identity-device-management
 
 Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
 
-On Android devices, use **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
+On Android devices, use Zebra's **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
 
 This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune.
 
@@ -137,8 +137,8 @@ After you test the file, the next step is to deploy the profile to devices using
 
 In Intune, create a device configuration profile:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device Configuration** > **Profiles** > **Create profile**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
     - **Name**: Enter a descriptive name for the new profile.

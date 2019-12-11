@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -38,7 +38,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 ## Get to your devices
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Select **Devices**. This view shows detailed information about the individual devices, and what you can do with them, including:
 
    - **Overview** shows a visual snapshot of the enrolled devices, and also shows how many devices are using the different platforms, including Android, iOS, and more.
@@ -74,7 +74,9 @@ The actions available depend on the device platform, and the configuration of th
   - [Windows 10 PIN reset](device-windows-pin-reset.md)
   - [Remote control for Android](teamviewer-support.md)
   - [Synchronize device](device-sync.md)
+  - [Rename device](device-rename.md)
   - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
 
 ## Next steps
 

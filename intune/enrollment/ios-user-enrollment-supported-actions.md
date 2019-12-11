@@ -34,6 +34,9 @@ ms.collection: M365-identity-device-management
 
 User Enrollment supports a subset of device management options. If a pre-existing configuration profile is applied to a User Enrollment device, only settings supported by User Enrollment will be applied to that device.
 
+> [!NOTE]
+> Support for Apple's User Enrollment in Intune is currently in preview.
+
 ## Password settings
 
 On User Enrollment devices, if you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
@@ -59,13 +62,18 @@ On User Enrollment devices, end users can perform these actions on their devices
 - Remote Lock
 - Check Status
 
+## App deployment options
+Following app types can be deployed on User Enrollment devices:
+- User-licensed Volume Purchasing Plan (VPP) apps including custom apps
+- Line-of-business (LOB) apps
+- Web apps
+
 ## Other supported options
 
 The following options are supported in Intune for devices enrolled by using Apple User enrollment:
 - Per-App VPN. This support excludes Safari Domains as User Enrollment doesn't support configuring Safari settings.
 - WiFi 
 - Corporate app removal upon unenrollment
-- App deployment via User-licensed Volume Purchasing Plan (VPP )
 - Jailbreak Detection
 
 The following restrictions are supported:
@@ -96,12 +104,26 @@ The following options aren't supported on devices enrolled with User Enrollment.
 - Collect UDID and other persistent device identifiers.
 - User Enrollment supports a unique enrollment ID for each device enrolled, but this ID doesn't persist after unenrollment.
 - The following Intune features aren't supported because of this limitation:
-- SCEP User profiles with Subject Name Format of Serial Numbe.r
+- SCEP User profiles with Subject Name Format of Serial Number.
 - Device-level VPN.
 - Device-licensed VPP app deployment.
+- Install App Store apps as managed apps.
 - MDM control of applications outside of the managed APFS volume.
 - Application Protection Policies will still apply to these apps. However, you won’t be able to take over management or deploy a managed version of these apps unless the user deletes them from their device.
 - Actions, configurations, settings, and commands requiring supervision. 
+
+## Options not supported in preview
+- Enrollment Device Type Restrictions to allow/block personally owned devices 
+
+## Known issues in preview
+- VPP license revocation: A notification that the license has been revoked does not appear. The current behavior is that the revocation is successful, but the end user is not notified. 
+- VPP application reporting: In the report located at Client Apps > Apps > [App Name] > Device Install Status, VPP applications deployed to User Enrolled devices are reporting as “failed”, even when the application successfully deploys to the device. 
+- Application reporting: For app types unsupported with User Enrollment, reports may provide irrelevant error messages. 
+- Company Portal app experience: Users see all applications targeted to them, regardless of whether those application types are supported for User Enrolled devices. 
+- Company Portal app experience: Users see the same text indicating what organizations can and can’t see for User and Device Enrollment.
+- If a user selects “My organization owns this device” during enrollment, the device is still identified as Personal within Intune unless otherwise modified within the admin console or via graph. 
+- Enrollment Targeting: iPadOS is not listed in the platform selector. iPadOS is supported in preview but not explicitly stated within the admin console. 
+
 
 ## Next steps
 

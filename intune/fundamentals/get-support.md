@@ -9,9 +9,10 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -42,29 +43,46 @@ As an Intune admin, you can use the **Help and Support** option to file an on-li
 
 ## Help and support experience
 
-The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal.
+The Help and support experience for Intune is available from the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and from all of the blades (or pages) under Intune in the Azure portal.
 
 The *Help and support* experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the previous *Help + support*, which remains in place for other services in Azure.
 
-To access Help and support, use the following options:
+> [!TIP]
+> Starting November 18, 2019, an updated and streamlined in-console experience for getting help and support is rolling out to tenants. If this new experience isn't available for you yet, it will be soon.
 
-- **Device Management Dashboard:**
+### Options to access Help and support
+
+When you use a newly created tenant for Intune, it’s possible that *Help and Support* fails to open and the following message is returned:
+
+- *We encountered an unknown problem. Please refresh the page but if the problem persists, please create a case through [M365 Admin Center](https://admin.microsoft.com) and reference the session ID provided.*
+
+The error details include a *Session ID*, *Extension* details, and more. 
+ 
+This problem occurs when you have not yet authenticated your new tenant account through either the **M365 Admin Center** at https://admin.microsoft.com, or the **Office 365  portal** at https://portal.office.com. To resolve this problem, select the link for *M365 Admin Center* in the message, or visit https://portal.office.com, and sign in. Following authentication at either site, *Help and Support* for Intune becomes accessible.
+
+
+**Access Help and Support**:
+
+- **In the Azure portal**
+
+  - Select **Help and support** from any Intune blade or page.
+
+  > [!NOTE]  
+  > If your instance of Intune is hosted on the private cloud for government, also known as a sovereign cloud like Azure Government, see [Intune support for private cloud for government](#intune-support-for-private-cloud-for-government), later in this article. The Intune *Help and support* experience won’t be available on the private cloud for government until next year.
+
+- **From the Microsoft Endpoint Manager Admin Center**
   - After you've selected a feature area for Intune, select the option for **Help and support**.
-  - From any node in the Device Management portal, select the **?** icon in the upper-right corner of the portal, and then use the drop-down to select the service you want help with. The **?** icon in the Device Management portal supports multiple services, and you must select the specific service you want assistance for.  
+  - From any node in the Microsoft Endpoint Manager Admin Center, select the **?** icon in the upper-right corner of the portal, and then use the drop-down to select the service you want help with. The **?** icon in the Microsoft Endpoint Manager Admin Center supports multiple services, and you must select the specific service you want assistance for.  
 
     ![Select your service](./media/get-support/select-a-service.png)
 
-    After you select a service, you'll see the *Help and support* page for that service where you can specify details to [find solutions](#find-solutions) for a specific problem .
+    After you select a service, you'll see the *Help and support* page for that service where you can specify details to [find solutions](#find-solutions) for a specific problem.
 
     When the results of your search don't seem to match expectations for your service, check to ensure the correct service was selected. The service selection appears just after *Help and support*.  If the right service wasn't selected, click on *Select a service* to return to the service selection drop-down.
 
     ![Confirm your service](./media/get-support/confirm-your-service-selection.png)
 
-- **In the Azure portal:**
-  - Select **Help and support** from any Intune blade or page.
-
-  > [!NOTE]  
-  > If your instance of Intune is hosted on the private cloud for government, also known as a sovereign cloud like Azure Government, see [Intune support for private cloud for government](#intune-support-for-private-cloud-for-government), later in this article. The Intune *Help and support* experience won’t be available on the private cloud for government until later this year.
+###  The support experience
 
   When you open Help and Support, the portal displays the **Need help?** window:
 
@@ -77,7 +95,7 @@ To access Help and support, use the following options:
 
   *Need Help?* opens to the *Find Solutions* pane. However, if you have an active support case the window opens to the *Service requests* pane where you can view details about your active and closed support cases.
 
-### Find solutions
+#### Find solutions
 
 ![Select the find solutions pane](./media/get-support/find-solutions.png)
 
@@ -89,7 +107,7 @@ For example, you might enter **Password synchronization errors**. The results in
 
 ![View troubleshooting insights](./media/get-support/troubleshooting-insights.png)
 
-### Contact support
+#### Contact support
 
 ![Select the contact support pane](./media/get-support/contact-support.png)
 
@@ -101,7 +119,7 @@ When requesting assistance, provide a description of the problem with as much de
 
 After you fill in the required information, select **Contact me** to submit the request.
 
-### Service requests
+#### Service requests
 
 ![Select the service requests pane](./media/get-support/service-requests.png)
 
@@ -113,7 +131,7 @@ If you have an active support case number, you can enter it here to jump to that
 
 When you’re done viewing details for an incident, select the left arrow that appears at the top of the service request window just above the icons for the three *Need Help?* pane icons. The back arrow returns the display to the list of support incidents you’ve opened.
 
-### Premier and Unified support customers
+#### Premier and Unified support customers
 
 As a customer with a **Premier** or **Unified** support contract, you can specify a severity for your issue, and schedule a support callback for a specific time and day. These options are available when you open or submit a new issue and when you edit an active support case.
 
@@ -128,11 +146,25 @@ Selecting either a severity **A** or **Critical** issue limits you to a phone su
 
 ## Azure Help + support experience
 
-When you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the Azure portal, you open the Azure Help + support experience, which is distinct from the Intune Help and support experience.
+You can no longer use the Azure *Help + support* experience to get assistance with Intune, unless your subscription is on a private cloud for government.
+If your instance of Intune doesn't run on a private cloud for government, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents:
 
-Beginning in April of 2019, you can't access the Azure *Help + support* experience to get assistance with Intune, unless your subscription is on a private cloud for government. 
+When you use the left navigation pane **Help + support**, or use the **?** option to open the *Help* pane and then select **Help + support**, you open the Azure *Help + support* page. 
 
-If your instance of Intune doesn't run on a private cloud for government, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents.
+
+From this page select **+ New support request** to open the *Basics* tab of the *Help + support + New support request* page.
+
+![Help + support](./media/get-support/help-plus-support.png)
+
+On this page:
+
+- For *Issue type*, select  **Technical**.
+- For *Service*, select **Microsoft Intune**.
+
+  You are then presented with a link that redirects you to the [Intune Help and Support page](https://aka.ms/intunehelpsupport).
+  
+  ![New support request](./media/get-support/new-request.png)
+
 
 ## Intune support for private cloud for government
 
@@ -147,7 +179,7 @@ When your Intune subscription hosted on the private cloud for government, which 
 >
 > When transitions between support tools completes later this year, the support experience Intune hosted on the government cloud will resemble the default *Help and support* experience that’s currently available for Intune subscriptions hosted on the public cloud.
 
-1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to the Azure portal (<https://portal.azure.us>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
    ![Image of the question mark link with the Help + support link highlighted](./media/get-support/azure-get-support.png)
 
@@ -185,7 +217,7 @@ You can view your support requests from within the Azure portal. However, limite
 
 1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
-2. On the **Help + support** page you can view the list of **Recent support requests**.
+2. On the **Help + support** page, you can view the list of **Recent support requests**.
 
    > [!IMPORTANT]  
    > Private cloud for government customers can only view the 15-digit support case number, and the incident status. All case communications and tracking of work or alerts are sent by email and reference the 8-digit support case number that is created as a mirror of the support case opened from within the Intune console.

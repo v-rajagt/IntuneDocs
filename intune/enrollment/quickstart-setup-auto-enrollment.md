@@ -39,13 +39,13 @@ If you don’t have an Intune subscription, [sign up for a free trial account](.
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Set up Windows 10 automatic enrollment
 
 For this example, you'll use MDM enrollment so that both corporate and bring-your-own-devices can be automatically enrolled. You will sign up for a free Azure Active Directory Premium subscription.
 
-1. In Azure, choose **Azure Active Directory** > **Mobility (MDM and MAM)**.
+1. In the [Azure portal](https://portal.azure.com), choose **Azure Active Directory** > **Mobility (MDM and MAM)**.
 2. Select **Get a free Premium trial to use this feature**. Selecting this option will allow auto enrollment using the Azure Active Directory free Premium trial. 
 
     ![Select the Azure Active Directory free Premium trial](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

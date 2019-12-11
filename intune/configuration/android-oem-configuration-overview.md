@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -84,8 +84,8 @@ Be sure the device supports OEMConfig, the correct OEMConfig app is added to Int
 
 ## Create an OEMConfig profile
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device Configuration** > **Profiles** > **Create profile**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
     - **Name**: Enter a descriptive name for the new profile.
@@ -112,11 +112,11 @@ Be sure the device supports OEMConfig, the correct OEMConfig app is added to Int
       - Many settings have default values supplied by the OEM. To see if there's a default value, hover over the info icon next to the setting. A tooltip shows the default values for that setting (if applicable), and more details provided by the OEM.
 
       - Clicking **Clear** deletes a setting from the profile. If a setting isn't in the profile, its value on the device won't change when the profile is applied.
-        
+
       - If you create an empty (unconfigured) bundle in the configuration designer, it's deleted when switching to the JSON editor.
 
     - **JSON editor**: When you select this option, a JSON editor opens with a template for the full configuration schema embedded in the app. In the editor, customize the template with values for the different settings. If you use the **Configuration designer** to change your values, the JSON editor overwrites the template with values from the configuration designer.
-    
+
       - If you're updating an existing profile, the JSON editor shows the settings that were last saved with the profile.
 
       - OEMConfig schemas can be large and complex. If you prefer to update these settings using a different editor, select the **Download JSON template** button. Use an editor of your choice to add your configuration values to the template. Then, copy and paste your updated JSON in to the **JSON editor** property.
@@ -145,11 +145,16 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 
 | OEM | Bundle ID | OEM Documentation (if available) |
 | --- | --- | ---|
-| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Zebra Technologies | com.zebra.oemconfig.common | [Zebra OEMConfig overview](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com.datalogic.oemconfig | [User Documentation for Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com.honeywell.oemconfig |  |
 | Kyocera | jp.kyocera.enterprisedeviceconfig |  |
+| Spectralink - Barcodes | com.spectralink.barcode.service |  |
+| Spectralink - Buttons | com.spectralink.buttons |  |
+| Spectralink - Device | com.spectralink.slnkdevicesettings  |  |
+| Spectralink - Logging | com.spectralink.slnklogger |  |
+| Spectralink - VQO | com.spectralink.slnkvqo |  |
 
 -----------------
 

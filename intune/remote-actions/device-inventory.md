@@ -38,7 +38,7 @@ This article shows you how to view all your devices, and their properties in the
 
 ## View the device details
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
    - **Overview** shows the device name, and lists some key properties of the device, like whether it's a bring-your-own-device (BYOD) device, check in time, and more. You can do the following on the device:
@@ -82,14 +82,14 @@ Depending on the carrier used by the devices, not all details might be collected
 |MEID|The device's mobile equipment identifier.|Windows, iOS, Android|
 |Manufacturer|The manufacturer of the device.|Windows, iOS, Android|
 |Model|The model of the device.|Windows, iOS, Android|
-|Phone number|The phone number assigned to the device.|Windows, iOS, Android|
+|Phone number|The phone number assigned to the device.|Windows, iOS, Android*|
 |Subscribe carrier|The device's wireless carrier.|Windows, iOS, Android|
 |Cellular technology|The radio system used by the device.|Windows, iOS, Android|
 |Wi-Fi MAC|The device's Media Access Control address.|Windows, iOS, Android|
 |ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|Windows, iOS, Android|
 |Enrolled date|The date and time that the device was enrolled in Intune.|Windows, iOS, Android|
 |Last contact|The date and time that the device last connected to Intune.|Windows, iOS, Android|
-|Activation lock bypass code|The code that can be used to bypass the activation lock.|Windows, iOS, Android|
+|Activation lock bypass code|The code that can be used to bypass the activation lock.|iOS|
 |Azure AD registered|If **Yes**, the device is registered with Azure Directory.|Windows, iOS, Android|
 |Intune registered|If **Yes**, the device is registered with Intune|Windows, iOS, Android|
 |Compliance|The device's compliance state.|Windows, iOS, Android|
@@ -98,7 +98,7 @@ Depending on the carrier used by the devices, not all details might be collected
 |Supervised|If **Yes**, administrators have enhanced control over the device.|Windows, iOS, Android|
 |Encrypted|If **Yes**, the data stored on the device is encrypted.|Windows, iOS, Android|
 
-
+\* Not available in Android with Google policy manager,such as Fully-managed and Dedicated devices
 
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.

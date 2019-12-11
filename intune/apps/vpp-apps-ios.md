@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -76,7 +76,6 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
 * Before you start to use Apple VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune only synchronizes data from the Apple VPP service that Intune created.
-* Intune supports adding up to 256 VPP tokens.
 * Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store.
 * When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
 * Ensure that when you set up a device for a new Intune user, you configure it with that user's unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can be used on up to five devices.
@@ -87,12 +86,14 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 
 ## To get and upload an Apple VPP token
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps** > **Apple VPP tokens** under **Setup**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Select **Tenant administration** > **Connectors and tokens** > **Apple VPP tokens**.
 4. On the list of VPP tokens pane, select **Create**.
 5. On the **Create VPP token** pane, specify the following information:
     - **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
     - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
+    - **Take control of token from another MDM** - Setting this option to **yes** allows the token to be reassigned to Intune from another MDM.
+    - **Token Name** - An administrative field for setting the token name.    
     - **Country/Region** - Select the VPP country/region store.  Intune synchronizes VPP apps for all locales from the specified VPP country/region store.
         > [!WARNING]  
         > Changing the country/region will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country/region store.
@@ -102,6 +103,9 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 
         > [!NOTE]
         > Automatic app updates work for both device and user licensed apps for iOS 11.0 and above or macOS 10.12 and above.
+
+    - **I grant Microsoft permission to send both user and device information to Apple.** - You must select **I agree** to proceed. To review what data Microisoft sends to Apple, see [Data Intune sends to Apple](~/protect/data-intune-sends-to-apple.md).
+
 6. When you are done, select **Create**.
 
 The token is displayed in the list of tokens pane.
@@ -110,7 +114,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1. On the **Intune** pane, choose **Client apps** > **Apps** under **Manage**.
+1. Select **Apps** > **All apps**.
 2. On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
 3. On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
 5. For each group you selected, choose the following settings:
@@ -176,8 +180,8 @@ Currently, you cannot delete an iOS VPP app from Microsoft Intune.
 
 Access to Apple VPP tokens and VPP apps can be controlled independently using permissions assigned to custom administrator roles in Intune.
 
-* To allow an Intune custom role to manage Apple VPP tokens under **Client apps** > **Apple VPP tokens**, assign permissions for **Managed apps**.
-* To allow an Intune custom role to manage apps purchased using iOS VPP tokens under **Client apps** > **Apps**, assign permissions for **Mobile apps**. 
+* To allow an Intune custom role to manage Apple VPP tokens under **Apps** > **Apple VPP tokens**, assign permissions for **Managed apps**.
+* To allow an Intune custom role to manage apps purchased using iOS VPP tokens under **Apps** > **All apps**, assign permissions for **Mobile apps**. 
 
 ## Additional information
 
@@ -196,7 +200,7 @@ The license should be updated within a few hours after installing or uninstallin
 Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
 
 ### How frequently does Intune sync VPP tokens with Apple?
-Intune syncs VPP tokens and licenses twice a day with Apple. The Intune admin can initiate a manual sync under **Client apps** > **Apple VPP tokens**.
+Intune syncs VPP tokens and licenses twice a day with Apple. The Intune admin can initiate a manual sync under **Apps** > **Apple VPP tokens**.
 
 ## Next steps
 

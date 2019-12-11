@@ -81,6 +81,8 @@
           href: lob-apps-macos.md     
         - name: Win32 app management
           href: apps-win32-app-management.md
+        - name: Win32 app S mode devices
+          href: apps-win32-s-mode.md          
       - name: Add specific apps
         items:
         - name: Company Portal app
@@ -134,6 +136,8 @@
           href: manage-microsoft-edge.md        
         - name: Configure Outlook
           href: app-configuration-policies-outlook.md
+        - name: Configure S/MIME for Outlook
+          href: app-configuration-policies-outlook-smime.md          
         - name: Configure Google Chrome for Android
           href: apps-configure-chrome-android.md        
       - name: Volume-purchased apps and books
@@ -186,7 +190,7 @@
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
-        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
       - name: Troubleshoot app installation problems
         href: troubleshoot-app-install.md         
       - name: Troubleshoot mobile application management

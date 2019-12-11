@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -58,6 +58,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Maps         | Apple     |
+| com.apple.measure           | Measure      | Apple     |
 | com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Music        | Apple     |
 | com.apple.news              | News         | Apple     |
@@ -71,6 +72,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Settings     | Apple     |
+| com.apple.shortcuts         | Shortcuts    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tips         | Apple     |

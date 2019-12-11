@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -30,9 +30,6 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-> [!Note]
-> Each [monthly update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) may take several days to rollout. Some features may roll out over several weeks, and might not be available to all customers immediately.
-
 When you use Intune to manage Autopilot devices, you can manage UEFI (BIOS) settings after they're enrolled, using the Device Firmware Configuration Interface (DFCI). For an overview of benefits, scenarios, and prerequisites, see [Overview of DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
 DFCI [enables Windows](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) to pass management commands from Intune to UEFI (Unified Extensible Firmware Interface).
@@ -49,7 +46,7 @@ This feature applies to:
 
 ## Before you begin
 
-- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update you install. Work with your device vendors to determine the manufacturers that support DFCI, or the firmware version needed to use DFCI.
+- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update you install. Work with your device vendors to determine [the manufacturers that support DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci), or the firmware version needed to use DFCI.
 
 - The device must be registered for Windows Autopilot by a [Microsoft Cloud Solution Provider (CSP) partner](https://partner.microsoft.com/cloud-solution-provider), or registered directly by the OEM. 
 
@@ -84,8 +81,8 @@ This profile makes sure that devices are verified and enabled for DFCI during th
 
 This profile includes the DFCI settings you configure.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device configuration** > **Profiles** > **Create profile**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
     - **Name**: Enter a descriptive name for the profile. Name your policies so you can easily identify them later. For example, a good profile name is **Windows: Configure DFCI settings on Windows devices**.
@@ -134,9 +131,11 @@ This profile includes the DFCI settings you configure.
 
 After the profiles are created, they're [ready to be assigned](../configuration/device-profile-assign.md). Be sure to assign the profiles to your Azure AD security groups that include your DFCI devices.
 
-The next time the device syncs, or the device reboots, the DFCI profile settings are applied. After the policy applies, reboot the device.
+When the device runs the Windows Autopilot, during the Enrollment Status page, DFCI may force a reboot. This first reboot enrolls UEFI to Intune. 
 
-When the device runs the Windows device setup, DFCI may force a reboot during the Enrollment Status Page. Once setup completes, you can confirm the DFCI settings are active by rebooting the device. Then, use the device manufacturer’s instructions to open the UEFI menu.
+If you want to confirm the device is enrolled, you can reboot the device again, but it's not required. Use the device manufacturer’s instructions to open the UEFI menu, and confirm UEFI is now managed.
+
+The next time the device syncs with Intune, Windows receives the DFCI settings. Reboot the device. This third reboot is required for UEFI to receive the DFCI settings from Windows.
 
 ## Update existing DFCI settings
 
@@ -163,7 +162,7 @@ After wiping the device, move the device to the group assigned the new DFCI and 
 
 When you're ready to retire the device and release it from management, update the DFCI profile to the UEFI (BIOS) settings you want at the exit state. Typically, you want all settings enabled. For example:
 
-1. Open your DFCI profile (**Device configuration** > **Profiles**).
+1. Open your DFCI profile (**Devices** > **Configuration profiles**).
 2. Change the **Allow local user to change UEFI (BIOS) settings** to **Only not configured settings**.
 3. Set all other settings to **Not configured**.
 4. Save your settings.

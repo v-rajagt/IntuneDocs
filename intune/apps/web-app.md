@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -37,21 +37,22 @@ Intune supports a variety of app types, including web apps. A web app is a clien
 
 Before you can manage and assign an app for your users, add the app to Intune. 
 
-Intune creates a shortcut to the web app on the user's device. For iOS devices,a shortcut to the web app is added to the home screen. For Android devices, a shortcut to the web app is added to the Intune company portal widget and the widget needs to be pinned manually by the user. For Windows devices, a shortcut to the web app is placed on the Start Menu.
+Intune creates a shortcut to the web app on the user's device. For iOS devices, a shortcut to the web app is added to the home screen. For Android Device Admin devices, a shortcut to the web app is added to the Intune company portal widget and the widget needs to be pinned manually by the user. For Windows devices, a shortcut to the web app is placed on the Start Menu.
 
 > [!Note]
-> Web apps are not supported on Android work profile devices. A browser must be installed on the user’s device to launch web apps.
+> A browser must be installed on the user’s device to launch web apps. 
+
+> [!Note]
+> For Android Enterprise devices, see [Managed Google Play web links](apps-add-android-for-work.md#managed-google-play-web-links)
 
 ## Add a web app to Intune
 To add an app to Intune as a shortcut to an app on the web, do the following:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** pane, select **Client apps**.
-4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
-5. In the **Apps** pane, select **Add**.
-6. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
-7. Select **Configure**.
-8. In the **App information** pane, add the following information:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
+4. Select **Configure**.
+5. In the **App information** pane, add the following information:
     - **Name**:  Enter the name of the app as it is to be displayed in the company portal. 
 
         > [!NOTE]
@@ -64,13 +65,13 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
     - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
     - **Require a managed browser to open this link**: Select this option to assign to your users a link to a website or web app that they can open in the Intune managed browser. This browser must be installed on their device.
     - **Logo**: Upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
-9. Select **OK**.
-10. In the **Add app** pane, select **Add**.
+6. Select **OK**.
+7. In the **Add app** pane, select **Add**.
 
 > [!Note]
-> Users must add the Intune widget to their home screen to display web apps that have been assigned to Android devices.
->
 > Currently, deployment of Intune web apps to iOS devices is associated with the management profile and cannot be removed manually. You can change the deployment type to **Uninstall** in the Intune portal, at which point the web app can be removed automatically. However, if you remove the deployment before changing the app assignment intent to **Uninstall**, the web app will be permanently in place on the device until the device is un-enrolled from Intune.
+
+End-users can launch web apps directly from the Windows Company Portal app by selecting the web app and then choosing the option **Open in browser**. The published web URL is opened directly in the web browser. 
 
 ## Next steps
 

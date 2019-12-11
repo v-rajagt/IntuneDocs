@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -34,6 +34,9 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Use the information in this article to help you add macOS line-of-business apps to Microsoft Intune. You must download an external tool to pre-process your *.pkg* files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your *.pkg* files must take place on a macOS device.
+
+> [!NOTE]
+> Starting with the release of macOS Catalina 10.15, prior to adding your apps to Intune, check to make sure your macOS LOB apps are notarized. If the developers of your LOB apps did not notarize their apps, the apps will fail to run on your users' macOS devices. For more information about how to check if an app is notarized, visit [Notarize your macOS apps to prepare for macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
 
 > [!NOTE]
 > While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
@@ -72,11 +75,9 @@ You must download an external tool, mark the downloaded tool as an executable, a
 
 ## Step 1 - Specify the software setup file
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps**.
-4. In the **Client apps** workload, choose **Manage** > **Apps**.
-5. Above the list of apps, choose **Add**.
-6. In the **Add App** pane, choose **Line-of-business app**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Add app** pane, select **Line-of-business app** as the **App type**.
 
 ## Step 2 - Configure the app package file
 
