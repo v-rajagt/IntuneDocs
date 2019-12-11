@@ -25,7 +25,7 @@ Today there are three roles available in Azure AD for your security professional
     - Read and Update Security tasks
  
 ### What do I need to do to prepare for this change?
-Review your Intune RBAC roles today. If you currently just have Global Admins as roles, then there’s no changes needed. If you use roles, and you’d like the granularity that the Endpoint Security Manager provides, then assign that role when it is available. Check the Intune [What’s New](whats-new.md) page for up-to-date Intune release information. 
+Review your Intune RBAC roles today. If you currently just have Global Admins as roles, then there’s no changes needed. If you use roles, and you’d like the granularity that the Endpoint Security Manager provides, then assign that role when it is available. Check the Intune [What’s New](../fundamentals/whats-new.md) page for up-to-date Intune release information. 
 
 ### Updated support statement for 'Adobe Acrobat Reader for Intune' mobile app<!--5746776-->
 We shared in MC188653 at the end of August, that the Adobe Acrobat Reader for Intune mobile app was reaching end-of-life on December 1, 2019 and that Adobe was planning on supporting Intune’s app protection policies within their main Acrobat Reader app. Since then, we received customer feedback that we needed to provide more time to continue allowing IT admins to target, and end users to begin using Adobe Acrobat Reader for Intune. Given the high usage of Adobe Acrobat Reader for Intune on end user devices and its importance in enterprise scenarios, we want to make sure any experience meets your organization's app protection needs. 
