@@ -109,9 +109,9 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 3. When prompted to open Company Portal, tap **Open**. Read through the information on the **How to install Management Profile** screen.  
 
-4. Go to the Settings app and tap **Profile Downloaded**. 
+4. Go to the Settings app and tap **Enroll in organization** or **Profile Downloaded**. 
 
-    If **Profile Downloaded** doesn't appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.  
+    If neither appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.  
 
     ![Example screenshot of the Settings app, Profile Downloaded setting.](./media/ios-1904-settings-badge.PNG)  
 
