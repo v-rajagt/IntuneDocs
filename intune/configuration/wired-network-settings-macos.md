@@ -43,7 +43,7 @@ You can create a profile with specific wired network settings, and then deploy t
 ## Profiles
 
 - **Profile type**: Choose **Wired network**.
-- **Network Interface**: Select the network interfaces on the device that the profile applies to, based on the service-order priority. The "active" options use interfaces that are actively working on the device. If there aren't any active interfaces, then the next interface in service-order priority is configured.
+- **Network Interface**: Choose which of the network interfaces on the device the profile applies to, based on service-order priority. Options that include active in the title will use interfaces that are actively working on the device. If there are no active interfaces, the next interface in service-order priority will be configured. First active Ethernet is selected by default, which is also the default setting configured by macOS itself.
 
   Your options:
   
