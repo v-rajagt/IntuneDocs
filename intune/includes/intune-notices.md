@@ -11,7 +11,7 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
-### Updated Feature: New RBAC role coming to Intune
+### Updated Feature: New RBAC role coming to Intune<!--4253397-->
 In the January Intune service update, we plan to release a new security role in Intune. You will see this role listed as “Endpoint Security Manager” in Intune and the role is an expansion of the “Security Administrator” role from Azure AD.
  
 #### How does this affect me?
