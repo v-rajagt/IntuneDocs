@@ -52,7 +52,7 @@ The **Wipe** action restores a device to its factory default settings. The user 
 
 The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
 
-The **Perform protected wipe** option makes sure that the wipe action can't be circumvented by turning off the device. A protected wipe will keep trying to reset the device until successful. In some configurations this action may leave thedevice unable to reboot.
+The **Perform protected wipe** option makes sure that the wipe action can't be circumvented by turning off the device. A protected wipe will keep trying to reset the device until successful. In some configurations this action may leave the device unable to reboot.
 
 MDM policies will be reapplied the next time the device connects to Intune.
 
@@ -64,7 +64,7 @@ A wipe is useful for resetting a device before you give the device to a new user
 3. Select **Devices** > **All devices**.
 4. Select the name of the device that you want to wipe.
 5. In the pane that shows the device name, select **Wipe**.
-6. For Windows 10 version 1709 or later, you also have the **Retain enrollment state and user account** option. 
+6. For Windows 10 version 1709 or later, you also have the **Wipe device, but keep enrollment state and associated user account** option. 
     
     |Retained during a wipe |Not retained|
     | -------------|------------|

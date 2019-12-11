@@ -31,6 +31,9 @@ ms.collection: M365-identity-device-management
 Secure/Multipurpose Internet Mail Extensions (S/MIME) provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. [Microsoft Outlook](https://aka.ms/omsmime) can utilize S/MIME to allow users to encrypt both outgoing messages and attachments, ensuring that only the intended recipient can read and access message content when using Office 365 accounts. Users can also digitally sign a message, which allows the recipients to both verify the identity of the sender and confirm that the message hasn't been tampered with. This capability is possible by utilizing certificates. For more information, see [Understanding S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
 
 > [!NOTE]
+> This feature has been delayed, but will be released soon.
+
+> [!NOTE]
 > This topic describes how to deploy trusted root certificates via [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Microsoft Endpoint Manager is a single, integrated endpoint management platform for managing all your endpoints. This Microsoft Endpoint Manager admin center integrates ConfigMgr and Microsoft Intune.
 
 ## About message encryption
@@ -81,9 +84,6 @@ The **Add configuration policy** pane will be displayed.
 6. Click **Configuration settings** to add configuration settings. 
     - Select **Use configuration designer** next to **Configuration settings format** and accept the default settings. For more information, see [Microsoft Outlook configuration settings](~/apps/app-configuration-policies-outlook.md).
 7. Click **S/MIME** to display the **Outlook S/MIME settings**.
-
-    ![Screenshot of Outlook for iOS S/MIME settings](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. Set **Enable S/MIME** to **Yes**.
 9. Set **Deploy S/MIME certificates from Intune** to **Yes**.
 10. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
