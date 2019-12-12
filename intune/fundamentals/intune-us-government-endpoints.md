@@ -84,4 +84,3 @@ For more information, see:
 ## Next steps
 [Network endpoints for Microsoft Intune](intune-endpoints.md)
 
-[Windows 10 auto-enrollment and device registration](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)
