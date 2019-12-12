@@ -76,7 +76,7 @@ Use the following steps to enroll your macOS device with your organization. Your
     ![Example screenshot of Company Portal, Install management profile screen, highlighting password prompt.](./media/install-management-profile-macos-1912.PNG)   
 5. On the **Confirm device management** screen, select **Open System Preferences**.  
 
-    ![Example screenshot of Confirm device management screen, highlighting "Open Sytem Preferences" button.](./media/confirm-device-management-macos-1912.PNG)  
+    ![Example screenshot of Confirm device management screen, highlighting "Open System Preferences" button.](./media/confirm-device-management-macos-1912.PNG)  
 6. Your device's system preferences will open. Select **Management Profile** from the device profiles list and then select **Approve** > **Approve**.  
     ![Example screenshot of System Preferences, Management Profile screen, highlighting "Approve" button.](./media/management-profile-approve-macos-1912.PNG)   
 1. Return to Company Portal and select **Continue**.    
