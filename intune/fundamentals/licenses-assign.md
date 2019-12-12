@@ -36,7 +36,7 @@ Whether you manually add users or synchronize from your on-premises Active Direc
 
 ## Assign an Intune license Microsoft Endpoint Manager admin center
 
-You can use the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+You can use the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
 1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Users** > **All Users** > choose a user > **Licenses** > **Assignments**.
 
