@@ -32,17 +32,17 @@ ms.collection: M365-identity-device-management
 # How to monitor app protection policies
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users from the Intune app protection pane in the [Azure portal](https://portal.azure.com). Additionally, you can find information about the users affected by MAM policies, MAM policy compliance status, and any issues that your users might be experiencing.
+You can monitor the status of the app protection policies that you've applied to users from the Intune app protection pane in the [Azure portal](https://portal.azure.com). Additionally, you can find information about the users affected by app protection policies, policy compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor app protection policies:
 - Summary view
 - Detailed view
 - Reporting view
 
+The retention period for app protection data is 90 days. Any app instances that have checked in to the Intune service within the past 90 days is included in the app protection status report. An *app instance* is a unique user + app + device. 
+
 > [!NOTE]
 > For more information, see [How to create and assign app protection policies](app-protection-policies.md).
-
-The retention period for app protection data is 90 days. Any app instances that have checked in to the MAM service within the past 90 days is included in the app protection status report. An *app instance* is a unique user + app + device. 
 
 ## Summary view
 
@@ -55,18 +55,34 @@ The retention period for app protection data is 90 days. Any app instances that 
 - **Flagged users**: The number of users who are experiencing issues with their devices. Jailbroken (iOS) and rooted (Android) devices are reported under **Flagged users**. Also, users with devices that are flagged by the Google SafetyNet device attestation check (if turned on by the IT admin) are reported here. 
 - **Users with potentially harmful apps**: The number of users who may have a harmful app on their Android device detected by Google Play Protect. 
 - **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
-- **Top Protected iOS Apps**: Based on the most used iOS apps, this information shows the number of protected and unprotected iOS apps.
-- **Top Protected Android Apps**: Based on the most used Android apps, this information shows the number of protected and unprotected Android apps.
-- **Top Configured iOS Apps Without Enrollment**: Based on the most used iOS apps for unenrolled devices, this information shows the number of configured iOS apps.
-- **Top Configured Android Apps Without Enrollment**: Based on the most used Android apps for unenrolled devices, this information shows the number of configured Android apps.
+- **Top Protected iOS Apps** and **Top Protected Android Apps**: Based on the most used iOS and Android apps, this information shows the number of protected and unprotected apps by platform.
+- **Top Configured iOS Apps Without Enrollment** and **Top Configured Android Apps Without Enrollment**: Based on the most used iOS and Android apps for unenrolled devices, this information shows the number of configured apps by platform  (as in, using an app configuration policy).
 
     > [!NOTE]
     > If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy assigned to them.
 
 ## Detailed view
-You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), the **Users with potentially harmful apps** tile, and the **Flagged users** tile.
+You can get to the detailed view of the summary by choosing the **Flagged users** tile, and the **Users with potentially harmful apps** tile.
 
-### User status
+### Flagged users
+The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. The error is typically for jailbroken (iOS) or rooted (Android) devices. Also, users with devices that are flagged by the 'SafetyNet device attestation' conditional launch check are reported here with the reason as reported by Google. For a user to be removed from the report, the status of the device itself needs to have changed, which happens after the next root detection check (or jailbreak check/SafetyNet check happens) that needs to report a positive result. If the device is truly remediated, the refresh on the Flagged Users report will happen when the pane reloads.
+
+### Users with potentially harmful apps
+Users with devices that are flagged by the **Require threat scan on apps** conditional launch check are reported here, with the threat category as reported by Google. If there are apps listed in this report that are being deployed through Intune, contact the app developer for the app, or remove the app from being assigned to your users. The detailed view shows:
+
+- **User**: The name of the user.
+- **App package ID**: This is the way the Android OS uniquely determines an app.
+- **If the app is MAM-enabled**: Whether or not the app is being deployed through Microsoft Intune. 
+- The **threat category**: What Google-determined threat category this app falls into. 
+- **Email**: The email of the user.
+- **Device Name**: Names of any devices that are associated with the user's account.
+- **A time stamp**: This is the date of the last sync that Google did with Microsoft Intune regarding potentially harmful apps.
+
+## Reporting view
+
+You can find the same reports at the top of the **App protection status** pane. To view these reports, select **Apps** > **App protection status** > **Reports**. The **Reports** pane provides several reports based on user and app, including the following:
+
+### User report
 You can search for a single user and check the compliance status for that user. The **App reporting** pane shows the following information for a selected user:
 - **Icon**: Displays whether the app status is up-to-date.
 - **App Name**: The name of the app.
@@ -90,7 +106,6 @@ You can search for a single user and check the compliance status for that user. 
 > - If this is a sign in for the first time, that means the user was signed out before, and doesn't have an app instance registration with Intune. After the user signs in, the user gets a new app instance registration, and can be checked-in immediately (with the same time delays listed previously for future check-ins). Thus, the Last Sync time is 12:00 PM in the User status report, and 12:01 PM (or 12:30 PM at latest) in the App Protection Policy report. 
 > - If the user is just launching the app, the Last Sync time reported depends on when the user last checked in.
 
-
 To see the reporting for a user, follow these steps:
 
 1. To select a user, choose the **User status** summary tile.
@@ -106,56 +121,29 @@ To see the reporting for a user, follow these steps:
 >[!NOTE]
 > If the users you searched for do not have the MAM policy deployed to them, you see a message informing you that the user is not targeted by any MAM policies.
 
-### Flagged users
-The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. The error is typically for jailbroken (iOS) or rooted (Android) devices. Also, users with devices that are flagged by the 'SafetyNet device attestation' conditional launch check are reported here with the reason as reported by Google. For a user to be removed from the report, the status of the device itself needs to have changed, which happens after the next root detection check (or jailbreak check/SafetyNet check happens) that needs to report a positive result. If the device is truly remediated, the refresh on the Flagged Users report will happen when the pane reloads.
-
-### Users with potentially harmful apps
-The detailed view shows:
-
-- **User**: The name of the user.
-- **App package ID**
-- If the app is MAM-enabled
-- The **threat category**
-- **Email**: The email of the user.
-- **Device Name**: Names of any devices that are associated with the user's account.
-- A time stamp
-
-Users with devices that are flagged by the **Require threat scan on apps** conditional launch check are reported here, with the threat category as reported by Google. If there are apps listed in this report that are being deployed through Intune, contact the app developer for the app, or remove the app from being assigned to your users. 
-
-## Reporting view
-
-You can find the same reports at the top of the **App protection status** pane. To view these reports, select **Apps** > **App protection status** > **Reports**. 
-
-The **Reports** pane provides several reports based on user and app, including the following:
-
-- **User report**: This report outlines the same information you can find at the **User status** report under the [Detailed view](app-protection-policies-monitor.md#detailed-view) section above.
-
-- **App report**: In addition to selecting the platform and app, this report provides two different app protection statuses that you can select before generating the report. The statuses can be **Protected** or **Unprotected**.
+### App report
+You can search by platform and app, and then this report will provide two different app protection statuses that you can select before generating the report. The statuses can be **Protected** or **Unprotected**.
 
   - User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per-user basis. It shows all apps targeted by MAM policies for each user, and the status of each app as checked in with MAM policies. The report also includes the status of each app that was targeted with a MAM policy, but was never checked in.
   - User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per-user basis. This might happen because:
-   - These apps are either being used by a user or an app that isn't currently targeted by a MAM policy.
-   - All apps are checked in, but aren't getting any MAM policies.
+    - These apps are either being used by a user or an app that isn't currently targeted by a MAM policy.
+    - All apps are checked in, but aren't getting any MAM policies.
 
     ![Screenshot of a user's App reporting pane, with details for three apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
-- **User configuration report**: Based on a selected user, this report provides details about any app configurations the user has received.
-- **App configuration report**: Based on the selected platform and app, this report provides details about which users have received configurations for the selected app.
-- **App learning report for Windows Information Protection**: This report shows which apps are attempting to cross policy boundaries.
-- **Website learning for Windows Information Protection**: This report shows which websites are attempting to cross policy boundaries.
+### **User configuration report**
+Based on a selected user, this report provides details about any app configurations the user has received.
 
-## Table grouping
+### **App configuration report**
+Based on the selected platform and app, this report provides details about which users have received configurations for the selected app.
 
-After the **App protection user report** data is shown, you can aggregate data by the following:
+### App learning report for Windows Information Protection
+This report shows which apps are attempting to cross policy boundaries.
 
-- **Validation result**: The data is grouped by app protection status, which can be "failure," "warning," or "success."
-- **App name**: The data is grouped by the actual app name. Again, the status can be "failure," "warning," or "success."
+### Website learning for Windows Information Protection
+This report shows which websites are attempting to cross policy boundaries.
 
 ## Export app protection activities
-
-> [!NOTE]
-> Intune provides additional device reporting fields, including App Registration ID, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, you access these fields by selecting **Apps** > **App protection status** > **App Protection Report: iOS, Android**. In addition, these parameters help you configure the **Allow** list for the device manufacturer (Android), the **Allow** list for the device model (Android and iOS), and the **minimum Android security patch version** setting. 
-
 You can export all your app protection policy activities to a single .csv file. This can be helpful to analyze all the app protection statuses reported from the users. The **App Protection .csv file shows**:
 - **User**: The name of the user.
 - **Email**: The email of the user.
@@ -185,7 +173,9 @@ Follow these steps to generate App Protection .csv file or App Configuration .cs
 
     ![Screenshot of the Save report confirmation box](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
-
+> [!NOTE]
+> Intune provides additional device reporting fields, including App Registration ID, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, you access these fields by selecting **Apps** > **App protection status** > **App Protection Report: iOS, Android**. In addition, these parameters help you configure the **Allow** list for the device manufacturer (Android), the **Allow** list for the device model (Android and iOS), and the **minimum Android security patch version** setting.   
+ 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
 - [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md)
