@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -112,24 +112,19 @@ The detailed view shows the error message, the app that was accessed when the er
 ### Users with potentially harmful apps
 The detailed view shows:
 
-- The user.
-- The app package ID.
-- If the app is MAM-enabled.
-- The threat category.
-- The email.
-- The device name.
-- A time stamp.
+- **User**: The name of the user.
+- **App package ID**
+- If the app is MAM-enabled
+- The **threat category**
+- **Email**: The email of the user.
+- **Device Name**: Names of any devices that are associated with the user's account.
+- A time stamp
 
 Users with devices that are flagged by the **Require threat scan on apps** conditional launch check are reported here, with the threat category as reported by Google. If there are apps listed in this report that are being deployed through Intune, contact the app developer for the app, or remove the app from being assigned to your users. 
 
 ## Reporting view
 
-You can find the same reports at the top of the **App protection status** pane.
-
-> [!NOTE]
-> Intune provides additional device reporting fields, including App Registration ID, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, you access these fields by selecting **Apps** > **App protection status** > **App Protection Report: iOS, Android**. In addition, these parameters help you configure the **Allow** list for the device manufacturer (Android), the **Allow** list for the device model (Android and iOS), and the minimum Android security patch version setting. 
-
-Additional reports are available to help you with the MAM policy compliance status. To view these reports, select **Apps** > **App protection status** > **Reports**. 
+You can find the same reports at the top of the **App protection status** pane. To view these reports, select **Apps** > **App protection status** > **Reports**. 
 
 The **Reports** pane provides several reports based on user and app, including the following:
 
@@ -139,13 +134,13 @@ The **Reports** pane provides several reports based on user and app, including t
 
   - User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per-user basis. It shows all apps targeted by MAM policies for each user, and the status of each app as checked in with MAM policies. The report also includes the status of each app that was targeted with a MAM policy, but was never checked in.
   - User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per-user basis. This might happen because:
-    - These apps are either being used by a user or an app that isn't currently targeted by a MAM policy.
-    - All apps are checked in, but aren't getting any MAM policies.
+   - These apps are either being used by a user or an app that isn't currently targeted by a MAM policy.
+   - All apps are checked in, but aren't getting any MAM policies.
 
     ![Screenshot of a user's App reporting pane, with details for three apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **User configuration report**: Based on a selected user, this report provides details about any app configurations the user has received.
-- **App configuration report**: Base on the selected platform and app, this report provides details about which users have received configurations for the selected app.
+- **App configuration report**: Based on the selected platform and app, this report provides details about which users have received configurations for the selected app.
 - **App learning report for Windows Information Protection**: This report shows which apps are attempting to cross policy boundaries.
 - **Website learning for Windows Information Protection**: This report shows which websites are attempting to cross policy boundaries.
 
@@ -158,9 +153,29 @@ After the **App protection user report** data is shown, you can aggregate data b
 
 ## Export app protection activities
 
-You can export all your app protection policy activities to a single .csv file. This can be helpful to analyze all the app protection statuses reported from the users.
+> [!NOTE]
+> Intune provides additional device reporting fields, including App Registration ID, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, you access these fields by selecting **Apps** > **App protection status** > **App Protection Report: iOS, Android**. In addition, these parameters help you configure the **Allow** list for the device manufacturer (Android), the **Allow** list for the device model (Android and iOS), and the **minimum Android security patch version** setting. 
 
-Follow these steps to generate the app protection report:
+You can export all your app protection policy activities to a single .csv file. This can be helpful to analyze all the app protection statuses reported from the users. The **App Protection .csv file shows**:
+- **User**: The name of the user.
+- **Email**: The email of the user.
+- **App**: The name of the app.
+- **App version**: The version of the app.
+- **Device Name**: Names of any devices that are associated with the user's account.
+- **Device Manufacturer**: This lists the manufactuer of the device (Android only). 
+- **Device Model**: This lists the manufactuer of the device (Android only). 
+- **Android Patch Version**: The date of the last Android Security Patch.
+- **AAD Device ID**: This column gets populated if the device is AAD-joined.
+- **MDM Device ID**: This column gets populated if the device is enrolled Microsoft Intune MDM.
+- **Platform**: The operating system.
+- **Platform version**: The operating system version.
+- **Management Type**: Type of management on device. For example, Android Enterprise, unmanaged, or MDM.  
+- **App Protection Status**: Unprotected or protected.
+- **Policy**: The app protection policies associated with the app.
+- **Last Sync**: When the app was last synced with Microsoft Intune. 
+- **Compliance State**: Whether the app on the user's device is compliant with any app-based Conditional Access policies.  
+
+Follow these steps to generate App Protection .csv file or App Configuration .csv file:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
@@ -169,6 +184,7 @@ Follow these steps to generate the app protection report:
 2. Choose **Yes** to save your report, and then choose **Save As**. Select the folder you want to save the report in.
 
     ![Screenshot of the Save report confirmation box](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
+   
 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
