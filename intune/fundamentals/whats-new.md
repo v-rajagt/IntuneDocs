@@ -176,7 +176,7 @@ For more information, see [Licensing terms](https://www.microsoft.com/en-us/Lice
    > [!NOTE]
    > This feature has been delayed, but will be released soon.
 
-Intune supports delivering S/MIME signing and encryption certificates that can be used with Outlook for iOS on iOS devices. For more information, see [Configure S/MIME for Outlook for iOS](~/apps/app-configuration-policies-outlook-smime.md).
+
 
 #### UI update when selectively wiping app data<!-- 4102028 -->
 The UI to selectively wipe app data in Intune has been updated. UI changes include:
