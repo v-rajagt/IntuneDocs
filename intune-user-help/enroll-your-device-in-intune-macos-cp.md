@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
