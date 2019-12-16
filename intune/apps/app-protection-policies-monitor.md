@@ -150,8 +150,8 @@ You can export all your app protection policy activities to a single .csv file. 
 - **App**: The name of the app.
 - **App version**: The version of the app.
 - **Device Name**: Names of any devices that are associated with the user's account.
-- **Device Manufacturer**: This lists the manufactuer of the device (Android only). 
-- **Device Model**: This lists the manufactuer of the device (Android only). 
+- **Device Manufacturer**: This lists the manufacturer of the device (Android only). 
+- **Device Model**: This lists the manufacturer of the device (Android only). 
 - **Android Patch Version**: The date of the last Android Security Patch.
 - **AAD Device ID**: This column gets populated if the device is AAD-joined.
 - **MDM Device ID**: This column gets populated if the device is enrolled Microsoft Intune MDM.
