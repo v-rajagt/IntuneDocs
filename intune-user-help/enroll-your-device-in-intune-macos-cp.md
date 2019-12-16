@@ -70,7 +70,7 @@ Use the following steps to enroll your macOS device with your organization. Your
 
 1. Sign in to Company Portal with your work or school account.  
 2. When the app opens, select **Begin**.  
-3. Review [what your organization can and can't see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) on your enrolled device. Then select **Continue**.  
+3. Review what your organization can and can't see on your enrolled device. Then select **Continue**.
 4.  If prompted to, enter your device password on the **Install management profile** screen.
 
     ![Example screenshot of Company Portal, Install management profile screen, highlighting password prompt.](./media/install-management-profile-macos-1912.PNG)   
