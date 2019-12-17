@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 12/13/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -56,6 +56,14 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Role-based access control
 -->  
 
+<!-- ########################## -->
+## Week of December 16, 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### App management
+
+#### Retrieve personal recovery key from MEM encrypted macOS devices<!-- 4851745 -->
+End users can retrieve their personal recovery key (FileVault key) using the iOS Company Portal app. The device that has the personal recovery key must be enrolled with Intune and encrypted with FileVault through Intune. Using the iOS Company Portal app, an end user can retrieve their personal recovery key on their encrypted macOS device by clicking **Get recovery key**. You can also retrieve the recovery key from Intune by selecting **Devices** > *the encrypted and enrolled macOS device* > **Get recovery key**. For more information about FileVault, see [FileVault encryption for macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
 
 <!-- ########################## -->
 ## Week of December 9, 2019 (1912 Service release)
