@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/11/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -109,7 +109,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 3. When prompted to open Company Portal, tap **Open**. Read through the information on the **How to install Management Profile** screen.  
 
-4. Go to the Settings app and tap **Enroll in organization** or **Profile Downloaded**. 
+4. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**. 
 
     If neither appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.  
 
@@ -138,9 +138,9 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
     2. When the App Store opens, install the app. 
     3. Return to Company Portal and tap **Continue**.    
     
-  After you install Microsoft Authenticator, you won't need to do anything else with the app. It just needs to be present on your device. 
+          After you install Microsoft Authenticator, you won't need to do anything else with the app. It just needs to be present on your device. 
 
-    ![Example screenshot of Company Portal, "Download Microsoft Authenticator" screen.](./media/download-ms-authenticator-1909.PNG)  
+   ![Example screenshot of Company Portal, "Download Microsoft Authenticator" screen.](./media/download-ms-authenticator-1909.PNG)  
 
 2. On the **Device management and privacy** screen, read through the list of device information your organization can and can't see. Then tap **Continue**.  
 
@@ -159,9 +159,9 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 4. When prompted to open Company Portal, tap **Open**. Read through the information on the **How to install Management Profile** screen. 
 
-5. Go to the Settings app and tap **Profile Downloaded**. 
+5. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**. 
 
-    If **Profile Downloaded** doesn't appear as an option, go to **General** > **Profiles & Device Management** > **Management Profile**. If you still don't see a management profile, you may need to download it again.  
+    If neither appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.   
 
     ![Example screenshot of the Settings app, Profile Downloaded setting.](./media/ios-1904-settings-badge.PNG)  
 
@@ -177,7 +177,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
     ![Example screenshot of Settings app, Profiles & Device Management settings, showing the management profile.](./media/ios-12-cp-enroll-1904.PNG)  
 
-11. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**.   
+11. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**.    
 
 12. You'll know that setup is complete when all items in the list show a green checkmark. Tap **Done**.  
 
