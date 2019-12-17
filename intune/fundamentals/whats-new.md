@@ -57,7 +57,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
-## Week of December 23, 2019 (1912 Service release)
+## Week of December 23, 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### App management
