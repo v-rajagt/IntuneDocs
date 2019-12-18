@@ -109,11 +109,11 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 3. When prompted to open Company Portal, tap **Open**. Read through the information on the **How to install Management Profile** screen.  
 
-4. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**. 
+4. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**.  
 
-    If neither appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.  
+    ![Example screenshot of the Settings app, Enroll in organization option.](./media/enroll-in-organization-ios-1909.PNG)  
 
-    ![Example screenshot of the Settings app, Profile Downloaded setting.](./media/ios-1904-settings-badge.PNG)  
+   If neither options appear, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.  
 
 5. Tap **Install**.  
     
@@ -159,11 +159,12 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 4. When prompted to open Company Portal, tap **Open**. Read through the information on the **How to install Management Profile** screen. 
 
-5. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**. 
+5. Go to the Settings app and tap **Enroll in < organization name >** or **Profile Downloaded**.  
 
-    If neither appear as an option, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.   
+    ![Example screenshot of the Settings app, Enroll in organization option.](./media/enroll-in-organization-ios-1909.PNG)  
 
-    ![Example screenshot of the Settings app, Profile Downloaded setting.](./media/ios-1904-settings-badge.PNG)  
+   If neither options appear, go to **General** > **Profiles & Device Management**> **Management Profile**. If you still don't see a management profile, you may need to download it again.   
+
 
 6. On the **User Enrollment** screen, tap **Enroll My iPhone**.  
 
