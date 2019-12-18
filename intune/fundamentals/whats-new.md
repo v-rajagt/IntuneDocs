@@ -80,7 +80,7 @@ Intune app protection policies (APP) on Android and iOS devices allow you to con
 The icons used for Microsoft apps in the app targeting pane for App protection policies and App configuration policies have been updated.
 
 #### Require use of approved keyboards on Android<!--4761794  -->
-As part of an app protection policy, you can specify the setting [**Approved keyboards**](../apps/app-protection-policy-settings-android.md#data-protection) to mange which Android keyboards can be used with managed Android apps. When a user opens the managed app and doesn't already use an approved keyboard for that app, they are prompted to switch to one of the approved keyboards already installed on their device. If needed, they're presented with a link to download an approved keyboard from the Google Play Store, which they can install and set up. The user can only edit text fields in a managed app when their active keyboard isn't one of the approved keyboards.
+As part of an app protection policy, you can specify the setting [**Approved keyboards**](../apps/app-protection-policy-settings-android.md#data-protection) to manage which Android keyboards can be used with managed Android apps. When a user opens the managed app and doesn't already use an approved keyboard for that app, they are prompted to switch to one of the approved keyboards already installed on their device. If needed, they're presented with a link to download an approved keyboard from the Google Play Store, which they can install and set up. The user can only edit text fields in a managed app when their active keyboard isn't one of the approved keyboards.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device configuration
@@ -110,10 +110,8 @@ This feature applies to:
 - OS/iPadOS
 
 #### Wired network device configuration profiles for macOS devices<!-- 3508686  -->
-A new macOS device configuration profile is available that configures wired networks (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Wired Network** for profile type). Use this feature to create 802.1x profiles to manage wired networks, and deploy these wired networks to your macOS devices.
-
-Applies to:
-- macOS
+   > [!NOTE]
+   > This feature has been delayed, but will be released soon.
 
 #### Block users from configuring certificate credentials in the managed keystore on Android Enterprise device owner devices<!-- 3311998 -->
 On Android Enterprise device owner devices, you can configure a new setting that blocks users from configuring their certificate credentials in the managed keystore (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner Only > Device Restrictions** for profile type > **Users + Accounts**).
@@ -176,7 +174,7 @@ For more information, see [Licensing terms](https://www.microsoft.com/en-us/Lice
    > [!NOTE]
    > This feature has been delayed, but will be released soon.
 
-Intune supports delivering S/MIME signing and encryption certificates that can be used with Outlook for iOS on iOS devices. For more information, see [Configure S/MIME for Outlook for iOS](~/apps/app-configuration-policies-outlook-smime.md).
+
 
 #### UI update when selectively wiping app data<!-- 4102028 -->
 The UI to selectively wipe app data in Intune has been updated. UI changes include:
