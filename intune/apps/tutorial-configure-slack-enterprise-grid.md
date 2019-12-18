@@ -59,7 +59,7 @@ Add the iOS app Slack for EMM to your Intune tenant and create an app configurat
 
 ### Add Slack for EMM to Intune
 Add Slack for EMM as a managed iOS app in Intune and assign your Slack users. Apps are platform-specific, so you need to add a separate Intune app for your Slack users on Android devices.
-1. In the admine center, select **Apps** > **All apps** > **Add**.
+1. In the admin center, select **Apps** > **All apps** > **Add**.
 2. Under **App type**, select the **iOS** store app.
 3. Select **Search the App Store**. Enter the search term "Slack for EMM" and select the app. Click **Select** in the **Search the App Store** pane.
 4. Select **App information** and configure any changes as you see fit. Select **OK** to set your app information.
