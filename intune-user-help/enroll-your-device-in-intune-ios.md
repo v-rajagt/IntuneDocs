@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -138,7 +138,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
     2. When the App Store opens, install the app. 
     3. Return to Company Portal and tap **Continue**.    
     
-          After you install Microsoft Authenticator, you won't need to do anything else with the app. It just needs to be present on your device. 
+   After you install Microsoft Authenticator, you won't need to do anything else with the app. It just needs to be present on your device. 
 
    ![Example screenshot of Company Portal, "Download Microsoft Authenticator" screen.](./media/download-ms-authenticator-1909.PNG)  
 
