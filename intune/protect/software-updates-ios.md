@@ -85,8 +85,6 @@ For guidance from the Intune support team, see [Delay visibility of software upd
 ## Edit a policy
 You can edit an existing policy, including changing the restricted times:
 
-**Devices** > **Update policies for iOS**
-
 1. Select **Devices** > **Update policies for iOS**. Select the policy you want to edit.
 
 2. While viewing the policies **Properties**, select **Edit** for the policy page you want to modify.  
