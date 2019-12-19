@@ -36,6 +36,9 @@ This article shows you the Intune settings you can use to configure VPN connecti
 
 Depending on the settings you choose, not all values in the following list are configurable.
 
+>[!IMPORTANT]
+>Windows Phone 8.1 VPN profiles are also applied to Windows 10 devices.
+
 ## Base VPN settings
 
 - **Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the Intune classic portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings are only applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings also apply to Windows 10 Mobile devices.
