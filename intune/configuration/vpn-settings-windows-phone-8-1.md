@@ -69,31 +69,31 @@ Depending on the settings you choose, not all values in the following list are c
 
 - **Custom XML**: Specify any custom XML commands that configure the VPN connection.
 
-    **Pulse Secure example**:
+  **Pulse Secure example**:
 
-```xml
-    <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-```
+  ```xml
+  <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+  ```
 
-**CheckPoint Mobile VPN example**:
+  **CheckPoint Mobile VPN example**:
 
-```xml
-    <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-```
+  ```xml
+  <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+  ```
 
-**SonicWall Mobile Connect example**:
+  **SonicWall Mobile Connect example**:
 
-```xml
-<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-```
+  ```xml
+  <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+  ```
 
-**F5 Edge Client example**:
+  **F5 Edge Client example**:
 
-```xml
-    <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-```
+  ```xml
+  <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+  ```
 
-For more information on writing custom XML commands, see the manufacturer's VPN documentation.
+  For more information on writing custom XML commands, see the manufacturer's VPN documentation.
 
 - **Split tunneling**: **Enable** or **Disable** this option that lets devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 
