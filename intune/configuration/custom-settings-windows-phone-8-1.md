@@ -70,7 +70,7 @@ This article shows you how to create a custom profile for Windows Phone 8.1 devi
 
 ## Example
 
-In the following example, Windows 8.1 phone devices are prevented from changing cellular networks when travelling outside the carrier coverage area.
+In the following example, Windows 8.1 phone devices are prevented from changing cellular networks when traveling outside the carrier coverage area.
 
 - **Name**: Allow Cellular Data Roaming
 - **Description**: Allow or disallow cellular data roaming

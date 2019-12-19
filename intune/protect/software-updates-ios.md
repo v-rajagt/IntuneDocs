@@ -88,7 +88,7 @@ You can edit an existing policy, including changing the restricted times:
 1. Select **Devices** > **Update policies for iOS**. Select the policy you want to edit.
 
 2. While viewing the policies **Properties**, select **Edit** for the policy page you want to modify.  
-   ![Edit a policie](./media/software-updates-ios/edit-policy.png)   
+   ![Edit a policy](./media/software-updates-ios/edit-policy.png)   
 
 3. After introducing a change, select **Review + save** > **Save** to save your edits, and return to the policies *Properties*.  
  
