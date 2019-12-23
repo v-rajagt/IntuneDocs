@@ -106,7 +106,7 @@ More resources:
 
 Applies only to co-managed devices running Windows 10 and later. Intune-only devices return a not available status.
 
-- **Require device compliance from Microsoft Endpoint Configuration Manager**:  
+- **Require device compliance from Configuration Manager**:  
   - **Not configured** (*default*) - Intune doesn't check for any of the Configuration Manager settings for compliance.
   - **Require** - Require all settings (configuration items) in Configuration Manager to be compliant.  
 
