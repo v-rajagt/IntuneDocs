@@ -51,8 +51,8 @@ Each device is represented by one of the following statuses (used in the *device
 - **Matches baseline** - All the settings in the baseline match the recommended settings.
 - **Does not match baseline** - At least one setting in the baseline doesn't match the recommended setting.
 
-> [!NOTE]
-> When you create or edit a baseline profile, any change that is made to a default value or configuration setting causes a "Does not match baseline" status to occur. For help to determine the settings that were changed, contact Microsoft Support. 
+  > [!NOTE]
+  > When you create or edit a baseline profile, any change that is made to a default value or configuration setting causes a "Does not match baseline" status to occur. For help to determine the settings that were changed, contact Microsoft Support. 
 
 - **Misconfigured** - At least one setting isn't correctly configured. This status means that the setting is in a conflict, error, or pending state.
 - **Not applicable** - At least one setting isn't applicable and isn't applied.
