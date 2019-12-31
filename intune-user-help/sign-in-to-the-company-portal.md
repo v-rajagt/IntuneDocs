@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 012/31/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ The following steps show screenshots from the Company Portal for iOS.
 
 1. Open the app on your device and tap **Sign In**.  
 
-   [ ![Example screenshot of the Company Portal sign in page.](/intune-user-help/media/intune-ios-cp-signin-1908.png) ](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [ ![Example screenshot of the Company Portal sign-in page.](/intune-user-help/media/intune-ios-cp-signin-1908.png) ](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Enter your **Work or school account** and tap **Next**.
@@ -77,7 +77,7 @@ If your company uses smartcards to access your computers, it's likely that you h
 
 1. Select **Sign in from another device**.  
 
-   ![The Company Portal sign in page prompts user for email address.  Shows the "Next" button and a link to "Sign in from another device." Also includes a link to "Can't access your account?" A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![The Company Portal sign-in page prompts user for email address.  Shows the "Next" button and a link to "Sign in from another device." Also includes a link to "Can't access your account?" A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. You receive a unique, one-time code to sign in to the Company Portal. Copy the code.
 
