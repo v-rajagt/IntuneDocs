@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 012/31/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,7 @@ The following steps show screenshots from the Company Portal for iOS.
    ![After going through the authentication process, the Company Portal app signs in, shows a loading bar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## Sign in with certificate-based authentication
+You'll only see this sign-in option if your organization allows certificate-based authentication and you have a certificate available to use.  
 
 1. Open the Company Portal app on your device.  
 
