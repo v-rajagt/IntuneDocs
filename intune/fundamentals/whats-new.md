@@ -57,6 +57,15 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+## Week of December 30, 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### App management
+
+#### iOS user-licensed VPP apps<!-- 5619268 -->
+For user enrolled iOS devices, end users will no longer be presented with device-licensed VPP applications deployed as available. However, end users will continue to see all user-licensed VPP apps within the Company Portal. For more information about VPP apps, see [How to manage iOS and macOS apps purchased through Apple Volume Purchase Program with Microsoft Intune](~/apps/vpp-apps-ios.md).
+
+<!-- ########################## -->
 ## Week of December 23, 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
