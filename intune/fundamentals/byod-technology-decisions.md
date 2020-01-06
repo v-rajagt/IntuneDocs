@@ -12,6 +12,7 @@ ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.assetid: 297926f6-c029-4003-bda4-9ee031d47dda
+redirect_url: https://docs.microsoft.com/intune
 
 # optional metadata
 
