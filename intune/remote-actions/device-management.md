@@ -14,6 +14,7 @@ ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
+redirect_url: https://docs.microsoft.com/intune
 
 # optional metadata
 
